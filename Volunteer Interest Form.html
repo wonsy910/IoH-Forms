@@ -1,0 +1,547 @@
+<html style="font-size: 62.5%">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+    <style>
+      #volunteer-interest-application {
+        margin: auto;
+        padding: 0px;
+        width: 360px;
+        height: auto;
+
+        background-color: #334355;
+        border: solid 2px #f89a1c;
+        border-radius: 15px;
+      }
+      #volunteer-interest-form {
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+      }
+      #interest-form {
+        margin: 0px auto;
+        padding: 0px;
+        width: 90%;
+        height: auto;
+      }
+      #category-box {
+        margin: 20px auto 0px auto;
+        padding: 0px;
+        width: 96%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      #category-1,
+      #category-2,
+      #category-3,
+      #category-4 {
+        margin: 0px auto 0px auto;
+        padding: 10px 5px 10px 5px;
+        width: 90%;
+        height: auto;
+      }
+      #form-name {
+        margin: 20px auto 20px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      #form-name span {
+        margin: 0px;
+        padding: 0px;
+
+        font-size: 2.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #f89a1c;
+      }
+      #description {
+        margin: 20px auto 20px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      #description span {
+        margin: 0px;
+        padding: 0px;
+
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+      }
+      #title {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      #title span {
+        font-size: 2rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #f89a1c;
+      }
+      #two-rows {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+      }
+      #left-row {
+        margin: 0px;
+        padding: 0px;
+        width: 30%;
+        height: auto;
+      }
+      #left-row input[type="checkbox"] {
+        margin: 14px 10px 16px auto;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+      }
+      #right-row {
+        margin: 0px;
+        padding: 0px;
+        width: 70%;
+        height: auto;
+      }
+      #right-row label {
+        margin: 10px auto 10px auto;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+      }
+      #info-box {
+        margin: 10px auto 10px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      #two-columns {
+        margin: 10px auto 10px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      #column {
+        margin: 0px auto 0px auto;
+        padding: 0px;
+
+        width: 45%;
+      }
+      #column label {
+        margin: auto;
+        padding: 0px auto 0px 0px;
+
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+      }
+      #column input {
+        margin: 5px auto;
+        padding: 2px 0px 2px 4px;
+
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #334355;
+
+        background-color: #ffffff;
+      }
+      #column input:focus {
+        outline: solid 2px #f89a1c;
+      }
+      #column input::placeholder {
+        padding: 2px;
+        font-size: 1.6rem;
+        color: #334355;
+      }
+      #button-box {
+        margin: 10px auto 10px auto;
+        padding: 0px;
+        width: 60%;
+        height: 50px;
+
+        text-align: center;
+      }
+      #button-box button {
+        cursor: pointer;
+        margin: auto;
+        padding: 5px 10px 5px 10px;
+        width: 50%;
+        height: auto;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        color: #334355;
+        background-color: #f89a1c;
+        border: 2px solid #334355;
+        border-radius: 15px;
+      }
+      #button-box button:hover {
+        color: #808284;
+        border-color: #808284;
+      }
+
+      @media screen and (min-width: 768px) {
+        #volunteer-interest-application {
+          width: 740px;
+          height: auto;
+        }
+        #volunteer-interest-form {
+          width: 100%;
+          height: auto;
+        }
+        #interest-form {
+          width: 100%;
+          height: auto;
+        }
+        #category-box {
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+        #category-1,
+        #category-2,
+        #category-3,
+        #category-4 {
+          width: 100%;
+          height: auto;
+        }
+        #form-name {
+          margin: 20px auto 20px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        #form-name span {
+          margin: 0px;
+          padding: 0px;
+
+          font-size: 2.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          color: #f89a1c;
+        }
+        #description {
+          margin: 5px auto 5px auto;
+          padding: 0px;
+          width: 80%;
+          height: auto;
+
+          text-align: center;
+        }
+        #description span {
+          margin: 0px;
+          padding: 0px;
+
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          color: #ffffff;
+        }
+        #title span {
+          font-size: 2.4rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          color: #f89a1c;
+        }
+        #two-rows {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+        }
+        #left-row {
+          margin: 0px;
+          padding: 0px;
+          width: 30%;
+          height: auto;
+        }
+        #left-row input[type="checkbox"] {
+          margin: 15px 10px 19px auto;
+          padding: 0px;
+
+          display: flex;
+          flex-direction: column;
+        }
+        #right-row {
+          margin: 0px;
+          padding: 0px;
+          width: 70%;
+          height: auto;
+        }
+        #right-row label {
+          margin: 10px auto 10px auto;
+          padding: 0px;
+
+          display: flex;
+          flex-direction: column;
+
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          color: #ffffff;
+        }
+        #info-box {
+          margin: 25px auto 25px auto;
+          padding: 0px;
+          width: 65%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        #two-columns {
+          margin: 10px auto 10px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+        #column {
+          margin: 0px auto 0px auto;
+          padding: 0px;
+
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+        }
+        #column label {
+          margin: auto;
+          padding: 0px auto 0px 0px;
+
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          color: #ffffff;
+        }
+        #column input {
+          margin: 5px auto;
+          padding: 2px 0px 2px 4px;
+
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          color: #334355;
+
+          background-color: #ffffff;
+        }
+        #column input::placeholder {
+          padding: 2px;
+          font-size: 1.8rem;
+          color: #334355;
+        }
+        #button-box {
+          margin: 10px auto 10px auto;
+          padding: 0px;
+          width: 40%;
+          height: 50px;
+
+          text-align: center;
+        }
+        #button-box button {
+          cursor: pointer;
+          margin: auto;
+          padding: 5px 10px 5px 10px;
+          width: 50%;
+          height: auto;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          color: #334355;
+          background-color: #f89a1c;
+          border: 2px solid #334355;
+          border-radius: 15px;
+        }
+        #button-box button:hover {
+          color: #808284;
+          border-color: #808284;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="volunteer-interest-application" class="volunteer-interest-application">
+      <form action="" id="volunteer-interest-form" class="volunteer-interest-form">
+        <div id="interset-form" class="interest-form">
+          <div id="form-name" class="form-name">
+            <span> Volunteer Application </span>
+          </div>
+          <div id="description" class="description">
+            <span> Click all that interest you. You'll be able to choose your first preference in the next step. </span>
+          </div>
+          <div id="category-box" class="category-box">
+            <div id="category-1" class="category-1">
+              <div id="title">
+                <span>Marketing</span>
+              </div>
+              <div id="two-rows" class="two-rows">
+                <div id="left-row" class="left-row">
+                  <input type="checkbox" id="" name="" value="Facebook" />
+                  <input type="checkbox" id="" name="" value="Instagram" />
+                  <input type="checkbox" id="" name="" value="LinkedIn" />
+                  <input type="checkbox" id="" name="" value="Hope@Home App" />
+                  <input type="checkbox" id="" name="" value="Blog" />
+                  <input type="checkbox" id="" name="" value="Website" />
+                </div>
+                <div id="right-row" class="right-row">
+                  <label for="">Facebook</label>
+                  <label for="">Instagram</label>
+                  <label for="">LinkedIn</label>
+                  <label for="">Hope@Home&trade; App</label>
+                  <label for="">Blog</label>
+                  <label for="">Website</label>
+                </div>
+              </div>
+            </div>
+            <div id="category-2" class="category-2">
+              <div id="title">
+                <span>Resources</span>
+              </div>
+              <div id="two-rows" class="two-rows">
+                <div id="left-row" class="left-row">
+                  <input type="checkbox" id="" name="" value="Graphic Design" />
+                  <input type="checkbox" id="" name="" value="Video Editing" />
+                  <input type="checkbox" id="" name="" value="Supplies" />
+                  <input type="checkbox" id="" name="" value="Mail" />
+                  <input type="checkbox" id="" name="" value="Tech" />
+                  <input type="checkbox" id="" name="" value="Data" />
+                </div>
+                <div id="right-row" class="right-row">
+                  <label for="">Graphic Design</label>
+                  <label for="">Video Editing</label>
+                  <label for="">Supplies</label>
+                  <label for="">Mail</label>
+                  <label for="">Tech</label>
+                  <label for="">Data</label>
+                </div>
+              </div>
+            </div>
+            <div id="category-3" class="category-3">
+              <div id="title">
+                <span>Development</span>
+              </div>
+              <div id="two-rows" class="two-rows">
+                <div id="left-row" class="left-row">
+                  <input type="checkbox" id="" name="" value="Legacy Builders" />
+                  <input type="checkbox" id="" name="" value="Grants" />
+                  <input type="checkbox" id="" name="" value="Fundraising Events" />
+                  <input type="checkbox" id="" name="" value="Giving Tuesday" />
+                  <input type="checkbox" id="" name="" value="Thanking" />
+                </div>
+                <div id="right-row" class="right-row">
+                  <label for="">Legacy Builders</label>
+                  <label for="">Grants</label>
+                  <label for="">Fundraising Events</label>
+                  <label for="">Giving Tuesday</label>
+                  <label for="">Thanking</label>
+                </div>
+              </div>
+            </div>
+            <div id="category-4" class="category-4">
+              <div id="title">
+                <span>Programs</span>
+              </div>
+              <div id="two-rows" class="two-rows">
+                <div id="left-row" class="left-row">
+                  <input type="checkbox" id="" name="" value="Hope@Home Groups" />
+                  <input type="checkbox" id="" name="" value="Hope Hubs" />
+                  <input type="checkbox" id="" name="" value="Hope@Home Weekend" />
+                  <input type="checkbox" id="" name="" value="Legacy Retreat" />
+                  <input type="checkbox" id="" name="" value="National Legacy Day" />
+                  <input type="checkbox" id="" name="" value="Legacy Videos" />
+                </div>
+                <div id="right-row" class="right-row">
+                  <label for="">Hope@Home&trade; Groups</label>
+                  <label for="">Hope Hubs&trade;</label>
+                  <label for="">Hope@Home&trade; Weekends</label>
+                  <label for="">Legacy Retreats&trade;</label>
+                  <label for="">National Legacy Day&trade;</label>
+                  <label for="">Legacy Videos&trade;</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="info-box" class="info-box">
+            <div id="two-columns" class="two-columns">
+              <div id="column" class="column">
+                <label for="Applicant-First-Name">First Name&#42;</label>
+                <input type="text" id="ApplicantFirstName" name="Applicant-First-Name" />
+              </div>
+              <div id="column" class="column">
+                <label for="Applicant-Last-Name">Last Name&#42;</label>
+                <input type="text" id="ApplicantLastName" name="Applicant-Last-Name" />
+              </div>
+            </div>
+            <div id="two-columns" class="two-columns">
+              <div id="column" class="column">
+                <label for="Applicant-Email-Address">Email Address&#42;</label>
+                <input type="email" id="ApplicantEmailAddress" name="Applicant-Email-Address" placeholder="xxx@example.com" />
+              </div>
+              <div id="column" class="column">
+                <label for="Applicant-Cell-Phone-Number">Mobile (optional)</label>
+                <input type="text" id="ApplicantCellPhoneNumber" name="Applicant-Cell-Phone-Number" placeholder="xxx-xxx-xxxx" />
+              </div>
+            </div>
+          </div>
+          <div id="button-box" class="button-box">
+            <button id="submit-from" class="submit-form" type="button">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script></script>
+  </body>
+</html>
