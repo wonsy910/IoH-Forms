@@ -1509,6 +1509,7 @@
       function validation() {
         var interest = document.getElementsByName("Volunteer-Serving-Interests");
         if (
+          !interest[0].checked &&
           !interest[1].checked &&
           !interest[2].checked &&
           !interest[3].checked &&
@@ -1531,8 +1532,7 @@
           !interest[20].checked &&
           !interest[21].checked &&
           !interest[22].checked &&
-          !interest[23].checked &&
-          !interest[0].checked
+          !interest[23].checked
         ) {
           document.getElementById("vsi-error").style.visibility = "visible";
           interest[0].focus();
@@ -1596,8 +1596,8 @@
         } else {
           document.getElementById("bd-error").style.visibility = "hidden";
         }
-        if (document.getElementById("gender").value == "") {
-          document.getElementById("gender").focus();
+        if (document.getElementById("Gender").value == "") {
+          document.getElementById("Gender").focus();
           document.getElementById("g-error").style.visibility = "visible";
           e.preventDefault();
         } else {
@@ -1637,6 +1637,193 @@
           e.preventDefault();
         } else {
           document.getElementById("z-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("GoalsGiftsTalents").value == "") {
+          document.getElementById("GoalsGiftsTalents").focus();
+          document.getElementById("ggt-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ggt-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("StatementofFaith").value == "") {
+          document.getElementById("StatementofFaith").focus();
+          document.getElementById("sof-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("sof-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DeliverJoy1").value == "") {
+          document.getElementById("DeliverJoy1").focus();
+          document.getElementById("dj-error-1").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("dj-error-1").style.visibility = "hidden";
+        }
+        if (document.getElementById("DeliverJoy2").value == "") {
+          document.getElementById("DeliverJoy2").focus();
+          document.getElementById("dj-error-2").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("dj-error-2").style.visibility = "hidden";
+        }
+        if (document.getElementById("NeighborasSelf1").value == "") {
+          document.getElementById("NeighborasSelf1").focus();
+          document.getElementById("nas-error-1").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("nas-error-1").style.visibility = "hidden";
+        }
+        if (document.getElementById("NeighborasSelf2").value == "") {
+          document.getElementById("NeighborasSelf2").focus();
+          document.getElementById("nas-error-2").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("nas-error-2").style.visibility = "hidden";
+        }
+        if (document.getElementById("AntifragileAmbition1").value == "") {
+          document.getElementById("AntifragileAmbition1").focus();
+          document.getElementById("aa-error-1").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("aa-error-1").style.visibility = "hidden";
+        }
+        if (document.getElementById("AntifragileAmbition2").value == "") {
+          document.getElementById("AntifragileAmbition2").focus();
+          document.getElementById("aa-error-2").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("aa-error-2").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SpecialNeedsExperienceY").checked && !document.getElementById("SpecialNeedsExperienceN").checked) {
+          document.getElementById("SpecialNeedsExperienceY").focus();
+          document.getElementById("sne-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("sne-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SpecialNeedsExperienceY").checked && document.getElementById("YesSpecialNeedsExperience").value == "") {
+          document.getElementById("YesSpecialNeedsExperience").focus();
+          document.getElementById("ysne-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ysne-error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("NonEnglishAbilityY").checked && !document.getElementById("NonEnglishAbilityN").checked) {
+          document.getElementById("NonEnglishAbilityY").focus();
+          document.getElementById("nea-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("nea-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("NonEnglishAbilityY").checked && document.getElementById("YesNonEnglishAbility").value == "") {
+          document.getElementById("YesNonEnglishAbility").focus();
+          document.getElementById("ynea-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ynea-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("AboutInheritanceofHope").value == "") {
+          document.getElementById("AboutInheritanceofHope").focus();
+          document.getElementById("aioh-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("aioh-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("EmergencyContactName").value == "") {
+          document.getElementById("EmergencyContactName").focus();
+          document.getElementById("ecn-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ecn-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("EmergencyContactRelationship").value == "") {
+          document.getElementById("EmergencyContactRelationship").focus();
+          document.getElementById("ecr-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ecr-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("EmergencyContactEmail").value == "") {
+          document.getElementById("EmergencyContactEmail").focus();
+          document.getElementById("ece-error").style.visibility = "visible";
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("EmergencyContactEmail").value) === false) {
+          document.getElementById("ece-error").innerHTML = "Invalid Format*";
+          document.getElementById("EmergencyContactEmail").focus();
+          document.getElementById("ece-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ece-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("EmergencyContactNumber").value == "") {
+          document.getElementById("EmergencyContactNumber").focus();
+          document.getElementById("ecpn-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ecpn-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("EmergencyContactStreetAddress").value == "") {
+          document.getElementById("EmergencyContactStreetAddress").focus();
+          document.getElementById("ecsa-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ecsa-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("EmergencyContactCity").value == "") {
+          document.getElementById("EmergencyContactCity").focus();
+          document.getElementById("ecc-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ecc-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("EmergencyContactState").value == "") {
+          document.getElementById("EmergencyContactState").focus();
+          document.getElementById("ecs-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ecs-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("EmergencyContactZip").value == "") {
+          document.getElementById("EmergencyContactZip").focus();
+          document.getElementById("ecz-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ecz-error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("ElectronicConsent").checked) {
+          document.getElementById("ElectronicConsent").focus();
+          document.getElementById("ec-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ec-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("ApplicantSignature").value == "") {
+          document.getElementById("ApplicantSignature").focus();
+          document.getElementById("as-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("as-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("ApplicantSignatureDate").value == "") {
+          document.getElementById("ApplicantSignatureDate").focus();
+          document.getElementById("asd-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("asd-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("ParentGuardianSignature").value == "") {
+          document.getElementById("ParentGuardianSignature").focus();
+          document.getElementById("pgs-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("pgs-error").style.visibility = "hidden";
+        }
+        if (document.getElementById("ParentGuardianSignatureDate").value == "") {
+          document.getElementById("ParentGuardianSignatureDate").focus();
+          document.getElementById("pgsd-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("pgsd-error").style.visibility = "hidden";
         }
       }
       document.getElementById("submit-form").addEventListener("click", validation);
