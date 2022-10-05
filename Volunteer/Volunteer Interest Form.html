@@ -643,15 +643,11 @@
           document.getElementById("ea-error").innerHTML = "Required*";
           document.getElementById("ea-error").style.visibility = "hidden";
         }
-        if (document.getElementById("PhoneNumber").value == "") {
-          document.getElementById("PhoneNumber").focus();
-          document.getElementById("pn-error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("pn-error").style.visibility = "hidden";
-        }
       }
-      document.getElementById("submit-form").addEventListener("click", validation);
+      document.getElementById("submit-form").addEventListener("click", () => {
+        validation();
+        document.getElementById("volunteer-interest-form").submit();
+      });
     </script>
   </body>
 </html>
