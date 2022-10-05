@@ -457,12 +457,12 @@
               </div>
               <div id="two-rows" class="two-rows">
                 <div id="left-row" class="left-row">
-                  <input type="checkbox" id="" name="All-Interests" value="Facebook" />
-                  <input type="checkbox" id="" name="All-Interests" value="Instagram" />
-                  <input type="checkbox" id="" name="All-Interests" value="LinkedIn" />
-                  <input type="checkbox" id="" name="All-Interests" value="Hope@Home™ App" />
-                  <input type="checkbox" id="" name="All-Interests" value="Blog" />
-                  <input type="checkbox" id="" name="All-Interests" value="Web Design" />
+                  <input type="checkbox" id="" name="Interest" value="Facebook" />
+                  <input type="checkbox" id="" name="Interest" value="Instagram" />
+                  <input type="checkbox" id="" name="Interest" value="LinkedIn" />
+                  <input type="checkbox" id="" name="Interest" value="Hope@Home™ App" />
+                  <input type="checkbox" id="" name="Interest" value="Blog" />
+                  <input type="checkbox" id="" name="Interest" value="Web Design" />
                 </div>
                 <div id="right-row" class="right-row">
                   <label for="">Facebook</label>
@@ -480,12 +480,12 @@
               </div>
               <div id="two-rows" class="two-rows">
                 <div id="left-row" class="left-row">
-                  <input type="checkbox" id="" name="All-Interests" value="Graphic design" />
-                  <input type="checkbox" id="" name="All-Interests" value="Video editing" />
-                  <input type="checkbox" id="" name="All-Interests" value="Supplies" />
-                  <input type="checkbox" id="" name="All-Interests" value="Mail" />
-                  <input type="checkbox" id="" name="All-Interests" value="Tech" />
-                  <input type="checkbox" id="" name="All-Interests" value="Data" />
+                  <input type="checkbox" id="" name="Interest" value="Graphic design" />
+                  <input type="checkbox" id="" name="Interest" value="Video editing" />
+                  <input type="checkbox" id="" name="Interest" value="Supplies" />
+                  <input type="checkbox" id="" name="Interest" value="Mail" />
+                  <input type="checkbox" id="" name="Interest" value="Tech" />
+                  <input type="checkbox" id="" name="Interest" value="Data" />
                 </div>
                 <div id="right-row" class="right-row">
                   <label for="">Graphic Design</label>
@@ -503,11 +503,11 @@
               </div>
               <div id="two-rows" class="two-rows">
                 <div id="left-row" class="left-row">
-                  <input type="checkbox" id="" name="All-Interests" value="Legacy Builders™" />
-                  <input type="checkbox" id="" name="All-Interests" value="Grants Volunteer" />
-                  <input type="checkbox" id="" name="All-Interests" value="Fundraising events" />
-                  <input type="checkbox" id="" name="All-Interests" value="Giving Tuesday" />
-                  <input type="checkbox" id="" name="All-Interests" value="Thanking" />
+                  <input type="checkbox" id="" name="Interest" value="Legacy Builders™" />
+                  <input type="checkbox" id="" name="Interest" value="Grants Volunteer" />
+                  <input type="checkbox" id="" name="Interest" value="Fundraising events" />
+                  <input type="checkbox" id="" name="Interest" value="Giving Tuesday" />
+                  <input type="checkbox" id="" name="Interest" value="Thanking" />
                 </div>
                 <div id="right-row" class="right-row">
                   <label for="">Legacy Builders</label>
@@ -524,13 +524,13 @@
               </div>
               <div id="two-rows" class="two-rows">
                 <div id="left-row" class="left-row">
-                  <input type="checkbox" id="" name="All-Interests" value="Hope@Home™ Groups" />
-                  <input type="checkbox" id="" name="All-Interests" value="Hope Hubs™" />
-                  <input type="checkbox" id="" name="All-Interests" value="Hope@Home™ Weekends" />
-                  <input type="checkbox" id="" name="All-Interests" value="Legacy Retreats®" />
-                  <input type="checkbox" id="" name="All-Interests" value="National Legacy Day™" />
-                  <input type="checkbox" id="" name="All-Interests" value="Annual Vision Event" />
-                  <input type="checkbox" id="" name="All-Interests" value="Legacy Videos™" />
+                  <input type="checkbox" id="" name="Interest" value="Hope@Home™ Groups" />
+                  <input type="checkbox" id="" name="Interest" value="Hope Hubs™" />
+                  <input type="checkbox" id="" name="Interest" value="Hope@Home™ Weekends" />
+                  <input type="checkbox" id="" name="Interest" value="Legacy Retreats®" />
+                  <input type="checkbox" id="" name="Interest" value="National Legacy Day™" />
+                  <input type="checkbox" id="" name="Interest" value="Annual Vision Event" />
+                  <input type="checkbox" id="" name="Interest" value="Legacy Videos™" />
                 </div>
                 <div id="right-row" class="right-row">
                   <label for="">Hope@Home&trade; Groups</label>
@@ -570,6 +570,9 @@
               </div>
             </div>
           </div>
+          <div id="pd-to-sf" class="pd-to-sf" style="display: none">
+            <textarea name="All-Interests" id="AllInterests" cols="30" rows="10"></textarea>
+          </div>
           <div id="button-box" class="button-box">
             <button id="submit-form" class="submit-form" type="button">Submit</button>
           </div>
@@ -577,12 +580,23 @@
       </form>
     </div>
     <script>
+      function pdtosf() {
+        var choiceValue = document.getElementsByName("Interest");
+        var allInterests = "";
+        for (var i = 0; i < choiceValue.length; i++) {
+          if (choiceValue[i].checked) {
+            allInterests += choiceValue[i].value + "\n";
+          }
+        }
+        document.getElementById("AllInterests").value = allInterests;
+      }
+
       function emailCorrectPattern(e) {
         var y = /\S+@\S+\.\S+/;
         return y.test(e);
       }
       function validation() {
-        var interest = document.getElementsByName("All-Interests");
+        var interest = document.getElementsByName("Interest");
         if (
           !interest[0].checked &&
           !interest[1].checked &&
@@ -645,6 +659,7 @@
         }
       }
       document.getElementById("submit-form").addEventListener("click", () => {
+        pdtosf();
         validation();
         document.getElementById("volunteer-interest-form").submit();
       });
