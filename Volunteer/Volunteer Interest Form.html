@@ -571,6 +571,7 @@
             </div>
           </div>
           <div id="pd-to-sf" class="pd-to-sf" style="display: none">
+            <textarea name="Volunteer-Serving-Interests" id="VolunteerServingInterests" cols="30" rows="10"></textarea>
             <textarea name="All-Interests" id="AllInterests" cols="30" rows="10"></textarea>
           </div>
           <div id="button-box" class="button-box">
@@ -585,10 +586,11 @@
         var allInterests = "";
         for (var i = 0; i < choiceValue.length; i++) {
           if (choiceValue[i].checked) {
-            allInterests += choiceValue[i].value + ", ";
+            allInterests += choiceValue[i].value + " , ";
           }
         }
         document.getElementById("AllInterests").value = allInterests;
+        document.getElementById("VolunteerServingInterests").value = allInterests;
       }
 
       function emailCorrectPattern(e) {
