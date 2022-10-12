@@ -1567,6 +1567,18 @@
         let sof = document.getElementById("StatementofFaith").value;
         let sne = document.getElementById("YesSpecialNeedsExperience").value;
         let multilingual = document.getElementById("YesNonEnglishAbility").value;
+        let deliverneighborambition =
+          document.getElementById("DeliverJoy1").value +
+          " & " +
+          document.getElementById("DeliverJoy2").value +
+          " & " +
+          document.getElementById("NeighborasSelf1").value +
+          " & " +
+          document.getElementById("NeighborasSelf2").value +
+          " & " +
+          document.getElementById("AntifragileAmbition1").value +
+          " & " +
+          document.getElementById("AntifragileAmbition2").value;
         let shirt = document.getElementById("TShirtSize").value;
         let ecn = document.getElementById("EmergencyContactName").value;
         let ecr = document.getElementById("EmergencyContactRelationship").value;
@@ -1606,6 +1618,9 @@
           "[Multilingual]" +
           multilingual +
           "[/Multilingual]" +
+          "[DNA]" +
+          deliverneighborambition +
+          "[/DNA]" +
           "[Shirt]" +
           shirt +
           "[/Shirt]" +
