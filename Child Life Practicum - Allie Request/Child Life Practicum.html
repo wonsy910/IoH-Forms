@@ -23,6 +23,12 @@
         width: 95%;
         height: auto;
       }
+      .form-pages {
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+      }
 
       #form-name {
         margin: 0px;
@@ -44,6 +50,26 @@
         font-weight: 500;
         line-height: 1.5em;
       }
+      #section-name {
+        margin: 0px;
+        padding: 10px 0px 0px 0px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      #section-name span {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #f89a1c;
+        font-size: 2.4rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+      }
 
       #description {
         margin: 0px auto 15px auto;
@@ -52,6 +78,7 @@
         height: auto;
 
         text-align: left;
+        border: 1px solid #ffffff;
       }
       #description p {
         margin: 0px;
@@ -102,8 +129,10 @@
         color: #ffffff;
         font-size: 1.6rem;
         font-family: "Raleway", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
         line-height: 1.2em;
+        text-align: center;
       }
       .one input[type="text"],
       .one input[type="date"] {
@@ -115,7 +144,7 @@
         color: #000000;
         font-size: 1.6rem;
         font-family: "Raleway", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 1.5em;
 
         background: #ffffff;
@@ -166,17 +195,19 @@
         font-weight: 600;
         line-height: 1.5em;
       }
-      .one span {
+      .one > span {
         margin: 5px auto 5px auto;
         padding: 0px 5px 0px 5px;
         width: 95%;
         height: auto;
 
-        color: #f89a1c;
+        color: #ffffff;
         font-size: 1.4rem;
         font-family: "Raleway", sans-serif;
         font-weight: 500;
         line-height: 1.3em;
+
+        border: 1px solid #ffffff;
       }
 
       .two-columns {
@@ -207,8 +238,10 @@
         color: #ffffff;
         font-size: 1.6rem;
         font-family: "Raleway", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
         line-height: 1.2em;
+        text-align: center;
       }
       .two input[type="text"],
       .two input[type="date"] {
@@ -220,7 +253,8 @@
         color: #000000;
         font-size: 1.6rem;
         font-family: "Raleway", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
         line-height: 1.5em;
 
         background: #ffffff;
@@ -283,8 +317,10 @@
         color: #ffffff;
         font-size: 1.6rem;
         font-family: "Raleway", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
         line-height: 1.2em;
+        text-align: center;
       }
       .three input[type="text"],
       .three input[type="date"] {
@@ -296,7 +332,8 @@
         color: #000000;
         font-size: 1.6rem;
         font-family: "Raleway", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
         line-height: 1.5em;
 
         background: #ffffff;
@@ -314,7 +351,8 @@
         color: #000000;
         font-size: 1.4rem;
         font-family: "Raleway", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
         line-height: 1.5em;
 
         background: #ffffff;
@@ -378,19 +416,63 @@
         flex-direction: column;
         justify-content: center;
       }
+      .left-box input[type="checkbox"],
+      .left-box input[type="radio"] {
+        margin: auto;
+      }
       .right-box span {
         margin: 0px;
-        padding: 2px 2px 2px;
+        padding: 3px 3px 3px 3px;
         font-family: "Raleway", sans-serif;
-        font-size: 1.4rem;
-        font-weight: 400;
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
         line-height: 1.5em;
 
         color: #ffffff;
       }
-      .left-box input[type="checkbox"],
-      .left-box input[type="radio"] {
-        margin: auto 10px auto auto;
+
+      .button-box {
+        display: flex;
+        flex-direction: row;
+
+        margin: 0px auto 30px auto;
+        padding: 0px;
+
+        width: 100%;
+        height: auto;
+      }
+
+      .left,
+      .middle,
+      .right {
+        margin: auto;
+        width: 32%;
+        height: auto;
+
+        text-align: center;
+      }
+
+      .back-page,
+      .next-page,
+      .form-submit {
+        width: 80%;
+
+        color: #334355;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+
+        background-color: #f89a1c;
+        border: 3px solid #808284;
+        border-radius: 5px;
+      }
+
+      .back-page:hover,
+      .next-page:hover,
+      .form-submit:hover {
+        cursor: pointer;
       }
     </style>
   </head>
@@ -420,120 +502,163 @@
             </p>
           </div>
 
-          div
+          <div id="first-page" class="form-pages">
+            <div id="section-name" class="section-name">
+              <span> Your info: </span>
+            </div>
 
-          <div id="two-columns" class="two-columns">
-            <div id="two" class="two">
-              <label for="First-Name">First Name&#42;</label>
-              <input type="text" id="FirstName" name="First-Name" />
-              <small id="fn-error" class="error">Please provide the information.&#42;</small>
-            </div>
-            <div id="two" class="two">
-              <label for="Last-Name">Last Name&#42;</label>
-              <input type="text" id="LastName" name="Last-Name" />
-              <small id="ln-error" class="error">Please provide the information.&#42;</small>
-            </div>
-          </div>
-
-          <div id="two-columns" class="two-columns">
-            <div id="two" class="two">
-              <label for="Email">Email&#42;</label>
-              <input type="text" id="Email" name="Email" placeholder="xxx@example.com" />
-              <small id="e-error" class="error">Please write the valid email.&#42;</small>
-            </div>
-            <div id="two" class="two">
-              <label for="Phone-Number">Phone Number&#42;</label>
-              <input type="text" id="PhoneNumber" name="Phone-Number" placeholder="xxx-xxx-xxxx" />
-              <small id="pn-error" class="error">Please provide the information.&#42;</small>
-            </div>
-          </div>
-
-          <div id="one-column" class="one-column">
-            <div id="one" class="one">
-              <label for="Street-Address">Street Address&#42;</label>
-              <input type="text" id="StreetAddress" name="Street-Address" />
-              <small id="sa-error" class="error">Please provide the information.&#42;</small>
-            </div>
-          </div>
-
-          <div id="three-columns" class="three-columns">
-            <div id="three" class="three">
-              <label for="City">City&#42;</label>
-              <input type="text" id="City" name="City" />
-              <small id="c-error" class="error">Please provide the information.&#42;</small>
-            </div>
-            <div id="three" class="three">
-              <label for="State">State&#42;</label>
-              <input type="text" id="State" name="State" />
-              <small id="s-error" class="error">Please provide the information.&#42;</small>
-            </div>
-            <div id="three" class="three">
-              <label for="Zip">Zip&#42;</label>
-              <input type="text" id="Zip" name="Zip" />
-              <small id="z-error" class="error">Please provide the information.&#42;</small>
-            </div>
-          </div>
-
-          <div id="one-column" class="one-column">
-            <div id="one" class="one">
-              <label for="College">College/University&#42;</label>
-              <input type="text" id="College" name="College" />
-              <small id="c-error" class="error">Please provide the information.&#42;</small>
-            </div>
-          </div>
-
-          <div id="three-columns" class="three-columns">
-            <div id="three" class="three">
-              <label for="Major">Major&#42;</label>
-              <input type="text" id="Major" name="Major" />
-              <small id="m-error" class="error">Please provide the information.&#42;</small>
-            </div>
-            <div id="three" class="three">
-              <label for="Year">Year&#42;</label>
-              <input type="text" id="Year" name="Year" />
-              <small id="y-error" class="error">Please provide the information.&#42;</small>
-            </div>
-            <div id="three" class="three">
-              <label for="GPA">GPA&#42;</label>
-              <input type="text" id="GPA" name="GPA" />
-              <small id="g-error" class="error">Please provide the information.&#42;</small>
-            </div>
-          </div>
-
-          <div id="one-column" class="one-column">
-            <div id="one" class="one">
-              <label for="Work-Hour">
-                The practicum aims to provide a 10-week practicum experience for students (generally 10 hours a week).<br />
-                This timeframe is flexible, however. <br />
-                There will be a weekend/weeknight component. <br />
-                What is your availability? (Check all that apply).&#42;
-              </label>
-              <div id="check-box" class="check-box">
-                <div id="left-box" class="left-box">
-                  <input type="radio" id="Work-Hour" name="Work-Hour" value="flexible hours" />
-                  <input type="radio" id="Work-Hour" name="Work-Hour" value="1.5 hours" />
-                  <input type="radio" id="Work-Hour" name="Work-Hour" value="Saturday-45 mins" />
-                  <input type="radio" id="Work-Hour" name="Work-Hour" value="Uncertain" />
-                </div>
-                <div id="right-box" class="right-box">
-                  <span>I have flexible hours</span>
-                  <span>I am unable to work any week night (1.5 hours)</span>
-                  <span>I am unable to work any weekend (Saturday, 45 minutes)</span>
-                  <span>Uncertain at this time</span>
-                </div>
+            <div id="two-columns" class="two-columns">
+              <div id="two" class="two">
+                <label for="First-Name">First Name&#42;</label>
+                <input type="text" id="FirstName" name="First-Name" />
+                <small id="fn-error" class="error">Please provide the information.&#42;</small>
               </div>
-              <div id="three-columns" class="three-columns">
-                <div id="three" class="three" style="width: 15%">
-                  <input type="radio" id="Work-Hour" name="Work-Hour" value="Other:" />
-                </div>
-                <div id="three" class="three" style="width: 35%">
-                  <span>Other:</span>
-                </div>
-                <div id="three" class="three" style="width: 50%">
-                  <input type="text" id="Work-Hour" name="Work-Hour" />
-                </div>
+              <div id="two" class="two">
+                <label for="Last-Name">Last Name&#42;</label>
+                <input type="text" id="LastName" name="Last-Name" />
+                <small id="ln-error" class="error">Please provide the information.&#42;</small>
               </div>
-              <small id="fh-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+
+            <div id="two-columns" class="two-columns">
+              <div id="two" class="two">
+                <label for="Email">Email&#42;</label>
+                <input type="text" id="Email" name="Email" placeholder="xxx@example.com" />
+                <small id="e-error" class="error">Please write the valid email.&#42;</small>
+              </div>
+              <div id="two" class="two">
+                <label for="Phone-Number">Phone Number&#42;</label>
+                <input type="text" id="PhoneNumber" name="Phone-Number" placeholder="xxx-xxx-xxxx" />
+                <small id="pn-error" class="error">Please provide the information.&#42;</small>
+              </div>
+            </div>
+
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <label for="Street-Address">Street Address&#42;</label>
+                <input type="text" id="StreetAddress" name="Street-Address" />
+                <small id="sa-error" class="error">Please provide the information.&#42;</small>
+              </div>
+            </div>
+
+            <div id="three-columns" class="three-columns">
+              <div id="three" class="three">
+                <label for="City">City&#42;</label>
+                <input type="text" id="City" name="City" />
+                <small id="c-error" class="error">Please provide the information.&#42;</small>
+              </div>
+              <div id="three" class="three">
+                <label for="State">State&#42;</label>
+                <input type="text" id="State" name="State" />
+                <small id="s-error" class="error">Please provide the information.&#42;</small>
+              </div>
+              <div id="three" class="three">
+                <label for="Zip">Zip&#42;</label>
+                <input type="text" id="Zip" name="Zip" />
+                <small id="z-error" class="error">Please provide the information.&#42;</small>
+              </div>
+            </div>
+
+            <div id="section-name" class="section-name">
+              <span> School Info: </span>
+            </div>
+
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <label for="College">College/University&#42;</label>
+                <input type="text" id="College" name="College" />
+                <small id="c-error" class="error">Please provide the information.&#42;</small>
+              </div>
+            </div>
+
+            <div id="three-columns" class="three-columns">
+              <div id="three" class="three">
+                <label for="Major">Major&#42;</label>
+                <input type="text" id="Major" name="Major" />
+                <small id="m-error" class="error">Please provide the information.&#42;</small>
+              </div>
+              <div id="three" class="three">
+                <label for="Year">Year&#42;</label>
+                <input type="text" id="Year" name="Year" />
+                <small id="y-error" class="error">Please provide the information.&#42;</small>
+              </div>
+              <div id="three" class="three">
+                <label for="GPA">GPA&#42;</label>
+                <input type="text" id="GPA" name="GPA" />
+                <small id="g-error" class="error">Please provide the information.&#42;</small>
+              </div>
+            </div>
+
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <span for="Work-Hour">
+                  The practicum aims to provide a 10-week practicum experience for students (generally 10 hours a week).<br /><br />
+                  This timeframe is flexible, however. There will be a weekend/weeknight component.<br /><br />
+                  What is your availability? (Check all that apply).&#42;
+                </span>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <input type="radio" id="Work-Hour" name="Work-Hour" value="flexible hours" />
+                    <input type="radio" id="Work-Hour" name="Work-Hour" value="1.5 hours" />
+                    <input type="radio" id="Work-Hour" name="Work-Hour" value="Saturday-45 mins" />
+                    <input type="radio" id="Work-Hour" name="Work-Hour" value="Uncertain" />
+                    <input type="radio" id="Work-Hour" name="Work-Hour" value="Other:" />
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <span>I have flexible hours</span>
+                    <span>I am unable to work any week night (1.5 hours)</span>
+                    <span>I am unable to work any weekend (Saturday, 45 minutes)</span>
+                    <span>Uncertain at this time</span>
+                    <span>Other:</span>
+                  </div>
+                </div>
+                <small id="fh-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+              </div>
+            </div>
+          </div>
+
+          <div id="second-page" class="form-pages">
+            <div id="section-name" class="section-name">
+              <span> Share your story.. </span>
+            </div>
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <span>
+                  What specifically inspires you about Inheritance of Hope and what has led you to apply for the Child Life Practicum? <br />
+                  Why do you want to be a part of it? (200 words).
+                </span>
+                <textarea name="IoH-Inspiration" id="IoHInspiration" cols="30" rows="3"></textarea>
+              </div>
+            </div>
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <span>
+                  Share about a time when you cared for someone grieving or hurting.<br />
+                  What were 3 important aspects of walking alongside of them? (200 words).
+                </span>
+                <textarea name="Three-Aspects" id="ThreeAspects" cols="30" rows="3"></textarea>
+              </div>
+            </div>
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <span>
+                  How do you go about building rapport with children and families? <br />
+                  What are the important qualities of building connections and fostering safety with others? (200 words).
+                </span>
+                <textarea name="Building-Rapport" id="BuildingRapport" cols="30" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-box">
+            <div class="left">
+              <button id="back-page" class="back-page" type="button">BACK</button>
+            </div>
+            <div class="middle">
+              <button id="form-submit" class="form-submit" type="button">SUBMIT</button>
+            </div>
+            <div class="right">
+              <button id="next-page" class="next-page" type="button">NEXT</button>
             </div>
           </div>
         </div>
