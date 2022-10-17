@@ -72,9 +72,9 @@
       }
 
       #description {
-        margin: 0px auto 15px auto;
+        margin: 10px auto;
         padding: 0px;
-        width: 96%;
+        width: 97.5%;
         height: auto;
 
         text-align: left;
@@ -162,8 +162,8 @@
         line-height: 1.5em;
       }
       .one textarea {
-        margin: 0px;
-        padding: 2px 0px 2px 2px;
+        margin: 10px auto;
+        padding: 0px;
         width: 100%;
         min-height: 70px;
 
@@ -197,8 +197,8 @@
       }
       .one > span {
         margin: 5px auto 5px auto;
-        padding: 0px 5px 0px 5px;
-        width: 95%;
+        padding: 0px;
+        width: 97.5%;
         height: auto;
 
         color: #ffffff;
@@ -207,7 +207,8 @@
         font-weight: 500;
         line-height: 1.3em;
 
-        border: 1px solid #ffffff;
+        outline: 1px solid #ffffff;
+        outline-offset: 3px;
       }
 
       .two-columns {
@@ -598,20 +599,21 @@
                 </span>
                 <div id="check-box" class="check-box">
                   <div id="left-box" class="left-box">
-                    <input type="radio" id="Work-Hour" name="Work-Hour" value="flexible hours" />
-                    <input type="radio" id="Work-Hour" name="Work-Hour" value="1.5 hours" />
-                    <input type="radio" id="Work-Hour" name="Work-Hour" value="Saturday-45 mins" />
-                    <input type="radio" id="Work-Hour" name="Work-Hour" value="Uncertain" />
-                    <input type="radio" id="Work-Hour" name="Work-Hour" value="Other:" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="flexible hours" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="1.5 hours" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Saturday-45 mins" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Uncertain" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Other:" />
                   </div>
                   <div id="right-box" class="right-box">
                     <span>I have flexible hours</span>
                     <span>I am unable to work any week night (1.5 hours)</span>
                     <span>I am unable to work any weekend (Saturday, 45 minutes)</span>
                     <span>Uncertain at this time</span>
-                    <span>Other:</span>
+                    <span> Other:</span>
                   </div>
                 </div>
+                <input type="text" id="Work-Hour" name="Work-Hour" placeholder="Other: " style="margin: auto; width: 80%" />
                 <small id="fh-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
               </div>
             </div>
@@ -625,7 +627,8 @@
               <div id="one" class="one">
                 <span>
                   What specifically inspires you about Inheritance of Hope and what has led you to apply for the Child Life Practicum? <br />
-                  Why do you want to be a part of it? (200 words).
+                  Why do you want to be a part of it? <br />
+                  (200 words)
                 </span>
                 <textarea name="IoH-Inspiration" id="IoHInspiration" cols="30" rows="3"></textarea>
                 <small id="ii-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
@@ -636,7 +639,8 @@
               <div id="one" class="one">
                 <span>
                   Share about a time when you cared for someone grieving or hurting.<br />
-                  What were 3 important aspects of walking alongside of them? (200 words).
+                  What were 3 important aspects of walking alongside of them? <br />
+                  (200 words)
                 </span>
                 <textarea name="Three-Aspects" id="ThreeAspects" cols="30" rows="3"></textarea>
                 <small id="ta-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
@@ -647,7 +651,8 @@
               <div id="one" class="one">
                 <span>
                   How do you go about building rapport with children and families? <br />
-                  What are the important qualities of building connections and fostering safety with others? (200 words).
+                  What are the important qualities of building connections and fostering safety with others? <br />
+                  (200 words)
                 </span>
                 <textarea name="Building-Rapport" id="BuildingRapport" cols="30" rows="3"></textarea>
                 <small id="br-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
@@ -670,6 +675,65 @@
                 </span>
                 <textarea name="Statement-of-Faith" id="StatementofFaith" cols="30" rows="3"></textarea>
                 <small id="sf-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+              </div>
+            </div>
+          </div>
+
+          <div id="third-page" class="form-pages">
+            <div id="section-name" class="section-name">
+              <span> Child Life Experience </span>
+            </div>
+
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <span>
+                  Given the job description of the Child Life Practicum for Inheritance of Hope, what are 3 measurable goals you hope to accomplish as part of
+                  this experience? <br /><br />
+                  (See the job description linked on the first page of application)
+                </span>
+                <textarea name="Three-Goals" id="ThreeGoals" cols="30" rows="3"></textarea>
+                <small id="tg-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+              </div>
+            </div>
+
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <label for="Work-Hour"> Check your top 2-5 interests for child life: &#42; </label>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="flexible hours" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="1.5 hours" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="Saturday-45 mins" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="Uncertain" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="Other:" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="flexible hours" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="1.5 hours" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="flexible hours" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="1.5 hours" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="Saturday-45 mins" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="Uncertain" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="Other:" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="flexible hours" />
+                    <input type="checkbox" id="TopInterests" name="Top-Interests" value="1.5 hours" />
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <span>Anticipatory grief</span>
+                    <span>Grieving parents/caregivers</span>
+                    <span>Grieving preschoolers</span>
+                    <span>Grieving school-age children</span>
+                    <span>Grieving teens</span>
+                    <span>Family-centered care</span>
+                    <span>Diversity, equity, inclusion</span>
+                    <span>Bereavement</span>
+                    <span>Education</span>
+                    <span>Group support</span>
+                    <span>Preparation</span>
+                    <span>Medical play</span>
+                    <span>Therapeutic play</span>
+                    <span>Child development</span>
+                  </div>
+                </div>
+                <small id="fh-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
               </div>
             </div>
           </div>
