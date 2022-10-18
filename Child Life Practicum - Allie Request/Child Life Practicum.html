@@ -3,7 +3,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
     <style>
-      #Child-Life-Practicum {
+      #Student-Opportunities-Application {
         margin: 0px auto;
         padding: 0px;
         width: 360px;
@@ -11,7 +11,7 @@
 
         background: #334355;
       }
-      #Child-Life-Practicum-Application {
+      #Student-Opportunities-Application-Form {
         margin: 0px;
         height: 0px;
         width: 100%;
@@ -179,6 +179,24 @@
       .one input[type="date"]:focus {
         outline: solid 3px #808284;
       }
+      .one select[type="text"] {
+        margin: 0px;
+        padding: 2px 0px 2px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .one select[type="text"]:focus {
+        outline: solid 3px #808284;
+      }
       .one textarea:focus {
         outline: solid 3px #808284;
       }
@@ -202,7 +220,7 @@
         height: auto;
 
         color: #ffffff;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-family: "Raleway", sans-serif;
         font-weight: 500;
         line-height: 1.3em;
@@ -262,6 +280,24 @@
       }
       .two input[type="text"]:focus,
       .two input[type="date"]:focus {
+        outline: solid 3px #808284;
+      }
+      .two select[type="text"] {
+        margin: 0px;
+        padding: 2px 0px 2px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .two select[type="text"]:focus {
         outline: solid 3px #808284;
       }
       .two input::placeholder {
@@ -397,10 +433,28 @@
         flex-direction: row;
         justify-content: space-between;
       }
+      .checkbox-label {
+        margin: auto;
+        padding: 5px 0px 5px 0px;
+        width: 100%;
+        height: auto;
+      }
+      .checkbox-label span {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #f89a1c;
+        font-size: 1.8rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+      }
       .left-box {
         margin: 0px;
         padding: 0px;
-        width: 10%;
+        width: 30%;
         height: auto;
 
         display: flex;
@@ -410,7 +464,7 @@
       .right-box {
         margin: 0px;
         padding: 0px;
-        width: 90%;
+        width: 70%;
         height: auto;
 
         display: flex;
@@ -478,22 +532,22 @@
     </style>
   </head>
   <body>
-    <div id="Child-Life-Practicum">
-      <form action="" id="Child-Life-Practicum-Application" method="post">
-        <div id="application-form">
+    <div id="Student-Opportunities-Application">
+      <form action="" id="Student-Opportunities-Application-Form" method="post">
+        <div id="application-form" class="application-form">
           <div id="form-name" class="form-name">
-            <span> Child Life Practicum </span>
+            <span> Student Opportunities Application </span>
           </div>
 
           <div id="description" class="description">
-            <p>Thank you for your interest in our Child Life Practicum at Inheritance of Hope. We look forward to learning more about you!</p>
+            <p>Thank you for your interest in our Student Opportunities at Inheritance of Hope. We look forward to learning more about you!</p>
             <p>
-              This application is due by August 5, 2022. Interviews will be conducted between August 15-25. A selection will be offered on August 26 with an
-              expected start date of September 1, 2022.
+              Read more about the Child Life Practicum
+              <a href="https://www.dropbox.com/s/60mqy5sasa5zjak/Child%20Life%20Practicum%20Flier%20.pdf?dl=0" target="_blank">here</a>.
             </p>
             <p>
-              You can find more detail about the job description
-              <a href="https://www.dropbox.com/s/60mqy5sasa5zjak/Child%20Life%20Practicum%20Flier%20.pdf?dl=0" target="_blank">here</a>.
+              Read more about the Groups internship
+              <a href="https://www.dropbox.com/s/sh680vafe9jnsq7/Groups%20Internship%20Flier.pdf?dl=0" target="_blank">here</a>.
             </p>
             <p>
               For any additional questions, please contact: <br />
@@ -505,7 +559,50 @@
 
           <div id="first-page" class="form-pages">
             <div id="section-name" class="section-name">
-              <span> Your info: </span>
+              <span> Background information: </span>
+            </div>
+
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <label for="Which-Job"> Select which you are applying for: &#42; </label>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box" style="width: 40%">
+                    <input type="checkbox" id="WhichJob" name="Which-Job" value="Child Life Practicum" />
+                    <input type="checkbox" id="WhichJob" name="Which-Job" value="Groups Internship" />
+                  </div>
+                  <div id="right-box" class="right-box" style="width: 60%">
+                    <span>Child Life Practicum</span>
+                    <span>Groups Internship</span>
+                  </div>
+                </div>
+                <small id="wj-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+              </div>
+            </div>
+
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <label for="Which-Term">
+                  Select the beginning term <br />
+                  you are applying for: &#42;
+                </label>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box" style="width: 40%">
+                    <input type="checkbox" id="WhichTerm" name="Which-Term" value="Spring 2023" />
+                    <input type="checkbox" id="WhichTerm" name="Which-Term" value="Summer 2023" />
+                    <input type="checkbox" id="WhichTerm" name="Which-Term" value="Fall 2023" />
+                    <input type="checkbox" id="WhichTerm" name="Which-Term" value="Spring 2024" />
+                    <input type="checkbox" id="WhichTerm" name="Which-Term" value="Summer 2024" />
+                  </div>
+                  <div id="right-box" class="right-box" style="width: 60%">
+                    <span>Spring 2023</span>
+                    <span>Summer 2023</span>
+                    <span>Fall 2023</span>
+                    <span>Spring 2024</span>
+                    <span>Summer 2024</span>
+                  </div>
+                </div>
+                <small id="wt-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+              </div>
             </div>
 
             <div id="two-columns" class="two-columns">
@@ -518,6 +615,33 @@
                 <label for="Last-Name">Last Name&#42;</label>
                 <input type="text" id="LastName" name="Last-Name" />
                 <small id="ln-error" class="error">Please provide the information.&#42;</small>
+              </div>
+            </div>
+
+            <div id="two-columns" class="two-columns">
+              <div id="two" class="two">
+                <label for="Birth-Date">Date of Birth&#42;</label>
+                <input type="text" id="BirthDate" name="Birth-Date" />
+                <small id="bd-error" class="error">Please provide the information.&#42;</small>
+              </div>
+              <div id="two" class="two">
+                <label for="T-Shirt-Size">T-Shirt Size&#42;</label>
+                <select type="text" id="TShirtSize" oninput="PdtoSf()" name="T-Shirt-Size">
+                  <option value="" selected hidden>Select Your Size...</option>
+                  <option value="5XL">5XL</option>
+                  <option value="4XL">4XL</option>
+                  <option value="3XL">3XL</option>
+                  <option value="XXL">XXL</option>
+                  <option value="XL">XL</option>
+                  <option value="Adult L">L</option>
+                  <option value="Adult M">M</option>
+                  <option value="Adult S">S</option>
+                  <option value="Youth L">Youth L</option>
+                  <option value="Youth M">Youth M</option>
+                  <option value="Youth S">Youth S</option>
+                  <option value="Youth XS">Youth XS</option>
+                </select>
+                <small id="tss-error" class="error">Please provide the information.&#42;</small>
               </div>
             </div>
 
@@ -566,25 +690,25 @@
 
             <div id="one-column" class="one-column">
               <div id="one" class="one">
-                <label for="College">College/University&#42;</label>
-                <input type="text" id="College" name="College" />
+                <label for="College-University">Name of College/University:&#42;</label>
+                <input type="text" id="CollegeUniversity" name="College-University" />
                 <small id="cu-error" class="error">Please provide the information.&#42;</small>
               </div>
             </div>
 
             <div id="three-columns" class="three-columns">
               <div id="three" class="three">
-                <label for="Major">Major&#42;</label>
-                <input type="text" id="Major" name="Major" />
-                <small id="m-error" class="error">Please provide the information.&#42;</small>
+                <label for="Major-Degree">Major/Degree&#42;<br /><br /></label>
+                <input type="text" id="MajorDegree" name="Major-Degree" />
+                <small id="md-error" class="error">Please provide the information.&#42;</small>
               </div>
               <div id="three" class="three">
-                <label for="Year">Year&#42;</label>
-                <input type="text" id="Year" name="Year" />
-                <small id="y-error" class="error">Please provide the information.&#42;</small>
+                <label for="Graduation-Date">Graduation Date&#42;</label>
+                <input type="text" id="GraduationDate" name="Graduation-Date" />
+                <small id="gd-error" class="error">Please provide the information.&#42;</small>
               </div>
               <div id="three" class="three">
-                <label for="GPA">GPA&#42;</label>
+                <label for="GPA">GPA&#42; <br /><br /></label>
                 <input type="text" id="GPA" name="GPA" />
                 <small id="g-error" class="error">Please provide the information.&#42;</small>
               </div>
@@ -593,28 +717,107 @@
             <div id="one-column" class="one-column">
               <div id="one" class="one">
                 <span for="Work-Hour">
-                  The practicum aims to provide a 10-week practicum experience for students (generally 10 hours a week).<br /><br />
-                  This timeframe is flexible, however. There will be a weekend/weeknight component.<br /><br />
-                  What is your availability? (Check all that apply).&#42;
+                  Student hours at Inheritance of Hope can be flexible in nature rather than schedule Hope@Home™ Group Calls in the evenings/Saturday Story Time
+                  on the weekend. <br /><br />
+                  Check your availability for groups/meetings:&#42;
                 </span>
+                <small id="fh-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <div id="checkbox-label" class="checkbox-label">
+                  <span> Monday </span>
+                </div>
                 <div id="check-box" class="check-box">
                   <div id="left-box" class="left-box">
-                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="flexible hours" />
-                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="1.5 hours" />
-                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Saturday-45 mins" />
-                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Uncertain" />
-                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Other:" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Monday: 9am-12pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Monday: 12pm-2pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Monday: 3pm-5pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Monday: 5pm-8pm" />
                   </div>
                   <div id="right-box" class="right-box">
-                    <span>I have flexible hours</span>
-                    <span>I am unable to work any week night (1.5 hours)</span>
-                    <span>I am unable to work any weekend (Saturday, 45 minutes)</span>
-                    <span>Uncertain at this time</span>
-                    <span> Other:</span>
+                    <span>Morning: 9am-12pm</span>
+                    <span>Early Afternoon: 12pm-2pm</span>
+                    <span>Later Afternoon: 3pm-5pm</span>
+                    <span>Evening: 5pm-8pm</span>
                   </div>
                 </div>
-                <input type="text" id="Work-Hour" name="Work-Hour" placeholder="Other: " style="margin: auto; width: 80%" />
-                <small id="fh-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <div id="checkbox-label" class="checkbox-label">
+                  <span> Tuesday </span>
+                </div>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Tuesday: 9am-12pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Tuesday: 12pm-2pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Tuesday: 3pm-5pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Tuesday: 5pm-8pm" />
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <span>Morning: 9am-12pm</span>
+                    <span>Early Afternoon: 12pm-2pm</span>
+                    <span>Later Afternoon: 3pm-5pm</span>
+                    <span>Evening: 5pm-8pm</span>
+                  </div>
+                </div>
+                <div id="checkbox-label" class="checkbox-label">
+                  <span> Wednesday </span>
+                </div>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Wednesday: 9am-12pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Wednesday: 12pm-2pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Wednesday: 3pm-5pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Wednesday: 5pm-8pm" />
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <span>Morning: 9am-12pm</span>
+                    <span>Early Afternoon: 12pm-2pm</span>
+                    <span>Later Afternoon: 3pm-5pm</span>
+                    <span>Evening: 5pm-8pm</span>
+                  </div>
+                </div>
+                <div id="checkbox-label" class="checkbox-label">
+                  <span> Thursday </span>
+                </div>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Thursday: 9am-12pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Thursday: 12pm-2pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Thursday: 3pm-5pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Thursday: 5pm-8pm" />
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <span>Morning: 9am-12pm</span>
+                    <span>Early Afternoon: 12pm-2pm</span>
+                    <span>Later Afternoon: 3pm-5pm</span>
+                    <span>Evening: 5pm-8pm</span>
+                  </div>
+                </div>
+                <div id="checkbox-label" class="checkbox-label">
+                  <span> Friday </span>
+                </div>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Friday: 9am-12pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Friday: 12pm-2pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Friday: 3pm-5pm" />
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Friday: 5pm-8pm" />
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <span>Morning: 9am-12pm</span>
+                    <span>Early Afternoon: 12pm-2pm</span>
+                    <span>Later Afternoon: 3pm-5pm</span>
+                    <span>Evening: 5pm-8pm</span>
+                  </div>
+                </div>
+                <div id="checkbox-label" class="checkbox-label">
+                  <span> Saturday </span>
+                </div>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <input type="checkbox" id="Work-Hour" name="Work-Hour" value="Saturday: 9am-12pm" />
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <span>Morning: 9am-12pm</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
