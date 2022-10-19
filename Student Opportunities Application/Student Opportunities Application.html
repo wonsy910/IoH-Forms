@@ -6,7 +6,7 @@
       #Student-Opportunities-Application {
         margin: 0px auto;
         padding: 0px;
-        width: 360px;
+        width: 368px;
         min-height: 720px;
 
         background: #334355;
@@ -20,7 +20,7 @@
       #application-form {
         margin: auto;
         padding: 0px;
-        width: 95%;
+        width: 98%;
         height: auto;
       }
       .form-pages {
@@ -92,6 +92,35 @@
         line-height: 1.5em;
       }
       #description a {
+        color: #f89a1c;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        line-height: 1.5em;
+        text-decoration: none;
+      }
+      #note {
+        margin: 10px auto;
+        padding: 0px;
+        width: 97.5%;
+        height: auto;
+
+        text-align: left;
+        border: 1px solid #ffffff;
+      }
+      #note p {
+        margin: 0px;
+        padding: 5px;
+
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+        line-height: 1.5em;
+      }
+      #note a {
         color: #f89a1c;
         font-size: 1.4rem;
         font-family: "Raleway", sans-serif;
@@ -227,6 +256,15 @@
 
         outline: 1px solid #ffffff;
         outline-offset: 3px;
+      }
+      .one a {
+        color: #f89a1c;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        line-height: 1.5em;
+        text-decoration: none;
       }
 
       .two-columns {
@@ -578,7 +616,7 @@
 
             <div id="one-column" class="one-column">
               <div id="one" class="one">
-                <label for="Which-Job"> Select which you are applying for: &#42; </label>
+                <label for="Which-Job"> Select which you are applying for: </label>
                 <div id="check-box" class="check-box">
                   <div id="left-box" class="left-box" style="width: 40%">
                     <input type="checkbox" id="WhichJob" name="Which-Job" value="Child Life Practicum" />
@@ -589,7 +627,7 @@
                     <span>Groups Internship</span>
                   </div>
                 </div>
-                <small id="wj-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <small id="wj-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
             </div>
 
@@ -597,7 +635,7 @@
               <div id="one" class="one">
                 <label for="Which-Term">
                   Select the beginning term <br />
-                  you are applying for: &#42;
+                  you are applying for:
                 </label>
                 <div id="check-box" class="check-box">
                   <div id="left-box" class="left-box" style="width: 40%">
@@ -615,31 +653,31 @@
                     <span>Summer 2024</span>
                   </div>
                 </div>
-                <small id="wt-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <small id="wt-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
             </div>
 
             <div id="two-columns" class="two-columns">
               <div id="two" class="two">
-                <label for="First-Name">First Name&#42;</label>
+                <label for="First-Name">First Name</label>
                 <input type="text" id="FirstName" name="First-Name" />
-                <small id="fn-error" class="error">Please provide the information.&#42;</small>
+                <small id="fn-error" class="error">Please provide the information</small>
               </div>
               <div id="two" class="two">
-                <label for="Last-Name">Last Name&#42;</label>
+                <label for="Last-Name">Last Name</label>
                 <input type="text" id="LastName" name="Last-Name" />
-                <small id="ln-error" class="error">Please provide the information.&#42;</small>
+                <small id="ln-error" class="error">Please provide the information</small>
               </div>
             </div>
 
             <div id="two-columns" class="two-columns">
               <div id="two" class="two">
-                <label for="Birth-Date">Date of Birth&#42;</label>
+                <label for="Birth-Date">Date of Birth</label>
                 <input type="text" id="BirthDate" name="Birth-Date" />
-                <small id="bd-error" class="error">Please provide the information.&#42;</small>
+                <small id="bd-error" class="error">Please provide the information</small>
               </div>
               <div id="two" class="two">
-                <label for="T-Shirt-Size">T-Shirt Size&#42;</label>
+                <label for="T-Shirt-Size">T-Shirt Size</label>
                 <select type="text" id="TShirtSize" oninput="PdtoSf()" name="T-Shirt-Size">
                   <option value="" selected hidden>Select Your Size...</option>
                   <option value="5XL">5XL</option>
@@ -655,46 +693,46 @@
                   <option value="Youth S">Youth S</option>
                   <option value="Youth XS">Youth XS</option>
                 </select>
-                <small id="tss-error" class="error">Please provide the information.&#42;</small>
+                <small id="tss-error" class="error">Please provide the information</small>
               </div>
             </div>
 
             <div id="two-columns" class="two-columns">
               <div id="two" class="two">
-                <label for="Email">Email&#42;</label>
+                <label for="Email">Email</label>
                 <input type="text" id="Email" name="Email" placeholder="xxx@example.com" />
-                <small id="e-error" class="error">Please write the valid email.&#42;</small>
+                <small id="e-error" class="error">Please write the valid email</small>
               </div>
               <div id="two" class="two">
-                <label for="Phone-Number">Phone Number&#42;</label>
+                <label for="Phone-Number">Phone Number</label>
                 <input type="text" id="PhoneNumber" name="Phone-Number" placeholder="xxx-xxx-xxxx" />
-                <small id="pn-error" class="error">Please provide the information.&#42;</small>
+                <small id="pn-error" class="error">Please provide the information</small>
               </div>
             </div>
 
             <div id="one-column" class="one-column">
               <div id="one" class="one">
-                <label for="Street-Address">Street Address&#42;</label>
+                <label for="Street-Address">Street Address</label>
                 <input type="text" id="StreetAddress" name="Street-Address" />
-                <small id="sa-error" class="error">Please provide the information.&#42;</small>
+                <small id="sa-error" class="error">Please provide the information</small>
               </div>
             </div>
 
             <div id="three-columns" class="three-columns">
               <div id="three" class="three">
-                <label for="City">City&#42;</label>
+                <label for="City">City</label>
                 <input type="text" id="City" name="City" />
-                <small id="c-error" class="error">Please provide the information.&#42;</small>
+                <small id="c-error" class="error">Please provide the information</small>
               </div>
               <div id="three" class="three">
-                <label for="State">State&#42;</label>
+                <label for="State">State</label>
                 <input type="text" id="State" name="State" />
-                <small id="s-error" class="error">Please provide the information.&#42;</small>
+                <small id="s-error" class="error">Please provide the information</small>
               </div>
               <div id="three" class="three">
-                <label for="Zip">Zip&#42;</label>
+                <label for="Zip">Zip</label>
                 <input type="text" id="Zip" name="Zip" />
-                <small id="z-error" class="error">Please provide the information.&#42;</small>
+                <small id="z-error" class="error">Please provide the information</small>
               </div>
             </div>
 
@@ -704,27 +742,27 @@
 
             <div id="one-column" class="one-column">
               <div id="one" class="one">
-                <label for="College-University">Name of College/University:&#42;</label>
+                <label for="College-University">Name of College/University:</label>
                 <input type="text" id="CollegeUniversity" name="College-University" />
-                <small id="cu-error" class="error">Please provide the information.&#42;</small>
+                <small id="cu-error" class="error">Please provide the information</small>
               </div>
             </div>
 
             <div id="three-columns" class="three-columns">
               <div id="three" class="three">
-                <label for="Major-Degree">Major/Degree&#42;<br /><br /></label>
+                <label for="Major-Degree">Major/Degree<br /><br /></label>
                 <input type="text" id="MajorDegree" name="Major-Degree" />
-                <small id="md-error" class="error">Please provide the information.&#42;</small>
+                <small id="md-error" class="error">Please provide the information</small>
               </div>
               <div id="three" class="three">
-                <label for="Graduation-Date">Graduation Date&#42;</label>
+                <label for="Graduation-Date">Graduation Date</label>
                 <input type="text" id="GraduationDate" name="Graduation-Date" />
-                <small id="gd-error" class="error">Please provide the information.&#42;</small>
+                <small id="gd-error" class="error">Please provide the information</small>
               </div>
               <div id="three" class="three">
-                <label for="GPA">GPA&#42; <br /><br /></label>
+                <label for="GPA">GPA <br /><br /></label>
                 <input type="text" id="GPA" name="GPA" />
-                <small id="g-error" class="error">Please provide the information.&#42;</small>
+                <small id="g-error" class="error">Please provide the information</small>
               </div>
             </div>
 
@@ -733,9 +771,9 @@
                 <span for="Work-Hour">
                   Student hours at Inheritance of Hope can be flexible in nature rather than schedule Hope@Home™ Group Calls in the evenings/Saturday Story Time
                   on the weekend. <br /><br />
-                  Check your availability for groups/meetings:&#42;
+                  Check your availability for groups/meetings:
                 </span>
-                <small id="fh-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <small id="fh-error" class="error" style="text-align: center">Please provide the information</small>
                 <div id="checkbox-label" class="checkbox-label">
                   <span> Monday </span>
                 </div>
@@ -844,11 +882,11 @@
               <div id="one" class="one">
                 <span>
                   What specifically inspires you about Inheritance of Hope and what has led you to apply for the Child Life Practicum? <br />
-                  Why do you want to be a part of it? <br />
+                  Why do you want to be a part of it? <br /><br />
                   (200 words)
                 </span>
-                <textarea name="IoH-Inspiration" id="IoHInspiration" cols="30" rows="3"></textarea>
-                <small id="ii-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <textarea name="IoH-Inspiration" id="IoHInspiration" cols="30" rows="3" maxlength="200"></textarea>
+                <small id="ii-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
             </div>
 
@@ -856,11 +894,11 @@
               <div id="one" class="one">
                 <span>
                   Share about a time when you cared for someone grieving or hurting.<br />
-                  What were 3 important aspects of walking alongside of them? <br />
+                  What were 3 important aspects of walking alongside of them? <br /><br />
                   (200 words)
                 </span>
-                <textarea name="Three-Aspects" id="ThreeAspects" cols="30" rows="3"></textarea>
-                <small id="ta-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <textarea name="Three-Aspects" id="ThreeAspects" cols="30" rows="3" maxlength="200"></textarea>
+                <small id="ta-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
             </div>
 
@@ -868,11 +906,11 @@
               <div id="one" class="one">
                 <span>
                   How do you go about building rapport with children and families? <br />
-                  What are the important qualities of building connections and fostering safety with others? <br />
+                  What are the important qualities of building connections and fostering safety with others? <br /><br />
                   (200 words)
                 </span>
-                <textarea name="Building-Rapport" id="BuildingRapport" cols="30" rows="3"></textarea>
-                <small id="br-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <textarea name="Building-Rapport" id="BuildingRapport" cols="30" rows="3" maxlength="200"></textarea>
+                <small id="br-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
             </div>
 
@@ -890,30 +928,30 @@
                   with a terminally ill parent and not a clinical environment for evaluation or counseling. <br /><br />
                   • We believe that all IoH serving team members should comfort, encourage, and serve family members in the love of Jesus Christ.
                 </span>
-                <textarea name="Statement-of-Faith" id="StatementofFaith" cols="30" rows="3"></textarea>
-                <small id="sf-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <textarea name="Statement-of-Faith" id="StatementofFaith" cols="30" rows="3" maxlength="200"></textarea>
+                <small id="sf-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
             </div>
 
             <div id="one-column" class="one-column">
               <div id="one" class="one">
                 <span>
-                  What are 3 measurable goals you hope to accomplish as part of this student experience?<br />
+                  What are 3 measurable goals you hope to accomplish as part of this student experience?<br /><br />
                   (See the job description linked on the first page of application)
                 </span>
-                <textarea name="Measurable-Goals" id="MeasurableGoals" cols="30" rows="3"></textarea>
-                <small id="mg-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <textarea name="Measurable-Goals" id="MeasurableGoals" cols="30" rows="3" maxlength="200"></textarea>
+                <small id="mg-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
             </div>
 
             <div id="one-column" class="one-column">
               <div id="one" class="one">
                 <span>
-                  What are some unique special skills you could foresee bringing to this experience?<br />
+                  What are some unique special skills you could foresee bringing to this experience?<br /><br />
                   (Speaking another language, specific training or interests, etc.)
                 </span>
-                <textarea name="Unique-Skills" id="Unique-Skills" cols="30" rows="3"></textarea>
-                <small id="us-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <textarea name="Unique-Skills" id="Unique-Skills" cols="30" rows="3" maxlength="200"></textarea>
+                <small id="us-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
             </div>
           </div>
@@ -926,26 +964,83 @@
             <div id="one-column" class="one-column">
               <div id="one" class="one">
                 <label>Recommendation Form</label>
+                <span> Download the recommendation paper <a href="">here</a>. </span>
                 <div id="check-box" class="check-box">
                   <div id="left-box" class="left-box">
                     <span>1. Name</span>
-                    <span>2. E-mail</span>
-                    <span>1. Name</span>
-                    <span>2. E-mail</span>
-                    <span>1. Name</span>
-                    <span>2. E-mail</span>
                   </div>
                   <div id="right-box" class="right-box">
                     <input type="text" id="RecommendationForm" name="Recommendation-Form" />
-                    <input type="text" id="RecommendationForm" name="Recommendation-Form" />
-                    <input type="text" id="RecommendationForm" name="Recommendation-Form" />
-                    <input type="text" id="RecommendationForm" name="Recommendation-Form" />
-                    <input type="text" id="RecommendationForm" name="Recommendation-Form" />
+                  </div>
+                </div>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <span>2. Email</span>
+                  </div>
+                  <div id="right-box" class="right-box">
                     <input type="text" id="RecommendationForm" name="Recommendation-Form" />
                   </div>
                 </div>
-                <small id="rf-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+                <br />
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <span>1. Name</span>
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <input type="text" id="RecommendationForm" name="Recommendation-Form" />
+                  </div>
+                </div>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <span>2. Email</span>
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <input type="text" id="RecommendationForm" name="Recommendation-Form" />
+                  </div>
+                </div>
+                <br />
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <span>1. Name</span>
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <input type="text" id="RecommendationForm" name="Recommendation-Form" />
+                  </div>
+                </div>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <span>2. Email</span>
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <input type="text" id="RecommendationForm" name="Recommendation-Form" />
+                  </div>
+                </div>
+                <small id="rf-error" class="error" style="text-align: center">Please provide the information</small>
               </div>
+            </div>
+
+            <div id="one-column" class="one-column">
+              <div id="one" class="one">
+                <label>Please upload your resume <a href="">here</a>.</label>
+                <div id="check-box" class="check-box">
+                  <div id="left-box" class="left-box">
+                    <input type="checkbox" id="ResumeUpload" name="Resume-Upload" value="Uploaded Resume in Dropbox" />
+                  </div>
+                  <div id="right-box" class="right-box">
+                    <span>I uploaded the resume.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="note">
+              <p>
+                Deep breath! This completes your application! <br /><br />
+                We appreciate your time, effort, and interest in the student opportunities with Inheritance of Hope. We will be in touch. <br /><br />
+                For any additional questions, <br />
+                please contact:<br />
+                <a href="mailto:allie@InheritanceOfHope.org">Allie Jones</a> at <a href="mailto:allie@InheritanceOfHope.org">allie@InheritanceOfHope.org</a>.
+              </p>
             </div>
           </div>
 
