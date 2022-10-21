@@ -1,0 +1,2589 @@
+<html style="font-size: 62.5%; margin: 0px; padding: 0px">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <style>
+      /*----------------------Bootstrap----------------------*/
+
+      .row {
+        display: flex;
+        justify-content: space-evenly;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .col {
+        display: flex;
+        justify-content: center;
+      }
+
+      /*---------------------Custom-------------------------*/
+
+      #hope-hub-form {
+        padding-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 360px;
+        min-height: 740px;
+      }
+
+      #form-paper {
+        margin: 8px 8px 8px 8px;
+
+        width: 344px;
+        min-height: 724px;
+      }
+
+      #form-name {
+        color: #ffffff;
+        font-family: "Bebas Neue";
+        font-size: 3.2rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.3rem;
+        text-align: center;
+      }
+
+      .tech-support {
+        margin: 0px;
+        padding: 20px 0px 20px 0px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .tech-support span {
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.5em;
+
+        color: #ffffff;
+      }
+      .tech-support a {
+        color: #f89a1c;
+        text-decoration: none;
+      }
+
+      #entrance {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+      }
+
+      #description {
+        margin: 20px auto 20px auto;
+
+        color: #f89a1c;
+        font-family: "Raleway";
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        word-spacing: 0.3rem;
+        text-align: center;
+      }
+
+      #SD-description,
+      #NV-description {
+        margin: 20px auto 20px auto;
+
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        word-spacing: 0.3rem;
+        text-align: center;
+      }
+
+      #SDdetail,
+      #NVdetail {
+        display: none;
+
+        margin: 20px auto 20px auto;
+
+        color: #f89a1c;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        word-spacing: 0.3rem;
+        text-align: center;
+      }
+
+      #SDdetail > a,
+      #NVdetail > a {
+        color: #64a0f8;
+      }
+
+      #SDopen,
+      #NVopen {
+        font-size: 1.5rem;
+        color: #f89a1c;
+        font-weight: 500;
+        background: #334355 !important;
+        text-decoration: underline #ffffff;
+      }
+
+      #SDclose,
+      #NVclose {
+        width: 80px;
+        height: auto;
+        margin: 10px auto 5px auto;
+        padding: 2px;
+
+        font-family: "Bebas Neue";
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        color: #334355;
+
+        border-radius: 15px;
+        background-color: #ffffff;
+      }
+
+      .sectionName {
+        margin: 20px auto 20px auto;
+        width: 100%;
+
+        color: #f89a1c;
+        font-family: "Bebas Neue";
+        font-size: 2.8rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.5rem;
+        text-align: center;
+      }
+
+      #miniOne {
+        margin: auto;
+        width: 100%;
+        height: auto;
+      }
+      #miniTwo {
+        display: none;
+
+        margin: auto;
+        width: 100%;
+        height: auto;
+      }
+
+      .miniSectionName {
+        margin: 0px auto 5px auto;
+        width: 100%;
+
+        color: #ffffff;
+        font-family: "Bebas Neue";
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.5rem;
+        text-align: center;
+      }
+
+      .agreement {
+        display: none;
+
+        margin: 15px auto 30px auto;
+        width: 100%;
+
+        color: #f89a1c;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      #CES {
+        margin: auto;
+        width: 100%;
+
+        color: #f89a1c;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        font-weight: 500;
+        text-align: center;
+      }
+      #ICABTN,
+      #RABTN {
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.08rem;
+        word-spacing: 0.08rem;
+        text-align: center;
+      }
+      #ICABTN mark,
+      #RABTN mark {
+        font-size: 1.8rem;
+        color: #f89a1c;
+        background: #334355 !important;
+        text-decoration: underline #ffffff;
+      }
+      #ICACLOSE,
+      #RACLOSE {
+        width: 80px;
+        height: auto;
+        margin: 10px auto 5px auto;
+        padding: 2px;
+
+        font-family: "Bebas Neue";
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        color: #334355;
+
+        border-radius: 15px;
+        background-color: #ffffff;
+      }
+      #ICACLOSE:hover,
+      #RACLOSE:hover {
+        color: #ffffff;
+        background: #808284;
+      }
+
+      /*-----------------------page--------------------------*/
+
+      #entrance {
+        margin: auto;
+        width: 100%;
+        height: auto;
+      }
+
+      #page-one,
+      #page-two,
+      #page-three,
+      #page-four,
+      #page-five,
+      #page-six {
+        display: none;
+        margin: auto;
+        width: 100%;
+        height: auto;
+      }
+
+      /*-----------------------Box-----------------------------*/
+
+      .oneField {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+      }
+
+      .oneBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: auto;
+        width: 96%;
+        height: auto;
+      }
+
+      .oneBox > label {
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.08rem;
+        word-spacing: 0.08rem;
+        text-align: left;
+      }
+
+      .oneBox > input::placeholder {
+        color: #ffffff;
+      }
+
+      .oneBox > select[type="text"],
+      .oneBox > input[type="text"],
+      .oneBox > input[type="email"],
+      .oneBox > input[type="date"],
+      .oneBox > textarea {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        padding-left: 5px !important;
+
+        color: #ffffff !important;
+        font-family: "Raleway" !important;
+        font-size: 1.6rem !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.1rem !important;
+        word-spacing: 0.1rem !important;
+        text-align: left !important;
+
+        background-color: #808284 !important;
+        outline: 1px solid #ffffff !important;
+        border-radius: 5px !important;
+      }
+
+      .oneBox > select[type="text"] *,
+      .oneBox > input[type="text"] *,
+      .oneBox > input[type="email"] *,
+      .oneBox > input[type="date"] *,
+      .oneBox > textarea * {
+        background-color: #808284 !important;
+      }
+
+      .oneBox > select[type="text"]:focus,
+      .oneBox > input[type="text"]:focus,
+      .oneBox > input[type="email"]:focus,
+      .oneBox > input[type="date"]:focus,
+      .oneBox > textarea:focus {
+        outline: 2px solid #f89a1c;
+        outline-offset: 1px;
+      }
+
+      .twoField,
+      .threeField {
+        display: flex;
+        flex-direction: row;
+
+        margin: auto;
+        width: 100%;
+        height: auto;
+      }
+
+      .twoBox {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+        width: 45%;
+        height: auto;
+      }
+
+      .twoBox > label {
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.08rem;
+        word-spacing: 0.08rem;
+        text-align: left;
+      }
+
+      .twoBox > input::placeholder {
+        color: #ffffff;
+      }
+
+      .twoBox > select[type="text"],
+      .twoBox > input[type="text"],
+      .twoBox > input[type="email"],
+      .twoBox > input[type="date"],
+      .twoBox > textarea {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        padding-left: 5px !important;
+
+        color: #ffffff !important;
+        font-family: "Raleway" !important;
+        font-size: 1.6rem !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.1rem !important;
+        word-spacing: 0.1rem !important;
+        text-align: left !important;
+
+        background-color: #808284 !important;
+        outline: 1px solid #ffffff !important;
+        border-radius: 5px !important;
+      }
+
+      .twoBox > select[type="text"] *,
+      .twoBox > input[type="text"] *,
+      .twoBox > input[type="email"] *,
+      .twoBox > input[type="date"] *,
+      .twoBox > textarea * {
+        background-color: #808284 !important;
+      }
+
+      .twoBox > select[type="text"]:focus,
+      .twoBox > input[type="text"]:focus,
+      .twoBox > input[type="email"]:focus,
+      .twoBox > input[type="date"]:focus,
+      .twoBox > textarea:focus {
+        outline: 2px solid #f89a1c;
+        outline-offset: 1px;
+      }
+
+      .threeBox {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+        width: 30%;
+        height: auto;
+      }
+
+      .threeBox > label {
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.08rem;
+        word-spacing: 0.08rem;
+        text-align: left;
+      }
+
+      .threeBox > input::placeholder {
+        color: #ffffff;
+      }
+
+      .threeBox > select[type="text"],
+      .threeBox > input[type="text"],
+      .threeBox > input[type="email"],
+      .threeBox > input[type="date"],
+      .threeBox > textarea {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        padding-left: 5px !important;
+
+        color: #ffffff !important;
+        font-family: "Raleway" !important;
+        font-size: 1.6rem !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.1rem !important;
+        word-spacing: 0.1rem !important;
+        text-align: left !important;
+
+        background-color: #808284 !important;
+        outline: 1px solid #ffffff !important;
+        border-radius: 5px !important;
+      }
+
+      .threeBox > select[type="text"] *,
+      .threeBox > input[type="text"] *,
+      .threeBox > input[type="email"] *,
+      .threeBox > input[type="date"] *,
+      .threeBox > textarea * {
+        background-color: #808284 !important;
+      }
+
+      .threeBox > select[type="text"]:focus,
+      .threeBox > input[type="text"]:focus,
+      .threeBox > input[type="email"]:focus,
+      .threeBox > input[type="date"]:focus,
+      .threeBox > textarea:focus {
+        outline: 2px solid #f89a1c;
+        outline-offset: 1px;
+      }
+
+      .leftRightBox {
+        margin: auto;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+      }
+
+      .leftBox {
+        display: flex;
+        flex-direction: column;
+
+        width: 15%;
+      }
+
+      .leftBox > input[type="radio"] {
+        margin: auto;
+      }
+
+      .leftBox > input[type="checkbox"] {
+        text-align: right;
+        margin: auto 15px auto auto;
+      }
+
+      .rightBox {
+        display: flex;
+        flex-direction: column;
+
+        width: 85%;
+      }
+
+      .rightBox > span {
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        text-align: left;
+      }
+
+      /*------------------------message--------------------------*/
+
+      .error {
+        visibility: hidden;
+
+        margin: 2px auto 2px 2px;
+
+        color: #f84f52;
+        font-family: "Raleway";
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        font-weight: 600;
+        text-align: left;
+      }
+
+      .message {
+        display: none;
+
+        margin: 15px auto 30px auto;
+
+        color: #f89a1c;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .message > a {
+        color: #ffffff;
+      }
+
+      .doctor {
+        margin: 5px auto 5px auto;
+        width: 100%;
+        height: auto;
+
+        font-family: "Bebas Neue";
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        color: #ffffff;
+      }
+
+      .doctor > a {
+        color: #64a0f8;
+      }
+
+      /*------------------------buttons--------------------------*/
+
+      #start {
+        padding: 2px 2px 2px 2px !important;
+
+        width: 60%;
+
+        color: #334355;
+        font-family: "Raleway";
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+
+        background-color: #f89a1c;
+        border: 3px solid #808284;
+        border-radius: 10px;
+      }
+
+      #prev,
+      #next {
+        padding: 2px 2px 2px 2px !important;
+
+        width: 60%;
+
+        color: #334355;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+
+        background-color: #f89a1c;
+        border: 3px solid #808284;
+        border-radius: 10px;
+      }
+
+      #FormSubmit {
+        padding: 2px 2px 2px 2px !important;
+
+        width: 70%;
+
+        color: #334355;
+        font-family: "Raleway";
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+
+        background-color: #f89a1c;
+        border: 3px solid #808284;
+        border-radius: 10px;
+      }
+
+      #UploadDoctor {
+        padding: 2px 2px 2px 2px !important;
+
+        width: 100%;
+
+        color: #334355;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+
+        background-color: #f89a1c;
+        border: 3px solid #808284;
+        border-radius: 10px;
+      }
+
+      /*----------------------Children----------------------*/
+
+      .extraChild {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: auto;
+        margin: 15px auto 10px auto;
+      }
+      .children {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .addChild {
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+        padding: 5px 15px 5px 15px;
+
+        font-family: "Bebas Neue";
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        color: #334355;
+
+        border-radius: 15px;
+        background-color: #ffffff;
+      }
+      .addChild:hover {
+        color: #ffffff;
+        background: #808284;
+      }
+      .childCancel {
+        width: 85px;
+        height: auto;
+        margin: 10px auto 10px auto;
+        padding: 5px;
+
+        font-family: "Bebas Neue";
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        color: #334355;
+
+        border-radius: 15px;
+        background-color: #ffffff;
+      }
+      .childCancel:hover {
+        color: #ffffff;
+        background: #808284;
+      }
+      #sndChild,
+      #trdChild,
+      #frthChild,
+      #fithChild,
+      #sithChild {
+        display: none;
+      }
+
+      @media screen and (min-width: 720px) {
+        .row {
+          margin-top: 25px;
+          margin-bottom: 25px;
+        }
+
+        /*---------------------Custom-------------------------*/
+
+        #hope-hub-form {
+          padding-top: 70px;
+          width: 740px;
+          min-height: 980px;
+        }
+
+        #form-paper {
+          margin: 15px 15px 15px 15px;
+
+          width: 690px;
+          min-height: 980px;
+        }
+
+        #form-name {
+          font-size: 5rem;
+        }
+
+        .tech-support {
+          padding: 40px 0px 20px 0px;
+        }
+        .tech-support span {
+          font-size: 1.8rem;
+        }
+
+        #description {
+          margin: 50px auto 50px auto;
+
+          font-size: 3rem;
+        }
+
+        #SD-description,
+        #NV-description {
+          font-size: 2.2rem;
+        }
+
+        #SDdetail,
+        #NVdetail {
+          font-size: 2.2rem;
+        }
+
+        #SDopen,
+        #NVopen {
+          font-size: 1.8rem;
+        }
+
+        #SDclose,
+        #NVclose {
+          width: 150px;
+          margin: 15px auto 10px auto;
+          padding: 3px;
+
+          font-size: 1.8rem;
+        }
+
+        .sectionName {
+          font-size: 3.2rem;
+        }
+
+        .miniSectionName {
+          font-size: 2.6rem;
+        }
+
+        .mini-form {
+          min-height: 624px;
+        }
+
+        .mini-form > iframe {
+          min-height: 550px;
+        }
+
+        .agreement {
+          font-size: 2rem;
+        }
+
+        #CES {
+          font-size: 2rem;
+        }
+        #ICABTN,
+        #RABTN {
+          font-size: 1.8rem;
+        }
+        #ICABTN mark,
+        #RABTN mark {
+          font-size: 1.8rem;
+        }
+        #ICACLOSE,
+        #RACLOSE {
+          width: 150px;
+          margin: 15px auto 10px auto;
+          padding: 3px;
+
+          font-size: 1.8rem;
+        }
+
+        /*-----------------------Box-----------------------------*/
+
+        .oneBox > label {
+          font-size: 2.4rem !important;
+        }
+
+        .oneBox > select[type="text"],
+        .oneBox > input[type="text"],
+        .oneBox > input[type="email"],
+        .oneBox > input[type="date"],
+        .oneBox > textarea {
+          font-size: 2.2rem !important;
+        }
+
+        .twoBox > label {
+          font-size: 2.4rem !important;
+        }
+
+        .twoBox > select[type="text"],
+        .twoBox > input[type="text"],
+        .twoBox > input[type="email"],
+        .twoBox > input[type="date"],
+        .twoBox > textarea {
+          font-size: 2.2rem !important;
+        }
+
+        .threeBox > label {
+          font-size: 2.4rem !important;
+        }
+
+        .threeBox > select[type="text"],
+        .threeBox > input[type="text"],
+        .threeBox > input[type="email"],
+        .threeBox > input[type="date"],
+        .threeBox > textarea {
+          font-size: 2.2rem !important;
+        }
+
+        .leftBox {
+          display: flex;
+          flex-direction: column;
+
+          width: 15%;
+        }
+
+        .rightBox {
+          width: 85%;
+        }
+
+        .rightBox > span {
+          font-size: 2.2rem !important;
+        }
+
+        /*------------------------message--------------------------*/
+
+        .error {
+          margin: 4px auto 4px 4px;
+
+          font-size: 1.6rem;
+        }
+
+        .message {
+          font-size: 2.2rem;
+        }
+
+        .doctor {
+          font-size: 2.6rem;
+        }
+
+        /*------------------------buttons--------------------------*/
+
+        #start {
+          padding: 3px !important;
+
+          font-size: 2.4rem;
+
+          border: 5px solid #808284;
+        }
+
+        #prev,
+        #next {
+          padding: 3px !important;
+
+          font-size: 2.4rem;
+
+          border: 5px solid #808284;
+        }
+
+        #FormSubmit {
+          padding: 3px !important;
+
+          font-size: 2.4rem;
+
+          border: 5px solid #808284;
+        }
+
+        .addChild,
+        .removeChild {
+          padding: 3px !important;
+
+          font-size: 2.4rem;
+
+          border: 5px solid #808284;
+        }
+
+        #UploadDoctor {
+          padding: 3px !important;
+
+          font-size: 2.4rem;
+
+          border: 5px solid #808284;
+        }
+
+        .childCancel {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="background-color: #334355">
+    <div id="hope-hub-form">
+      <form action="https://www2.inheritanceofhope.org/l/739893/2022-03-22/22tjrq" id="PardotForm">
+        <div id="form-paper">
+          <div id="form-name">
+            Hope Hub&trade; <br />
+            Registration Form
+          </div>
+
+          <div id="entrance">
+            <div id="description">
+              Hope Hubs welcome families facing the loss or who have already experienced the loss of a parent due to a life-threatening illness.
+            </div>
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label for="Family-Eligibility">Does this match your family's situation?</label>
+                <div class="leftRightBox">
+                  <div class="leftBox">
+                    <input type="radio" id="FamilyEligibility1" name="Family-Eligibility" value="Yes" />
+                    <input type="radio" id="FamilyEligibility2" name="Family-Eligibility" value="No" />
+                  </div>
+                  <div class="rightBox">
+                    <span>Yes</span>
+                    <span>No</span>
+                  </div>
+                </div>
+                <small id="FEerror" class="error"> Please select an answer* </small>
+              </div>
+              <div id="FEmessage" class="message">
+                Thank you for your interest in Inheritance of Hope. Our mission is to inspire hope in young families, with children 18 or under, facing the loss
+                of a parent to a life-threatening illness. Since you do not meet those specific requirements, we are unable to serve you through our family
+                events. Please visit our
+                <a href="https://inheritanceofhope.org/" target="_blank" style="text-decoration: underline">website</a>
+                and download our
+                <a href="https://inheritanceofhope.org/app/" target="_blank" style="text-decoration: underline">Hope@Home™ App</a>
+                for resources for you and your family.
+              </div>
+            </div>
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label for="Events-Apply">Select a Hope Hub&trade; location.</label>
+                <select type="text" id="EventsApply" name="Events-Apply">
+                  <option value="" selected hidden>Select Your Preference</option>
+                  <option value="Washington D.C.">Washington D.C.</option>
+                </select>
+                <small id="EAerror" class="error">Please select a location*</small>
+              </div>
+              <div id="EAmessage" class="message">
+                New Hope Church <br />
+                <a href="https://goo.gl/maps/ikQ65PqxYsU66HVQA" target="_blank" style="text-decoration: underline">8905 Ox Road, Lorton, VA 22079</a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col">
+                <button id="start" class="start" type="button">Start</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="page-one">
+            <div class="sectionName">MAIN CONTACT INFO:</div>
+
+            <!--<input id="FirstPageComplete" name="First-Page-Complete" value="FALSE" style="display: none;">-->
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label for="Tell-Us-About-You">Please tell us more about you... &#42;</label>
+                <select type="text" id="TellUsAboutYou" name="Tell-Us-About-You">
+                  <option value="" selected hidden>Select Your Preference</option>
+                  <option value="Diagnosed Parent">I am a diagnosed parent.</option>
+                  <option value="Caregiver/Spouse">I am a caregiver/spouse.</option>
+                  <option value="Widow/Widower">I am a widow/widower.</option>
+                  <option value="Young Adult/Child of a Diagnosed Parent">I am a young adult/child of a diagnosed parent.</option>
+                </select>
+                <small id="TUAYerror" class="error">Required field &#42;</small>
+              </div>
+            </div>
+
+            <div class="twoField">
+              <div class="twoBox">
+                <label for="Applicant-First-Name">First Name&#42;</label>
+                <input type="text" id="ApplicantFirstName" name="Applicant-First-Name" />
+                <small id="AFNerror" class="error">Required field &#42;</small>
+              </div>
+              <div class="twoBox">
+                <label for="Applicant-Last-Name">Last Name&#42;</label>
+                <input type="text" id="ApplicantLastName" name="Applicant-Last-Name" />
+                <small id="ALNerror" class="error">Required field &#42;</small>
+              </div>
+            </div>
+
+            <div class="twoField">
+              <div class="twoBox">
+                <label for="Applicant-Birth-Date">Birth Date&#42;</label>
+                <input type="date" id="ApplicantBirthDate" name="Applicant-Birth-Date" />
+                <small id="ABDerror" class="error">Required field &#42;</small>
+              </div>
+              <div class="twoBox">
+                <label for="Applicant-T-Shirt-Size">T-Shirt Size&#42;</label>
+                <select type="text" name="Applicant-T-Shirt-Size" id="ApplicantTShirtSize">
+                  <option value="" disabled selected hidden>Select</option>
+                  <option value="5XL">5XL</option>
+                  <option value="4XL">4XL</option>
+                  <option value="3XL">3XL</option>
+                  <option value="XXL">XXL</option>
+                  <option value="XL">XL</option>
+                  <option value="Adult L">L</option>
+                  <option value="Adult M">M</option>
+                  <option value="Adult S">S</option>
+                  <option value="Youth L">Youth L</option>
+                  <option value="Youth M">Youth M</option>
+                  <option value="Youth S">Youth S</option>
+                  <option value="Youth XS">Youth XS</option>
+                </select>
+                <small id="ATSSerror" class="error">Required field &#42;</small>
+              </div>
+            </div>
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label for="Applicant-Cell-Phone-Number">Mobile Number&#42;</label>
+                <input type="text" id="ApplicantCellPhoneNumber" name="Applicant-Cell-Phone-Number" />
+                <small id="ACPNerror" class="error">Required field &#42;</small>
+              </div>
+            </div>
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label for="Applicant-Email-Address">Email Address&#42;</label>
+                <input type="email" id="ApplicantEmailAddress" name="Applicant-Email-Address" />
+                <small id="AEAerror" class="error">Incorrect format &#42;</small>
+              </div>
+            </div>
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label for="Mailing-Street-Address">Mailing Address&#42;</label>
+                <input type="text" id="MailingStreetAddress" name="Mailing-Street-Address" />
+                <small id="MSAerror" class="error">Required field &#42;</small>
+              </div>
+            </div>
+
+            <div class="threeField">
+              <div class="threeBox">
+                <label for="City">City&#42;</label>
+                <input type="text" id="City" name="City" />
+                <small id="Cerror" class="error">Required field&#42;</small>
+              </div>
+              <div class="threeBox">
+                <label for="State">State&#42;</label>
+                <input type="text" id="State" name="State" />
+                <small id="Serror" class="error">Required field&#42;</small>
+              </div>
+              <div class="threeBox">
+                <label for="Zip">Zip&#42;</label>
+                <input type="text" id="Zip" name="Zip" />
+                <small id="Zerror" class="error">Required field&#42;</small>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <button id="prev" class="prev" type="button">Prev</button>
+              </div>
+              <div class="col"></div>
+              <div class="col">
+                <button id="next" class="next" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="page-two">
+            <div class="sectionName">SECOND PARENT CONTACT INFO:</div>
+
+            <!--<input id="SecondPageComplete" name="Second-Page-Complete" value="FALSE" style="display: none;">-->
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label for="Let-Us-Know-More">Please let us know more... &#42;</label>
+                <select type="text" id="LetUsKnowMore" name="Let-Us-Know-More">
+                  <option value="" selected hidden>Select Your Preference</option>
+                  <option value="Diagnosed Parent">Diagnosed Parent</option>
+                  <option value="Caregiver/Spouse">Caregiver/Spouse</option>
+                  <option value="Passed Away">Passed Away</option>
+                  <option value="None">None</option>
+                </select>
+                <small id="LUKMerror" class="error">Required field &#42;</small>
+              </div>
+            </div>
+
+            <div id="miniOne">
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Parent-Guardian-First-Name">First Name &#42;</label>
+                  <input type="text" id="ParentGuardianFirstName" name="Parent-Guardian-First-Name" />
+                  <small id="PGFNerror" class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Parent-Guardian-Last-Name">Last Name &#42;</label>
+                  <input type="text" id="ParentGuardianLastName" name="Parent-Guardian-Last-Name" />
+                  <small id="PGLNerror" class="error">Required field &#42;</small>
+                </div>
+              </div>
+
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Parent-Guardian-Date-of-Birth">Date of Birth &#42;</label>
+                  <input type="date" id="ParentGuardianDateofBirth" name="Parent-Guardian-Date-of-Birth" placeholder="dd/mm/yyy" />
+                  <small id="PGDoBerror" class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Parent-Guardian-T-Shirt-Size">T-Shirt Size &#42;</label>
+                  <select type="text" name="Parent-Guardian-T-Shirt-Size" id="ParentGuardianTShirtSize">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="5XL">5XL</option>
+                    <option value="4XL">4XL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="Adult L">L</option>
+                    <option value="Adult M">M</option>
+                    <option value="Adult S">S</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth XS">Youth XS</option>
+                  </select>
+                  <small id="PGTSSerror" class="error">Required field &#42;</small>
+                </div>
+              </div>
+
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Parent-Guardian-Phone-Number">Mobile Number &#42;</label>
+                  <input type="text" id="ParentGuardianPhoneNumber" name="Parent-Guardian-Phone-Number" />
+                  <small id="PGPNerror" class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Parent-Guardian-E-Mail">Email Address&#42;</label>
+                  <input type="email" id="ParentGuardianEMail" name="Parent-Guardian-E-Mail" placeholder="xxx@example.com" />
+                  <small id="PGEMerror" class="error">Incorrect format &#42;</small>
+                </div>
+              </div>
+            </div>
+
+            <div id="miniTwo">
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Passed-Away-First-Name">First Name &#42;</label>
+                  <input type="text" id="PassedAwayFirstName" name="Passed-Away-First-Name" />
+                  <small id="PGFNerror" class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Passed-Away-Last-Name">Last Name &#42;</label>
+                  <input type="text" id="PassedAwayLastName" name="Passed-Away-Last-Name" />
+                  <small id="PGLNerror" class="error">Required field &#42;</small>
+                </div>
+              </div>
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Parent-Guardian-Date-Passed-Away">Date Passed Away &#42;</label>
+                  <input type="date" id="ParentGuardianDatePassedAway" name="Parent-Guardian-Date-Passed-Away" placeholder="DD/MM/YEAR" />
+                  <small id="PGDPAerror" class="error">Required field &#42;</small>
+                </div>
+              </div>
+            </div>
+
+            <textarea name="Additional-Family-Contact" id="AdditionalFamilyContact" cols="30" rows="10" hidden></textarea>
+
+            <div class="row">
+              <div class="col">
+                <button id="prev" class="prev" type="button">Prev</button>
+              </div>
+              <div class="col"></div>
+              <div class="col">
+                <button id="next" class="next" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="page-three">
+            <div class="sectionName">CHILDREN INFO:</div>
+
+            <!--<input id="ThirdPageComplete" name="Third-Page-Complete" value="FALSE" style="display: none;">-->
+
+            <div id="fstChild" class="children">
+              <div class="miniSectionName">CHILD 1:</div>
+
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="First-Child-Name">Name &#42;</label>
+                  <input type="text" id="FirstChildName" name="First-Child-Name" />
+                  <small id="FCNerror" class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="First-Child-Birth-Date">Birth Date &#42;</label>
+                  <input type="date" id="FirstChildBirthDate" name="First-Child-Birth-Date" />
+                  <small id="FCBDerror" class="error">Required field &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="First-Child-Relationship-Applicant">Relationship to Applicant &#42;</label>
+                  <select type="text" id="FirstChildRelationshipApplicant" name="First-Child-Relationship-Applicant">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="Son">Son</option>
+                    <option value="Daughter">Daughter</option>
+                    <option value="Step-Son">Step-Son</option>
+                    <option value="Step-Daughter">Step-Daughter</option>
+                    <option value="Foster-Child">Foster Child</option>
+                    <option value="Legal-Guardian">Legal Ward</option>
+                  </select>
+                  <small id="FCRAerror" class="error">Please select an option. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="First-Child-T-Shirt-Size">T-Shirt Size &#42;</label>
+                  <select type="text" name="First-Child-T-Shirt-Size" id="FirstChildTShirtSize">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="5XL">5XL</option>
+                    <option value="4XL">4XL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="Adult L">L</option>
+                    <option value="Adult M">M</option>
+                    <option value="Adult S">S</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth XS">Youth XS</option>
+                  </select>
+                  <small id="FCTSSerror" class="error">Please select an option. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="First-Child-Special-Needs">Any Special Needs?</label>
+                  <textarea name="First-Child-Special-Needs" id="FirstChildSpecialNeeds" cols="30" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="extraChild" style="visibility: hidden">
+              <button type="button">Add another Child</button>
+            </div>
+
+            <div class="extraChild">
+              <button class="addChild" id="SndChildAdd" type="button">Add 2nd Child</button>
+            </div>
+
+            <div id="sndChild" class="children">
+              <div class="miniSectionName">CHILD 2:</div>
+
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Second-Child-Name">Name</label>
+                  <input type="text" id="SecondChildName" name="Second-Child-Name" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Second-Child-Birth-Date">Birth Date</label>
+                  <input type="date" id="SecondChildBirthDate" name="Second-Child-Birth-Date" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Second-Child-Relationship-Applicant">Relationship to Applicant</label>
+                  <select type="text" id="SecondChildRelationshipApplicant" name="Second-Child-Relationship-Applicant">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="Son">Son</option>
+                    <option value="Daughter">Daughter</option>
+                    <option value="Step-Son">Step-Son</option>
+                    <option value="Step-Daughter">Step-Daughter</option>
+                    <option value="Foster-Child">Foster Child</option>
+                    <option value="Legal-Guardian">Legal Ward</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Second-Child-T-Shirt-Size">T-Shirt Size</label>
+                  <select type="text" name="Second-Child-T-Shirt-Size" id="SecondChildTShirtSize">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="5XL">5XL</option>
+                    <option value="4XL">4XL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="Adult L">L</option>
+                    <option value="Adult M">M</option>
+                    <option value="Adult S">S</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth XS">Youth XS</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Second-Child-Special-Needs">Any Special Needs?</label>
+                  <textarea name="Second-Child-Special-Needs" id="SecondChildSpecialNeeds" cols="30" rows="3"></textarea>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <button id="SndChildCancel" class="childCancel" type="button">Cancel</button>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+
+            <div class="extraChild">
+              <button class="addChild" id="TrdChildAdd" type="button">Add 3rd Child</button>
+            </div>
+
+            <div id="trdChild" class="children">
+              <div class="miniSectionName">CHILD 3:</div>
+
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Third-Child-Name">Name</label>
+                  <input type="text" id="ThirdChildName" name="Third-Child-Name" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Third-Child-Birth-Date">Birth Date</label>
+                  <input type="date" id="ThirdChildBirthDate" name="Third-Child-Birth-Date" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Third-Child-Relationship-Applicant">Relationship to Applicant</label>
+                  <select type="text" id="ThirdChildRelationshipApplicant" name="Third-Child-Relationship-Applicant">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="Son">Son</option>
+                    <option value="Daughter">Daughter</option>
+                    <option value="Step-Son">Step-Son</option>
+                    <option value="Step-Daughter">Step-Daughter</option>
+                    <option value="Foster-Child">Foster Child</option>
+                    <option value="Legal-Guardian">Legal Ward</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Third-Child-T-Shirt-Size">T-Shirt Size</label>
+                  <select type="text" name="Third-Child-T-Shirt-Size" id="ThirdChildTShirtSize">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="5XL">5XL</option>
+                    <option value="4XL">4XL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="Adult L">L</option>
+                    <option value="Adult M">M</option>
+                    <option value="Adult S">S</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth XS">Youth XS</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Third-Child-Special-Needs">Any Special Needs?</label>
+                  <textarea name="Third-Child-Special-Needs" id="ThirdChildSpecialNeeds" cols="30" rows="3"></textarea>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <button id="TrdChildCancel" class="childCancel" type="button">Cancel</button>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+
+            <div class="extraChild">
+              <button class="addChild" id="FrthChildAdd" type="button">Add 4th Child</button>
+            </div>
+
+            <div id="frthChild" class="children">
+              <div class="miniSectionName">CHILD 4:</div>
+
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Fourth-Child-Name">Name</label>
+                  <input type="text" id="FourthChildName" name="Fourth-Child-Name" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Fourth-Child-Birth-Date">Birth Date</label>
+                  <input type="date" id="FourthChildBirthDate" name="Fourth-Child-Birth-Date" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Fourth-Child-Relationship-Applicant">Relationship to Applicant</label>
+                  <select type="text" id="FourthChildRelationshipApplicant" name="Fourth-Child-Relationship-Applicant">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="Son">Son</option>
+                    <option value="Daughter">Daughter</option>
+                    <option value="Step-Son">Step-Son</option>
+                    <option value="Step-Daughter">Step-Daughter</option>
+                    <option value="Foster-Child">Foster Child</option>
+                    <option value="Legal-Guardian">Legal Ward</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Fourth-Child-T-Shirt-Size">T-Shirt Size</label>
+                  <select type="text" name="Fourth-Child-T-Shirt-Size" id="FourthChildTShirtSize">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="5XL">5XL</option>
+                    <option value="4XL">4XL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="Adult L">L</option>
+                    <option value="Adult M">M</option>
+                    <option value="Adult S">S</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth XS">Youth XS</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Fourth-Child-Special-Needs">Any Special Needs?</label>
+                  <textarea name="Fourth-Child-Special-Needs" id="FourthChildSpecialNeeds" cols="30" rows="3"></textarea>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <button id="FrthChildCancel" class="childCancel" type="button">Cancel</button>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+
+            <div class="extraChild">
+              <button class="addChild" id="FithChildAdd" type="button">Add 5th Child</button>
+            </div>
+
+            <div id="fithChild" class="children">
+              <div class="miniSectionName">CHILD 5:</div>
+
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Fifth-Child-Name">Name</label>
+                  <input type="text" id="FifthChildName" name="Fifth-Child-Name" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Fifth-Child-Birth-Date">Birth Date</label>
+                  <input type="date" id="FifthChildBirthDate" name="Fifth-Child-Birth-Date" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Fifth-Child-Relationship-Applicant">Relationship to Applicant</label>
+                  <select type="text" id="FifthChildRelationshipApplicant" name="Fifth-Child-Relationship-Applicant">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="Son">Son</option>
+                    <option value="Daughter">Daughter</option>
+                    <option value="Step-Son">Step-Son</option>
+                    <option value="Step-Daughter">Step-Daughter</option>
+                    <option value="Foster-Child">Foster Child</option>
+                    <option value="Legal-Guardian">Legal Ward</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Fifth-Child-T-Shirt-Size">T-Shirt Size</label>
+                  <select type="text" name="Fifth-Child-T-Shirt-Size" id="FifthChildTShirtSize">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="5XL">5XL</option>
+                    <option value="4XL">4XL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="Adult L">L</option>
+                    <option value="Adult M">M</option>
+                    <option value="Adult S">S</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth XS">Youth XS</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Fifth-Child-Special-Needs">Any Special Needs?</label>
+                  <textarea name="Fifth-Child-Special-Needs" id="FifthChildSpecialNeeds" cols="30" rows="3"></textarea>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <button id="FithChildCancel" class="childCancel" type="button">Cancel</button>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+
+            <div class="extraChild">
+              <button class="addChild" id="SithChildAdd" type="button">Add 6th Child</button>
+            </div>
+
+            <div id="sithChild" class="children">
+              <div class="miniSectionName">CHILD 6:</div>
+
+              <div class="twoField">
+                <div class="twoBox">
+                  <label for="Sixth-Child-Name">Name</label>
+                  <input type="text" id="SixthChildName" name="Sixth-Child-Name" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+                <div class="twoBox">
+                  <label for="Sixth-Child-Birth-Date">Birth Date</label>
+                  <input type="date" id="SixthChildBirthDate" name="Sixth-Child-Birth-Date" />
+                  <small class="error">Required field &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Sixth-Child-Relationship-Applicant">Relationship to Applicant</label>
+                  <select type="text" id="SixthChildRelationshipApplicant" name="Sixth-Child-Relationship-Applicant">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="Son">Son</option>
+                    <option value="Daughter">Daughter</option>
+                    <option value="Step-Son">Step-Son</option>
+                    <option value="Step-Daughter">Step-Daughter</option>
+                    <option value="Foster-Child">Foster Child</option>
+                    <option value="Legal-Guardian">Legal Ward</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Sixth-Child-T-Shirt-Size">T-Shirt Size</label>
+                  <select type="text" name="Sixth-Child-T-Shirt-Size" id="SixthChildTShirtSize">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="5XL">5XL</option>
+                    <option value="4XL">4XL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="Adult L">L</option>
+                    <option value="Adult M">M</option>
+                    <option value="Adult S">S</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth XS">Youth XS</option>
+                  </select>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Sixth-Child-Special-Needs">Any Special Needs?</label>
+                  <textarea name="Sixth-Child-Special-Needs" id="SixthChildSpecialNeeds" cols="30" rows="3"></textarea>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="oneField">
+                <div class="oneBox">
+                  <label for="Children-Comment">If you have more than 6 children, please enter their info below.</label>
+                  <textarea name="Children-Comment" id="ChildrenComment" cols="30" rows="3"></textarea>
+                  <small class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <button id="SithChildCancel" class="childCancel" type="button">Cancel</button>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <button id="prev" class="prev" type="button">Prev</button>
+              </div>
+              <div class="col"></div>
+              <div class="col">
+                <button id="next" class="next" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="page-four">
+            <div class="sectionName">AGREEMENT:</div>
+
+            <!--<input id="FifthPageComplete" name="Fifth-Page-Complete" value="FALSE" style="display: none;">-->
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label id="ICABTN" for="Informed-Consent-Agreement"
+                  >Informed Consent Agreement<br /><mark id="ICACTR" onclick="ICAOpen()">(Click to Read)</mark></label
+                >
+                <div id="ICAagreement" class="agreement">
+                  <strong>A)</strong> &nbsp I understand, recognize, and agree that Inheritance of Hope employs a variety of facilitators in order to provide a
+                  quality experience to all Participants. I understand that I can request information regarding my facilitators' education and experience
+                  backgrounds from Inheritance of Hope.<br /><br />
+                  <strong>B)</strong> &nbsp I understand, recognize, and agree that a safe group environment is created and maintained by both the facilitators
+                  and the group members offering mutual respect and trust. Confidentiality is also primary for a safe group environment. Group facilitators are
+                  bound by law to maintain confidentiality. Participants are bound by honor to maintain confidentiality. Should I desire to share what I learn
+                  in group, I agree to do so without using group members' names or in any way compromising group members' confidentiality. I acknowledge that
+                  there are legal and professional limits to confidentiality. I understand that I can request more information about these limits from
+                  Inheritance of Hope.<br /><br />
+                  <strong>C)</strong> &nbsp I understand, recognize, and agree that my children and/or teenagers will have age-appropriate group experiences for
+                  healthy emotional processing. The above elements also apply to children and teenager groups. I understand that children and teenagers will not
+                  focus on specific details of any parent's illness but will address the fact that all have an ill parent in common.<br /><br />
+                  <strong>D)</strong> &nbsp I understand and agree to all terms of event group participation. I also understand and agree that any Participant
+                  can contact Inheritance of Hope for more information about any aspect of the group experience. <br /><button
+                    id="ICACLOSE"
+                    type="button"
+                    onclick="ICAClose()"
+                  >
+                    Close</button
+                  ><br />
+                </div>
+                <small id="ICAerror" class="error" style="margin: auto">You must agree to the term. &#42;</small>
+                <br />
+                <div class="leftRightBox">
+                  <div class="leftBox" style="width: 50%">
+                    <input type="checkbox" id="InformedConsentAgreement" name="Informed-Consent-Agreement" value="TRUE" />
+                  </div>
+                  <div class="rightBox" style="width: 50%">
+                    <span>Accept</span>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label id="RABTN" for="Release-Agreement">Release Agreement<br /><mark id="RACTR" onclick="RAOpen()">(Click to Read)</mark></label>
+                <div id="RAagreement" class="agreement">
+                  <strong>A)</strong> &nbsp I understand that participation in an Inheritance of Hope event is purely voluntary.<br /><br />
+                  <strong>B)</strong> &nbsp On behalf of myself and all the Participants listed on this form, their heirs, personal representatives, guardians,
+                  successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify and hold harmless
+                  Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and assigns, and any parent
+                  organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of action, costs or expenses (including
+                  attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly or indirectly, or in any way connected with
+                  the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                  <strong>C)</strong> &nbsp I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation in the
+                  event. I understand that participation in the event may result in injury, property damage, interaction with persons having potentially
+                  communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and risks associated with
+                  the event and voluntarily assume the risks associated with participation in the event. I hereby unconditionally, irrevocably, and absolutely
+                  release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers, employees, volunteers, agents,
+                  representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries, from any and all loss, liability, claims,
+                  demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits of any type, whether in law and/or in equity, in
+                  the event of injury, property damage, disease, and/or death related directly or indirectly, or in any way connected with the Participants’
+                  participation in the Inheritance of Hope event. <br /><br />
+                  <strong>D)</strong> &nbsp I understand, recognize, and agree that I am fully responsible for my child(ren) throughout the event. <br /><br />
+                  <strong>E)</strong> &nbsp By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or
+                  electronically record interviews with me/us in such a manner as they choose. I further give permission and consent that any such photographs,
+                  films, and/or electronically recorded interviews may be published and used by Inheritance of Hope and its agents to illustrate and promote the
+                  event experience and Inheritance of Hope. <br /><br />
+                  <strong>F)</strong> &nbsp By my signature set forth below, I the Applicant understand that I am unconditionally, irrevocably, and absolutely
+                  authorizing Inheritance of Hope to share the medical information contained in this application with its directors, officers, employees,
+                  volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries. <br /><br />
+                  <strong>G)</strong> &nbsp I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State of
+                  South Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in full legal
+                  force and effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the event must be submitted to binding
+                  arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration shall be sited in Oconee County,
+                  South Carolina. <br /><button id="RACLOSE" type="button" onclick="RAClose()">Close</button><br />
+                </div>
+                <small id="RAerror" class="error" style="margin: auto">You must agree to the term. &#42;</small>
+                <br />
+                <div class="leftRightBox">
+                  <div class="leftBox" style="width: 50%">
+                    <input type="checkbox" id="ReleaseAgreement" name="Release-Agreement" value="TRUE" />
+                  </div>
+                  <div class="rightBox" style="width: 50%">
+                    <span>Accept</span>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div class="oneField">
+              <div class="oneBox">
+                <div id="CES">
+                  I/we hereby warrant that I/we have read the foregoing Agreements and executed them freely and voluntarily.<br /><br />I/we consent to
+                  providing my/our legally effective electronic signature(s) by typing full legal name(s) below and entering today's date.
+                </div>
+                <small id="CESerror" class="error" style="margin: auto">You must agree to the term. &#42;</small>
+                <br />
+                <div class="leftRightBox">
+                  <div class="leftBox" style="width: 50%">
+                    <input type="checkbox" id="ConsentElectronicSignature" name="Consent-Electronic-Signature" value="TRUE" />
+                  </div>
+                  <div class="rightBox" style="width: 50%">
+                    <span>Accept</span>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <br /><br />
+
+            <div class="miniSectionName">Main Contact's Signature</div>
+
+            <div class="twoField">
+              <div class="twoBox">
+                <label for="Electronic-Signature">Signature&#42;</label>
+                <input type="text" id="ElectronicSignature" name="Electronic-Signature" />
+                <small id="ESerror" class="error">Required Field &#42;</small>
+              </div>
+              <div class="twoBox">
+                <label for="Electronic-Signature-Date">Signature Date&#42;</label>
+                <input type="date" id="ElectronicSignatureDate" name="Electronic-Signature-Date" />
+                <small id="ESDerror" class="error">Required Field &#42;</small>
+              </div>
+            </div>
+
+            <div class="miniSectionName">Spouse/Caregiver's Signature</div>
+
+            <div class="twoField">
+              <div class="twoBox">
+                <label for="Spouse-Caregiver-Signature">Signature</label>
+                <input type="text" id="SpouseCaregiverSignature" name="Spouse-Caregiver-Signature" />
+                <small id="" class="error">Required Field. &#42;</small>
+              </div>
+              <div class="twoBox">
+                <label for="Spouse-Caregiver-Signature-Date">Signature Date</label>
+                <input type="date" id="SpouseCaregiverSignatureDate" name="Spouse-Caregiver-Signature-Date" />
+                <small id="" class="error">Required Field &#42;</small>
+              </div>
+            </div>
+
+            <div class="miniSectionName">Parent/Guardian's Signature</div>
+
+            <div class="twoField">
+              <div class="twoBox">
+                <label for="Parent-Guardian-Signature">Signature&#42;</label>
+                <input type="text" id="ParentGuardianSignature" name="Parent-Guardian-Signature" />
+                <small id="PGSerror" class="error">Required Field &#42;</small>
+              </div>
+              <div class="twoBox">
+                <label for="Parent-Guardian-Signature-Date">Signature Date&#42;</label>
+                <input type="date" id="ParentGuardianSignatureDate" name="Parent-Guardian-Signature-Date" />
+                <small id="PGSDerror" class="error">Required Field &#42;</small>
+              </div>
+            </div>
+
+            <div class="oneField">
+              <div class="oneBox">
+                <label for="Heard-About-IoH">How did you hear about Inheritance of Hope?</label>
+                <textarea name="Heard-About-IoH" id="HeardAboutIoH" cols="30" rows="3"></textarea>
+                <small id="" class="error">Required Field &#42;</small>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <button id="prev" class="prev" type="button">Prev</button>
+              </div>
+              <div class="col"></div>
+              <div class="col">
+                <button id="FormSubmit" class="FormSubmit" type="button">Submit</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="tech-support" class="tech-support">
+            <span>
+              For trouble filling out the form, please email: <br />
+              <a href="mailto:tech@inheritanceofhope.org">Tech@InheritanceOfHope.Org</a>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function uptoTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function emailCorrectPattern(e) {
+        var y = /\S+@\S+\.\S+/;
+        return y.test(e);
+      }
+
+      var strt = document.getElementById("start");
+      var prvs = document.getElementsByClassName("prev");
+      var nxts = document.getElementsByClassName("next");
+
+      document.getElementById("FamilyEligibility1").addEventListener("click", function (e) {
+        var x = document.getElementsByClassName("oneField");
+        document.getElementById("FEmessage").style.display = "none";
+        document.getElementById("FEerror").style.visibility = "hidden";
+        x[1].style.display = "flex";
+        strt.style.display = "block";
+      });
+      document.getElementById("FamilyEligibility2").addEventListener("click", function (e) {
+        var x = document.getElementsByClassName("oneField");
+        document.getElementById("FEmessage").style.display = "block";
+        document.getElementById("FEerror").style.visibility = "hidden";
+        x[1].style.display = "none";
+        strt.style.display = "none";
+      });
+      document.getElementById("EventsApply").addEventListener("change", function (e) {
+        if (document.getElementById("EventsApply").value == "Washington D.C.") {
+          document.getElementById("EAmessage").style.display = "block";
+          document.getElementById("EAerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("EAmessage").style.display = "none";
+          document.getElementById("EAerror").style.visibility = "hidden";
+        }
+      });
+
+      document.getElementById("LetUsKnowMore").addEventListener("change", function (e) {
+        if (document.getElementById("LetUsKnowMore").value == "Passed Away") {
+          document.getElementById("miniTwo").style.display = "block";
+          document.getElementById("miniOne").style.display = "none";
+        } else if (document.getElementById("LetUsKnowMore").value == "None") {
+          document.getElementById("miniTwo").style.display = "none";
+          document.getElementById("miniOne").style.display = "none";
+        } else {
+          document.getElementById("miniTwo").style.display = "none";
+          document.getElementById("miniOne").style.display = "block";
+        }
+      });
+
+      strt.onclick = function () {
+        if (!document.getElementById("FamilyEligibility1").checked && !document.getElementById("FamilyEligibility2").checked) {
+          document.getElementById("FEerror").style.visibility = "visible";
+          return false;
+        } else {
+          document.getElementById("FEerror").style.visibility = "hidden";
+        }
+
+        if (document.getElementById("EventsApply").value == "") {
+          document.getElementById("EAerror").style.visibility = "visible";
+          return false;
+        } else {
+          document.getElementById("EAerror").style.visibility = "hidden";
+        }
+
+        if (
+          (document.getElementById("FamilyEligibility1").checked || document.getElementById("FamilyEligibility2").checked) &&
+          document.getElementById("EventsApply").value != ""
+        ) {
+          document.getElementById("entrance").style.display = "none";
+          document.getElementById("page-one").style.display = "block";
+        }
+      };
+
+      function pageOneVal(e) {
+        if (document.getElementById("TellUsAboutYou").value == "") {
+          document.getElementById("TUAYerror").style.visibility = "visible";
+          document.getElementById("TellUsAboutYou").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("TUAYerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ApplicantFirstName").value == "") {
+          document.getElementById("AFNerror").style.visibility = "visible";
+          document.getElementById("ApplicantFirstName").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("AFNerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ApplicantLastName").value == "") {
+          document.getElementById("ALNerror").style.visibility = "visible";
+          document.getElementById("ApplicantLastName").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("ALNerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ApplicantBirthDate").value == "") {
+          document.getElementById("ABDerror").style.visibility = "visible";
+          document.getElementById("ApplicantBirthDate").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("ABDerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ApplicantTShirtSize").value == "") {
+          document.getElementById("ATSSerror").style.visibility = "visible";
+          document.getElementById("ApplicantTShirtSize").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("ATSSerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ApplicantCellPhoneNumber").value == "") {
+          document.getElementById("ACPNerror").style.visibility = "visible";
+          document.getElementById("ApplicantCellPhoneNumber").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("ACPNerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ApplicantEmailAddress").value == "") {
+          document.getElementById("AEAerror").style.visibility = "visible";
+          document.getElementById("ApplicantEmailAddress").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("ApplicantEmailAddress").value) === false) {
+          document.getElementById("ApplicantEmailAddress").focus();
+          document.getElementById("AEAerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("AEAerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("MailingStreetAddress").value == "") {
+          document.getElementById("MSAerror").style.visibility = "visible";
+          document.getElementById("MailingStreetAddress").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("MSAerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("City").value == "") {
+          document.getElementById("Cerror").style.visibility = "visible";
+          document.getElementById("City").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Cerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("State").value == "") {
+          document.getElementById("Serror").style.visibility = "visible";
+          document.getElementById("State").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Serror").style.visibility = "hidden";
+        }
+        if (document.getElementById("Zip").value == "") {
+          document.getElementById("Zerror").style.visibility = "visible";
+          document.getElementById("Zip").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Zerror").style.visibility = "hidden";
+        }
+      }
+      function pageTwoVal(e) {
+        if (document.getElementById("LetUsKnowMore").value == "") {
+          document.getElementById("LUKMerror").style.visibility = "visible";
+          document.getElementById("LetUsKnowMore").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("LUKMerror").style.visibility = "hidden";
+        }
+
+        if (document.getElementById("LetUsKnowMore").value == "Diagnosed Parent" || document.getElementById("LetUsKnowMore").value == "Caregiver/Spouse") {
+          if (document.getElementById("ParentGuardianFirstName").value == "") {
+            document.getElementById("PGFNerror").style.visibility = "visible";
+            document.getElementById("ParentGuardianFirstName").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("PGFNerror").style.visibility = "hidden";
+          }
+          if (document.getElementById("ParentGuardianLastName").value == "") {
+            document.getElementById("PGLNerror").style.visibility = "visible";
+            document.getElementById("ParentGuardianLastName").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("PGLNerror").style.visibility = "hidden";
+          }
+          if (document.getElementById("ParentGuardianDateofBirth").value == "") {
+            document.getElementById("PGDoBerror").style.visibility = "visible";
+            document.getElementById("ParentGuardianDateofBirth").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("PGDoBerror").style.visibility = "hidden";
+          }
+          if (document.getElementById("ParentGuardianTShirtSize").value == "") {
+            document.getElementById("PGTSSerror").style.visibility = "visible";
+            document.getElementById("ParentGuardianTShirtSize").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("PGTSSerror").style.visibility = "hidden";
+          }
+          if (document.getElementById("ParentGuardianPhoneNumber").value == "") {
+            document.getElementById("PGPNerror").style.visibility = "visible";
+            document.getElementById("ParentGuardianPhoneNumber").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("PGPNerror").style.visibility = "hidden";
+          }
+          if (document.getElementById("ParentGuardianEMail").value == "") {
+            document.getElementById("PGEMerror").style.visibility = "visible";
+            document.getElementById("ParentGuardianEMail").focus();
+            e.preventDefault();
+          } else if (emailCorrectPattern(document.getElementById("ParentGuardianEMail").value) === false) {
+            document.getElementById("ParentGuardianEMail").focus();
+            document.getElementById("PGEMerror").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("PGEMerror").style.visibility = "hidden";
+          }
+        } else if (document.getElementById("LetUsKnowMore").value == "None") {
+          document.getElementById("miniOne").style.display = "none";
+          document.getElementById("miniTwo").style.display = "none";
+        } else {
+          if (document.getElementById("ParentGuardianDatePassedAway").value == "") {
+            document.getElementById("PGDPAerror").style.visibility = "visible";
+            document.getElementById("ParentGuardianDatePassedAway").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("PGDPAerror").style.visibility = "hidden";
+          }
+        }
+      }
+      function pageThreeVal(e) {
+        if (document.getElementById("FirstChildName").value == "") {
+          document.getElementById("FirstChildName").focus();
+          document.getElementById("FCNerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FCNerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("FirstChildBirthDate").value == "") {
+          document.getElementById("FirstChildBirthDate").focus();
+          document.getElementById("FCBDerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FCBDerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("FirstChildRelationshipApplicant").value == "") {
+          document.getElementById("FirstChildRelationshipApplicant").focus();
+          document.getElementById("FCRAerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FCRAerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("FirstChildTShirtSize").value == "") {
+          document.getElementById("FirstChildTShirtSize").focus();
+          document.getElementById("FCTSSerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FCTSSerror").style.visibility = "hidden";
+        }
+      }
+      function SubmitVal(e) {
+        if (!document.getElementById("InformedConsentAgreement").checked) {
+          document.getElementById("InformedConsentAgreement").focus();
+          document.getElementById("ICAerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ICAerror").style.visibility = "hidden";
+        }
+        if (!document.getElementById("ReleaseAgreement").checked) {
+          document.getElementById("ReleaseAgreement").focus();
+          document.getElementById("RAerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("RAerror").style.visibility = "hidden";
+        }
+        if (!document.getElementById("ConsentElectronicSignature").checked) {
+          document.getElementById("ConsentElectronicSignature").focus();
+          document.getElementById("CESerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("CESerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ElectronicSignature").value == "") {
+          document.getElementById("ElectronicSignature").focus();
+          document.getElementById("ESerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ESerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ElectronicSignatureDate").value == "") {
+          document.getElementById("ElectronicSignatureDate").focus();
+          document.getElementById("ESDerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("ESDerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ParentGuardianSignature").value == "") {
+          document.getElementById("ParentGuardianSignature").focus();
+          document.getElementById("PGSerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("PGSerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("ParentGuardianSignatureDate").value == "") {
+          document.getElementById("ParentGuardianSignatureDate").focus();
+          document.getElementById("PGSDerror").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("PGSDerror").style.visibility = "hidden";
+        }
+      }
+      function intoTextarea() {
+        var firstName = document.getElementById("ParentGuardianFirstName").value;
+        var lastName = document.getElementById("ParentGuardianLastName").value;
+        var birthDate = document.getElementById("ParentGuardianDateofBirth").value;
+        var tshirtSize = document.getElementById("ParentGuardianTShirtSize").value;
+        var mobile = document.getElementById("ParentGuardianPhoneNumber").value;
+        var eMail = document.getElementById("ParentGuardianEMail").value;
+
+        var fstName = document.getElementById("PassedAwayFirstName").value;
+        var lstName = document.getElementById("PassedAwayLastName").value;
+
+        if (document.getElementById("LetUsKnowMore").value == "Diagnosed Parent" || document.getElementById("LetUsKnowMore").value == "Caregiver/Spouse") {
+          document.getElementById("AdditionalFamilyContact").value =
+            firstName + " " + lastName + "\n" + birthDate + "\n" + tshirtSize + "\n" + mobile + "\n" + eMail;
+        } else if (document.getElementById("LetUsKnowMore").value == "Passed Away") {
+          document.getElementById("AdditionalFamilyContact").value = fstName + " " + lstName;
+        } else {
+          document.getElementById("AdditionalFamilyContact").value = " ";
+        }
+      }
+
+      nxts[0].onclick = function (e) {
+        pageOneVal();
+        document.getElementById("page-one").style.display = "none";
+        uptoTop();
+        document.getElementById("page-two").style.display = "block";
+      };
+      nxts[1].onclick = function (e) {
+        pageTwoVal();
+        intoTextarea();
+        document.getElementById("page-two").style.display = "none";
+        uptoTop();
+        document.getElementById("page-three").style.display = "block";
+      };
+      nxts[2].onclick = function (e) {
+        pageThreeVal();
+        document.getElementById("page-three").style.display = "none";
+        uptoTop();
+        document.getElementById("page-four").style.display = "block";
+      };
+
+      prvs[0].onclick = function () {
+        uptoTop();
+        document.getElementById("entrance").style.display = "block";
+        document.getElementById("page-one").style.display = "none";
+      };
+      prvs[1].onclick = function () {
+        uptoTop();
+        document.getElementById("page-one").style.display = "block";
+        document.getElementById("page-two").style.display = "none";
+      };
+      prvs[2].onclick = function () {
+        uptoTop();
+        document.getElementById("page-two").style.display = "block";
+        document.getElementById("page-three").style.display = "none";
+      };
+      prvs[3].onclick = function () {
+        uptoTop();
+        document.getElementById("page-three").style.display = "block";
+        document.getElementById("page-four").style.display = "none";
+      };
+
+      document.getElementById("FormSubmit").onclick = function () {
+        SubmitVal();
+        document.getElementById("PardotForm").submit();
+      };
+
+      document.getElementById("SndChildAdd").addEventListener("click", function () {
+        document.getElementById("SndChildAdd").style.display = "none";
+        document.getElementById("sndChild").style.display = "flex";
+      });
+      document.getElementById("SndChildCancel").addEventListener("click", function (e) {
+        document.getElementById("sndChild").style.display = "none";
+        document.getElementById("SndChildAdd").style.display = "flex";
+        document.getElementById("trdChild").style.display = "none";
+        document.getElementById("TrdChildAdd").style.display = "flex";
+        document.getElementById("frthChild").style.display = "none";
+        document.getElementById("FrthChildAdd").style.display = "flex";
+        document.getElementById("fithChild").style.display = "none";
+        document.getElementById("FithChildAdd").style.display = "flex";
+        document.getElementById("sithChild").style.display = "none";
+        document.getElementById("SithChildAdd").style.display = "flex";
+      });
+
+      document.getElementById("TrdChildAdd").addEventListener("click", function (e) {
+        if (document.getElementById("sndChild").style.display !== "flex") {
+          e.preventDefault();
+        } else {
+          document.getElementById("TrdChildAdd").style.display = "none";
+          document.getElementById("trdChild").style.display = "flex";
+        }
+      });
+      document.getElementById("TrdChildCancel").addEventListener("click", function (e) {
+        document.getElementById("trdChild").style.display = "none";
+        document.getElementById("TrdChildAdd").style.display = "flex";
+        document.getElementById("frthChild").style.display = "none";
+        document.getElementById("FrthChildAdd").style.display = "flex";
+        document.getElementById("fithChild").style.display = "none";
+        document.getElementById("FithChildAdd").style.display = "flex";
+        document.getElementById("sithChild").style.display = "none";
+        document.getElementById("SithChildAdd").style.display = "flex";
+      });
+
+      document.getElementById("FrthChildAdd").addEventListener("click", function (e) {
+        if (document.getElementById("trdChild").style.display !== "flex") {
+          e.preventDefault();
+        } else {
+          document.getElementById("FrthChildAdd").style.display = "none";
+          document.getElementById("frthChild").style.display = "flex";
+        }
+      });
+      document.getElementById("FrthChildCancel").addEventListener("click", function (e) {
+        document.getElementById("frthChild").style.display = "none";
+        document.getElementById("FrthChildAdd").style.display = "flex";
+        document.getElementById("fithChild").style.display = "none";
+        document.getElementById("FithChildAdd").style.display = "flex";
+        document.getElementById("sithChild").style.display = "none";
+        document.getElementById("SithChildAdd").style.display = "flex";
+      });
+
+      document.getElementById("FithChildAdd").addEventListener("click", function (e) {
+        if (document.getElementById("frthChild").style.display !== "flex") {
+          e.preventDefault();
+        } else {
+          document.getElementById("FithChildAdd").style.display = "none";
+          document.getElementById("fithChild").style.display = "flex";
+        }
+      });
+      document.getElementById("FithChildCancel").addEventListener("click", function (e) {
+        document.getElementById("fithChild").style.display = "none";
+        document.getElementById("FithChildAdd").style.display = "flex";
+        document.getElementById("sithChild").style.display = "none";
+        document.getElementById("SithChildAdd").style.display = "flex";
+      });
+
+      document.getElementById("SithChildAdd").addEventListener("click", function (e) {
+        if (document.getElementById("fithChild").style.display !== "flex") {
+          e.preventDefault();
+        } else {
+          document.getElementById("SithChildAdd").style.display = "none";
+          document.getElementById("sithChild").style.display = "flex";
+        }
+      });
+      document.getElementById("SithChildCancel").addEventListener("click", function (e) {
+        document.getElementById("sithChild").style.display = "none";
+        document.getElementById("SithChildAdd").style.display = "flex";
+      });
+
+      document.getElementById("ICABTN").addEventListener("click", function () {
+        if (document.getElementById("ICAagreement").style.display == "block") {
+          document.getElementById("ICAagreement").style.display = "none";
+          document.getElementById("ICACTR").style.display = "block";
+        } else {
+          document.getElementById("ICAagreement").style.display = "block";
+          document.getElementById("ICACTR").style.display = "none";
+        }
+      });
+      document.getElementById("ICACLOSE").addEventListener("click", function () {
+        if (document.getElementById("ICAagreement").style.display == "block") {
+          document.getElementById("ICAagreement").style.display = "none";
+          document.getElementById("ICACTR").style.display = "block";
+        } else {
+          document.getElementById("ICAagreement").style.display = "block";
+          document.getElementById("ICACTR").style.display = "none";
+        }
+        uptoTop();
+      });
+      document.getElementById("RABTN").addEventListener("click", function () {
+        if (document.getElementById("RAagreement").style.display == "block") {
+          document.getElementById("RAagreement").style.display = "none";
+          document.getElementById("RACTR").style.display = "block";
+        } else {
+          document.getElementById("RAagreement").style.display = "block";
+          document.getElementById("RACTR").style.display = "none";
+        }
+      });
+      document.getElementById("RACLOSE").addEventListener("click", function () {
+        if (document.getElementById("RAagreement").style.display == "block") {
+          document.getElementById("RAagreement").style.display = "none";
+          document.getElementById("RACTR").style.display = "block";
+        } else {
+          document.getElementById("RAagreement").style.display = "block";
+          document.getElementById("RACTR").style.display = "none";
+        }
+        uptoTop();
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+
+
+
+
+
+            if (document.getElementById("ParentGuardianSignature").value == "") {
+                document.getElementById("ParentGuardianSignature").focus();
+                document.getElementById("PGSerror").style.visibility = "visible";
+                e.preventDefault();
+            }
+            else {
+                document.getElementById("PGSerror").style.visibility = "hidden";
+            }
+            if (document.getElementById("ParentGuardianSignatureDate").value == "") {
+                document.getElementById("ParentGuardianSignatureDate").focus();
+                document.getElementById("PGSDerror").style.visibility = "visible";
+                e.preventDefault();
+            }
+            else {
+                document.getElementById("PGSDerror").style.visibility = "hidden";
+            }
+
+
+
+
+
+
+
+
+Hope@Home™ Weekend
+
+
+                <div id="page-six">
+
+                    <div class="sectionName">
+                        LEGACY RETREAT:
+                    </div>
+
+                    <input id="FamilyApplicationComplete" name="Family-Application-Complete" value="FALSE" style="display: none;">
+
+                    <div id="description">
+                        In order to be considered for an on-site event we need the following information.
+                    </div>
+                    
+                    <div id="SD-description">                    
+                        San Diego Legacy Retreat&reg; 
+                        <br> on May 20-23, 2022
+                        <br> <mark id="SDopen" onclick="SDOPen()">(Click to Read)</mark>
+                    </div>
+
+                    <div id="SDdetail">
+                        We will be staying at <a href="https://paradisepoint.com/" target="_blank">Paradise Point</a>
+                        and your family will be given opportunities to build community with other families, make family
+                        memories, and gain tools to navigate your circumstances.
+                        <br><br>To be considered for this event you must complete
+                        the following additional steps.<br>
+
+                        <button id="SDclose" type="button" onclick="SDClose()">Close</button>
+                    </div>
+
+                    <div id="NV-description">                    
+                        Nashville Legacy Retreat&reg; 
+                        <br> on July 28-31, 2022
+                        <br> <mark id="NVopen" onclick="NVOpen()">(Click to Read)</mark>
+                    </div>
+
+                    <div id="NVdetail">
+                        We will be staying at <a href="https://www.marriott.com/en-us/hotels/bnago-gaylord-opryland-resort-and-convention-center/overview/" target="_blank">Gaylord Opryland Resort</a>
+                        and your family will be given opportunities to build community with other families, make family
+                        memories, and gain tools to navigate your circumstances.
+                        <br><br>To be considered for this event you must complete
+                        the following additional steps.<br>
+
+                        <button id="NVclose" type="button" onclick="NVClose()">Close</button>
+                    </div>
+
+                    <div class="oneField">
+                        <div class="oneBox">
+                            <div class="doctor">
+                                This physician note is required for a Legacy Retreat&reg;.<br>
+                                <a href="https://inheritanceofhope.org/wp-content/uploads/2022/02/Physician_Letter_2.17.22.pdf" target="_blank">Download now >></a>     
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="oneField">
+                        <div class="oneBox">
+                            <div class="doctor">
+                                <a href="https://www.dropbox.com/request/tLZxQzFZHC0WK5i5zV6H" target="_blank">
+                                    <button id="UploadDoctor" type="button">Upload Physician Note</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="oneField">
+                        <div class="oneBox">
+                            <br><br>
+                            <div class="leftRightBox">
+                                <div class="leftBox">
+                                    <input type="checkbox" id="DoctorNoteUpload" name="Doctor-Note-Upload" value="TRUE">
+                                </div>
+                                <div class="rightBox">
+                                    <span>
+                                        I understand that my application will not be completed until I upload a completed doctor's note. I will check my email (including spam folder) for the link to submit my completed doctor's note. &#42;&#42;
+                                    </span>
+                                    <small id="DNUerror" class="error">You must agree to the term. &#42;</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionName">
+                        Emergency Contact:
+                    </div>
+
+                    <div class="oneField">
+                        <div class="oneBox">
+                            <label for="Emergency-Contact-Name">Name&#42;</label>
+                            <input type="text" id="EmergencyContactName" name="Emergency-Contact-Name">
+                            <small id="ECNerror" class="error">Required Field &#42;</small>            
+                        </div>
+                    </div>
+
+                    <div class="oneField">
+                        <div class="oneBox">
+                            <label for="Emergency-Contact-Relationship-Applicant">Relationship to
+                                Applicant&#42;</label>
+                            <input type="text" id="EmergencyContactRelationshipApplicant"
+                                name="Emergency-Contact-Relationship-Applicant">
+                            <small id="ECRAerror" class="error">Required Field &#42;</small>            
+                        </div>
+                    </div>
+
+                    <div class="twoField">
+                        <div class="twoBox">
+                            <label for="Emergency-Contact-Cell-Phone-Number">Mobile Number&#42;</label>
+                            <input type="text" id="EmergencyContactCellPhoneNumber" name="Emergency-Contact-Cell-Phone-Number">
+                            <small id="ECCPNerror" class="error">Required Field &#42;</small>
+                        </div>
+                        <div class="twoBox">
+                            <label for="Emergency-Contact-Other-Phone">Other mobile&#42;</label>
+                            <input type="text" id="EmergencyContactOtherPhone" name="Emergency-Contact-Other-Phone">
+                            <small id="ECOPerror" class="error">Required Field &#42;</small>
+                        </div>
+                    </div>
+
+                    <div class="oneField">
+                        <div class="oneBox">
+                            <label for="Emergency-Contact-Email">Email Address&#42;</label>
+                            <input type="email" id="EmergencyContactEmail" name="Emergency-Contact-Email">
+                            <small id="ECEerror" class="error">Invalid format &#42;</small>
+                        </div>
+                    </div>
+
+                    <div class="oneField">
+                        <div class="oneBox">
+                            <br><br>
+                            <div class="leftRightBox">
+                                <div class="leftBox">
+                                    <input type="checkbox" id="TravelResponsibility" name="Travel-Responsibility" value="TRUE">
+                                </div>
+                                <div class="rightBox">
+                                    <span>
+                                        I understand I am responsible to arrange and pay my own travel to and from the event, including airfare if applicable. &#42;&#42; 
+                                    </span>
+                                    <small id="TRerror" class="error">You must agree to the term. &#42;</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="oneField">
+                        <div class="oneBox">
+                            <br><br>
+                            <div class="leftRightBox">
+                                <div class="leftBox">
+                                    <input type="checkbox" id="FamilyLegacyVideo" name="Family-Legacy-Video" value="TRUE">
+                                </div>
+                                <div class="rightBox">
+                                    <span>
+                                        I understand that I am required to make a Legacy Video™ with an Inheritance of Hope Coach
+                                        to be considered for this Legacy Retreat&reg;. &#42;&#42;
+                                    </span>
+                                    <small id="FLVerror" class="error">You must agree to the term. &#42;</small>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <button id="prev" class="prev" type="button">Prev</button>
+                        </div>
+                        <div class="col">
+                            <button id="save" class="save" type="button">Save/Close</button>
+                        </div>
+                        <div class="col">
+                            <button id="FormSubmit" class="FormSubmit" type="button">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+
+-->
