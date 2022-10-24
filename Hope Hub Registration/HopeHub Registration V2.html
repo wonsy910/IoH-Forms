@@ -39,7 +39,7 @@
         width: 100%;
         height: auto;
       }
-      .Form-Name h1 {
+      .Form-Name > h1 {
         margin: 0px auto;
         padding: 0px;
 
@@ -67,7 +67,7 @@
         display: flex;
         flex-direction: column;
       }
-      .One p {
+      .One > p {
         margin: 15px auto;
         padding: 0px;
 
@@ -83,7 +83,7 @@
         outline-offset: 3px;
         border-radius: 5px;
       }
-      .One label {
+      .One > label {
         margin: 5px auto;
         padding: 0px;
 
@@ -95,7 +95,7 @@
 
         text-align: center;
       }
-      .One select {
+      .One > select {
         margin: 0px auto;
         padding: 0px;
         width: 100%;
@@ -124,11 +124,9 @@
         margin: 0px auto;
         padding: 0px;
       }
-      .Right-Box > .Rows {
+      .Right-Box > .Rows > p {
         margin: 0px auto;
         padding: 0px;
-        width: 100%;
-        height: 32px;
 
         font-family: "Raleway", sans-serif;
         font-size: 1.6rem;
@@ -178,7 +176,7 @@
         outline-offset: 3px;
         border-radius: 5px;
       }
-      .location a {
+      .location > a {
         color: #f89a1c;
       }
     </style>
@@ -209,8 +207,8 @@
                     </div>
                   </div>
                   <div class="Right-Box" style="width: 50%">
-                    <div class="Rows">Yes</div>
-                    <div class="Rows">No</div>
+                    <div class="Rows"><p>Yes</p></div>
+                    <div class="Rows"><p>No</p></div>
                   </div>
                 </div>
               </div>
@@ -316,7 +314,7 @@
                   <div class="Check-Box">
                     <div class="Left-Box">
                       <div class="Rows">
-                        <input type="radi" id="Have-Spouse-Caregiver" name="Have-Spouse-Caregiver" value="No" />
+                        <input type="radio" id="Have-Spouse-Caregiver" name="Have-Spouse-Caregiver" value="No" />
                       </div>
                     </div>
                   </div>
