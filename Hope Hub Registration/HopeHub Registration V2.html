@@ -14,13 +14,13 @@
       #Hope-Hub-Registration-Form {
         margin: 0px auto;
         padding: 0px;
-        width: 100%;
+        width: 360px;
         height: auto;
       }
       .Form-Paper {
         margin: 0px auto;
         padding: 0px;
-        width: 96%;
+        width: 95%;
         height: auto;
       }
       .Form-Pages {
@@ -31,6 +31,12 @@
 
         display: flex;
         flex-direction: column;
+      }
+      .Questions {
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
       }
 
       .Form-Name {
@@ -83,6 +89,18 @@
         outline-offset: 3px;
         border-radius: 5px;
       }
+      .One > span {
+        margin: 0px auto;
+        padding: 0px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #f89a1c;
+
+        text-align: center;
+      }
       .One > label {
         margin: 5px auto;
         padding: 0px;
@@ -97,7 +115,22 @@
       }
       .One > select {
         margin: 0px auto;
-        padding: 0px;
+        padding: 2px 0px auto 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .One > input[type="text"],
+      .One > input[type="date"] {
+        margin: 0px auto;
+        padding: 2px 0px auto 4px;
         width: 100%;
         height: auto;
 
@@ -123,6 +156,12 @@
       .Right-Box {
         margin: 0px auto;
         padding: 0px;
+      }
+      .Right-Box > .Rows {
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+        height: 32px;
       }
       .Right-Box > .Rows > p {
         margin: 0px auto;
@@ -150,12 +189,27 @@
 
         text-align: right;
       }
-      .Rows input[type="radio"],
-      .Rows input[type="checkbox"] {
+      .Rows > input[type="radio"],
+      .Rows > input[type="checkbox"] {
         margin: 5px 10px auto auto;
         padding: 0px;
 
         text-align: right;
+      }
+      .Rows > input[type="text"],
+      .Rows > select {
+        margin: 5px 10px auto auto;
+        padding: 2px 0px auto 4px;
+        width: 100%;
+        height: 32px;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background-color: #ffffff;
       }
 
       .Location {
@@ -176,8 +230,11 @@
         outline-offset: 3px;
         border-radius: 5px;
       }
-      .location > a {
+      #Washington-D-C > a {
         color: #f89a1c;
+      }
+      #Washington-D-C > a:hover {
+        color: #808284;
       }
     </style>
   </head>
@@ -192,7 +249,7 @@
             </h1>
           </div>
 
-          <div id="First-Page" class="Form-Pages">
+          <div id="Start-Page" class="Form-Pages">
             <div class="One-Column">
               <div class="One">
                 <p>Hope Hubs welcome families facing the loss or who have already experienced the loss of a parent due to a life-threatening illness.</p>
@@ -218,10 +275,11 @@
               <div class="One">
                 <label for="Hope-Hub-Location">Select a Hope Hub&trade; location.</label>
                 <select id="Hope-Hub-Location" name="Hope-Hub-Location">
+                  <option value="" selected disabled>Select the location...</option>
                   <option value="Washington D.C.">Washington D.C.</option>
                 </select>
               </div>
-              <div class="Location">
+              <div id="Washington-D-C" class="Location">
                 New Hope Church <br />
                 <a href="https://goo.gl/maps/eaMAnNE5aDUyXDX29" target="_blank">8905 Ox Road, Lorton, VA 22079</a>
               </div>
@@ -236,7 +294,7 @@
             </div>
           </div>
 
-          <div id="Second-Page" class="Form-Pages">
+          <div id="First-Page" class="Form-Pages">
             <div class="Section-Name">
               <span> Main Contact Info: </span>
             </div>
@@ -245,6 +303,7 @@
               <div class="One">
                 <label for="Tell-Us-About-You"> Please tell us more about you... </label>
                 <select id="Tell-Us-About-You" name="Tell-Us-About-You">
+                  <option value="" selected disabled>Select your status...</option>
                   <option value="Diagnosed Parent">I am a diagnosed parent.</option>
                   <option value="Spouse/Caregiver">I am a spouse/caregiver.</option>
                   <option value="Widow/Widower">I am a widow/widower.</option>
@@ -253,25 +312,25 @@
               </div>
             </div>
 
-            <div id="If-Diagnosed-Parent">
+            <div id="If-Diagnosed-Parent" class="Questions">
               <div class="One-Column">
                 <div class="One">
                   <label for="Life-Threatening">Is the diagnosis life-threatening?</label>
                   <div class="Check-Box">
-                    <div class="Left-Box">
+                    <div class="Left-Box" style="width: 30%">
                       <div class="Rows">
-                        <input type="radio" id="Life-Threatening-No" name="Life-Threatening" />
+                        <input type="radio" id="Life-Threatening-No" name="Life-Threatening" value="No" />
                       </div>
                       <div class="Rows">
-                        <input type="radio" id="Life-Threatening-Yes" name="Life-Threatening" />
+                        <input type="radio" id="Life-Threatening-Yes" name="Life-Threatening" value="Yes" />
                       </div>
                     </div>
-                    <div class="Right-Box">
+                    <div class="Right-Box" style="width: 70%">
                       <div class="Rows">
-                        <span>No</span>
+                        <p>No</p>
                       </div>
                       <div class="Rows">
-                        <span>Yes</span>
+                        <p>Yes</p>
                       </div>
                       <div class="Rows">
                         <input type="text" id="Diagnosis-Name" name="Diagnosis-Name" />
@@ -285,20 +344,20 @@
                 <div class="One">
                   <label for="Age-Child">Do you have children 18 years old or younger?</label>
                   <div class="Check-Box">
-                    <div class="Left-Box">
+                    <div class="Left-Box" style="width: 30%">
                       <div class="Rows">
-                        <input type="radio" id="Age-Child-Yes" name="Age-Child" />
+                        <input type="radio" id="Age-Child-Yes" name="Age-Child" value="Yes" />
                       </div>
                       <div class="Rows">
-                        <input type="radio" id="Age-Child-No" name="Age-Child" />
+                        <input type="radio" id="Age-Child-No" name="Age-Child" value="No" />
                       </div>
                     </div>
-                    <div class="Right-Box">
+                    <div class="Right-Box" style="width: 70%">
                       <div class="Rows">
-                        <span>Yes</span>
+                        <p>Yes</p>
                       </div>
                       <div class="Rows">
-                        <span>No</span>
+                        <p>No</p>
                       </div>
                       <div class="Rows">
                         <input type="text" id="Gray-Area-Age" name="Gray-Area-Age" />
@@ -312,12 +371,191 @@
                 <div class="One">
                   <label for="Have-Spouse-Caregiver">Do you have a spouse or a caregiver?</label>
                   <div class="Check-Box">
-                    <div class="Left-Box">
+                    <div class="Left-Box" style="width: 30%">
                       <div class="Rows">
-                        <input type="radio" id="Have-Spouse-Caregiver" name="Have-Spouse-Caregiver" value="No" />
+                        <input type="radio" id="Have-Spouse-Caregiver-No" name="Have-Spouse-Caregiver" value="No" />
+                      </div>
+                      <div class="Rows">
+                        <input type="radio" id="Have-Spouse-Caregiver-Yes" name="Have-Spouse-Caregiver" value="Yes" />
+                      </div>
+                    </div>
+                    <div class="Right-Box" style="width: 70%">
+                      <div class="Rows"><p>No</p></div>
+                      <div class="Rows"><p>Yes</p></div>
+                      <div class="Rows">
+                        <select name="Spouse-Family-Member-Friend" id="Spouse-Family-Member-Friend">
+                          <option value="Spouse">Spouse</option>
+                          <option value="Family Member">Family Member</option>
+                          <option value="Friend">Friend</option>
+                        </select>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="If-Spouse-Caregiver" class="Questions">
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Relationship-to-Diagnosed-Parent">What is your relationship to the diagnosed parent?</label>
+                  <select name="Relationship-to-Diagnosed-Parent" id="Relationship-to-Diagnosed-Parent">
+                    <option value="" selected disabled>Select your status...</option>
+                    <option value="Spouse">Spouse</option>
+                    <option value="Family Member">Family Member</option>
+                    <option value="Friend">Friend</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Age-Child">Do you have children 18 years old or younger?</label>
+                  <div class="Check-Box">
+                    <div class="Left-Box" style="width: 30%">
+                      <div class="Rows">
+                        <input type="radio" id="Age-Child-Yes" name="Age-Child" value="Yes" />
+                      </div>
+                      <div class="Rows">
+                        <input type="radio" id="Age-Child-No" name="Age-Child" value="No" />
+                      </div>
+                    </div>
+                    <div class="Right-Box" style="width: 70%">
+                      <div class="Rows">
+                        <p>Yes</p>
+                      </div>
+                      <div class="Rows">
+                        <p>No</p>
+                      </div>
+                      <div class="Rows">
+                        <input type="text" id="Gray-Area-Age" name="Gray-Area-Age" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="If-Widow-Widows" class="Questions">
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Diagnosed-Parent-Death-Date">Diagnosed parent's date of death</label>
+                  <input type="date" name="Diagnosed-Parent-Death-Date" id="Diagnosed-Parent-Death-Date" />
+                </div>
+              </div>
+
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Relationship-to-Diagnosed-Parent">What is your relationship to the diagnosed parent?</label>
+                  <select name="Relationship-to-Diagnosed-Parent" id="Relationship-to-Diagnosed-Parent">
+                    <option value="" selected disabled>Select your status...</option>
+                    <option value="Spouse">Spouse</option>
+                    <option value="Family Member">Family Member</option>
+                    <option value="Friend">Friend</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Age-Child">Do you have children 18 years old or younger?</label>
+                  <div class="Check-Box">
+                    <div class="Left-Box" style="width: 30%">
+                      <div class="Rows">
+                        <input type="radio" id="Age-Child-Yes" name="Age-Child" value="Yes" />
+                      </div>
+                      <div class="Rows">
+                        <input type="radio" id="Age-Child-No" name="Age-Child" value="No" />
+                      </div>
+                    </div>
+                    <div class="Right-Box" style="width: 70%">
+                      <div class="Rows">
+                        <p>Yes</p>
+                      </div>
+                      <div class="Rows">
+                        <p>No</p>
+                      </div>
+                      <div class="Rows">
+                        <input type="text" id="Gray-Area-Age" name="Gray-Area-Age" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="If-Child-Of-Diagnosed-Parent" class="Questions">
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Diagnosed-Parent-Alive">Is the diagnosed parent still alive?</label>
+                  <div class="Check-Box">
+                    <div class="Left-Box" style="width: 40%">
+                      <div class="Rows">
+                        <input type="radio" id="Diagnosed-Parent-Alive-No" name="Have-Spouse-Caregiver" value="No" />
+                      </div>
+                      <div class="Rows">
+                        <input type="radio" id="Diagnosed-Parent-Alive-Yes" name="Diagnosed-Parent-Alive" value="Yes" />
+                      </div>
+                    </div>
+                    <div class="Right-Box" style="width: 60%">
+                      <div class="Rows"><p>No</p></div>
+                      <div class="Rows"><p>Yes</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Life-Threatening">Is the diagnosis life-threatening?</label>
+                  <div class="Check-Box">
+                    <div class="Left-Box" style="width: 30%">
+                      <div class="Rows">
+                        <input type="radio" id="Life-Threatening-No" name="Life-Threatening" value="No" />
+                      </div>
+                      <div class="Rows">
+                        <input type="radio" id="Life-Threatening-Yes" name="Life-Threatening" value="Yes" />
+                      </div>
+                    </div>
+                    <div class="Right-Box" style="width: 70%">
+                      <div class="Rows">
+                        <p>No</p>
+                      </div>
+                      <div class="Rows">
+                        <p>Yes</p>
+                      </div>
+                      <div class="Rows">
+                        <input type="text" id="Diagnosis-Name" name="Diagnosis-Name" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Are-You-Caregiver"> Are/were you the caregiver or is/was someone else?</label>
+                  <span>
+                    If someone else is/was, <br />
+                    please fill out the following questions.
+                  </span>
+                  <select name="Are-You-Caregiver" id="Are-You-Caregiver">
+                    <option value="" selected disabled>Select his or her status...</option>
+                    <option value="Spouse">Spouse</option>
+                    <option value="Family Member">Family Member</option>
+                    <option value="Friend">Friend</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="One-Column">
+                <div class="One">
+                  <label for="Relationship-to-Diagnosed-Parent">What is your relationship to the diagnosed parent?</label>
+                  <select name="Relationship-to-Diagnosed-Parent" id="Relationship-to-Diagnosed-Parent">
+                    <option value="" selected disabled>Select your status...</option>
+                    <option value="Son">Son</option>
+                    <option value="Daughter">Daughter</option>
+                  </select>
                 </div>
               </div>
             </div>
