@@ -37,6 +37,9 @@
         padding: 0px;
         width: 100%;
         height: auto;
+
+        display: flex;
+        flex-direction: column;
       }
 
       .Form-Name {
@@ -58,11 +61,39 @@
         text-align: center;
       }
 
+      .Alarm {
+        margin: 15px auto;
+        padding: 0px 15px 0px 15px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
+      .Alarm > a {
+        color: #f89a1c;
+      }
+      .Alarm > a:hover {
+        color: #808284;
+      }
+
       .One-Column {
         margin: 10px auto;
         padding: 0px;
         width: 100%;
         height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        border-top: 1px solid #ffffff;
       }
       .One {
         margin: 0px auto;
@@ -143,6 +174,102 @@
         background: #ffffff;
       }
 
+      .Two-Columns {
+        margin: 10px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Two {
+        margin: 0px auto;
+        padding: 0px;
+        width: 48%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .Two > label {
+        margin: 5px auto;
+        padding: 0px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Two > input[type="text"],
+      .Two > input[type="date"] {
+        margin: 0px auto;
+        padding: 2px 0px auto 4px;
+        width: 96%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+
+      .Three-Columns {
+        margin: 10px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Three {
+        margin: 0px auto;
+        padding: 0px;
+        width: 33%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .Three > label {
+        margin: 5px auto;
+        padding: 0px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Three > input[type="text"],
+      .Three > input[type="date"] {
+        margin: 0px auto;
+        padding: 2px 0px auto 4px;
+        width: 96%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+
       .Check-Box {
         margin: 0px auto;
         padding: 0px;
@@ -212,6 +339,54 @@
         background-color: #ffffff;
       }
 
+      .Button-Box {
+        margin: 30px auto 15px;
+        padding: 0px;
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Left,
+      .Middle,
+      .Right {
+        margin: 5px auto;
+        padding: 0px;
+        width: 33%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Back-Button,
+      .Next-Button,
+      .Submit-Button {
+        margin: 0px auto;
+        padding: 5px 10px;
+        width: 70%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.8rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Back-Button:hover,
+      .Next-Button:hover,
+      .Submit-Button:hover {
+        border: 2px solid #f89a1c;
+        background-color: #334355;
+        color: #f89a1c;
+      }
+
       .Location {
         margin: 20px auto;
         padding: 0px;
@@ -268,35 +443,14 @@
                     <div class="Rows"><p>No</p></div>
                   </div>
                 </div>
+                <div id="DP-Family-Eligibility-Alarm" class="Alarm" style="display: none">
+                  Thank you for your interest in Inheritance of Hope. <br />
+                  We exist to serve families who have a parent with a terminal illness. <br />
+                  Thankfully that is not you and we hope and pray that it never is! <br />
+                  For other ways to be connected to Inheritance of Hope visit our <br />
+                  “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage.
+                </div>
               </div>
-            </div>
-
-            <div class="One-Column">
-              <div class="One">
-                <label for="Hope-Hub-Location">Select a Hope Hub&trade; location.</label>
-                <select id="Hope-Hub-Location" name="Hope-Hub-Location">
-                  <option value="" selected disabled>Select the location...</option>
-                  <option value="Washington D.C.">Washington D.C.</option>
-                </select>
-              </div>
-              <div id="Washington-D-C" class="Location">
-                New Hope Church <br />
-                <a href="https://goo.gl/maps/eaMAnNE5aDUyXDX29" target="_blank">8905 Ox Road, Lorton, VA 22079</a>
-              </div>
-            </div>
-
-            <div id="Button-Box">
-              <div class="left"></div>
-              <div class="middle"></div>
-              <div class="right">
-                <button class="next-button" type="button">Next</button>
-              </div>
-            </div>
-          </div>
-
-          <div id="First-Page" class="Form-Pages">
-            <div class="Section-Name">
-              <span> Main Contact Info: </span>
             </div>
 
             <div class="One-Column">
@@ -312,88 +466,197 @@
               </div>
             </div>
 
-            <div id="If-Diagnosed-Parent" class="Questions">
-              <div class="One-Column">
-                <div class="One">
-                  <label for="Life-Threatening">Is the diagnosis life-threatening?</label>
-                  <div class="Check-Box">
-                    <div class="Left-Box" style="width: 30%">
-                      <div class="Rows">
-                        <input type="radio" id="Life-Threatening-No" name="Life-Threatening" value="No" />
-                      </div>
-                      <div class="Rows">
-                        <input type="radio" id="Life-Threatening-Yes" name="Life-Threatening" value="Yes" />
-                      </div>
+            <div class="Button-Box">
+              <div class="Left"></div>
+              <div class="Middle"></div>
+              <div class="Right">
+                <button class="Next-Button" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="If-Diagnosed-Parent-1" class="Questions">
+            <div id="DP-1" class="One-Column">
+              <div class="One">
+                <label for="DP-Life-Threatening">Is the diagnosis life-threatening?</label>
+                <div class="Check-Box">
+                  <div class="Left-Box" style="width: 30%">
+                    <div class="Rows">
+                      <input type="radio" id="DP-Life-Threatening-No" name="DP-Life-Threatening" value="No" />
                     </div>
-                    <div class="Right-Box" style="width: 70%">
-                      <div class="Rows">
-                        <p>No</p>
-                      </div>
-                      <div class="Rows">
-                        <p>Yes</p>
-                      </div>
-                      <div class="Rows">
-                        <input type="text" id="Diagnosis-Name" name="Diagnosis-Name" />
-                      </div>
+                    <div class="Rows">
+                      <input type="radio" id="DP-Life-Threatening-Yes" name="DP-Life-Threatening" value="Yes" />
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="One-Column">
-                <div class="One">
-                  <label for="Age-Child">Do you have children 18 years old or younger?</label>
-                  <div class="Check-Box">
-                    <div class="Left-Box" style="width: 30%">
-                      <div class="Rows">
-                        <input type="radio" id="Age-Child-Yes" name="Age-Child" value="Yes" />
-                      </div>
-                      <div class="Rows">
-                        <input type="radio" id="Age-Child-No" name="Age-Child" value="No" />
-                      </div>
+                  <div class="Right-Box" style="width: 70%">
+                    <div class="Rows">
+                      <p>No</p>
                     </div>
-                    <div class="Right-Box" style="width: 70%">
-                      <div class="Rows">
-                        <p>Yes</p>
-                      </div>
-                      <div class="Rows">
-                        <p>No</p>
-                      </div>
-                      <div class="Rows">
-                        <input type="text" id="Gray-Area-Age" name="Gray-Area-Age" />
-                      </div>
+                    <div class="Rows">
+                      <p>Yes</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="One-Column">
-                <div class="One">
-                  <label for="Have-Spouse-Caregiver">Do you have a spouse or a caregiver?</label>
-                  <div class="Check-Box">
-                    <div class="Left-Box" style="width: 30%">
-                      <div class="Rows">
-                        <input type="radio" id="Have-Spouse-Caregiver-No" name="Have-Spouse-Caregiver" value="No" />
-                      </div>
-                      <div class="Rows">
-                        <input type="radio" id="Have-Spouse-Caregiver-Yes" name="Have-Spouse-Caregiver" value="Yes" />
-                      </div>
-                    </div>
-                    <div class="Right-Box" style="width: 70%">
-                      <div class="Rows"><p>No</p></div>
-                      <div class="Rows"><p>Yes</p></div>
-                      <div class="Rows">
-                        <select name="Spouse-Family-Member-Friend" id="Spouse-Family-Member-Friend">
-                          <option value="Spouse">Spouse</option>
-                          <option value="Family Member">Family Member</option>
-                          <option value="Friend">Friend</option>
-                        </select>
-                      </div>
+                    <div class="Rows">
+                      <input type="text" id="DP-Diagnosis-Name" name="DP-Diagnosis-Name" placeholder="What is your diagnosis?" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div id="DP-2" class="One-Column">
+              <div class="One">
+                <label for="DP-Age-Child">Do you have children 18 years old or younger?</label>
+                <div class="Check-Box">
+                  <div class="Left-Box" style="width: 30%">
+                    <div class="Rows">
+                      <input type="radio" id="DP-Age-Child-Yes" name="DP-Age-Child" value="Yes" />
+                    </div>
+                    <div class="Rows">
+                      <input type="radio" id="DP-Age-Child-No" name="DP-Age-Child" value="No" />
+                    </div>
+                  </div>
+                  <div class="Right-Box" style="width: 70%">
+                    <div class="Rows">
+                      <p>Yes</p>
+                    </div>
+                    <div class="Rows">
+                      <p>No</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="DP-Age-Child-Alarm" class="Alarm" style="display: none">
+                Inheritance of Hope exists to serve families who have children ages 18 and under. <br />
+                If your children are slightly above that age and you think they could still be a good fit for our program then please continue with the
+                application and we will be in touch to further discuss. <br />
+                Otherwise, please visit our “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage for other ways to be
+                connected to Inheritance of Hope.
+              </div>
+              <button id="" class="" type="button" style="display: none">Continue</button>
+            </div>
+
+            <div id="DP-3" class="One-Column">
+              <div class="One">
+                <label for="DP-Have-Spouse-Caregiver">Do you have a spouse or a caregiver?</label>
+                <div class="Check-Box">
+                  <div class="Left-Box" style="width: 30%">
+                    <div class="Rows">
+                      <input type="radio" id="DP-Have-Spouse-Caregiver-No" name="DP-Have-Spouse-Caregiver" value="No" />
+                    </div>
+                    <div class="Rows">
+                      <input type="radio" id="DP-Have-Spouse-Caregiver-Yes" name="DP-Have-Spouse-Caregiver" value="Yes" />
+                    </div>
+                  </div>
+                  <div class="Right-Box" style="width: 70%">
+                    <div class="Rows"><p>No</p></div>
+                    <div class="Rows"><p>Yes</p></div>
+                    <div class="Rows">
+                      <select name="DP-Spouse-Family-Member-Friend" id="DP-Spouse-Family-Member-Friend">
+                        <option value="Spouse">Spouse</option>
+                        <option value="Family Member">Family Member</option>
+                        <option value="Friend">Friend</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Button-Box">
+              <div class="Left">
+                <button class="Back-Button" type="button">Back</button>
+              </div>
+              <div class="Middle"></div>
+              <div class="Right">
+                <button class="Next-Button" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="If-Diagnosed-Parent-2" class="Questions">
+            <div id="DP-4" class="Two-Columns">
+              <div class="Two">
+                <label for="DP-First-Name">First Name</label>
+                <input type="text" id="DP-First-Name" name="DP-First-Name" />
+              </div>
+              <div class="Two">
+                <label for="DP-Last-Name">Last Name</label>
+                <input type="text" id="DP-Last-Name" name="DP-Last-Name" />
+              </div>
+            </div>
+
+            <div id="DP-5" class="Two-Columns">
+              <div class="Two">
+                <label for="DP-E-Mail">E-Mail</label>
+                <input type="text" id="DP-E-Mail" name="DP-E-Mail" />
+              </div>
+              <div class="Two">
+                <label for="DP-Mobile">Mobile</label>
+                <input type="text" id="DP-Mobile" name="DP-Mobile" />
+              </div>
+            </div>
+
+            <div id="DP-6" class="Three-Columns">
+              <div class="Three">
+                <label for="DP-E-Mail">E-Mail</label>
+                <input type="text" id="DP-E-Mail" name="DP-E-Mail" />
+              </div>
+              <div class="Three">
+                <label for="DP-Mobile">Mobile</label>
+                <input type="text" id="DP-Mobile" name="DP-Mobile" />
+              </div>
+            </div>
+
+            <div class="Button-Box">
+              <div class="Left">
+                <button class="Back-Button" type="button">Back</button>
+              </div>
+              <div class="Middle"></div>
+              <div class="Right">
+                <button class="Next-Button" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="Footer">
+            <span>
+              For trouble filling out the form, please email: <br />
+              <a href="mailto:tech@inheritanceofhope.org">Tech@InheritanceOfHope.Org</a>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script></script>
+  </body>
+</html>
+
+<!--
+            <div class="Rows">
+              <input type="text" id="DP-Gray-Area-Age" name="DP-Gray-Area-Age" placeholder="Are they aged between 18 & 21?" />
+            </div>
+
+            <div id="First-Page" class="Form-Pages">
+            <div class="Section-Name">
+              <span> Main Contact Info: </span>
+            </div>
+
+            <div class="One-Column">
+              <div class="One">
+                <label for="Hope-Hub-Location">Select a Hope Hub&trade; location.</label>
+                <select id="Hope-Hub-Location" name="Hope-Hub-Location">
+                  <option value="" selected disabled>Select the location...</option>
+                  <option value="Washington D.C.">Washington D.C.</option>
+                </select>
+              </div>
+              <div id="Washington-D-C" class="Location" style="display: none">
+                New Hope Church <br />
+                <a href="https://goo.gl/maps/eaMAnNE5aDUyXDX29" target="_blank">8905 Ox Road, Lorton, VA 22079</a>
+              </div>
+            </div>
+
+            <h2>Diagnosed Parent Info:</h2>
 
             <div id="If-Spouse-Caregiver" class="Questions">
               <div class="One-Column">
@@ -560,17 +823,4 @@
               </div>
             </div>
           </div>
-
-          <div id="Footer">
-            <span>
-              For trouble filling out the form, please email: <br />
-              <a href="mailto:tech@inheritanceofhope.org">Tech@InheritanceOfHope.Org</a>
-            </span>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <script></script>
-  </body>
-</html>
+-->
