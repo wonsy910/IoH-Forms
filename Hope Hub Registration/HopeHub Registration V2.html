@@ -370,7 +370,7 @@
       }
 
       .error {
-        margin: 10px auto 5px;
+        margin: 5px auto 5px;
         padding: 0px;
 
         visibility: hidden;
@@ -661,6 +661,7 @@
                 <div id="DP-1" class="One-Column">
                   <div class="One">
                     <label for="Hope-Hub-Location">Select a Hope Hub&trade; location.</label>
+                    <small id="DP-1-Error" class="error">Required*</small>
                     <select id="Hope-Hub-Location" name="Hope-Hub-Location">
                       <option value="" selected disabled hidden>Select the location...</option>
                       <option value="Washington D.C.">Washington D.C.</option>
@@ -670,12 +671,12 @@
                     New Hope Church <br />
                     <a href="https://goo.gl/maps/eaMAnNE5aDUyXDX29" target="_blank">8905 Ox Road, Lorton, VA 22079</a>
                   </div>
-                  <small id="DP-1-Error" class="error">Required*</small>
                 </div>
 
                 <div id="DP-2" class="One-Column" style="display: none">
                   <div class="One">
                     <label for="DP-Life-Threatening">Is the diagnosis life-threatening?</label>
+                    <small id="DP-2-Error" class="error">Required*</small>
                     <div class="Check-Box">
                       <div class="Left-Box" style="width: 30%">
                         <div class="Rows">
@@ -705,13 +706,14 @@
                         >Connect</a
                       >” webpage.
                     </div>
-                    <small id="DP-2-Error" class="error">Required*</small>
                   </div>
                 </div>
 
                 <div id="DP-3" class="One-Column" style="display: none">
                   <div class="One">
                     <label for="DP-Age-Child">Do you have children 18 years old or younger?</label>
+                    <small id="DP-3-Error" class="error">Required*</small>
+
                     <div class="Check-Box">
                       <div class="Left-Box" style="width: 30%">
                         <div class="Rows">
@@ -730,7 +732,6 @@
                         </div>
                       </div>
                     </div>
-                    <small id="DP-3-Error" class="error">Required*</small>
                   </div>
                   <div id="DP-Age-Child-Alarm" class="Alarm" style="display: none">
                     Inheritance of Hope exists to serve families who have children ages 18 and under. <br />
@@ -744,6 +745,8 @@
                 <div id="DP-4" class="One-Column" style="display: none">
                   <div class="One">
                     <label for="DP-Have-Spouse-Caregiver">Do you have a spouse or a caregiver?</label>
+                    <small id="DP-4-Error" class="error">Required*</small>
+
                     <div class="Check-Box">
                       <div class="Left-Box" style="width: 30%">
                         <div class="Rows">
@@ -766,7 +769,6 @@
                         </div>
                       </div>
                     </div>
-                    <small id="DP-4-Error" class="error">Required*</small>
                   </div>
                 </div>
 
