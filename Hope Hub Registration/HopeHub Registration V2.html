@@ -23,6 +23,25 @@
         width: 95%;
         height: auto;
       }
+      #If-Diagnosed-Parent-Form,
+      #If-Spouse-Caregiver-Form,
+      #If-Widow-Widower-Form,
+      #If-Child-Of-Diagnosed-Parent-Form {
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: none;
+      }
+      #Diagnosed-Parent-Info,
+      #Spouse-Caregiver-Info,
+      #Children-Info {
+        margin: 15px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+      }
       .Questions {
         margin: 0px auto;
         padding: 0px;
@@ -33,7 +52,7 @@
         flex-direction: column;
       }
       .Part-Section {
-        margin: 30px auto;
+        margin: 15px auto;
         padding: 0px;
         width: 100%;
         height: auto;
@@ -41,7 +60,7 @@
         display: flex;
         flex-direction: column;
       }
-      .Part-Section > h2 {
+      .Part-Section h2 {
         margin: 5px auto 5px auto;
         padding: 0px;
 
@@ -95,11 +114,11 @@
       }
 
       .Alarm {
-        margin: 15px auto;
+        margin: 30px auto 15px auto;
         padding: 0px 15px 0px 15px;
 
         font-family: "Raleway", sans-serif;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.5em;
         color: #ffffff;
@@ -118,7 +137,7 @@
       }
 
       .One-Column {
-        margin: 10px auto 15px auto;
+        margin: 10px auto;
         padding: 0px;
         width: 100%;
         height: auto;
@@ -207,9 +226,15 @@
 
         background: #ffffff;
       }
+      .One > select:focus,
+      .One > input[type="text"]:focus,
+      .One > input[type="date"]:focus,
+      .One > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
 
       .Two-Columns {
-        margin: 10px auto 15px auto;
+        margin: 10px auto;
         padding: 0px;
         width: 100%;
         height: auto;
@@ -269,9 +294,15 @@
 
         background: #ffffff;
       }
+      .Two > select:focus,
+      .Two > input[type="text"]:focus,
+      .Two > input[type="date"]:focus,
+      .Two > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
 
       .Three-Columns {
-        margin: 10px auto 15px auto;
+        margin: 10px auto;
         padding: 0px;
         width: 100%;
         height: auto;
@@ -331,9 +362,15 @@
 
         background: #ffffff;
       }
+      .Three > select:focus,
+      .Three > input[type="text"]:focus,
+      .Three > input[type="date"]:focus,
+      .Three > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
 
       .error {
-        margin: 5px auto;
+        margin: 10px auto 5px;
         padding: 0px;
 
         visibility: hidden;
@@ -414,6 +451,13 @@
         line-height: 1.5em;
 
         background-color: #ffffff;
+      }
+      .Rows > select:focus,
+      .Rows > input[type="text"]:focus,
+      .Rows > input[type="radio"]:focus,
+      .Rows > input[type="checkbox"]:focus,
+      .Rows > textarea:focus {
+        outline: 2px solid #f89a1c;
       }
 
       .Button-Box {
@@ -564,8 +608,8 @@
             </h1>
           </div>
 
-          <div id="Start-Page" class="Questions">
-            <div class="Part-Section">
+          <div id="Form-Front" class="Questions">
+            <div id="Start-Page" class="Part-Section">
               <div id="SP-1" class="One-Column">
                 <div class="One">
                   <p>Hope Hubs welcome families facing the loss or who have already experienced the loss of a parent due to a life-threatening illness.</p>
@@ -595,7 +639,7 @@
                 </div>
               </div>
 
-              <div id="SP-2" class="One-Column">
+              <div id="SP-2" class="One-Column" style="display: none">
                 <div class="One">
                   <label for="Tell-Us-About-You"> Please tell us more about you... </label>
                   <select id="Tell-Us-About-You" name="Tell-Us-About-You">
@@ -610,400 +654,398 @@
               </div>
             </div>
 
-            <div id="BB-1" class="Button-Box">
-              <div class="Left"></div>
-              <div class="Middle"></div>
-              <div class="Right">
-                <button id="DP-NB-1" class="Next-Button" type="button">Next</button>
-              </div>
-            </div>
-          </div>
+            <div id="If-Diagnosed-Parent-Form">
+              <div id="If-Diagnosed-Parent-1" class="Part-Section">
+                <h2>Fill out the questions below.</h2>
 
-          <div id="If-Diagnosed-Parent-1" class="Questions" style="display: none">
-            <div class="Part-Section">
-              <div id="DP-1" class="One-Column">
-                <div class="One">
-                  <label for="Hope-Hub-Location">Select a Hope Hub&trade; location.</label>
-                  <select id="Hope-Hub-Location" name="Hope-Hub-Location">
-                    <option value="" selected disabled hidden>Select the location...</option>
-                    <option value="Washington D.C.">Washington D.C.</option>
-                  </select>
+                <div id="DP-1" class="One-Column">
+                  <div class="One">
+                    <label for="Hope-Hub-Location">Select a Hope Hub&trade; location.</label>
+                    <select id="Hope-Hub-Location" name="Hope-Hub-Location">
+                      <option value="" selected disabled hidden>Select the location...</option>
+                      <option value="Washington D.C.">Washington D.C.</option>
+                    </select>
+                  </div>
+                  <div id="Washington-D-C" class="Location" style="display: none">
+                    New Hope Church <br />
+                    <a href="https://goo.gl/maps/eaMAnNE5aDUyXDX29" target="_blank">8905 Ox Road, Lorton, VA 22079</a>
+                  </div>
+                  <small id="DP-1-Error" class="error">Required*</small>
                 </div>
-                <div id="Washington-D-C" class="Location" style="display: none">
-                  New Hope Church <br />
-                  <a href="https://goo.gl/maps/eaMAnNE5aDUyXDX29" target="_blank">8905 Ox Road, Lorton, VA 22079</a>
-                </div>
-                <small id="DP-1-Error" class="error">Required*</small>
-              </div>
 
-              <div id="DP-2" class="One-Column">
-                <div class="One">
-                  <label for="DP-Life-Threatening">Is the diagnosis life-threatening?</label>
-                  <div class="Check-Box">
-                    <div class="Left-Box" style="width: 30%">
-                      <div class="Rows">
-                        <input type="radio" id="DP-Life-Threatening-No" name="DP-Life-Threatening" value="No" />
+                <div id="DP-2" class="One-Column" style="display: none">
+                  <div class="One">
+                    <label for="DP-Life-Threatening">Is the diagnosis life-threatening?</label>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 30%">
+                        <div class="Rows">
+                          <input type="radio" id="DP-Life-Threatening-No" name="DP-Life-Threatening" value="No" />
+                        </div>
+                        <div class="Rows">
+                          <input type="radio" id="DP-Life-Threatening-Yes" name="DP-Life-Threatening" value="Yes" />
+                        </div>
                       </div>
-                      <div class="Rows">
-                        <input type="radio" id="DP-Life-Threatening-Yes" name="DP-Life-Threatening" value="Yes" />
+                      <div class="Right-Box" style="width: 70%">
+                        <div class="Rows">
+                          <p>No</p>
+                        </div>
+                        <div class="Rows">
+                          <p>Yes</p>
+                        </div>
+                        <div class="Rows">
+                          <input type="text" id="DP-Diagnosis-Name" name="DP-Diagnosis-Name" placeholder="What is your diagnosis?" />
+                        </div>
                       </div>
                     </div>
-                    <div class="Right-Box" style="width: 70%">
-                      <div class="Rows">
-                        <p>No</p>
+                    <div id="DP-Life-Threatening-Alarm" class="Alarm" style="display: none">
+                      Thank you for your interest in Inheritance of Hope.<br />
+                      We exist to serve families who have a parent with a terminal illness. <br />
+                      Thankfully that is not you and we hope and pray that it never is! <br />
+                      For other ways to be connected to Inheritance of Hope visit our “<a href="https://inheritanceofhope.org/connect/" target="_blank"
+                        >Connect</a
+                      >” webpage.
+                    </div>
+                    <small id="DP-2-Error" class="error">Required*</small>
+                  </div>
+                </div>
+
+                <div id="DP-3" class="One-Column" style="display: none">
+                  <div class="One">
+                    <label for="DP-Age-Child">Do you have children 18 years old or younger?</label>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 30%">
+                        <div class="Rows">
+                          <input type="radio" id="DP-Age-Child-Yes" name="DP-Age-Child" value="Yes" />
+                        </div>
+                        <div class="Rows">
+                          <input type="radio" id="DP-Age-Child-No" name="DP-Age-Child" value="No" />
+                        </div>
                       </div>
-                      <div class="Rows">
-                        <p>Yes</p>
+                      <div class="Right-Box" style="width: 70%">
+                        <div class="Rows">
+                          <p>Yes</p>
+                        </div>
+                        <div class="Rows">
+                          <p>No</p>
+                        </div>
                       </div>
-                      <div class="Rows">
-                        <input type="text" id="DP-Diagnosis-Name" name="DP-Diagnosis-Name" placeholder="What is your diagnosis?" />
+                    </div>
+                    <small id="DP-3-Error" class="error">Required*</small>
+                  </div>
+                  <div id="DP-Age-Child-Alarm" class="Alarm" style="display: none">
+                    Inheritance of Hope exists to serve families who have children ages 18 and under. <br />
+                    If your children are slightly above that age and you think they could still be a good fit for our program then <br />
+                    <a id="Continue-Button">please continue with the application >></a> <br />
+                    Otherwise, please visit our “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage for other ways to be
+                    connected to Inheritance of Hope.
+                  </div>
+                </div>
+
+                <div id="DP-4" class="One-Column" style="display: none">
+                  <div class="One">
+                    <label for="DP-Have-Spouse-Caregiver">Do you have a spouse or a caregiver?</label>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 30%">
+                        <div class="Rows">
+                          <input type="radio" id="DP-Have-Spouse-Caregiver-No" name="DP-Have-Spouse-Caregiver" value="No" />
+                        </div>
+                        <div class="Rows">
+                          <input type="radio" id="DP-Have-Spouse-Caregiver-Yes" name="DP-Have-Spouse-Caregiver" value="Yes" />
+                        </div>
                       </div>
+                      <div class="Right-Box" style="width: 70%">
+                        <div class="Rows"><p>No</p></div>
+                        <div class="Rows"><p>Yes</p></div>
+                        <div class="Rows">
+                          <select name="DP-Spouse-Family-Member-Friend" id="DP-Spouse-Family-Member-Friend">
+                            <option value="" selected disabled hidden>Select</option>
+                            <option value="Spouse">Spouse</option>
+                            <option value="Family Member">Family Member</option>
+                            <option value="Friend">Friend</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <small id="DP-4-Error" class="error">Required*</small>
+                  </div>
+                </div>
+
+                <div id="IDP-Button-Box-1" class="Button-Box" style="display: none">
+                  <div class="Left"></div>
+                  <div class="Middle"></div>
+                  <div class="Right">
+                    <button id="IDP-NB-1" class="Next-Button" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="If-Diagnosed-Parent-2" class="Part-Section" style="display: none">
+                <div id="Diagnosed-Parent-Info">
+                  <h2>Diagnosed Parent Info:</h2>
+                  <div id="DP-5-6" class="Two-Columns">
+                    <div class="Two">
+                      <label for="DP-First-Name">First Name</label>
+                      <input type="text" id="DP-First-Name" name="DP-First-Name" />
+                      <small id="DP-5-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="DP-Last-Name">Last Name</label>
+                      <input type="text" id="DP-Last-Name" name="DP-Last-Name" />
+                      <small id="DP-6-Error" class="error">Required*</small>
                     </div>
                   </div>
-                  <div id="DP-Life-Threatening-Alarm" class="Alarm" style="display: none">
-                    Thank you for your interest in Inheritance of Hope.<br />
-                    We exist to serve families who have a parent with a terminal illness. <br />
-                    Thankfully that is not you and we hope and pray that it never is! <br />
-                    For other ways to be connected to Inheritance of Hope visit our “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a
-                    >” webpage.
-                  </div>
-                  <small id="DP-2-Error" class="error">Required*</small>
-                </div>
-              </div>
 
-              <div id="DP-3" class="One-Column">
-                <div class="One">
-                  <label for="DP-Age-Child">Do you have children 18 years old or younger?</label>
-                  <div class="Check-Box">
-                    <div class="Left-Box" style="width: 30%">
-                      <div class="Rows">
-                        <input type="radio" id="DP-Age-Child-Yes" name="DP-Age-Child" value="Yes" />
-                      </div>
-                      <div class="Rows">
-                        <input type="radio" id="DP-Age-Child-No" name="DP-Age-Child" value="No" />
-                      </div>
+                  <div id="DP-7-8" class="Two-Columns">
+                    <div class="Two">
+                      <label for="DP-E-Mail">E-Mail</label>
+                      <input type="text" id="DP-E-Mail" name="DP-E-Mail" placeholder="xxx@example.xxx" />
+                      <small id="DP-7-Error" class="error">Required*</small>
                     </div>
-                    <div class="Right-Box" style="width: 70%">
-                      <div class="Rows">
-                        <p>Yes</p>
-                      </div>
-                      <div class="Rows">
-                        <p>No</p>
-                      </div>
+                    <div class="Two">
+                      <label for="DP-Mobile">Mobile</label>
+                      <input type="text" id="DP-Mobile" name="DP-Mobile" placeholder="xxx-xxx-xxxx" />
+                      <small id="DP-8-Error" class="error">Required*</small>
                     </div>
                   </div>
-                  <small id="DP-3-Error" class="error">Required*</small>
-                </div>
-                <div id="DP-Age-Child-Alarm" class="Alarm" style="display: none">
-                  Inheritance of Hope exists to serve families who have children ages 18 and under. <br />
-                  If your children are slightly above that age and you think they could still be a good fit for our program then please continue with the
-                  application and we will be in touch to further discuss. <br />
-                  Otherwise, please visit our “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage for other ways to be
-                  connected to Inheritance of Hope.
-                </div>
-                <button id="Continue-Button" class="Continue-Button" type="button" style="display: none">Continue</button>
-              </div>
 
-              <div id="DP-4" class="One-Column">
-                <div class="One">
-                  <label for="DP-Have-Spouse-Caregiver">Do you have a spouse or a caregiver?</label>
-                  <div class="Check-Box">
-                    <div class="Left-Box" style="width: 30%">
-                      <div class="Rows">
-                        <input type="radio" id="DP-Have-Spouse-Caregiver-No" name="DP-Have-Spouse-Caregiver" value="No" />
+                  <div id="DP-9-10-11" class="Three-Columns">
+                    <div class="Three">
+                      <label for="DP-Birthdate">Birthdate</label>
+                      <input type="date" id="DP-Birthdate" name="DP-Birthdate" placeholder="MM/DD/YYYY" />
+                      <small id="DP-9-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="DP-Gender">Gender</label>
+                      <input type="text" id="DP-Gender" name="DP-Gender" />
+                      <small id="DP-10-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="DP-T-Shirt">T-Shirt</label>
+                      <select name="DP-T-Shirt" id="DP-T-Shirt">
+                        <option value="" selected disabled hidden>Select</option>
+                        <option value="5XL">5XL</option>
+                        <option value="4XL">4XL</option>
+                        <option value="3XL">3XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XL">XL</option>
+                        <option value="Adult L">L</option>
+                        <option value="Adult M">M</option>
+                        <option value="Adult S">S</option>
+                        <option value="Youth L">Youth L</option>
+                        <option value="Youth M">Youth M</option>
+                        <option value="Youth S">Youth S</option>
+                        <option value="Youth XS">Youth XS</option>
+                      </select>
+                      <small id="DP-11-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="DP-12" class="One-Column">
+                    <div class="One">
+                      <label for="DP-Street-Address">Street Address</label>
+                      <input type="text" id="DP-Street-Address" name="DP-Street-Address" />
+                      <small id="DP-12-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="DP-13-14-15" class="Three-Columns">
+                    <div class="Three">
+                      <label for="DP-City">City</label>
+                      <input type="text" id="DP-City" name="DP-City" />
+                      <small id="DP-13-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="DP-State">State</label>
+                      <input type="text" id="DP-State" name="DP-State" />
+                      <small id="DP-14-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="DP-Zip">Zip</label>
+                      <input type="text" id="DP-Zip" name="DP-Zip" />
+                      <small id="DP-15-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="Spouse-Caregiver-Info">
+                  <h2>Spouse/Caregiver Registration:</h2>
+                  <div id="DP-SC-1-2" class="Two-Columns">
+                    <div class="Two">
+                      <label for="DP-SC-First-Name">First Name</label>
+                      <input type="text" id="DP-SC-First-Name" name="DP-SC-First-Name" />
+                      <small id="DP-SC-1-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="DP-SC-Last-Name">Last Name</label>
+                      <input type="text" id="DP-SC-Last-Name" name="DP-SC-Last-Name" />
+                      <small id="DP-SC-2-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="DP-SC-3-4" class="Two-Columns">
+                    <div class="Two">
+                      <label for="DP-SC-E-Mail">E-Mail</label>
+                      <input type="text" id="DP-SC-E-Mail" name="DP-SC-E-Mail" placeholder="xxx@example.xxx" />
+                      <small id="DP-SC-3-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="DP-SC-Mobile">Mobile</label>
+                      <input type="text" id="DP-SC-Mobile" name="DP-SC-Mobile" placeholder="xxx-xxx-xxxx" />
+                      <small id="DP-SC-4-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="DP-SC-5-6-7" class="Three-Columns">
+                    <div class="Three">
+                      <label for="DP-SC-Birthdate">Birthdate</label>
+                      <input type="date" id="DP-SC-Birthdate" name="DP-SC-Birthdate" />
+                      <small id="DP-SC-5-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="DP-SC-Gender">Gender</label>
+                      <input type="text" id="DP-SC-Gender" name="DP-SC-Gender" />
+                      <small id="DP-SC-6-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="DP-SC-T-Shirt">T-Shirt</label>
+                      <select name="DP-SC-T-Shirt" id="DP-SC-T-Shirt">
+                        <option value="" selected hidden disabled>Select</option>
+                        <option value="5XL">5XL</option>
+                        <option value="4XL">4XL</option>
+                        <option value="3XL">3XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XL">XL</option>
+                        <option value="Adult L">L</option>
+                        <option value="Adult M">M</option>
+                        <option value="Adult S">S</option>
+                        <option value="Youth L">Youth L</option>
+                        <option value="Youth M">Youth M</option>
+                        <option value="Youth S">Youth S</option>
+                        <option value="Youth XS">Youth XS</option>
+                      </select>
+                      <small id="DP-SC-7-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="Children-Info">
+                  <h2>Child Registration:</h2>
+                  <div id="child1" class="child">
+                    <div class="Two-Columns">
+                      <div class="Two">
+                        <label for="Child-First-Name-1">First Name</label>
+                        <input type="text" id="Child-First-Name-1" name="Child-First-Name-1" class="Contact-First-Name" onchange="FullName(this.id)" />
                       </div>
-                      <div class="Rows">
-                        <input type="radio" id="DP-Have-Spouse-Caregiver-Yes" name="DP-Have-Spouse-Caregiver" value="Yes" />
+                      <div class="Two">
+                        <label for="Child-Last-Name-1">Last Name</label>
+                        <input type="text" id="Child-Last-Name-1" name="Child-Last-Name-1" class="Contact-Last-Name" onchange="FullName(this.id)" />
                       </div>
                     </div>
-                    <div class="Right-Box" style="width: 70%">
-                      <div class="Rows"><p>No</p></div>
-                      <div class="Rows"><p>Yes</p></div>
-                      <div class="Rows">
-                        <select name="DP-Spouse-Family-Member-Friend" id="DP-Spouse-Family-Member-Friend">
-                          <option value="" selected disabled hidden>Select</option>
-                          <option value="Spouse">Spouse</option>
-                          <option value="Family Member">Family Member</option>
-                          <option value="Friend">Friend</option>
+                    <div class="Three-Columns">
+                      <div class="Three">
+                        <label for="Child-Birth-Date-1">Birthdate</label>
+                        <input type="date" id="Child-Birth-Date-1" name="Child-Birth-Date-1" placeholder="MM/DD/YYYY" />
+                      </div>
+                      <div class="Three">
+                        <label for="Child-Gender-1">Gender</label>
+                        <input type="text" id="Child-Gender-1" name="Child-Gender-1" class="Contact-Gender-1" onchange="FullName(this.id)" />
+                      </div>
+                      <div class="Three">
+                        <label for="Child-T-Shirt-Size-1">T-Shirt</label>
+                        <select type="text" id="Child-T-Shirt-Size-1" name="Child-T-Shirt-Size-1">
+                          <option value="" disabled selected hidden>Select</option>
+                          <option value="5XL">5XL</option>
+                          <option value="4XL">4XL</option>
+                          <option value="3XL">3XL</option>
+                          <option value="XXL">XXL</option>
+                          <option value="XL">XL</option>
+                          <option value="Adult L">L</option>
+                          <option value="Adult M">M</option>
+                          <option value="Adult S">S</option>
+                          <option value="Youth L">Youth L</option>
+                          <option value="Youth M">Youth M</option>
+                          <option value="Youth S">Youth S</option>
+                          <option value="Youth XS">Youth XS</option>
                         </select>
                       </div>
                     </div>
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="Child-Special-Need-1">Special Needs for the Child</label>
+                        <textarea name="Child-Special-Need" id="Child-Special-Need-1" cols="30" rows="3"></textarea>
+                      </div>
+                    </div>
                   </div>
-                  <small id="DP-4-Error" class="error">Required*</small>
-                </div>
-              </div>
-            </div>
-
-            <div id="BB-2" class="Button-Box">
-              <div class="Left">
-                <button id="DP-BB-1" class="Back-Button" type="button">Back</button>
-              </div>
-              <div class="Middle"></div>
-              <div class="Right">
-                <button id="DP-NB-2" class="Next-Button" type="button">Next</button>
-              </div>
-            </div>
-          </div>
-
-          <div id="If-Diagnosed-Parent-2" class="Questions" style="display: none">
-            <div class="Part-Section">
-              <h2>Diagnosed Parent Info:</h2>
-
-              <div id="DP-5-6" class="Two-Columns">
-                <div class="Two">
-                  <label for="DP-First-Name">First Name</label>
-                  <input type="text" id="DP-First-Name" name="DP-First-Name" />
-                  <small id="DP-5-Error" class="error">Required*</small>
-                </div>
-                <div class="Two">
-                  <label for="DP-Last-Name">Last Name</label>
-                  <input type="text" id="DP-Last-Name" name="DP-Last-Name" />
-                  <small id="DP-6-Error" class="error">Required*</small>
-                </div>
-              </div>
-
-              <div id="DP-7-8" class="Two-Columns">
-                <div class="Two">
-                  <label for="DP-E-Mail">E-Mail</label>
-                  <input type="text" id="DP-E-Mail" name="DP-E-Mail" placeholder="xxx@example.xxx" />
-                  <small id="DP-7-Error" class="error">Required*</small>
-                </div>
-                <div class="Two">
-                  <label for="DP-Mobile">Mobile</label>
-                  <input type="text" id="DP-Mobile" name="DP-Mobile" placeholder="xxx-xxx-xxxx" />
-                  <small id="DP-8-Error" class="error">Required*</small>
-                </div>
-              </div>
-
-              <div id="DP-9-10-11" class="Three-Columns">
-                <div class="Three">
-                  <label for="DP-Birthdate">Birthdate</label>
-                  <input type="date" id="DP-Birthdate" name="DP-Birthdate" placeholder="MM/DD/YYYY" />
-                  <small id="DP-9-Error" class="error">Required*</small>
-                </div>
-                <div class="Three">
-                  <label for="DP-Gender">Gender</label>
-                  <input type="text" id="DP-Gender" name="DP-Gender" />
-                  <small id="DP-10-Error" class="error">Required*</small>
-                </div>
-                <div class="Three">
-                  <label for="DP-T-Shirt">T-Shirt</label>
-                  <select name="DP-T-Shirt" id="DP-T-Shirt">
-                    <option value="" selected disabled hidden>Select</option>
-                    <option value="5XL">5XL</option>
-                    <option value="4XL">4XL</option>
-                    <option value="3XL">3XL</option>
-                    <option value="XXL">XXL</option>
-                    <option value="XL">XL</option>
-                    <option value="Adult L">L</option>
-                    <option value="Adult M">M</option>
-                    <option value="Adult S">S</option>
-                    <option value="Youth L">Youth L</option>
-                    <option value="Youth M">Youth M</option>
-                    <option value="Youth S">Youth S</option>
-                    <option value="Youth XS">Youth XS</option>
-                  </select>
-                  <small id="DP-11-Error" class="error">Required*</small>
-                </div>
-              </div>
-
-              <div id="DP-12" class="One-Column">
-                <div class="One">
-                  <label for="DP-Street-Address">Street Address</label>
-                  <input type="text" id="DP-Street-Address" name="DP-Street-Address" />
-                  <small id="DP-12-Error" class="error">Required*</small>
-                </div>
-              </div>
-
-              <div id="DP-13-14-15" class="Three-Columns">
-                <div class="Three">
-                  <label for="DP-City">City</label>
-                  <input type="text" id="DP-City" name="DP-City" />
-                  <small id="DP-13-Error" class="error">Required*</small>
-                </div>
-                <div class="Three">
-                  <label for="DP-State">State</label>
-                  <input type="text" id="DP-State" name="DP-State" />
-                  <small id="DP-14-Error" class="error">Required*</small>
-                </div>
-                <div class="Three">
-                  <label for="DP-Zip">Zip</label>
-                  <input type="text" id="DP-Zip" name="DP-Zip" />
-                  <small id="DP-15-Error" class="error">Required*</small>
-                </div>
-              </div>
-            </div>
-
-            <div id="If-DP-Has-Spouse-Caregiver" class="Part-Section" style="display: none">
-              <h2>Spouse/Caregiver Registration:</h2>
-              <div id="DP-SC-1" class="Two-Columns">
-                <div class="Two">
-                  <label for="DP-SC-First-Name">First Name</label>
-                  <input type="text" id="DP-SC-First-Name" name="DP-SC-First-Name" />
-                </div>
-                <div class="Two">
-                  <label for="DP-SC-Last-Name">Last Name</label>
-                  <input type="text" id="DP-SC-Last-Name" name="DP-SC-Last-Name" />
-                </div>
-              </div>
-
-              <div id="DP-SC-2" class="Two-Columns">
-                <div class="Two">
-                  <label for="DP-SC-E-Mail">E-Mail</label>
-                  <input type="text" id="DP-SC-E-Mail" name="DP-SC-E-Mail" placeholder="xxx@example.xxx" />
-                </div>
-                <div class="Two">
-                  <label for="DP-SC-Mobile">Mobile</label>
-                  <input type="text" id="DP-SC-Mobile" name="DP-SC-Mobile" placeholder="xxx-xxx-xxxx" />
-                </div>
-              </div>
-
-              <div id="DP-SC-3" class="Three-Columns">
-                <div class="Three">
-                  <label for="DP-SC-Birthdate">Birthdate</label>
-                  <input type="date" id="DP-SC-Birthdate" name="DP-SC-Birthdate" />
-                </div>
-                <div class="Three">
-                  <label for="DP-SC-Gender">Gender</label>
-                  <input type="text" id="DP-SC-Gender" name="DP-SC-Gender" />
-                </div>
-                <div class="Three">
-                  <label for="DP-SC-T-Shirt">T-Shirt</label>
-                  <select name="DP-SC-T-Shirt" id="DP-SC-T-Shirt">
-                    <option value="" selected hidden disabled>Select</option>
-                    <option value="5XL">5XL</option>
-                    <option value="4XL">4XL</option>
-                    <option value="3XL">3XL</option>
-                    <option value="XXL">XXL</option>
-                    <option value="XL">XL</option>
-                    <option value="Adult L">L</option>
-                    <option value="Adult M">M</option>
-                    <option value="Adult S">S</option>
-                    <option value="Youth L">Youth L</option>
-                    <option value="Youth M">Youth M</option>
-                    <option value="Youth S">Youth S</option>
-                    <option value="Youth XS">Youth XS</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div id="Register-Children" class="Part-Section">
-              <h2>Child Registration:</h2>
-              <div id="child1" class="child">
-                <div class="Two-Columns">
-                  <div class="Two">
-                    <label for="Child-First-Name-1">First Name</label>
-                    <input type="text" id="Child-First-Name-1" name="Child-First-Name-1" class="Contact-First-Name" onchange="FullName(this.id)" />
-                  </div>
-                  <div class="Two">
-                    <label for="Child-Last-Name-1">Last Name</label>
-                    <input type="text" id="Child-Last-Name-1" name="Child-Last-Name-1" class="Contact-Last-Name" onchange="FullName(this.id)" />
+                  <div class="Button-Box" style="border: none">
+                    <div id="Child-Add-1" class="Left">
+                      <button id="Add-Guest" class="contact-button-add" type="button">Add</button>
+                    </div>
+                    <div class="Middle"></div>
+                    <div id="Child-Close-1" class="Right">
+                      <button id="Remove-Guest" class="contact-button-close" type="button">Remove</button>
+                    </div>
                   </div>
                 </div>
-                <div class="Three-Columns">
-                  <div class="Three">
-                    <label for="Child-Birth-Date-1">Birthdate</label>
-                    <input type="date" id="Child-Birth-Date-1" name="Child-Birth-Date-1" placeholder="MM/DD/YYYY" />
+
+                <div id="IDP-Button-Box-2" class="Button-Box">
+                  <div class="Left">
+                    <button id="IDP-BB-2" class="Back-Button" type="button">Back</button>
                   </div>
-                  <div class="Three">
-                    <label for="Child-Gender-1">Gender</label>
-                    <input type="text" id="Child-Gender-1" name="Child-Gender-1" class="Contact-Gender-1" onchange="FullName(this.id)" />
-                  </div>
-                  <div class="Three">
-                    <label for="Child-T-Shirt-Size-1">T-Shirt</label>
-                    <select type="text" id="Child-T-Shirt-Size-1" name="Child-T-Shirt-Size-1">
-                      <option value="" disabled selected hidden>Select</option>
-                      <option value="5XL">5XL</option>
-                      <option value="4XL">4XL</option>
-                      <option value="3XL">3XL</option>
-                      <option value="XXL">XXL</option>
-                      <option value="XL">XL</option>
-                      <option value="Adult L">L</option>
-                      <option value="Adult M">M</option>
-                      <option value="Adult S">S</option>
-                      <option value="Youth L">Youth L</option>
-                      <option value="Youth M">Youth M</option>
-                      <option value="Youth S">Youth S</option>
-                      <option value="Youth XS">Youth XS</option>
-                    </select>
+                  <div class="Middle"></div>
+                  <div class="Right">
+                    <button id="IDP-NB-2" class="Next-Button" type="button">Next</button>
                   </div>
                 </div>
+              </div>
+
+              <div id="Agreement" class="Part-Section" style="display: none">
                 <div class="One-Column">
                   <div class="One">
-                    <label for="Child-Special-Need-1">Special Needs for the Child</label>
-                    <textarea name="Child-Special-Need" id="Child-Special-Need-1" cols="30" rows="3"></textarea>
+                    <label for="Heard-About-IoH">How did you hear about Inheritance of Hope?</label>
+                    <textarea name="Heard-About-IoH" id="HeardAboutIoH" cols="30" rows="3"></textarea>
                   </div>
                 </div>
-              </div>
-              <div class="Button-Box" style="border: none">
-                <div id="Child-Add-1" class="Left">
-                  <button id="Add-Guest" class="contact-button-add" type="button">Add</button>
+
+                <h2>Signature:</h2>
+
+                <div class="Two-Columns">
+                  <div class="Two">
+                    <label for="Electronic-Signature">Signature</label>
+                    <input type="text" id="ElectronicSignature" name="Electronic-Signature" />
+                  </div>
+                  <div class="Two">
+                    <label for="Electronic-Signature-Date">Signature Date</label>
+                    <input type="date" id="ElectronicSignatureDate" name="Electronic-Signature-Date" />
+                  </div>
                 </div>
-                <div class="Middle"></div>
-                <div id="Child-Close-1" class="Right">
-                  <button id="Remove-Guest" class="contact-button-close" type="button">Remove</button>
+
+                <h2>Parent/Guardian Signature:</h2>
+                <span>If you are under 18 years old, you must get your parent/guardian signature.</span>
+
+                <div class="Two-Columns">
+                  <div class="Two">
+                    <label for="Parent-Guardian-Signature">Signature</label>
+                    <input type="text" id="ParentGuardianSignature" name="Parent-Guardian-Signature" />
+                  </div>
+                  <div class="Two">
+                    <label for="Parent-Guardian-Signature-Date">Signature Date</label>
+                    <input type="date" id="ParentGuardianSignatureDate" name="Parent-Guardian-Signature-Date" />
+                  </div>
+                </div>
+
+                <div class="Button-Box">
+                  <div class="Left">
+                    <button class="Back-Button" type="button">Back</button>
+                  </div>
+                  <div class="Middle"><button class="Submit-Button" type="button">Submit</button></div>
+                  <div class="Right"></div>
                 </div>
               </div>
             </div>
 
-            <div class="Button-Box">
-              <div class="Left">
-                <button id="DP-BB-2" class="Back-Button" type="button">Back</button>
-              </div>
-              <div class="Middle"></div>
-              <div class="Right">
-                <button id="DP-NB-3" class="Next-Button" type="button">Next</button>
-              </div>
-            </div>
-          </div>
-
-          <div id="Agreement" class="Questions" style="display: none">
-            <div class="One-Column">
-              <div class="One">
-                <label for="Heard-About-IoH">How did you hear about Inheritance of Hope?</label>
-                <textarea name="Heard-About-IoH" id="HeardAboutIoH" cols="30" rows="3"></textarea>
-              </div>
-            </div>
-
-            <div class="Part-Section">
-              <h2>Signature:</h2>
-            </div>
-
-            <div class="Two-Columns">
-              <div class="Two">
-                <label for="Electronic-Signature">Signature</label>
-                <input type="text" id="ElectronicSignature" name="Electronic-Signature" />
-              </div>
-              <div class="Two">
-                <label for="Electronic-Signature-Date">Signature Date</label>
-                <input type="date" id="ElectronicSignatureDate" name="Electronic-Signature-Date" />
-              </div>
-            </div>
-
-            <div class="Part-Section">
-              <h2>Parent/Guardian Signature:</h2>
-              <span>If you are under 18 years old, you must get your parent/guardian signature.</span>
-            </div>
-
-            <div class="Two-Columns">
-              <div class="Two">
-                <label for="Parent-Guardian-Signature">Signature</label>
-                <input type="text" id="ParentGuardianSignature" name="Parent-Guardian-Signature" />
-              </div>
-              <div class="Two">
-                <label for="Parent-Guardian-Signature-Date">Signature Date</label>
-                <input type="date" id="ParentGuardianSignatureDate" name="Parent-Guardian-Signature-Date" />
-              </div>
-            </div>
-
-            <div class="Button-Box">
-              <div class="Left">
-                <button class="Back-Button" type="button">Back</button>
-              </div>
-              <div class="Middle"><button class="Submit-Button" type="button">Submit</button></div>
-              <div class="Right"></div>
-            </div>
+            <div id="If-Spouse-Caregiver-Form"></div>
+            <div id="If-Widow-Widower-Form"></div>
+            <div id="If-Child-Of-Diagnosed-Parent-Form"></div>
           </div>
 
           <div class="Footer">
@@ -1021,77 +1063,75 @@
       document.getElementById("Family-Eligibility-No").addEventListener("change", function () {
         document.getElementById("DP-Family-Eligibility-Alarm").style.display = "block";
         document.getElementById("SP-2").style.display = "none";
-        document.getElementById("BB-1").style.display = "none";
       });
       document.getElementById("Family-Eligibility-Yes").addEventListener("change", function () {
         document.getElementById("DP-Family-Eligibility-Alarm").style.display = "none";
         document.getElementById("SP-2").style.display = "block";
-        document.getElementById("BB-1").style.display = "flex";
       });
-      document.getElementById("DP-Life-Threatening-No").addEventListener("change", function () {
-        document.getElementById("DP-Life-Threatening-Alarm").style.display = "block";
-        document.getElementById("DP-1").style.display = "none";
-        document.getElementById("DP-3").style.display = "none";
-        document.getElementById("DP-4").style.display = "none";
-        document.getElementById("BB-2").style.display = "none";
-      });
-      document.getElementById("DP-Life-Threatening-Yes").addEventListener("change", function () {
-        document.getElementById("DP-Life-Threatening-Alarm").style.display = "none";
-        document.getElementById("DP-1").style.display = "block";
-        document.getElementById("DP-3").style.display = "block";
-        document.getElementById("DP-4").style.display = "block";
-        document.getElementById("BB-2").style.display = "flex";
-      });
-      document.getElementById("DP-Age-Child-No").addEventListener("change", function () {
-        document.getElementById("DP-Age-Child-Alarm").style.display = "block";
-        document.getElementById("DP-1").style.display = "none";
-        document.getElementById("DP-2").style.display = "none";
-        document.getElementById("DP-4").style.display = "none";
-        document.getElementById("BB-2").style.display = "none";
-        document.getElementById("Continue-Button").style.display = "block";
-      });
-      document.getElementById("DP-Age-Child-Yes").addEventListener("change", function () {
-        document.getElementById("DP-Age-Child-Alarm").style.display = "none";
-        document.getElementById("DP-1").style.display = "block";
-        document.getElementById("DP-2").style.display = "block";
-        document.getElementById("DP-4").style.display = "block";
-        document.getElementById("BB-2").style.display = "flex";
-        document.getElementById("Continue-Button").style.display = "none";
-      });
-      document.getElementById("Continue-Button").addEventListener("click", function () {
-        document.getElementById("DP-Age-Child-Alarm").style.display = "none";
-        document.getElementById("DP-1").style.display = "block";
-        document.getElementById("DP-2").style.display = "block";
-        document.getElementById("DP-4").style.display = "block";
-        document.getElementById("BB-2").style.display = "flex";
-        document.getElementById("Continue-Button").style.display = "none";
+      document.getElementById("Tell-Us-About-You").addEventListener("change", function () {
+        if (document.getElementById("Tell-Us-About-You").value == "Diagnosed Parent") {
+          document.getElementById("If-Diagnosed-Parent-Form").style.display = "block";
+        } else {
+          document.getElementById("If-Diagnosed-Parent-Form").style.display = "none";
+        }
+        if (document.getElementById("Tell-Us-About-You").value == "Spouse/Caregiver") {
+          document.getElementById("If-Spouse-Caregiver-Form").style.display = "block";
+        } else {
+          document.getElementById("If-Spouse-Caregiver-Form").style.display = "none";
+        }
+        if (document.getElementById("Tell-Us-About-You").value == "Widow/Widower") {
+          document.getElementById("If-Widow-Widower-Form").style.display = "block";
+        } else {
+          document.getElementById("If-Widow-Widower-Form").style.display = "none";
+        }
+        if (document.getElementById("Tell-Us-About-You").value == "Child of the Diagnosed Parent") {
+          document.getElementById("If-Child-Of-Diagnosed-Parent-Form").style.display = "block";
+        } else {
+          document.getElementById("If-Child-Of-Diagnosed-Parent-Form").style.display = "none";
+        }
       });
 
+      //DP-Form
       document.getElementById("Hope-Hub-Location").addEventListener("change", function () {
         if (document.getElementById("Hope-Hub-Location").value == "Washington D.C.") {
           document.getElementById("Washington-D-C").style.display = "block";
+          document.getElementById("DP-2").style.display = "block";
         } else {
           document.getElementById("Washington-D-C").style.display = "none";
+          document.getElementById("DP-2").style.display = "none";
         }
+      });
+      document.getElementById("DP-Life-Threatening-No").addEventListener("change", function () {
+        document.getElementById("DP-Life-Threatening-Alarm").style.display = "block";
+        document.getElementById("DP-3").style.display = "none";
+      });
+      document.getElementById("DP-Life-Threatening-Yes").addEventListener("change", function () {
+        document.getElementById("DP-Life-Threatening-Alarm").style.display = "none";
+        document.getElementById("DP-3").style.display = "block";
+      });
+      document.getElementById("DP-Age-Child-No").addEventListener("change", function () {
+        document.getElementById("DP-Age-Child-Alarm").style.display = "block";
+        document.getElementById("Continue-Button").style.display = "block";
+        document.getElementById("DP-4").style.display = "none";
+      });
+      document.getElementById("DP-Age-Child-Yes").addEventListener("change", function () {
+        document.getElementById("DP-Age-Child-Alarm").style.display = "none";
+        document.getElementById("Continue-Button").style.display = "none";
+        document.getElementById("DP-4").style.display = "block";
+      });
+      document.getElementById("Continue-Button").addEventListener("click", function () {
+        document.getElementById("DP-Age-Child-Alarm").style.display = "none";
+        document.getElementById("Continue-Button").style.display = "none";
+        document.getElementById("DP-4").style.display = "block";
+      });
+      document.getElementById("DP-Have-Spouse-Caregiver-No").addEventListener("change", function () {
+        document.getElementById("IDP-Button-Box-1").style.display = "flex";
+      });
+      document.getElementById("DP-Have-Spouse-Caregiver-Yes").addEventListener("change", function () {
+        document.getElementById("IDP-Button-Box-1").style.display = "flex";
       });
 
       //If-Diagnosed-Parent
-      function DpStartpVal() {
-        if (!document.getElementById("Family-Eligibility-No").checked && !document.getElementById("Family-Eligibility-Yes").checked) {
-          document.getElementById("SP-1-Error").style.visibility = "visible";
-          document.getElementById("Family-Eligibility-Yes").focus();
-          e.preventDefault();
-        } else {
-          document.getElementById("SP-1-Error").style.visibility = "hidden";
-        }
-        if (document.getElementById("Tell-Us-About-You").value == "") {
-          document.getElementById("SP-2-Error").style.visibility = "visible";
-          document.getElementById("Tell-Us-About-You").focus();
-          e.preventDefault();
-        } else {
-          document.getElementById("SP-2-Error").style.visibility = "hidden";
-        }
-      }
       function DpFirstpVal() {
         if (document.getElementById("Hope-Hub-Location").value == "") {
           document.getElementById("DP-1-Error").style.visibility = "visible";
@@ -1132,13 +1172,23 @@
       }
       function DpSecondpVal() {}
 
-      document.getElementById("DP-NB-1").addEventListener("click", function () {
-        DpStartpVal();
-        if (document.getElementById("Tell-Us-About-You").value == "Diagnosed Parent") {
-          document.getElementById("If-Diagnosed-Parent-1").style.display = "block";
-          document.getElementById("Start-Page").style.display = "none";
+      document.getElementById("IDP-NB-1").addEventListener("click", function () {
+        DpFirstpVal();
+        if (document.getElementById("DP-Have-Spouse-Caregiver-No").checked) {
+          document.getElementById("Spouse-Caregiver-Info").style.display = "none";
+        } else {
+          document.getElementById("Spouse-Caregiver-Info").style.display = "block";
         }
+        document.getElementById("Start-Page").style.display = "none";
+        document.getElementById("If-Diagnosed-Parent-1").style.display = "none";
+        document.getElementById("If-Diagnosed-Parent-2").style.display = "block";
       });
+      document.getElementById("IDP-BB-2").addEventListener("click", function () {
+        document.getElementById("If-Diagnosed-Parent-2").style.display = "none";
+        document.getElementById("Start-Page").style.display = "block";
+        document.getElementById("If-Diagnosed-Parent-1").style.display = "block";
+      });
+
       document.getElementById("DP-NB-2").addEventListener("click", function () {
         DpFirstpVal();
         if (document.getElementById("DP-Have-Spouse-Caregiver-Yes").checked) {
@@ -1150,18 +1200,6 @@
         document.getElementById("If-Diagnosed-Parent-2").style.display = "block";
         document.getElementById("Register-Children").style.display = "block";
         document.getElementById("If-Diagnosed-Parent-1").style.display = "none";
-      });
-      document.getElementById("DP-NB-3").addEventListener("click", function () {
-        DpSecondpVal();
-      });
-
-      document.getElementById("DP-BB-1").addEventListener("click", function () {
-        document.getElementById("Start-Page").style.display = "block";
-        document.getElementById("If-Diagnosed-Parent-1").style.display = "none";
-      });
-      document.getElementById("DP-BB-2").addEventListener("click", function () {
-        document.getElementById("If-Diagnosed-Parent-1").style.display = "block";
-        document.getElementById("If-Diagnosed-Parent-2").style.display = "none";
       });
     </script>
   </body>
