@@ -1,0 +1,1191 @@
+<html style="font-size: 62.5%; margin: 0; padding: 0">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <style>
+      .BigPaper {
+        margin: 30px auto 30px auto;
+        width: 350px;
+        height: auto;
+
+        background-color: #334355;
+      }
+
+      .HHTitle {
+        margin: auto;
+        width: 75%;
+        height: auto;
+
+        font-family: "Bebas Neue";
+        font-size: 3.2rem;
+
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .HHMultiPages {
+        margin: 15px auto 15px auto;
+        width: 95%;
+        height: auto;
+      }
+
+      .PageTitle {
+        margin-bottom: 15px;
+
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        color: #f89a1c;
+        text-align: center;
+      }
+
+      .PageDetail {
+        margin: 25px auto 25px auto;
+        width: 95%;
+
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .HHQuestions {
+        margin: auto;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .HHOneField,
+      .HHTwoFields,
+      .HHThreeFields {
+        margin-bottom: 5px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .OneBox {
+        margin: auto;
+        width: 98%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .TwoBox {
+        margin: auto;
+        width: 48%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ThreeBox {
+        margin: auto;
+        width: 32%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .OneBox > label,
+      .TwoBox > label,
+      .ThreeBox > label {
+        margin-bottom: 3px;
+
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 500;
+
+        color: #ffffff;
+      }
+
+      .OneBox > span {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        padding-left: 15px;
+        font-family: "Raleway";
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        color: #f89a1c;
+        text-align: text;
+      }
+
+      .OneBox > input[type="text"],
+      .OneBox > input[type="date"],
+      .OneBox > input[type="email"],
+      .OneBox > select[type="text"],
+      .OneBox > textarea {
+        margin-bottom: 3px !important;
+        padding: 2px !important;
+
+        font-family: "Raleway" !important;
+        font-size: 1.5rem !important;
+        font-weight: 500 !important;
+
+        color: #334355 !important;
+        background-color: #ffffff !important;
+      }
+
+      .OneBox textarea {
+        min-height: 50px !important;
+      }
+
+      .OneBox > input:focus,
+      .OneBox > textarea:focus {
+        outline: 2px solid #f89a1c !important;
+      }
+
+      .TwoBox > input[type="text"],
+      .TwoBox > input[type="date"],
+      .TwoBox > input[type="email"],
+      .TwoBox > textarea {
+        margin-bottom: 3px !important;
+        padding: 2px !important;
+
+        font-family: "Raleway" !important;
+        font-size: 1.5rem !important;
+        font-weight: 500 !important;
+
+        color: #334355 !important;
+        background-color: #ffffff !important;
+      }
+
+      .TwoBox > input:focus,
+      .TwoBox > textarea:focus {
+        outline: 2px solid #f89a1c !important;
+      }
+
+      .ThreeBox > input[type="text"],
+      .ThreeBox > input[type="date"],
+      .ThreeBox > input[type="email"],
+      .ThreeBox > textarea {
+        margin-bottom: 3px !important;
+        padding: 2px !important;
+
+        font-family: "Raleway" !important;
+        font-size: 1.5rem !important;
+        font-weight: 500 !important;
+
+        color: #334355 !important;
+        background-color: #ffffff !important;
+      }
+
+      .ThreeBox > input:focus,
+      .ThreeBox > textarea:focus {
+        outline: 2px solid #f89a1c !important;
+      }
+
+      .checkbox {
+        margin: 3px auto;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .checks {
+        width: 10%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .checks > input[type="checkbox"] {
+        margin: 7px auto 7px auto;
+        text-align: center;
+      }
+
+      .checkbox > .checks > input[type="radio"] {
+        margin: 8px auto 8px auto;
+        text-align: center;
+      }
+
+      #FstWAtY {
+        margin: 15px auto 15px auto;
+        text-align: center;
+      }
+
+      #SndWAtY {
+        margin: 115px auto 25px auto;
+        text-align: center;
+      }
+
+      #FrthWAtY {
+        margin: 100px auto 25px auto;
+        text-align: center;
+      }
+
+      .detail {
+        width: 90%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .detail > div {
+        margin: 5px auto 5px auto;
+        font-family: "Raleway";
+        font-size: 1.4rem;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      .detail > span {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        font-family: "Raleway";
+        font-size: 1.3rem;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      .detail > span > input {
+        font-family: "Raleway" !important;
+        font-size: 1.2rem !important;
+        color: #334355 !important;
+        text-align: left !important;
+
+        background-color: #ffffff !important;
+      }
+
+      .error {
+        visibility: hidden;
+
+        padding-left: 10px;
+
+        font-family: "Bebas Neue";
+        font-size: 1.4rem;
+
+        letter-spacing: 1.2px;
+        color: #fb6658;
+      }
+
+      #NoMessage {
+        visibility: hidden;
+
+        margin: 10px auto 50px auto;
+        width: 95%;
+
+        color: #f89a1c;
+        font-family: "Raleway";
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      #NoMessage > a {
+        color: #ffffff;
+      }
+
+      .NSBbtns {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #prev,
+      #next,
+      #sbmt {
+        padding: 5px 10px 5px 10px;
+        font-family: "Raleway";
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #ffffff;
+
+        border-radius: 30px;
+        background-color: #000000;
+      }
+      #prev:hover,
+      #next:hover,
+      #sbmt:hover {
+        color: #f89a1c;
+        background-color: #000000;
+      }
+
+      #HHSndPage,
+      #HHTrdPage,
+      #HHFrthPage,
+      #HHFithPage,
+      #HHSithPage {
+        display: none;
+
+        margin: auto;
+        width: 100%;
+        height: auto;
+      }
+      #HHFstPage {
+        margin: auto;
+        width: 100%;
+        height: auto;
+      }
+
+      @media screen and (min-width: 755px) {
+        .BigPaper {
+          width: 750px;
+        }
+
+        .HHTitle {
+          width: 85%;
+          font-size: 4.5rem;
+        }
+
+        .HHMultiPages {
+          margin: 25px auto 25px auto;
+        }
+
+        .PageTitle {
+          margin-bottom: 25px;
+          font-size: 2rem;
+        }
+
+        .PageDetail {
+          margin: 30px auto 20px auto;
+          font-size: 2.2rem;
+        }
+
+        .HHOneField,
+        .HHTwoFields,
+        .HHThreeFields {
+          margin-bottom: 12px;
+        }
+
+        .OneBox > label,
+        .TwoBox > label,
+        .ThreeBox > label {
+          margin-bottom: 5px;
+          font-size: 2rem;
+        }
+
+        .OneBox > span {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding-left: 100px;
+
+          font-size: 2rem;
+        }
+
+        .OneBox > input[type="text"],
+        .OneBox > input[type="date"],
+        .OneBox > input[type="email"],
+        .OneBox > select[type="text"],
+        .OneBox > textarea {
+          margin-bottom: 5px !important;
+          padding: 4px !important;
+
+          font-size: 2rem !important;
+        }
+
+        .OneBox textarea {
+          min-height: 100px !important;
+        }
+
+        .TwoBox > input[type="text"],
+        .TwoBox > input[type="date"],
+        .TwoBox > input[type="email"],
+        .TwoBox > textarea {
+          margin-bottom: 5px !important;
+          padding: 4px !important;
+
+          font-size: 2rem !important;
+        }
+
+        .ThreeBox > input[type="text"],
+        .ThreeBox > input[type="date"],
+        .ThreeBox > input[type="email"],
+        .ThreeBox > textarea {
+          margin-bottom: 5px !important;
+          padding: 4px !important;
+
+          font-size: 2rem !important;
+        }
+
+        .checkbox {
+          margin: 10px auto;
+        }
+
+        .checks > input[type="checkbox"] {
+          margin: 16px auto 16px auto;
+          text-align: center;
+        }
+
+        .checkbox > .checks > input[type="radio"] {
+          margin: 17px auto 20px auto;
+          text-align: center;
+        }
+
+        #FstWAtY {
+          margin: 18px auto 15px auto;
+          text-align: center;
+        }
+
+        #SndWAtY {
+          margin: 120px auto 15px auto;
+          text-align: center;
+        }
+
+        #FrthWAtY {
+          margin: 125px auto 15px auto;
+          text-align: center;
+        }
+
+        .detail > div {
+          margin: 10px auto 10px 0px;
+          font-size: 2rem;
+          text-align: left;
+        }
+
+        .detail > span {
+          padding-left: 90px;
+          font-family: "Raleway";
+          font-size: 1.8rem;
+        }
+
+        .detail > span > input {
+          font-size: 1.8rem !important;
+        }
+
+        .error {
+          visibility: none;
+
+          padding-left: 2.8px;
+
+          font-size: 1.6rem;
+
+          letter-spacing: 1px;
+        }
+
+        #NoMessage {
+          visibility: hidden;
+
+          margin: 10px auto 80px auto;
+          width: 95%;
+
+          color: #f89a1c;
+          font-family: "Raleway";
+          font-size: 3rem;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        .NSBbtns {
+          width: 100%;
+          height: auto;
+        }
+        #prev,
+        #next,
+        #sbmt {
+          padding: 10px 20px 10px 20px;
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="LivingwithIllnessRegistration">
+    <div class="BigPaper">
+      <div class="HHTitle">
+        Grupo Hope@Home&trade; <br />
+        "<u>Vivir con una enfermedad</u>"
+      </div>
+
+      <div class="HHMultiPages">
+        <form id="LivingwithIllnessPardotForm" action="https://www2.inheritanceofhope.org/l/739893/2022-01-13/xfqnr" method="post">
+          <div id="HHFstPage">
+            <div class="PageDetail" style="margin-top: 150px">¿Has sido diagnosticado con una enfermedad potencialmente mortal?</div>
+
+            <div class="HHOneField" style="margin: 0px auto 30px auto; width: 80%">
+              <div class="OneBox">
+                <div class="checkbox">
+                  <div class="checks">
+                    <input type="radio" id="FstPageQYes" name="areyoumatched" value="YES" />
+                    <input type="radio" id="FstPageQNo" name="areyoumatched" value="NO" />
+                  </div>
+                  <div class="detail">
+                    <div>Yes</div>
+                    <div>No</div>
+                    <small id="FstPageerror" class="error">Please provide the information. &#42;</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="NoMessage">
+              This group is not the best fit for you at this time. <br />
+              Please feel free to explore our other Hope@Home™ Group options and reach out to <br />
+              <a href="mailto:Allie@InheritanceOfHope.org" target="_blank">Allie@InheritanceOfHope.org</a> <br />
+              if you have any questions.
+            </div>
+
+            <div class="NSBbtns">
+              <div class="Threebox"></div>
+              <div class="Threebox"></div>
+              <div class="Threebox">
+                <button id="next" class="next" type="button">Start</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="HHSndPage">
+            <div class="PageTitle">
+              Página 1: <br />
+              información del aplicante
+            </div>
+
+            <div class="PageDetial"></div>
+
+            <div class="HHQuestions">
+              <div class="HHTwoFields">
+                <div class="TwoBox">
+                  <label for="Your-First-Name">Nombre &#42;</label>
+                  <input type="text" id="YourFirstName" name="Your-First-Name" />
+                  <small id="YFNerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="TwoBox">
+                  <label for="Your-Last-Name">Apellido &#42;</label>
+                  <input type="text" id="YourLastName" name="Your-Last-Name" />
+                  <small id="YLNerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHTwoFields">
+                <div class="TwoBox">
+                  <label for="Your-Date-of-Birth">Fecha de nacimiento &#42;</label>
+                  <input type="date" id="YourDateofBirth" name="Your-Date-of-Birth" />
+                  <small id="YDoBerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="TwoBox">
+                  <label for="Your-Gender">Género &#42;</label>
+                  <input type="text" id="YourGender" name="Your-Gender" />
+                  <small id="YGerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHTwoFields">
+                <div class="TwoBox">
+                  <label for="Your-E-Mail">Correo electronico &#42;</label>
+                  <input type="email" id="YourEMail" name="Your-E-Mail" placeholder="xxx@example.com" />
+                  <small id="YEMerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="TwoBox">
+                  <label for="Your-Phone-Number">Numero de telefono &#42;</label>
+                  <input type="text" id="YourPhoneNumber" name="Your-Phone-Number" />
+                  <small id="YPNerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHOneField">
+                <div class="OneBox">
+                  <label for="Your-Street-Address">Direccion &#42;</label>
+                  <input type="text" id="YourStreetAddress" name="Your-Street-Address" />
+                  <small id="YSAerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHThreeFields">
+                <div class="ThreeBox">
+                  <label for="Your-City">Ciudad &#42;</label>
+                  <input type="text" id="YourCity" name="Your-City" />
+                  <small id="YCerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="ThreeBox">
+                  <label for="Your-State">Estado &#42;</label>
+                  <input type="text" id="YourState" name="Your-State" />
+                  <small id="YSerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="ThreeBox">
+                  <label for="Your-Zip">Codigo postal &#42;</label>
+                  <input type="text" id="YourZip" name="Your-Zip" />
+                  <small id="YZerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHOneField">
+                <div class="OneBox">
+                  <label for="About-IoH">¿Como escuchaste de Inheritance of Hope? &#42;</label>
+                  <textarea id="AboutIoH" name="About-IoH" cols="30" rows="2"></textarea>
+                  <small id="AIoHerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHOneField">
+                <div class="OneBox">
+                  <label for="Served-in-IoH"> ¿Usted o su familia han utilizado o participado en otros servicios con Inheritance of Hope?<br /> </label>
+                  <span
+                    >¿De ser asi, cuales? <br />
+                    (Marque todo lo que corresponda)</span
+                  >
+                  <div class="checkbox">
+                    <div class="checks">
+                      <input type="checkbox" name="Served-in-IoH" value="Legacy Retreat®" />
+                      <input type="checkbox" name="Served-in-IoH" value="Hope@Home™ Weekend" />
+                      <input type="checkbox" name="Served-in-IoH" value="Annual Legacy Event" />
+                      <input type="checkbox" name="Served-in-IoH" value="Hope@Home™ Group" />
+                      <input type="checkbox" name="Served-in-IoH" value="Hope@Home™ App" />
+                    </div>
+                    <div class="detail">
+                      <div>Legacy Retreat®</div>
+                      <div>Hope@Home™ Weekend</div>
+                      <div>Annual Legacy Event</div>
+                      <div>Hope@Home™ Group</div>
+                      <div>Hope@Home™ App</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="NSBbtns">
+              <div class="Threebox">
+                <button id="prev" class="prev" type="button">Atrás</button>
+              </div>
+              <div class="Threebox"></div>
+              <div class="Threebox">
+                <button id="next" class="next" type="button">Siguiente</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="HHTrdPage">
+            <div class="PageTitle">
+              Page 2: <br />
+              FAMILY INFORMATION
+            </div>
+
+            <div class="PageDetail">
+              Our mission is to inspire hope in young families, with children 18 or under, <br />
+              facing the loss of a parent to a life-threatening illness.
+            </div>
+
+            <div class="HHQuestions">
+              <div class="HHOneField">
+                <div class="OneBox">
+                  <label for="Which-Applies-to-You"> Which applies to your family? &#42; <br /> </label>
+                  <div class="checkbox">
+                    <div class="checks">
+                      <input type="radio" id="FstWAtY" name="Which-Applies-to-You" value="I have been diagnosed with a life threatening illness." />
+                      <input
+                        type="radio"
+                        id="SndWAtY"
+                        name="Which-Applies-to-You"
+                        value="My spouse/partner/parent is diagnosed with a life-threatening illness."
+                      />
+                      <input type="radio" id="FrthWAtY" name="Which-Applies-to-You" value="My family has already experienced the loss of a loved one" />
+                    </div>
+                    <div class="detail">
+                      <div>I have been diagnosed with a life threatening illness.</div>
+                      <span
+                        >-Diagnosis and how long have you been diagnosed:
+                        <input type="text" id="DiagnosisandHowLongYou" name="Diagnosis-and-How-Long-You" placeholder="Diagnosis, Period" />
+                      </span>
+                      <div>My spouse/partner/parent is diagnosed with a life-threatening illness.</div>
+                      <span
+                        >-Diagnosis and how long have they been diagnosed:
+                        <input type="text" id="DiagnosisandHowLongOthers" name="Diagnosis-and-How-Long-Others" placeholder="Diagnosis, Period" />
+                      </span>
+                      <div>My family has already experienced the loss of a loved one.</div>
+                      <span
+                        >-Loved one's relationship to you <br />
+                        -Date of Death <br />
+                        <input type="text" id="LovedOneandDateofDeath" name="Loved-One-and-Date-of-Death" placeholder="Relationship, Date of Death"
+                      /></span>
+                      <small id="WAtYerror" class="error">Please provide the information. &#42;</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="HHOneField">
+                <div class="OneBox">
+                  <label for="Do-You-Have-Children"> Do you have children?<br /> </label>
+                  <div class="checkbox">
+                    <div class="checks">
+                      <input type="radio" name="Do-You-Have-Children" value="YES" />
+                      <input type="radio" name="Do-You-Have-Children" value="NO" />
+                    </div>
+                    <div class="detail">
+                      <div>Yes</div>
+                      <div>No</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="HHOneField" style="margin-bottom: 50px">
+                <div class="OneBox">
+                  <label for="How-Many-How-Old-Children"> If so, how many children do you have and how old they are? <br /> </label>
+                  <textarea type="text" id="HowManyHowOldChildren" name="How-Many-How-Old-Children" cols="30" rows="2"></textarea>
+                </div>
+              </div>
+
+              <div class="PageTitle">Parent/Guardian Info<br />(if applicable)</div>
+
+              <div class="HHTwoFields">
+                <div class="TwoBox">
+                  <label for="Parent-Guardian-First-Name">First Name</label>
+                  <input type="text" id="ParentGuardianFirstName" name="Parent-Guardian-First-Name" />
+                  <small id="PGFNerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="TwoBox">
+                  <label for="Parent-Guardian-Last-Name">Last Name</label>
+                  <input type="text" id="ParentGuardianLastName" name="Parent-Guardian-Last-Name" />
+                  <small id="PGLNerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHTwoFields">
+                <div class="TwoBox">
+                  <label for="Parent-Guardian-Date-of-Birth">Date of Birth</label>
+                  <input type="date" id="ParentGuardianDateofBirth" name="Parent-Guardian-Date-of-Birth" />
+                  <small id="PGDoBerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="TwoBox">
+                  <label for="Parent-Guardian-Phone-Number">Phone Number</label>
+                  <input type="text" id="ParentGuardianPhoneNumber" name="Parent-Guardian-Phone-Number" />
+                  <small id="PGPNerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHOneField">
+                <div class="OneBox">
+                  <label for="Parent-Guardian-E-Mail">E-Mail</label>
+                  <input type="email" id="ParentGuardianEMail" name="Parent-Guardian-E-Mail" placeholder="xxx@example.com" />
+                  <small id="PGEMerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHOneField">
+                <div class="OneBox">
+                  <div class="checkbox">
+                    <div class="checks">
+                      <input type="radio" id="ParentGuardianSameAddress" name="Parent-Guardian-Same-Address" value="Same address as me" />
+                    </div>
+                    <div class="detail">
+                      <div>Same address as me</div>
+                      <div><em>(If not, please provide information below)</em></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="HHOneField">
+                <div class="OneBox">
+                  <label for="Parent-Guardian-Street-Address">Street Address</label>
+                  <input type="text" id="ParentGuardianStreetAddress" name="Parent-Guardian-Street-Address" />
+                  <small id="PGSAerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+
+              <div class="HHThreeFields">
+                <div class="ThreeBox">
+                  <label for="Parent-Guardian-City">City</label>
+                  <input type="text" id="ParentGuardianCity" name="Parent-Guardian-City" />
+                  <small id="PGCerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="ThreeBox">
+                  <label for="Parent-Guardian-State">State</label>
+                  <input type="text" id="ParentGuardianState" name="Parent-Guardian-State" />
+                  <small id="PGSerror" class="error">Please provide the information. &#42;</small>
+                </div>
+                <div class="ThreeBox">
+                  <label for="Parent-Guardian-Zip">Zip</label>
+                  <input type="text" id="ParentGuardianZip" name="Parent-Guardian-Zip" />
+                  <small id="PGZerror" class="error">Please provide the information. &#42;</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="NSBbtns">
+              <div class="Threebox">
+                <button id="prev" class="prev" type="button">Back</button>
+              </div>
+              <div class="Threebox"></div>
+              <div class="Threebox">
+                <button id="next" class="next" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="HHFrthPage">
+            <div class="PageTitle">
+              Page 4: <br />
+              Group Registration
+            </div>
+
+            <div class="PageDetail">
+              Support, through resources and relationships, for diagnosed parents as they navigate challenges unique to their journey.
+            </div>
+
+            <div class="HHOneField">
+              <div class="OneBox">
+                <label for="One-Word-Describing-You-and-Fam"
+                  >What is one word (or a phrase) that would describe how you/your family are currently coping? &#42;</label
+                >
+                <input type="text" id="OneWordDescribingYouandFam" name="One-Word-Describing-You-and-Fam" />
+                <small id="OWDYaFerror" class="error">Please provide the information. &#42;</small>
+              </div>
+            </div>
+
+            <div class="HHOneField">
+              <div class="OneBox">
+                <label for="What-to-Gain-by-HH-Group">What do you hope to gain by attending a Hope@Home™ Group? &#42;</label>
+                <textarea name="What-to-Gain-by-HH-Group" id="WhattoGainbyHHGroup" cols="30" rows="3"></textarea>
+                <small id="WtGbHHGerror" class="error">Please provide the information. &#42;</small>
+              </div>
+            </div>
+
+            <div class="HHOneField">
+              <div class="OneBox">
+                <label for="Any-Other-Info-for-HH-Group"
+                  >Any other information that would be helpful for our group facilitators to know about how we can best come alongside you? (optional)</label
+                >
+                <textarea name="Any-Other-Info-for-HH-Group" id="AnyOtherInfoforHHGroup" cols="30" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="NSBbtns">
+              <div class="Threebox">
+                <button id="prev" class="prev" type="button">Back</button>
+              </div>
+              <div class="Threebox"></div>
+              <div class="Threebox">
+                <button id="next" class="next" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="HHFithPage">
+            <div class="PageTitle">
+              Page 5: <br />
+              ACKNOWLEDGEMENTS
+            </div>
+
+            <div class="HHOneField">
+              <div class="OneBox">
+                <label for="Support-Group-Agreement">
+                  <em>
+                    I understand the purpose of Hope@Home™ Groups is to encourage a confidential and safe place for connection and shared experiences. The
+                    purpose of groups is not to provide counseling or therapy, but rather offer support through resources and relationships.
+                  </em>
+                </label>
+                <div class="checkbox">
+                  <div class="checks">
+                    <input type="checkbox" name="Support-Group-Agreement" id="SupportGroupAgreement" value="TRUE" />
+                  </div>
+                  <div class="detail">
+                    <div><strong>I agree &#42;</strong></div>
+                    <small id="SGAerror" class="error">You must agree to the term. &#42;</small>
+                  </div>
+                </div>
+
+                <label for="Recording-Agreement">
+                  <em>
+                    By registering for this group, I give permission to Inheritance of Hope to photograph, film, and/or record and use those materials to
+                    encourage more people to enjoy this valuable resource.
+                  </em>
+                </label>
+                <div class="checkbox">
+                  <div class="checks">
+                    <input type="checkbox" name="Recording-Agreement" id="RecordingAgreement" value="TRUE" />
+                  </div>
+                  <div class="detail">
+                    <div><strong>I agree &#42;</strong></div>
+                    <small id="RAerror" class="error">You must agree to the term. &#42;</small>
+                  </div>
+                </div>
+
+                <label for="HH-Direct-Contact-Agreement">
+                  <em>
+                    Inheritance of Hope trained volunteers may contact me directly to offer encouragement and on-going support outside of group meetings.
+                  </em>
+                </label>
+                <div class="checkbox">
+                  <div class="checks">
+                    <input type="checkbox" name="HH-Direct-Contact-Agreement" id="HHDirectContactAgreement" value="TRUE" />
+                  </div>
+                  <div class="detail">
+                    <div><strong>I agree (Optional)</strong></div>
+                    <small id="HHDCAerror" class="error">Please provide the information. &#42;</small>
+                  </div>
+                </div>
+
+                <div class="NSBbtns">
+                  <div class="Threebox">
+                    <button id="prev" class="prev" type="button">Back</button>
+                  </div>
+                  <div class="Threebox"></div>
+                  <div class="Threebox">
+                    <button id="sbmt" class="submit" type="button">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function uptoTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      function emailCorrectPattern(e) {
+        var y = /\S+@\S+\.\S+/;
+        return y.test(e);
+      }
+
+      var bck = document.getElementsByClassName("prev");
+      var nxt = document.getElementsByClassName("next");
+      var sbmt = document.getElementById("sbmt");
+
+      document.getElementById("FstPageQNo").addEventListener("click", function () {
+        document.getElementById("NoMessage").style.visibility = "visible";
+        document.getElementById("next").style.display = "none";
+        document.getElementById("FstPageerror").style.visibility = "hidden";
+      });
+      document.getElementById("FstPageQYes").addEventListener("click", function () {
+        document.getElementById("NoMessage").style.visibility = "hidden";
+        document.getElementById("next").style.display = "block";
+        document.getElementById("FstPageerror").style.visibility = "hidden";
+      });
+
+      function FstPageValidating(e) {
+        if (document.getElementById("FstPageQYes").checked || document.getElementById("FstPageQNo").checked) {
+          document.getElementById("FstPageerror").style.visibility = "hidden";
+          return true;
+        } else {
+          document.getElementById("FstPageerror").style.visibility = "visible";
+          e.preventDefault();
+        }
+      }
+      function SndPageValidating(e) {
+        if (document.getElementById("YourFirstName").value != "") {
+          document.getElementById("YFNerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YFNerror").style.visibility = "visible";
+          document.getElementById("YourFirstName").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourLastName").value != "") {
+          document.getElementById("YLNerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YLNerror").style.visibility = "visible";
+          document.getElementById("YourLastName").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourDateofBirth").value != "") {
+          document.getElementById("YDoBerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YDoBerror").style.visibility = "visible";
+          document.getElementById("YourDateofBirth").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourGender").value != "") {
+          document.getElementById("YGerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YGerror").style.visibility = "visible";
+          document.getElementById("YourGender").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourEMail").value != "") {
+          if (emailCorrectPattern(document.getElementById("YourEMail").value) === false) {
+            document.getElementById("YEMerror").style.visibility = "visible";
+            document.getElementById("YourEMail").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("YEMerror").style.visibility = "hidden";
+          }
+        } else {
+          document.getElementById("YEMerror").style.visibility = "visible";
+          document.getElementById("YourEMail").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourPhoneNumber").value != "") {
+          document.getElementById("YPNerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YPNerror").style.visibility = "visible";
+          document.getElementById("YourPhoneNumber").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourStreetAddress").value != "") {
+          document.getElementById("YSAerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YSAerror").style.visibility = "visible";
+          document.getElementById("YourStreetAddress").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourCity").value != "") {
+          document.getElementById("YCerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YCerror").style.visibility = "visible";
+          document.getElementById("YourCity").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourState").value != "") {
+          document.getElementById("YSerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YSerror").style.visibility = "visible";
+          document.getElementById("YourState").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("YourZip").value != "") {
+          document.getElementById("YZerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("YZerror").style.visibility = "visible";
+          document.getElementById("YourZip").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("AboutIoH").value != "") {
+          document.getElementById("AIoHerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("AIoHerror").style.visibility = "visible";
+          document.getElementById("AboutIoH").focus();
+          e.preventDefault();
+        }
+      }
+      function TrdPageValidating(e) {
+        if (document.getElementById("FstWAtY").checked) {
+          if (document.getElementById("DiagnosisandHowLongYou").value == "") {
+            document.getElementById("DiagnosisandHowLongYou").focus();
+            document.getElementById("WAtYerror").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("WAtYerror").style.visibility = "hidden";
+          }
+        } else if (document.getElementById("SndWAtY").checked) {
+          if (document.getElementById("DiagnosisandHowLongOthers").value == "") {
+            document.getElementById("DiagnosisandHowLongOthers").focus();
+            document.getElementById("WAtYerror").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("WAtYerror").style.visibility = "hidden";
+          }
+        } else if (document.getElementById("FrthWAtY").checked) {
+          if (document.getElementById("LovedOneandDateofDeath").value == "") {
+            document.getElementById("LovedOneandDateofDeath").focus();
+            document.getElementById("WAtYerror").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("WAtYerror").style.visibility = "hidden";
+          }
+        } else {
+          document.getElementById("FstWAtY").focus();
+          document.getElementById("WAtYerror").style.visibility = "visible";
+          e.preventDefault();
+        }
+      }
+      function FrthPageValidating(e) {
+        if (document.getElementById("OneWordDescribingYouandFam").value != "") {
+          document.getElementById("OWDYaFerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("OWDYaFerror").style.visibility = "visible";
+          document.getElementById("OneWordDescribingYouandFam").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("WhattoGainbyHHGroup").value != "") {
+          document.getElementById("WtGbHHGerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("WtGbHHGerror").style.visibility = "visible";
+          document.getElementById("WhattoGainbyHHGroup").focus();
+          e.preventDefault();
+        }
+      }
+      function SubmitValidation(e) {
+        if (document.getElementById("SupportGroupAgreement").checked) {
+          document.getElementById("SGAerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("SGAerror").style.visibility = "visible";
+          document.getElementById("SupportGroupAgreement").focus();
+          e.preventDefault();
+        }
+        if (document.getElementById("RecordingAgreement").checked) {
+          document.getElementById("RAerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("RAerror").style.visibility = "visible";
+          document.getElementById("RecordingAgreement").focus();
+          e.preventDefault();
+        }
+      }
+
+      nxt[0].onclick = function () {
+        FstPageValidating();
+        document.getElementById("HHSndPage").style.display = "block";
+        document.getElementById("HHFstPage").style.display = "none";
+        uptoTop();
+      };
+      nxt[1].onclick = function () {
+        SndPageValidating();
+        document.getElementById("HHTrdPage").style.display = "block";
+        document.getElementById("HHSndPage").style.display = "none";
+        uptoTop();
+      };
+      nxt[2].onclick = function () {
+        TrdPageValidating();
+        document.getElementById("HHFrthPage").style.display = "block";
+        document.getElementById("HHTrdPage").style.display = "none";
+        uptoTop();
+      };
+      nxt[3].onclick = function () {
+        FrthPageValidating();
+        document.getElementById("HHFithPage").style.display = "block";
+        document.getElementById("HHFrthPage").style.display = "none";
+        uptoTop();
+      };
+
+      bck[0].onclick = function () {
+        uptoTop();
+        document.getElementById("HHSndPage").style.display = "none";
+        document.getElementById("HHFstPage").style.display = "block";
+      };
+      bck[1].onclick = function () {
+        uptoTop();
+        document.getElementById("HHTrdPage").style.display = "none";
+        document.getElementById("HHSndPage").style.display = "block";
+      };
+      bck[2].onclick = function () {
+        uptoTop();
+        document.getElementById("HHFrthPage").style.display = "none";
+        document.getElementById("HHTrdPage").style.display = "block";
+      };
+      bck[3].onclick = function () {
+        uptoTop();
+        document.getElementById("HHFithPage").style.display = "none";
+        document.getElementById("HHFrthPage").style.display = "block";
+      };
+
+      sbmt.onclick = function () {
+        SubmitValidation();
+        document.getElementById("LivingwithIllnessPardotForm").submit();
+      };
+    </script>
+  </body>
+</html>
+
+<!--
+    ™
+    ®
+    &#42;
+-->
