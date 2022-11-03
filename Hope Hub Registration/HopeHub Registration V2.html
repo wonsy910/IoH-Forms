@@ -135,6 +135,29 @@
         color: #808284;
       }
 
+      .Agreement {
+        margin: 10px auto 25px auto;
+        padding: 0px 15px 0px 15px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
+      .Agreement > a {
+        color: #f89a1c;
+      }
+      .Agreement > a:hover {
+        color: #808284;
+      }
+
       .One-Column {
         margin: 10px auto;
         padding: 0px;
@@ -499,6 +522,40 @@
         background-color: #f89a1c;
         color: #334355;
       }
+      .Read {
+        margin: 0px auto;
+        padding: 5px 15px;
+        width: auto;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Close {
+        margin: 0px auto;
+        padding: 5px 15px;
+        width: auto;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
       .Continue-Button {
         margin: 0px auto;
         padding: 5px 10px;
@@ -733,6 +790,29 @@
           color: #f89a1c;
         }
         .Alarm > a:hover {
+          color: #808284;
+        }
+
+        .Agreement {
+          margin: 10px auto 25px auto;
+          padding: 0px 15px 0px 15px;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: 3px;
+          border-radius: 5px;
+        }
+        .Agreement > a {
+          color: #f89a1c;
+        }
+        .Agreement > a:hover {
           color: #808284;
         }
 
@@ -1091,6 +1171,40 @@
 
           color: #000000;
           font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Read {
+          margin: 0px auto;
+          padding: 5px 15px;
+          width: auto;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Close {
+          margin: 0px auto;
+          padding: 5px 15px;
+          width: auto;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.6rem;
           font-family: "Raleway", sans-serif;
           font-weight: 600;
           line-height: 1.5em;
@@ -1618,6 +1732,114 @@
               <div id="DP-Agreement" class="Part-Section" style="display: none">
                 <div class="One-Column">
                   <div class="One">
+                    <h2 for="DP-Informed-Consent-Agreement">Informed Consent Agreement</h2>
+                    <button id="DP-ICA-Open" class="Read" type="button">Read</button>
+                    <small id="DP-ICA-Error" class="error">You must agree to the term*</small>
+                    <div id="DP-Informed-Consent-Agreement" class="Agreement" style="display: none">
+                      <strong>A)</strong> &nbsp I understand, recognize, and agree that Inheritance of Hope employs a variety of facilitators in order to
+                      provide a quality experience to all Participants. I understand that I can request information regarding my facilitators' education and
+                      experience backgrounds from Inheritance of Hope.<br /><br />
+                      <strong>B)</strong> &nbsp I understand, recognize, and agree that a safe group environment is created and maintained by both the
+                      facilitators and the group members offering mutual respect and trust. Confidentiality is also primary for a safe group environment. Group
+                      facilitators are bound by law to maintain confidentiality. Participants are bound by honor to maintain confidentiality. Should I desire to
+                      share what I learn in group, I agree to do so without using group members' names or in any way compromising group members'
+                      confidentiality. I acknowledge that there are legal and professional limits to confidentiality. I understand that I can request more
+                      information about these limits from Inheritance of Hope.<br /><br />
+                      <strong>C)</strong> &nbsp I understand, recognize, and agree that my children and/or teenagers will have age-appropriate group experiences
+                      for healthy emotional processing. The above elements also apply to children and teenager groups. I understand that children and teenagers
+                      will not focus on specific details of any parent's illness but will address the fact that all have an ill parent in common.<br /><br />
+                      <strong>D)</strong> &nbsp I understand and agree to all terms of event group participation. I also understand and agree that any
+                      Participant can contact Inheritance of Hope for more information about any aspect of the group experience. <br /><br />
+                      <button id="DP-ICA-Close" class="Close" type="button">Close</button>
+                    </div>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 50%">
+                        <div class="Rows">
+                          <input type="checkbox" id="DP-ICA-Accept" name="DP-ICA-Accept" value="Yes" />
+                        </div>
+                      </div>
+                      <div class="Right-Box" style="width: 50%">
+                        <div class="Rows"><p>Accept</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="One-Column">
+                  <div class="One">
+                    <h2 for="DP-Release-Agreement">Release Agreement</h2>
+                    <button id="DP-RA-Open" class="Read" type="button">Read</button>
+                    <small id="DP-RA-Error" class="error">You must agree to the term*</small>
+                    <div id="DP-Release-Agreement" class="Agreement" style="display: none">
+                      <strong>A)</strong> &nbsp I understand that participation in an Inheritance of Hope event is purely voluntary.<br /><br />
+                      <strong>B)</strong> &nbsp On behalf of myself and all the Participants listed on this form, their heirs, personal representatives,
+                      guardians, successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify and
+                      hold harmless Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and assigns, and
+                      any parent organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of action, costs or
+                      expenses (including attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly or indirectly, or in
+                      any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                      <strong>C)</strong> &nbsp I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation in
+                      the event. I understand that participation in the event may result in injury, property damage, interaction with persons having potentially
+                      communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and risks associated
+                      with the event and voluntarily assume the risks associated with participation in the event. I hereby unconditionally, irrevocably, and
+                      absolutely release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers, employees,
+                      volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries, from any and all
+                      loss, liability, claims, demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits of any type, whether
+                      in law and/or in equity, in the event of injury, property damage, disease, and/or death related directly or indirectly, or in any way
+                      connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                      <strong>D)</strong> &nbsp I understand, recognize, and agree that I am fully responsible for my child(ren) throughout the event.
+                      <br /><br />
+                      <strong>E)</strong> &nbsp By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or
+                      electronically record interviews with me/us in such a manner as they choose. I further give permission and consent that any such
+                      photographs, films, and/or electronically recorded interviews may be published and used by Inheritance of Hope and its agents to
+                      illustrate and promote the event experience and Inheritance of Hope. <br /><br />
+                      <strong>F)</strong> &nbsp By my signature set forth below, I the Applicant understand that I am unconditionally, irrevocably, and
+                      absolutely authorizing Inheritance of Hope to share the medical information contained in this application with its directors, officers,
+                      employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries.
+                      <br /><br />
+                      <strong>G)</strong> &nbsp I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State of
+                      South Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in full
+                      legal force and effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the event must be submitted to
+                      binding arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration shall be sited in
+                      Oconee County, South Carolina. <br /><br />
+                      <button id="DP-RA-Close" class="Close" type="button">Close</button>
+                    </div>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 50%">
+                        <div class="Rows">
+                          <input type="checkbox" id="DP-RA-Accept" name="DP-RA-Accept" value="Yes" />
+                        </div>
+                      </div>
+                      <div class="Right-Box" style="width: 50%">
+                        <div class="Rows"><p>Accept</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="One-Column">
+                  <div class="One">
+                    <label for="DP-Consent-Electronic-Signature">Consent Electronic Signature</label>
+                    <small id="DP-CES-Error" class="error">You must agree to the term*</small>
+                    <div id="DP-Consent-Electronic-Signature" class="Agreement">
+                      I/we hereby warrant that I/we have read the foregoing Agreements and executed them freely and voluntarily.<br /><br />I/we consent to
+                      providing my/our legally effective electronic signature(s) by typing full legal name(s) below and entering today's date.
+                    </div>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 50%">
+                        <div class="Rows">
+                          <input type="checkbox" id="DP-CES-Accept" name="DP-CES-Accept" value="Yes" />
+                        </div>
+                      </div>
+                      <div class="Right-Box" style="width: 50%">
+                        <div class="Rows"><p>I agree</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="One-Column">
+                  <div class="One">
                     <label for="DP-Heard-About-IoH">How did you hear about Inheritance of Hope?</label>
                     <textarea name="DP-Heard-About-IoH" id="DP-Heard-About-IoH" cols="30" rows="3"></textarea>
                     <small id="DP-HAI-Error" class="error">Required*</small>
@@ -1838,6 +2060,23 @@
         document.getElementById("DP-Button-Box-1").style.display = "flex";
       });
 
+      document.getElementById("DP-ICA-Open").addEventListener("click", function () {
+        document.getElementById("DP-Informed-Consent-Agreement").style.display = "block";
+        document.getElementById("DP-ICA-Open").style.display = "none";
+      });
+      document.getElementById("DP-ICA-Close").addEventListener("click", function () {
+        document.getElementById("DP-Informed-Consent-Agreement").style.display = "none";
+        document.getElementById("DP-ICA-Open").style.display = "block";
+      });
+      document.getElementById("DP-RA-Open").addEventListener("click", function () {
+        document.getElementById("DP-Release-Agreement").style.display = "block";
+        document.getElementById("DP-RA-Open").style.display = "none";
+      });
+      document.getElementById("DP-RA-Close").addEventListener("click", function () {
+        document.getElementById("DP-Release-Agreement").style.display = "none";
+        document.getElementById("DP-RA-Open").style.display = "block";
+      });
+
       //If-Diagnosed-Parent
       function DpFirstpVal() {
         if (document.getElementById("DP-Hope-Hub-Location").value == "") {
@@ -2033,7 +2272,28 @@
           document.getElementById("DP-C-5-Error").style.visibility = "hidden";
         }
       }
-      function AgreeVal() {
+      function DpAgreeVal() {
+        if (!document.getElementById("DP-ICA-Accept").checked) {
+          document.getElementById("DP-ICA-Error").style.visibility = "visible";
+          document.getElementById("DP-ICA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-ICA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("DP-RA-Accept").checked) {
+          document.getElementById("DP-RA-Error").style.visibility = "visible";
+          document.getElementById("DP-RA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-RA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("DP-CES-Accept").checked) {
+          document.getElementById("DP-CES-Error").style.visibility = "visible";
+          document.getElementById("DP-CES-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-CES-Error").style.visibility = "hidden";
+        }
         if (document.getElementById("DP-Heard-About-IoH").value == "") {
           document.getElementById("DP-HAI-Error").style.visibility = "visible";
           document.getElementById("DP-Heard-About-IoH").focus();
@@ -2248,7 +2508,7 @@
       });
 
       document.getElementById("DP-Submit-Button").addEventListener("click", function () {
-        AgreeVal();
+        DpAgreeVal();
         document.getElementById("Hope-Hub-Registration-Form").submit();
       });
 
