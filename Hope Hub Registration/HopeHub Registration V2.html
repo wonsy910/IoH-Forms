@@ -1906,7 +1906,7 @@
                   </div>
                 </div>
 
-                <div id="Child-of-Diagnosed-Parent-Signautre" class="Part-Section">
+                <div id="DP-Child-of-Diagnosed-Parent-Signautre" class="Part-Section">
                   <h2>Parent/Guardian Signature:</h2>
                   <p>If you are under 18 years old, you must get your parent/guardian signature.</p>
 
@@ -2080,7 +2080,7 @@
                     </div>
                     <div class="Two">
                       <label for="SC-DP-T-Shirt">T-Shirt</label>
-                      <select name="SC-DP-T-Shirt" id="SC-T-Shirt">
+                      <select name="SC-DP-T-Shirt" id="SC-DP-T-Shirt">
                         <option value="" selected disabled hidden>Select</option>
                         <option value="5XL">5XL</option>
                         <option value="4XL">4XL</option>
@@ -2128,42 +2128,42 @@
 
                 <div id="Spouse-Caregiver-Info">
                   <h2>Spouse/Caregiver Registration:</h2>
-                  <div id="SC-1-2" class="Two-Columns">
+                  <div id="SC-4-5" class="Two-Columns">
                     <div class="Two">
                       <label for="SC-First-Name">First Name</label>
                       <input type="text" id="SC-First-Name" name="SC-First-Name" />
-                      <small id="SC-1-Error" class="error">Required*</small>
+                      <small id="SC-4-Error" class="error">Required*</small>
                     </div>
                     <div class="Two">
                       <label for="SC-Last-Name">Last Name</label>
                       <input type="text" id="SC-Last-Name" name="SC-Last-Name" />
-                      <small id="SC-2-Error" class="error">Required*</small>
+                      <small id="SC-5-Error" class="error">Required*</small>
                     </div>
                   </div>
 
-                  <div id="SC-3-4" class="Two-Columns">
+                  <div id="SC-6-7" class="Two-Columns">
                     <div class="Two">
                       <label for="SC-E-Mail">E-Mail</label>
                       <input type="text" id="SC-E-Mail" name="SC-E-Mail" placeholder="xxx@example.xxx" />
-                      <small id="SC-3-Error" class="error">Required*</small>
+                      <small id="SC-6-Error" class="error">Required*</small>
                     </div>
                     <div class="Two">
                       <label for="SC-Mobile">Mobile</label>
                       <input type="text" id="SC-Mobile" name="SC-Mobile" placeholder="xxx-xxx-xxxx" />
-                      <small id="SC-4-Error" class="error">Required*</small>
+                      <small id="SC-7-Error" class="error">Required*</small>
                     </div>
                   </div>
 
-                  <div id="SC-5-6-7" class="Three-Columns">
+                  <div id="SC-8-9-10" class="Three-Columns">
                     <div class="Three">
                       <label for="SC-Birthdate">Birthdate</label>
                       <input type="date" id="SC-Birthdate" name="SC-Birthdate" />
-                      <small id="SC-5-Error" class="error">Required*</small>
+                      <small id="SC-8-Error" class="error">Required*</small>
                     </div>
                     <div class="Three">
                       <label for="SC-Gender">Gender</label>
                       <input type="text" id="SC-Gender" name="SC-Gender" />
-                      <small id="SC-6-Error" class="error">Required*</small>
+                      <small id="SC-9 -Error" class="error">Required*</small>
                     </div>
                     <div class="Three">
                       <label for="SC-T-Shirt">T-Shirt</label>
@@ -2182,7 +2182,7 @@
                         <option value="Youth S">Youth S</option>
                         <option value="Youth XS">Youth XS</option>
                       </select>
-                      <small id="SC-7-Error" class="error">Required*</small>
+                      <small id="SC-10-Error" class="error">Required*</small>
                     </div>
                   </div>
 
@@ -2191,14 +2191,14 @@
                     please fill out the blanks below.
                   </p>
 
-                  <div id="SC-8" class="One-Column" style="border: none">
+                  <div id="SC-11" class="One-Column" style="border: none">
                     <div class="One">
                       <label for="SC-Street-Address">Street Address</label>
                       <input type="text" id="SC-Street-Address" name="SC-Street-Address" />
                     </div>
                   </div>
 
-                  <div id="SC-9-10-11" class="Three-Columns" style="border: none">
+                  <div id="SC-12-13-14" class="Three-Columns" style="border: none">
                     <div class="Three">
                       <label for="SC-City">City</label>
                       <input type="text" id="SC-City" name="SC-City" />
@@ -2213,71 +2213,71 @@
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div id="SC-Children-Info" class="Part-Section" style="display: none">
-                  <h2>Child Registration:</h2>
-                  <div id="SC-Children-1" class="Child">
-                    <div class="Two-Columns">
-                      <div id="SC-C-1" class="Two">
-                        <label for="SC-C-First-Name-1">First Name</label>
-                        <input type="text" id="SC-C-First-Name-1" name="SC-C-First-Name-1" onchange="SCFullName(this.id)" />
-                        <small id="SC-C-1-Error" class="error">Required*</small>
-                      </div>
-                      <div id="SC-C-2" class="Two">
-                        <label for="SC-C-Last-Name-1">Last Name</label>
-                        <input type="text" id="SC-C-Last-Name-1" name="SC-C-Last-Name-1" onchange="SCFullName(this.id)" />
-                        <small id="SC-C-2-Error" class="error">Required*</small>
-                      </div>
-                      <div id="SC-C-1-2" style="display: none">
-                        <input type="text" id="SC-C-Full-Name-1" name="SC-C-Full-Name-1" style="display: none" />
-                      </div>
+              <div id="SC-Children-Info" class="Part-Section" style="display: none">
+                <h2>Child Registration:</h2>
+                <div id="SC-Children-1" class="Child">
+                  <div class="Two-Columns">
+                    <div id="SC-C-1" class="Two">
+                      <label for="SC-C-First-Name-1">First Name</label>
+                      <input type="text" id="SC-C-First-Name-1" name="SC-C-First-Name-1" onchange="SCFullName(this.id)" />
+                      <small id="SC-C-1-Error" class="error">Required*</small>
                     </div>
-                    <div class="Three-Columns">
-                      <div id="SC-C-3" class="Three">
-                        <label for="SC-C-Birthdate-1">Birthdate</label>
-                        <input type="date" id="SC-C-Birthdate-1" name="SC-C-Birthdate-1" placeholder="MM/DD/YYYY" />
-                        <small id="SC-C-3-Error" class="error">Required*</small>
-                      </div>
-                      <div id="SC-C-4" class="Three">
-                        <label for="SC-C-Gender-1">Gender</label>
-                        <input type="text" id="SC-C-Gender-1" name="SC-C-Gender-1" />
-                        <small id="SC-C-4-Error" class="error">Required*</small>
-                      </div>
-                      <div id="SC-C-5" class="Three">
-                        <label for="SC-C-T-Shirt-1">T-Shirt</label>
-                        <select type="text" id="SC-C-T-Shirt-1" name="SC-C-T-Shirt-1">
-                          <option value="" disabled selected hidden>Select</option>
-                          <option value="5XL">5XL</option>
-                          <option value="4XL">4XL</option>
-                          <option value="3XL">3XL</option>
-                          <option value="XXL">XXL</option>
-                          <option value="XL">XL</option>
-                          <option value="Adult L">L</option>
-                          <option value="Adult M">M</option>
-                          <option value="Adult S">S</option>
-                          <option value="Youth L">Youth L</option>
-                          <option value="Youth M">Youth M</option>
-                          <option value="Youth S">Youth S</option>
-                          <option value="Youth XS">Youth XS</option>
-                        </select>
-                        <small id="SC-C-5-Error" class="error">Required*</small>
-                      </div>
+                    <div id="SC-C-2" class="Two">
+                      <label for="SC-C-Last-Name-1">Last Name</label>
+                      <input type="text" id="SC-C-Last-Name-1" name="SC-C-Last-Name-1" onchange="SCFullName(this.id)" />
+                      <small id="SC-C-2-Error" class="error">Required*</small>
                     </div>
-                    <div class="One-Column">
-                      <div id="SC-C-6" class="One">
-                        <label for="SC-C-Special-Need-1">Special Needs for the Child</label>
-                        <textarea id="SC-C-Special-Need-1" name="SC-C-Special-Need-1" cols="30" rows="3"></textarea>
-                      </div>
+                    <div id="SC-C-1-2" style="display: none">
+                      <input type="text" id="SC-C-Full-Name-1" name="SC-C-Full-Name-1" style="display: none" />
+                    </div>
+                  </div>
+                  <div class="Three-Columns">
+                    <div id="SC-C-3" class="Three">
+                      <label for="SC-C-Birthdate-1">Birthdate</label>
+                      <input type="date" id="SC-C-Birthdate-1" name="SC-C-Birthdate-1" placeholder="MM/DD/YYYY" />
+                      <small id="SC-C-3-Error" class="error">Required*</small>
+                    </div>
+                    <div id="SC-C-4" class="Three">
+                      <label for="SC-C-Gender-1">Gender</label>
+                      <input type="text" id="SC-C-Gender-1" name="SC-C-Gender-1" />
+                      <small id="SC-C-4-Error" class="error">Required*</small>
+                    </div>
+                    <div id="SC-C-5" class="Three">
+                      <label for="SC-C-T-Shirt-1">T-Shirt</label>
+                      <select type="text" id="SC-C-T-Shirt-1" name="SC-C-T-Shirt-1">
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="5XL">5XL</option>
+                        <option value="4XL">4XL</option>
+                        <option value="3XL">3XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XL">XL</option>
+                        <option value="Adult L">L</option>
+                        <option value="Adult M">M</option>
+                        <option value="Adult S">S</option>
+                        <option value="Youth L">Youth L</option>
+                        <option value="Youth M">Youth M</option>
+                        <option value="Youth S">Youth S</option>
+                        <option value="Youth XS">Youth XS</option>
+                      </select>
+                      <small id="SC-C-5-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+                  <div class="One-Column">
+                    <div id="SC-C-6" class="One">
+                      <label for="SC-C-Special-Need-1">Special Needs for the Child</label>
+                      <textarea id="SC-C-Special-Need-1" name="SC-C-Special-Need-1" cols="30" rows="3"></textarea>
                     </div>
                   </div>
                 </div>
-                <div id="SC-CI-Button-Box" class="Button-Box" style="display: none">
-                  <div id="SC-Child-Add" class="Add">
-                    <button id="SC-Add-Child" class="Add-Child" type="button">Add another child</button>
-                  </div>
-                  <div id="SC-Child-Remove" class="Remove">
-                    <button id="SC-Remove-Child" class="Remove-Child" type="button">Remove child</button>
-                  </div>
+              </div>
+              <div id="SC-CI-Button-Box" class="Button-Box" style="display: none">
+                <div id="SC-Child-Add" class="Add">
+                  <button id="SC-Add-Child" class="Add-Child" type="button">Add another child</button>
+                </div>
+                <div id="SC-Child-Remove" class="Remove">
+                  <button id="SC-Remove-Child" class="Remove-Child" type="button">Remove child</button>
                 </div>
               </div>
 
@@ -2289,6 +2289,163 @@
                 <div class="Right">
                   <button id="SC-NB-2" class="Next-Button" type="button">Next</button>
                 </div>
+              </div>
+
+              <div id="SC-Agreement" class="Part-Section" style="display: none">
+                <div class="One-Column">
+                  <div class="One">
+                    <h2 for="SC-Informed-Consent-Agreement">Informed Consent Agreement</h2>
+                    <button id="SC-ICA-Open" class="Read" type="button">Read</button>
+                    <small id="SC-ICA-Error" class="error">You must agree to the term*</small>
+                    <div id="SC-Informed-Consent-Agreement" class="Agreement" style="display: none">
+                      <strong>A)</strong> &nbsp I understand, recognize, and agree that Inheritance of Hope employs a variety of facilitators in order to
+                      provide a quality experience to all Participants. I understand that I can request information regarding my facilitators' education and
+                      experience backgrounds from Inheritance of Hope.<br /><br />
+                      <strong>B)</strong> &nbsp I understand, recognize, and agree that a safe group environment is created and maintained by both the
+                      facilitators and the group members offering mutual respect and trust. Confidentiality is also primary for a safe group environment. Group
+                      facilitators are bound by law to maintain confidentiality. Participants are bound by honor to maintain confidentiality. Should I desire to
+                      share what I learn in group, I agree to do so without using group members' names or in any way compromising group members'
+                      confidentiality. I acknowledge that there are legal and professional limits to confidentiality. I understand that I can request more
+                      information about these limits from Inheritance of Hope.<br /><br />
+                      <strong>C)</strong> &nbsp I understand, recognize, and agree that my children and/or teenagers will have age-appropriate group experiences
+                      for healthy emotional processing. The above elements also apply to children and teenager groups. I understand that children and teenagers
+                      will not focus on specific details of any parent's illness but will address the fact that all have an ill parent in common.<br /><br />
+                      <strong>D)</strong> &nbsp I understand and agree to all terms of event group participation. I also understand and agree that any
+                      Participant can contact Inheritance of Hope for more information about any aspect of the group experience. <br /><br />
+                      <button id="SC-ICA-Close" class="Close" type="button">Close</button>
+                    </div>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 50%">
+                        <div class="Rows">
+                          <input type="checkbox" id="SC-ICA-Accept" name="SC-ICA-Accept" value="Yes" />
+                        </div>
+                      </div>
+                      <div class="Right-Box" style="width: 50%">
+                        <div class="Rows"><p>Accept</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="One-Column">
+                  <div class="One">
+                    <h2 for="SC-Release-Agreement">Release Agreement</h2>
+                    <button id="SC-RA-Open" class="Read" type="button">Read</button>
+                    <small id="SC-RA-Error" class="error">You must agree to the term*</small>
+                    <div id="SC-Release-Agreement" class="Agreement" style="display: none">
+                      <strong>A)</strong> &nbsp I understand that participation in an Inheritance of Hope event is purely voluntary.<br /><br />
+                      <strong>B)</strong> &nbsp On behalf of myself and all the Participants listed on this form, their heirs, personal representatives,
+                      guardians, successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify and
+                      hold harmless Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and assigns, and
+                      any parent organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of action, costs or
+                      expenses (including attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly or indirectly, or in
+                      any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                      <strong>C)</strong> &nbsp I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation in
+                      the event. I understand that participation in the event may result in injury, property damage, interaction with persons having potentially
+                      communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and risks associated
+                      with the event and voluntarily assume the risks associated with participation in the event. I hereby unconditionally, irrevocably, and
+                      absolutely release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers, employees,
+                      volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries, from any and all
+                      loss, liability, claims, demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits of any type, whether
+                      in law and/or in equity, in the event of injury, property damage, disease, and/or death related directly or indirectly, or in any way
+                      connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                      <strong>D)</strong> &nbsp I understand, recognize, and agree that I am fully responsible for my child(ren) throughout the event.
+                      <br /><br />
+                      <strong>E)</strong> &nbsp By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or
+                      electronically record interviews with me/us in such a manner as they choose. I further give permission and consent that any such
+                      photographs, films, and/or electronically recorded interviews may be published and used by Inheritance of Hope and its agents to
+                      illustrate and promote the event experience and Inheritance of Hope. <br /><br />
+                      <strong>F)</strong> &nbsp By my signature set forth below, I the Applicant understand that I am unconditionally, irrevocably, and
+                      absolutely authorizing Inheritance of Hope to share the medical information contained in this application with its directors, officers,
+                      employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries.
+                      <br /><br />
+                      <strong>G)</strong> &nbsp I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State of
+                      South Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in full
+                      legal force and effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the event must be submitted to
+                      binding arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration shall be sited in
+                      Oconee County, South Carolina. <br /><br />
+                      <button id="SC-RA-Close" class="Close" type="button">Close</button>
+                    </div>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 50%">
+                        <div class="Rows">
+                          <input type="checkbox" id="SC-RA-Accept" name="SC-RA-Accept" value="Yes" />
+                        </div>
+                      </div>
+                      <div class="Right-Box" style="width: 50%">
+                        <div class="Rows"><p>Accept</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="One-Column">
+                  <div class="One">
+                    <label for="SC-Consent-Electronic-Signature">Consent Electronic Signature</label>
+                    <small id="SC-CES-Error" class="error">You must agree to the term*</small>
+                    <div id="SC-Consent-Electronic-Signature" class="Agreement">
+                      I/we hereby warrant that I/we have read the foregoing Agreements and executed them freely and voluntarily.<br /><br />I/we consent to
+                      providing my/our legally effective electronic signature(s) by typing full legal name(s) below and entering today's date.
+                    </div>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 50%">
+                        <div class="Rows">
+                          <input type="checkbox" id="SC-CES-Accept" name="SC-CES-Accept" value="Yes" />
+                        </div>
+                      </div>
+                      <div class="Right-Box" style="width: 50%">
+                        <div class="Rows"><p>I agree</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="One-Column">
+                  <div class="One">
+                    <label for="SC-Heard-About-IoH">How did you hear about Inheritance of Hope?</label>
+                    <textarea name="SC-Heard-About-IoH" id="SC-Heard-About-IoH" cols="30" rows="3"></textarea>
+                    <small id="SC-HAI-Error" class="error">Required*</small>
+                  </div>
+                </div>
+
+                <h2>Signature:</h2>
+
+                <div class="Two-Columns">
+                  <div class="Two">
+                    <label for="SC-Electronic-Signature">Signature</label>
+                    <input type="text" id="SC-Electronic-Signature" name="SC-Electronic-Signature" />
+                    <small id="SC-ES-Error" class="error">Required*</small>
+                  </div>
+                  <div class="Two">
+                    <label for="SC-Electronic-Signature-Date">Signature Date</label>
+                    <input type="date" id="SC-Electronic-Signature-Date" name="SC-Electronic-Signature-Date" />
+                    <small id="SC-ESD-Error" class="error">Required*</small>
+                  </div>
+                </div>
+
+                <div id="SC-Child-of-Diagnosed-Parent-Signautre" class="Part-Section">
+                  <h2>Parent/Guardian Signature:</h2>
+                  <p>If you are under 18 years old, you must get your parent/guardian signature.</p>
+
+                  <div class="Two-Columns">
+                    <div class="Two">
+                      <label for="SC-Parent-Guardian-Signature">Signature</label>
+                      <input type="text" id="SC-Parent-Guardian-Signature" name="SC-Parent-Guardian-Signature" />
+                    </div>
+                    <div class="Two">
+                      <label for="SC-Parent-Guardian-Signature-Date">Signature Date</label>
+                      <input type="date" id="SC-Parent-Guardian-Signature-Date" name="SC-Parent-Guardian-Signature-Date" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="SC-Button-Box-3" class="Button-Box" style="display: none">
+                <div class="Left">
+                  <button id="SC-BB-2" class="Back-Button" type="button">Back</button>
+                </div>
+                <div class="Middle"><button id="SC-Submit-Button" class="Submit-Button" type="button">Submit</button></div>
+                <div class="Right"></div>
               </div>
             </div>
           </div>
@@ -2828,7 +2985,7 @@
         DPSpInfoVal();
         DPChildVal();
         if (document.getElementById("Tell-Us-About-You").value == "Diagnosed Parent") {
-          document.getElementById("Child-of-Diagnosed-Parent-Signautre").style.display = "none";
+          document.getElementById("DP-Child-of-Diagnosed-Parent-Signautre").style.display = "none";
         }
         document.getElementById("DP-Button-Box-2").style.display = "none";
         document.getElementById("If-Diagnosed-Parent-2").style.display = "none";
@@ -2839,7 +2996,7 @@
       });
 
       document.getElementById("DP-Submit-Button").addEventListener("click", function () {
-        DpAgreeVal();
+        DPAgreeVal();
         document.getElementById("Hope-Hub-Registration-Form").submit();
       });
 
@@ -2868,8 +3025,6 @@
       document.getElementById("SC-Age-Child-Yes").addEventListener("change", function () {
         document.getElementById("SC-Age-Child-Alarm").style.display = "none";
         document.getElementById("SC-Continue-Button").style.display = "none";
-        document.getElementById("SC-Children-Info").style.display = "block";
-        document.getElementById("SC-CI-Button-Box").style.display = "flex";
         document.getElementById("SC-Button-Box-1").style.display = "flex";
       });
       document.getElementById("SC-Continue-Button").addEventListener("click", function () {
@@ -2878,6 +3033,23 @@
         document.getElementById("SC-Children-Info").style.display = "none";
         document.getElementById("SC-CI-Button-Box").style.display = "none";
         document.getElementById("SC-Button-Box-1").style.display = "flex";
+      });
+
+      document.getElementById("SC-ICA-Open").addEventListener("click", function () {
+        document.getElementById("SC-Informed-Consent-Agreement").style.display = "block";
+        document.getElementById("SC-ICA-Open").style.display = "none";
+      });
+      document.getElementById("SC-ICA-Close").addEventListener("click", function () {
+        document.getElementById("SC-Informed-Consent-Agreement").style.display = "none";
+        document.getElementById("SC-ICA-Open").style.display = "block";
+      });
+      document.getElementById("SC-RA-Open").addEventListener("click", function () {
+        document.getElementById("SC-Release-Agreement").style.display = "block";
+        document.getElementById("SC-RA-Open").style.display = "none";
+      });
+      document.getElementById("SC-RA-Close").addEventListener("click", function () {
+        document.getElementById("SC-Release-Agreement").style.display = "none";
+        document.getElementById("SC-RA-Open").style.display = "block";
       });
 
       //SC-Form "If-Spouse-Caregiver"
@@ -2921,7 +3093,7 @@
         }
         if (!document.getElementById("SC-DP-Passed-Away-Yes").checked && !document.getElementById("SC-DP-Passed-Away-No").checked) {
           document.getElementById("SC-DP-3-Error").style.visibility = "visible";
-          document.getElementById("SC-DP-Passed-Away-Yes").focus();
+          document.getElementById("SC-DP-Passed-Away-No").focus();
           e.preventDefault();
         } else {
           document.getElementById("SC-DP-3-Error").style.visibility = "hidden";
@@ -2961,8 +3133,174 @@
           } else {
             document.getElementById("SC-DP-6-Error").style.visibility = "hidden";
           }
+          if (document.getElementById("SC-DP-Mobile").value == "") {
+            document.getElementById("SC-DP-7-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-Mobile").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-7-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-T-Shirt").value == "") {
+            document.getElementById("SC-DP-9-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-T-Shirt").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-9-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-Street-Address").value == "") {
+            document.getElementById("SC-DP-10-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-Street-Address").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-10-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-City").value == "") {
+            document.getElementById("SC-DP-11-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-City").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-11-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-State").value == "") {
+            document.getElementById("SC-DP-12-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-State").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-12-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-Zip").value == "") {
+            document.getElementById("SC-DP-13-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-Zip").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-13-Error").style.visibility = "hidden";
+          }
         }
       }
+      function SCInfoVal() {
+        if (document.getElementById("SC-First-Name").value == "") {
+          document.getElementById("SC-4-Error").style.visibility = "visible";
+          document.getElementById("SC-First-Name").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-4-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Last-Name").value == "") {
+          document.getElementById("SC-5-Error").style.visibility = "visible";
+          document.getElementById("SC-Last-Name").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-5-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-E-Mail").value == "") {
+          document.getElementById("SC-6-Error").style.visibility = "visible";
+          document.getElementById("SC-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("SC-E-Mail").value) === false) {
+          document.getElementById("SC-6-Error").innerHTML = "Invalid Format*";
+          document.getElementById("SC-E-Mail").focus();
+          document.getElementById("SC-6-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-6-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Mobile").value == "") {
+          document.getElementById("SC-7-Error").style.visibility = "visible";
+          document.getElementById("SC-Mobile").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-7-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Birthdate").value == "") {
+          document.getElementById("SC-8-Error").style.visibility = "visible";
+          document.getElementById("SC-Birthdate").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-8-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-T-Shirt").value == "") {
+          document.getElementById("SC-10-Error").style.visibility = "visible";
+          document.getElementById("SC-T-Shirt").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-10-Error").style.visibility = "hidden";
+        }
+      }
+      function SCChildVal() {
+        if (document.getElementById("SC-C-First-Name-1").value == "") {
+          document.getElementById("SC-C-1-Error").style.visibility = "visible";
+          document.getElementById("SC-C-First-Name-1").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-C-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-C-Last-Name-1").value == "") {
+          document.getElementById("SC-C-2-Error").style.visibility = "visible";
+          document.getElementById("SC-C-Last-Name-1").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-C-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-C-Birthdate-1").value == "") {
+          document.getElementById("SC-C-3-Error").style.visibility = "visible";
+          document.getElementById("SC-C-Birthdate-1").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-C-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-C-T-Shirt-1").value == "") {
+          document.getElementById("SC-C-5-Error").style.visibility = "visible";
+          document.getElementById("SC-C-T-Shirt-1").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-C-5-Error").style.visibility = "hidden";
+        }
+      }
+      function SCAgreeVal() {
+        if (!document.getElementById("SC-ICA-Accept").checked) {
+          document.getElementById("SC-ICA-Error").style.visibility = "visible";
+          document.getElementById("SC-ICA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-ICA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-RA-Accept").checked) {
+          document.getElementById("SC-RA-Error").style.visibility = "visible";
+          document.getElementById("SC-RA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-RA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-CES-Accept").checked) {
+          document.getElementById("SC-CES-Error").style.visibility = "visible";
+          document.getElementById("SC-CES-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-CES-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Heard-About-IoH").value == "") {
+          document.getElementById("SC-HAI-Error").style.visibility = "visible";
+          document.getElementById("SC-Heard-About-IoH").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-HAI-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Electronic-Signature").value == "") {
+          document.getElementById("SC-ES-Error").style.visibility = "visible";
+          document.getElementById("SC-Electronic-Signature").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-ES-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Electronic-Signature-Date").value == "") {
+          document.getElementById("SC-ESD-Error").style.visibility = "visible";
+          document.getElementById("SC-Electronic-Signature-Date").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-ESD-Error").style.visibility = "hidden";
+        }
+      }
+
       //SC-Form "SC-Children-Info"
       function SCFullName(id) {
         var FirstName = document.getElementById("SC-C-First-Name-1");
@@ -3108,6 +3446,15 @@
         document.getElementById("SC-CI-Button-Box").style.display = "none";
         document.getElementById("SC-Button-Box-2").style.display = "none";
       });
+      document.getElementById("SC-BB-2").addEventListener("click", function () {
+        uptoTop();
+        document.getElementById("If-Spouse-Caregiver-2").style.display = "block";
+        document.getElementById("SC-Button-Box-2").style.display = "flex";
+        document.getElementById("SC-Children-Info").style.display = "block";
+        document.getElementById("SC-CI-Button-Box").style.display = "flex";
+        document.getElementById("SC-Button-Box-3").style.display = "none";
+        document.getElementById("SC-Agreement").style.display = "none";
+      });
 
       document.getElementById("SC-NB-1").addEventListener("click", function () {
         uptoTop();
@@ -3115,12 +3462,29 @@
         document.getElementById("SP-2").style.display = "none";
         document.getElementById("SC-Button-Box-1").style.display = "none";
         document.getElementById("If-Spouse-Caregiver-1").style.display = "none";
+        document.getElementById("SC-Children-Info").style.display = "block";
+        document.getElementById("SC-CI-Button-Box").style.display = "flex";
         document.getElementById("SC-Button-Box-2").style.display = "flex";
         document.getElementById("If-Spouse-Caregiver-2").style.display = "block";
       });
       document.getElementById("SC-NB-2").addEventListener("click", function () {
         uptoTop();
         SCDpInfoVal();
+        SCInfoVal();
+        SCChildVal();
+        if (document.getElementById("Tell-Us-About-You").value == "Spouse/Caregiver") {
+          document.getElementById("SC-Child-of-Diagnosed-Parent-Signautre").style.display = "none";
+        }
+        document.getElementById("SC-Button-Box-2").style.display = "none";
+        document.getElementById("If-Spouse-Caregiver-2").style.display = "none";
+        document.getElementById("SC-Children-Info").style.display = "none";
+        document.getElementById("SC-CI-Button-Box").style.display = "none";
+        document.getElementById("SC-Button-Box-3").style.display = "flex";
+        document.getElementById("SC-Agreement").style.display = "block";
+      });
+      document.getElementById("SC-Submit-Button").addEventListener("click", function () {
+        SCAgreeVal();
+        document.getElementById("Hope-Hub-Registration-Form").submit();
       });
     </script>
   </body>
