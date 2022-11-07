@@ -41,6 +41,24 @@
         width: 100%;
         height: auto;
       }
+      #Diagnosed-Parent-Info > p,
+      #Spouse-Caregiver-Info > p,
+      #Child-of-Diagnosed-Parent-Signautre > p {
+        margin: 5px auto;
+        padding: 0px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
       .Questions {
         margin: 0px auto;
         padding: 0px;
@@ -1458,7 +1476,7 @@
                   <div id="DP-Age-Child-Alarm" class="Alarm" style="display: none">
                     Inheritance of Hope exists to serve families who have children ages 18 and under. <br />
                     If your children are slightly above that age and you think they could still be a good fit for our program then <br />
-                    <a id="Continue-Button">please continue with the application >></a> <br />
+                    <a id="DP-Continue-Button">please continue with the application >></a> <br />
                     Otherwise, please visit our “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage for other ways to be
                     connected to Inheritance of Hope.
                   </div>
@@ -1650,6 +1668,33 @@
                       <small id="DP-SC-7-Error" class="error">Required*</small>
                     </div>
                   </div>
+
+                  <p>
+                    If your caregiver's address is different from yours, <br />
+                    please fill out the blanks below.
+                  </p>
+
+                  <div id="DP-SC-8" class="One-Column" style="border: none">
+                    <div class="One">
+                      <label for="DP-SC-Street-Address">Street Address</label>
+                      <input type="text" id="DP-SC-Street-Address" name="DP-SC-Street-Address" />
+                    </div>
+                  </div>
+
+                  <div id="DP-SC-9-10-11" class="Three-Columns" style="border: none">
+                    <div class="Three">
+                      <label for="DP-SC-City">City</label>
+                      <input type="text" id="DP-SC-City" name="DP-SC-City" />
+                    </div>
+                    <div class="Three">
+                      <label for="DP-SC-State">State</label>
+                      <input type="text" id="DP-SC-State" name="DP-SC-State" />
+                    </div>
+                    <div class="Three">
+                      <label for="DP-SC-Zip">Zip</label>
+                      <input type="text" id="DP-SC-Zip" name="DP-SC-Zip" />
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -1659,12 +1704,12 @@
                   <div class="Two-Columns">
                     <div id="DP-C-1" class="Two">
                       <label for="DP-C-First-Name-1">First Name</label>
-                      <input type="text" id="DP-C-First-Name-1" name="DP-C-First-Name-1" onchange="FullName(this.id)" />
+                      <input type="text" id="DP-C-First-Name-1" name="DP-C-First-Name-1" onchange="DPFullName(this.id)" />
                       <small id="DP-C-1-Error" class="error">Required*</small>
                     </div>
                     <div id="DP-C-2" class="Two">
                       <label for="DP-C-Last-Name-1">Last Name</label>
-                      <input type="text" id="DP-C-Last-Name-1" name="DP-C-Last-Name-1" onchange="FullName(this.id)" />
+                      <input type="text" id="DP-C-Last-Name-1" name="DP-C-Last-Name-1" onchange="DPFullName(this.id)" />
                       <small id="DP-C-2-Error" class="error">Required*</small>
                     </div>
                     <div id="DP-C-1-2" style="display: none">
@@ -1921,7 +1966,7 @@
 
                 <div id="SC-3" class="One-Column" style="display: none">
                   <div class="One">
-                    <label for="SC-Age-Child">Do you have children 18 years old or younger?</label>
+                    <label for="SC-Age-Child">Does the diagnosed parent have children 18 years old or younger?</label>
                     <small id="SC-3-Error" class="error">Required*</small>
                     <div class="Check-Box">
                       <div class="Left-Box" style="width: 30%">
@@ -1945,26 +1990,312 @@
                   <div id="SC-Age-Child-Alarm" class="Alarm" style="display: none">
                     Inheritance of Hope exists to serve families who have children ages 18 and under. <br />
                     If your children are slightly above that age and you think they could still be a good fit for our program then <br />
-                    <a id="Continue-Button">please continue with the application >></a> <br />
+                    <a id="SC-Continue-Button">please continue with the application >></a> <br />
                     Otherwise, please visit our “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage for other ways to be
                     connected to Inheritance of Hope.
                   </div>
                 </div>
+              </div>
 
-                <div id="ISC-Button-Box-1" class="Button-Box" style="display: none">
-                  <div class="Left"></div>
-                  <div class="Middle"></div>
-                  <div class="Right">
-                    <button id="ISC-NB-1" class="Next-Button" type="button">Next</button>
+              <div id="SC-Button-Box-1" class="Button-Box" style="display: none">
+                <div class="Left"></div>
+                <div class="Middle"></div>
+                <div class="Right">
+                  <button id="SC-NB-1" class="Next-Button" type="button">Next</button>
+                </div>
+              </div>
+
+              <div id="If-Spouse-Caregiver-2" class="Part-Section" style="display: none">
+                <div id="Diagnosed-Parent-Info">
+                  <h2>Diagnosed Parent Info:</h2>
+                  <div id="SC-DP-1-2" class="Two-Columns">
+                    <div class="Two">
+                      <label for="SC-DP-First-Name">First Name</label>
+                      <input type="text" id="SC-DP-First-Name" name="SC-DP-First-Name" />
+                      <small id="SC-DP-1-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="SC-DP-Last-Name">Last Name</label>
+                      <input type="text" id="SC-DP-Last-Name" name="SC-DP-Last-Name" />
+                      <small id="SC-DP-2-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="SC-DP-3" class="One-Column">
+                    <div class="One">
+                      <label for="SC-DP-Passed-Away">Is the diagnosed parent passed away?</label>
+                      <small id="SC-DP-3-Error" class="error">Required*</small>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 30%">
+                          <div class="Rows">
+                            <input type="radio" id="SC-DP-Passed-Away-No" name="SC-DP-Passed-Away" value="No" />
+                          </div>
+                          <div class="Rows">
+                            <input type="radio" id="SC-DP-Passed-Away-Yes" name="SC-DP-Passed-Away" value="Yes" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 70%">
+                          <div class="Rows">
+                            <p>No</p>
+                          </div>
+                          <div class="Rows">
+                            <p>Yes</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="SC-DP-4-5" class="Two-Columns">
+                    <div class="Two">
+                      <label for="SC-DP-Birthdate">Birthdate</label>
+                      <input type="date" id="SC-DP-Birthdate" name="SC-DP-Birthdate" placeholder="MM/DD/YYYY" />
+                      <small id="SC-DP-4-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="SC-DP-Deathdate">Date of Death</label>
+                      <input type="date" id="SC-DP-Deathdate" name="SC-DP-Deathdate" placeholder="MM/DD/YYYY" />
+                      <small id="SC-DP-5-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="SC-DP-6-7" class="Two-Columns">
+                    <div class="Two">
+                      <label for="SC-DP-E-Mail">E-Mail</label>
+                      <input type="text" id="SC-DP-E-Mail" name="SC-DP-E-Mail" placeholder="xxx@example.xxx" />
+                      <small id="SC-DP-6-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="SC-DP-Mobile">Mobile</label>
+                      <input type="text" id="SC-DP-Mobile" name="SC-DP-Mobile" placeholder="xxx-xxx-xxxx" />
+                      <small id="SC-DP-7-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="SC-DP-8-9" class="Two-Columns">
+                    <div class="Two">
+                      <label for="SC-DP-Gender">Gender</label>
+                      <input type="text" id="SC-DP-Gender" name="SC-DP-Gender" />
+                      <small id="SC-DP-8-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="SC-DP-T-Shirt">T-Shirt</label>
+                      <select name="SC-DP-T-Shirt" id="SC-T-Shirt">
+                        <option value="" selected disabled hidden>Select</option>
+                        <option value="5XL">5XL</option>
+                        <option value="4XL">4XL</option>
+                        <option value="3XL">3XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XL">XL</option>
+                        <option value="Adult L">L</option>
+                        <option value="Adult M">M</option>
+                        <option value="Adult S">S</option>
+                        <option value="Youth L">Youth L</option>
+                        <option value="Youth M">Youth M</option>
+                        <option value="Youth S">Youth S</option>
+                        <option value="Youth XS">Youth XS</option>
+                      </select>
+                      <small id="SC-DP-9-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="SC-DP-10" class="One-Column">
+                    <div class="One">
+                      <label for="SC-DP-Street-Address">Street Address</label>
+                      <input type="text" id="SC-DP-Street-Address" name="SC-DP-Street-Address" />
+                      <small id="SC-DP-10-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="SC-DP-11-12-13" class="Three-Columns">
+                    <div class="Three">
+                      <label for="SC-DP-City">City</label>
+                      <input type="text" id="SC-DP-City" name="SC-DP-City" />
+                      <small id="SC-DP-11-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="SC-DP-State">State</label>
+                      <input type="text" id="SC-DP-State" name="SC-DP-State" />
+                      <small id="SC-DP-12-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="SC-DP-Zip">Zip</label>
+                      <input type="text" id="SC-DP-Zip" name="SC-DP-Zip" />
+                      <small id="SC-DP-13-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="Spouse-Caregiver-Info">
+                  <h2>Spouse/Caregiver Registration:</h2>
+                  <div id="SC-1-2" class="Two-Columns">
+                    <div class="Two">
+                      <label for="SC-First-Name">First Name</label>
+                      <input type="text" id="SC-First-Name" name="SC-First-Name" />
+                      <small id="SC-1-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="SC-Last-Name">Last Name</label>
+                      <input type="text" id="SC-Last-Name" name="SC-Last-Name" />
+                      <small id="SC-2-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="SC-3-4" class="Two-Columns">
+                    <div class="Two">
+                      <label for="SC-E-Mail">E-Mail</label>
+                      <input type="text" id="SC-E-Mail" name="SC-E-Mail" placeholder="xxx@example.xxx" />
+                      <small id="SC-3-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="SC-Mobile">Mobile</label>
+                      <input type="text" id="SC-Mobile" name="SC-Mobile" placeholder="xxx-xxx-xxxx" />
+                      <small id="SC-4-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="SC-5-6-7" class="Three-Columns">
+                    <div class="Three">
+                      <label for="SC-Birthdate">Birthdate</label>
+                      <input type="date" id="SC-Birthdate" name="SC-Birthdate" />
+                      <small id="SC-5-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="SC-Gender">Gender</label>
+                      <input type="text" id="SC-Gender" name="SC-Gender" />
+                      <small id="SC-6-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Three">
+                      <label for="SC-T-Shirt">T-Shirt</label>
+                      <select name="SC-T-Shirt" id="SC-T-Shirt">
+                        <option value="" selected hidden disabled>Select</option>
+                        <option value="5XL">5XL</option>
+                        <option value="4XL">4XL</option>
+                        <option value="3XL">3XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XL">XL</option>
+                        <option value="Adult L">L</option>
+                        <option value="Adult M">M</option>
+                        <option value="Adult S">S</option>
+                        <option value="Youth L">Youth L</option>
+                        <option value="Youth M">Youth M</option>
+                        <option value="Youth S">Youth S</option>
+                        <option value="Youth XS">Youth XS</option>
+                      </select>
+                      <small id="SC-7-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <p>
+                    If your caregiver's address is different from yours, <br />
+                    please fill out the blanks below.
+                  </p>
+
+                  <div id="SC-8" class="One-Column" style="border: none">
+                    <div class="One">
+                      <label for="SC-Street-Address">Street Address</label>
+                      <input type="text" id="SC-Street-Address" name="SC-Street-Address" />
+                    </div>
+                  </div>
+
+                  <div id="SC-9-10-11" class="Three-Columns" style="border: none">
+                    <div class="Three">
+                      <label for="SC-City">City</label>
+                      <input type="text" id="SC-City" name="SC-City" />
+                    </div>
+                    <div class="Three">
+                      <label for="SC-State">State</label>
+                      <input type="text" id="SC-State" name="SC-State" />
+                    </div>
+                    <div class="Three">
+                      <label for="SC-Zip">Zip</label>
+                      <input type="text" id="SC-Zip" name="SC-Zip" />
+                    </div>
+                  </div>
+                </div>
+
+                <div id="SC-Children-Info" class="Part-Section" style="display: none">
+                  <h2>Child Registration:</h2>
+                  <div id="SC-Children-1" class="Child">
+                    <div class="Two-Columns">
+                      <div id="SC-C-1" class="Two">
+                        <label for="SC-C-First-Name-1">First Name</label>
+                        <input type="text" id="SC-C-First-Name-1" name="SC-C-First-Name-1" onchange="SCFullName(this.id)" />
+                        <small id="SC-C-1-Error" class="error">Required*</small>
+                      </div>
+                      <div id="SC-C-2" class="Two">
+                        <label for="SC-C-Last-Name-1">Last Name</label>
+                        <input type="text" id="SC-C-Last-Name-1" name="SC-C-Last-Name-1" onchange="SCFullName(this.id)" />
+                        <small id="SC-C-2-Error" class="error">Required*</small>
+                      </div>
+                      <div id="SC-C-1-2" style="display: none">
+                        <input type="text" id="SC-C-Full-Name-1" name="SC-C-Full-Name-1" style="display: none" />
+                      </div>
+                    </div>
+                    <div class="Three-Columns">
+                      <div id="SC-C-3" class="Three">
+                        <label for="SC-C-Birthdate-1">Birthdate</label>
+                        <input type="date" id="SC-C-Birthdate-1" name="SC-C-Birthdate-1" placeholder="MM/DD/YYYY" />
+                        <small id="SC-C-3-Error" class="error">Required*</small>
+                      </div>
+                      <div id="SC-C-4" class="Three">
+                        <label for="SC-C-Gender-1">Gender</label>
+                        <input type="text" id="SC-C-Gender-1" name="SC-C-Gender-1" />
+                        <small id="SC-C-4-Error" class="error">Required*</small>
+                      </div>
+                      <div id="SC-C-5" class="Three">
+                        <label for="SC-C-T-Shirt-1">T-Shirt</label>
+                        <select type="text" id="SC-C-T-Shirt-1" name="SC-C-T-Shirt-1">
+                          <option value="" disabled selected hidden>Select</option>
+                          <option value="5XL">5XL</option>
+                          <option value="4XL">4XL</option>
+                          <option value="3XL">3XL</option>
+                          <option value="XXL">XXL</option>
+                          <option value="XL">XL</option>
+                          <option value="Adult L">L</option>
+                          <option value="Adult M">M</option>
+                          <option value="Adult S">S</option>
+                          <option value="Youth L">Youth L</option>
+                          <option value="Youth M">Youth M</option>
+                          <option value="Youth S">Youth S</option>
+                          <option value="Youth XS">Youth XS</option>
+                        </select>
+                        <small id="SC-C-5-Error" class="error">Required*</small>
+                      </div>
+                    </div>
+                    <div class="One-Column">
+                      <div id="SC-C-6" class="One">
+                        <label for="SC-C-Special-Need-1">Special Needs for the Child</label>
+                        <textarea id="SC-C-Special-Need-1" name="SC-C-Special-Need-1" cols="30" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-CI-Button-Box" class="Button-Box" style="display: none">
+                  <div id="SC-Child-Add" class="Add">
+                    <button id="SC-Add-Child" class="Add-Child" type="button">Add another child</button>
+                  </div>
+                  <div id="SC-Child-Remove" class="Remove">
+                    <button id="SC-Remove-Child" class="Remove-Child" type="button">Remove child</button>
                   </div>
                 </div>
               </div>
+
+              <div id="SC-Button-Box-2" class="Button-Box" style="display: none">
+                <div class="Left">
+                  <button id="SC-BB-1" class="Back-Button" type="button">Back</button>
+                </div>
+                <div class="Middle"></div>
+                <div class="Right">
+                  <button id="SC-NB-2" class="Next-Button" type="button">Next</button>
+                </div>
+              </div>
             </div>
-
-            <div id="If-Widow-Widower-Form" style="display: none"></div>
-
-            <div id="If-Child-Of-Diagnosed-Parent-Form" style="display: none"></div>
           </div>
+
+          <div id="If-Widow-Widower-Form" style="display: none"></div>
+
+          <div id="If-Child-Of-Diagnosed-Parent-Form" style="display: none"></div>
 
           <div class="Footer">
             <p>
@@ -2040,17 +2371,17 @@
       });
       document.getElementById("DP-Age-Child-No").addEventListener("change", function () {
         document.getElementById("DP-Age-Child-Alarm").style.display = "block";
-        document.getElementById("Continue-Button").style.display = "block";
+        document.getElementById("DP-Continue-Button").style.display = "block";
         document.getElementById("DP-4").style.display = "none";
       });
       document.getElementById("DP-Age-Child-Yes").addEventListener("change", function () {
         document.getElementById("DP-Age-Child-Alarm").style.display = "none";
-        document.getElementById("Continue-Button").style.display = "none";
+        document.getElementById("DP-Continue-Button").style.display = "none";
         document.getElementById("DP-4").style.display = "block";
       });
-      document.getElementById("Continue-Button").addEventListener("click", function () {
+      document.getElementById("DP-Continue-Button").addEventListener("click", function () {
         document.getElementById("DP-Age-Child-Alarm").style.display = "none";
-        document.getElementById("Continue-Button").style.display = "none";
+        document.getElementById("DP-Continue-Button").style.display = "none";
         document.getElementById("DP-4").style.display = "block";
       });
       document.getElementById("DP-Have-Spouse-Caregiver-No").addEventListener("change", function () {
@@ -2077,8 +2408,8 @@
         document.getElementById("DP-RA-Open").style.display = "block";
       });
 
-      //If-Diagnosed-Parent
-      function DpFirstpVal() {
+      //DP-Form "If-Diagnosed-Parent"
+      function DPFirstpVal() {
         if (document.getElementById("DP-Hope-Hub-Location").value == "") {
           document.getElementById("DP-1-Error").style.visibility = "visible";
           document.getElementById("Hope-Hub-Location").focus();
@@ -2112,7 +2443,7 @@
           document.getElementById("DP-4-Error").style.visibility = "hidden";
         }
       }
-      function DpInfoVal() {
+      function DPInfoVal() {
         if (document.getElementById("DP-First-Name").value == "") {
           document.getElementById("DP-5-Error").style.visibility = "visible";
           document.getElementById("DP-First-Name").focus();
@@ -2189,7 +2520,7 @@
           document.getElementById("DP-15-Error").style.visibility = "hidden";
         }
       }
-      function DpSpInfoVal() {
+      function DPSpInfoVal() {
         if (document.getElementById("Spouse-Caregiver-Info").style.display == "block") {
           if (document.getElementById("DP-SC-First-Name").value == "") {
             document.getElementById("DP-SC-1-Error").style.visibility = "visible";
@@ -2242,7 +2573,7 @@
           return true;
         }
       }
-      function DpChildVal() {
+      function DPChildVal() {
         if (document.getElementById("DP-C-First-Name-1").value == "") {
           document.getElementById("DP-C-1-Error").style.visibility = "visible";
           document.getElementById("DP-C-First-Name-1").focus();
@@ -2272,7 +2603,7 @@
           document.getElementById("DP-C-5-Error").style.visibility = "hidden";
         }
       }
-      function DpAgreeVal() {
+      function DPAgreeVal() {
         if (!document.getElementById("DP-ICA-Accept").checked) {
           document.getElementById("DP-ICA-Error").style.visibility = "visible";
           document.getElementById("DP-ICA-Accept").focus();
@@ -2317,7 +2648,7 @@
         }
       }
 
-      //DP-Children-Info
+      //DP-Form "DP-Children-Info"
       function DPFullName(id) {
         var FirstName = document.getElementById("DP-C-First-Name-1");
         var LastName = document.getElementById("DP-C-Last-Name-1");
@@ -2476,7 +2807,7 @@
 
       document.getElementById("DP-NB-1").addEventListener("click", function () {
         uptoTop();
-        DpFirstpVal();
+        DPFirstpVal();
         if (document.getElementById("DP-Have-Spouse-Caregiver-No").checked) {
           document.getElementById("Spouse-Caregiver-Info").style.display = "none";
         } else {
@@ -2493,9 +2824,9 @@
       });
       document.getElementById("DP-NB-2").addEventListener("click", function () {
         uptoTop();
-        DpInfoVal();
-        DpSpInfoVal();
-        DpChildVal();
+        DPInfoVal();
+        DPSpInfoVal();
+        DPChildVal();
         if (document.getElementById("Tell-Us-About-You").value == "Diagnosed Parent") {
           document.getElementById("Child-of-Diagnosed-Parent-Signautre").style.display = "none";
         }
@@ -2526,6 +2857,270 @@
       });
       document.getElementById("SC-Spouse-Family-Member-Friend").addEventListener("change", function () {
         document.getElementById("SC-3").style.display = "block";
+      });
+      document.getElementById("SC-Age-Child-No").addEventListener("change", function () {
+        document.getElementById("SC-Age-Child-Alarm").style.display = "block";
+        document.getElementById("SC-Continue-Button").style.display = "block";
+        document.getElementById("SC-Children-Info").style.display = "none";
+        document.getElementById("SC-CI-Button-Box").style.display = "none";
+        document.getElementById("SC-Button-Box-1").style.display = "none";
+      });
+      document.getElementById("SC-Age-Child-Yes").addEventListener("change", function () {
+        document.getElementById("SC-Age-Child-Alarm").style.display = "none";
+        document.getElementById("SC-Continue-Button").style.display = "none";
+        document.getElementById("SC-Children-Info").style.display = "block";
+        document.getElementById("SC-CI-Button-Box").style.display = "flex";
+        document.getElementById("SC-Button-Box-1").style.display = "flex";
+      });
+      document.getElementById("SC-Continue-Button").addEventListener("click", function () {
+        document.getElementById("SC-Age-Child-Alarm").style.display = "none";
+        document.getElementById("SC-Continue-Button").style.display = "none";
+        document.getElementById("SC-Children-Info").style.display = "none";
+        document.getElementById("SC-CI-Button-Box").style.display = "none";
+        document.getElementById("SC-Button-Box-1").style.display = "flex";
+      });
+
+      //SC-Form "If-Spouse-Caregiver"
+      function SCFirstpVal() {
+        if (document.getElementById("SC-Hope-Hub-Location").value == "") {
+          document.getElementById("SC-1-Error").style.visibility = "visible";
+          document.getElementById("Hope-Hub-Location").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-1-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-Life-Threatening-Yes").checked && !document.getElementById("SC-Life-Threatening-No").checked) {
+          document.getElementById("SC-2-Error").style.visibility = "visible";
+          document.getElementById("SC-Life-Threatening-Yes").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-2-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-Age-Child-Yes").checked && !document.getElementById("SC-Age-Child-No").checked) {
+          document.getElementById("SC-3-Error").style.visibility = "visible";
+          document.getElementById("SC-Age-Child-Yes").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-3-Error").style.visibility = "hidden";
+        }
+      }
+      function SCDpInfoVal() {
+        if (document.getElementById("SC-DP-First-Name").value == "") {
+          document.getElementById("SC-DP-1-Error").style.visibility = "visible";
+          document.getElementById("SC-DP-First-Name").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-DP-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-DP-Last-Name").value == "") {
+          document.getElementById("SC-DP-2-Error").style.visibility = "visible";
+          document.getElementById("SC-DP-Last-Name").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-DP-2-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-DP-Passed-Away-Yes").checked && !document.getElementById("SC-DP-Passed-Away-No").checked) {
+          document.getElementById("SC-DP-3-Error").style.visibility = "visible";
+          document.getElementById("SC-DP-Passed-Away-Yes").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-DP-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-DP-Passed-Away-Yes").checked) {
+          if (document.getElementById("SC-DP-Birthdate").value == "") {
+            document.getElementById("SC-DP-4-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-Birthdate").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-4-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-Deathdate").value == "") {
+            document.getElementById("SC-DP-5-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-Deathdate").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-5-Error").style.visibility = "hidden";
+          }
+        } else {
+          if (document.getElementById("SC-DP-Birthdate").value == "") {
+            document.getElementById("SC-DP-4-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-Birthdate").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-4-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-E-Mail").value == "") {
+            document.getElementById("SC-DP-6-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-E-Mail").focus();
+            e.preventDefault();
+          } else if (emailCorrectPattern(document.getElementById("SC-DP-E-Mail").value) === false) {
+            document.getElementById("SC-DP-6-Error").innerHTML = "Invalid Format*";
+            document.getElementById("SC-DP-E-Mail").focus();
+            document.getElementById("SC-DP-6-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-6-Error").style.visibility = "hidden";
+          }
+        }
+      }
+      //SC-Form "SC-Children-Info"
+      function SCFullName(id) {
+        var FirstName = document.getElementById("SC-C-First-Name-1");
+        var LastName = document.getElementById("SC-C-Last-Name-1");
+        var FullName = document.getElementById("SC-C-Full-Name-1");
+
+        FullName.value = FirstName.value + " " + LastName.value;
+        console.log(FullName.value);
+      }
+      function SCNoAdd(e) {
+        if (document.getElementById("SC-C-First-Name-1").value == "") {
+          document.getElementById("SC-C-First-Name-1").focus();
+          document.getElementById("SC-C-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-C-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-C-Last-Name-1").value == "") {
+          document.getElementById("SC-C-Last-Name-1").focus();
+          document.getElementById("SC-C-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-C-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-C-Birthdate-1").value == "") {
+          document.getElementById("SC-C-Birthdate-1").focus();
+          document.getElementById("SC-C-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-C-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-C-T-Shirt-1").value == "") {
+          document.getElementById("SC-C-T-Shirt-1").focus();
+          document.getElementById("SC-C-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-C-5-Error").style.visibility = "hidden";
+        }
+      }
+      function SCAdd(e) {
+        //Validation for guest fields
+        //Get number of guests
+        var NumChildren = document.getElementById("SC-Children-Info").getElementsByClassName("Child").length + 1;
+        console.log(NumChildren);
+        var ChildBox = document.getElementById("SC-Children-1");
+        var Clone = ChildBox.cloneNode(true);
+
+        Clone.id = "SC-Children-" + NumChildren;
+        Clone.classList.add("Child");
+        ChildBox.parentNode.append(Clone);
+
+        var ParentNode = document.getElementById(Clone.id);
+
+        var ChildrenFirstName = ParentNode.querySelector("#SC-C-1 > #SC-C-First-Name-1");
+        var ChildrenLastName = ParentNode.querySelector("#SC-C-2 > #SC-C-Last-Name-1");
+        var ChildrenFullName = ParentNode.querySelector("#SC-C-1-2 > #SC-C-Full-Name-1");
+        var ChildrenBirthDate = ParentNode.querySelector("#SC-C-3 > #SC-C-Birthdate-1");
+        var ChildrenGender = ParentNode.querySelector("#SC-C-4 > #SC-C-Gender-1");
+        var ChildrenTShirtSize = ParentNode.querySelector("#SC-C-5 >#SC-C-T-Shirt-1");
+        var ChildrenSpecialNeed = ParentNode.querySelector("#SC-C-6 > #SC-C-Special-Need-1");
+
+        /*
+        var ChildrenFirstName = ParentNode.querySelector("#Two-Columns > #Two > #C-First-Name-1");
+        var ChildrenLastName = ParentNode.querySelector("#Two-Columns > #Two > #C-Last-Name-1");
+        var ChildrenFullName = ParentNode.querySelector("#Two-Columns > #C-Full-Name-1");
+        var ChildrenGender = ParentNode.querySelector("#Three-Columns > #Three > #C-Gender-1");
+        var ChildrenBirthDate = ParentNode.querySelector("#Three-Columns > #Three > #C-Birthdate-1");
+        var ChildrenTShirtSize = ParentNode.querySelector("#Three-Columns > #Three > #C-T-Shirt-1");
+        var ChildrenSpecialNeed = ParentNode.querySelector("#One-Column > #One > #C-Special-Need-1");
+        */
+
+        //First Name
+        ChildrenFirstName.id = "SC-C-First-Name-" + NumChildren;
+        ChildrenFirstName.name = "SC-C-First-Name-" + NumChildren;
+        ChildrenFirstName.value = "";
+
+        //Last Name
+        ChildrenLastName.id = "SC-C-Last-Name-" + NumChildren;
+        ChildrenLastName.name = "SC-C-Last-Name-" + NumChildren;
+        ChildrenLastName.value = "";
+
+        //Full Name
+        ChildrenFullName.id = "SC-C-Full-Name-" + NumChildren;
+        ChildrenFullName.name = "SC-C-Full-Name-" + NumChildren;
+        ChildrenFullName.value = "";
+
+        //Gender
+        ChildrenGender.id = "SC-C-Gender-" + NumChildren;
+        ChildrenGender.name = "SC-C-Gender-" + NumChildren;
+        ChildrenGender.value = "";
+
+        //Birth Date
+        ChildrenBirthDate.id = "SC-C-Birthdate-" + NumChildren;
+        ChildrenBirthDate.name = "SC-C-Birthdate-" + NumChildren;
+        ChildrenBirthDate.value = "";
+
+        //T-Shirt Size
+        ChildrenTShirtSize.id = "SC-C-T-Shirt-" + NumChildren;
+        ChildrenTShirtSize.name = "SC-C-T-Shirt-" + NumChildren;
+        ChildrenTShirtSize.value = "";
+
+        //Special Need
+        ChildrenSpecialNeed.id = "SC-C-Special-Need-" + NumChildren;
+        ChildrenSpecialNeed.name = "SC-C-Special-Need-" + NumChildren;
+        ChildrenSpecialNeed.value = "";
+
+        if (NumChildren == 6) {
+          document.getElementById("SC-Add-Child").disabled = true;
+          document.getElementById("SC-Remove-Child").disabled = false;
+        } else {
+          document.getElementById("SC-Add-Child").disabled = false;
+          document.getElementById("SC-Remove-Child").disabled = false;
+        }
+      }
+      document.getElementById("SC-Add-Child").addEventListener("click", () => {
+        SCNoAdd();
+        SCAdd();
+      });
+      document.getElementById("SC-Remove-Child").addEventListener("click", function () {
+        //Get list of children
+        var Children = document.getElementById("SC-Children-Info").getElementsByClassName("Child");
+        //Get last kid
+        var LastChildren = Children[Children.length - 1];
+        //Error if only 1 child. At least 1 child is required.
+        if (Children.length == 1) {
+          document.getElementById("SC-Remove-Child").disabled = true;
+          document.getElementById("SC-Add-Child").disabled = false;
+        } else {
+          document.getElementById("SC-Add-Child").disabled = false;
+          document.getElementById("SC-Remove-Child").disabled = false;
+          LastChildren.remove();
+        }
+      });
+
+      document.getElementById("SC-BB-1").addEventListener("click", function () {
+        uptoTop();
+        document.getElementById("SP-1").style.display = "block";
+        document.getElementById("SP-2").style.display = "block";
+        document.getElementById("If-Spouse-Caregiver-1").style.display = "block";
+        document.getElementById("SC-Button-Box-1").style.display = "flex";
+        document.getElementById("If-Spouse-Caregiver-2").style.display = "none";
+        document.getElementById("SC-Children-Info").style.display = "none";
+        document.getElementById("SC-CI-Button-Box").style.display = "none";
+        document.getElementById("SC-Button-Box-2").style.display = "none";
+      });
+
+      document.getElementById("SC-NB-1").addEventListener("click", function () {
+        uptoTop();
+        document.getElementById("SP-1").style.display = "none";
+        document.getElementById("SP-2").style.display = "none";
+        document.getElementById("SC-Button-Box-1").style.display = "none";
+        document.getElementById("If-Spouse-Caregiver-1").style.display = "none";
+        document.getElementById("SC-Button-Box-2").style.display = "flex";
+        document.getElementById("If-Spouse-Caregiver-2").style.display = "block";
+      });
+      document.getElementById("SC-NB-2").addEventListener("click", function () {
+        uptoTop();
+        SCDpInfoVal();
       });
     </script>
   </body>
