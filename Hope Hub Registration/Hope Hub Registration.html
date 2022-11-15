@@ -988,12 +988,17 @@
                 <select type="text" id="EventsApply" name="Events-Apply">
                   <option value="" selected hidden>Select Your Preference</option>
                   <option value="Washington D.C.">Washington D.C.</option>
+                  <option value="Rochester, MN">Rochester, MN</option>
                 </select>
                 <small id="EAerror" class="error">Please select a location*</small>
               </div>
-              <div id="EAmessage" class="message">
+              <div id="EAmessage-DC" class="message">
                 New Hope Church <br />
                 <a href="https://goo.gl/maps/ikQ65PqxYsU66HVQA" target="_blank" style="text-decoration: underline">8905 Ox Road, Lorton, VA 22079</a>
+              </div>
+              <div id="EAmessage-MN" class="message">
+                Autumn Ridge Church <br />
+                <a href="https://goo.gl/maps/EbMcBzKRUf51vsKHA" target="_blank" style="text-decoration: underline">3611 Salem Rd. SW, Rochester, MN 55902</a>
               </div>
             </div>
 
@@ -1913,10 +1918,17 @@
       });
       document.getElementById("EventsApply").addEventListener("change", function (e) {
         if (document.getElementById("EventsApply").value == "Washington D.C.") {
-          document.getElementById("EAmessage").style.display = "block";
+          document.getElementById("EAmessage-DC").style.display = "block";
           document.getElementById("EAerror").style.visibility = "hidden";
         } else {
-          document.getElementById("EAmessage").style.display = "none";
+          document.getElementById("EAmessage-DC").style.display = "none";
+          document.getElementById("EAerror").style.visibility = "hidden";
+        }
+        if (document.getElementById("EventsApply").value == "Rochester, MN") {
+          document.getElementById("EAmessage-MN").style.display = "block";
+          document.getElementById("EAerror").style.visibility = "hidden";
+        } else {
+          document.getElementById("EAmessage-MN").style.display = "none";
           document.getElementById("EAerror").style.visibility = "hidden";
         }
       });

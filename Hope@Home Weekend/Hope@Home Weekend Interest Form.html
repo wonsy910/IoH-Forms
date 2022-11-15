@@ -1,0 +1,386 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+
+    <style>
+      #Hope-Home-Wknd-Interest-Form-Paper {
+        margin: auto;
+        padding: 0;
+        width: 350px;
+        height: auto;
+      }
+      #Hope-Home-Wknd-Interest-Form {
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .Two > label,
+      .One > label {
+        margin: 3px auto 3px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #000000 !important;
+        font-family: "Raleway" !important;
+        font-size: 1.6rem !important;
+        font-weight: 600 !important;
+        text-align: center !important;
+      }
+
+      .Two > input,
+      .One > input {
+        margin: 5px auto 5px auto;
+        width: 100%;
+        height: auto;
+
+        padding: 3px 0 3px 15px !important;
+
+        color: #ffffff !important;
+        font-family: "Raleway" !important;
+        font-size: 1.6rem !important;
+        font-weight: 600 !important;
+        text-align: left !important;
+
+        background-color: #808284 !important;
+        border: 2px solid #ffffff !important;
+        border-radius: 5px !important;
+      }
+
+      .Two > input:focus,
+      .One > input:focus {
+        border: 2px solid #ff9a03 !important;
+        border-radius: 5px !important;
+      }
+
+      .Two > input::placeholder,
+      .One > input::placeholder {
+        color: #ffffff !important;
+        font-family: "Raleway" !important;
+        font-size: 1.6rem !important;
+        font-weight: 600 !important;
+        text-align: left !important;
+      }
+
+      .Two-Columns {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .Two {
+        margin: 0px;
+        padding: 0px;
+        width: 45%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .One-Column {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .One {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .error {
+        visibility: hidden;
+
+        padding: 5px 0 2px 2px !important;
+
+        color: #f84f52 !important;
+        font-family: "Raleway" !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        text-align: left !important;
+      }
+
+      .Button-Box {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .Left,
+      .Mid,
+      .Right {
+        margin: 0px;
+        padding: 0px;
+        width: 30%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .Mid > button {
+        margin: 5px auto 5px auto;
+        padding: 5px 15px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-family: "Raleway";
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+
+        background-color: #ffffff;
+        border: 2px solid #808284;
+        border-radius: 5px;
+      }
+      .Mid > button:hover {
+        color: #ffffff;
+        background-color: #808284;
+        border: 2px solid #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Hope-Home-Wknd-Interest-Form-Paper">
+      <form id="Hope-Home-Wknd-Interest-Form" action="https://www2.inheritanceofhope.org/l/739893/2021-03-08/bpbxh" method="post">
+        <div class="Two-Columns">
+          <div class="Two">
+            <label for="firstname">First Name*</label>
+            <input type="text" id="First-Name" name="firstname" />
+            <small id="FN-Error" class="error">Required*</small>
+          </div>
+          <div class="Two">
+            <label for="lastname">Last Name*</label>
+            <input type="text" id="Last-Name" name="lastname" />
+            <small id="LN-Error" class="error">Required*</small>
+          </div>
+        </div>
+        <div class="One-Column">
+          <div class="One">
+            <label for="email">E-mail Address*</label>
+            <input type="text" id="Email-Address" name="email" placeholder="xxx@example.com" />
+            <small id="EA-Error" class="error">Required*</small>
+          </div>
+        </div>
+        <div class="One-Column">
+          <div class="One">
+            <label for="phone">Mobile Number (optional)</label>
+            <input type="text" name="phone" placeholder="xxx-xxx-xxxx" />
+          </div>
+        </div>
+        <div class="Button-Box">
+          <div class="Left"></div>
+          <div class="Mid">
+            <button id="Interest-Form-Submit" type="button">Submit</button>
+          </div>
+          <div class="Right"></div>
+        </div>
+      </form>
+    </div>
+    <script>
+      function emailCorrectPattern(e) {
+        var y = /\S+@\S+\.\S+/;
+        return y.test(e);
+      }
+      function InterestFormVali() {
+        if (document.getElementById("First-Name").value == "") {
+          document.getElementById("FN-Error").style.visibility = "visible";
+          document.getElementById("First-Name").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("FN-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Last-Name").value == "") {
+          document.getElementById("LN-Error").style.visibility = "visible";
+          document.getElementById("Last-Name").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("LN-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Email-Address").value == "") {
+          document.getElementById("EA-Error").style.visibility = "visible";
+          document.getElementById("Email-Address").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("Email-Address").value) === false) {
+          document.getElementById("EA-Error").innerHTML = "Invalid Format*";
+          document.getElementById("Email-Address").focus();
+          document.getElementById("EA-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("EA-Error").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("Interest-Form-Submit").addEventListener("click", function () {
+        InterestFormVali();
+        document.getElementById("Hope-Home-Wknd-Interest-Form").submit();
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+        @media screen and (max-width: 580px) {
+        #Hope-Home-Wknd-Interest-Form-Paper {
+          margin: auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        #Hope-Home-Wknd-Interest-Form {
+          margin: auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .Two > label,
+        .One > label {
+          margin: 3px auto 3px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-family: "Raleway";
+          font-size: 1.6rem !important;
+          font-weight: 600 !important;
+          word-spacing: 0.1rem !important;
+          letter-spacing: 0.05rem !important;
+          text-align: center !important;
+        }
+
+        .Two > input,
+        .One > input {
+          margin: 5px auto 5px auto;
+          width: 100%;
+          height: auto;
+
+          padding: 3px 0 3px 15px !important;
+
+          color: #ffffff !important;
+          font-family: "Raleway" !important;
+          font-size: 1.6rem !important;
+          font-weight: 600 !important;
+          word-spacing: 0.1rem !important;
+          letter-spacing: 0.05rem !important;
+          text-align: left !important;
+
+          background-color: #808284 !important;
+          border: 2px solid #ffffff !important;
+          border-radius: 5px !important;
+        }
+
+        .Two > input::placeholder,
+        .One > input::placeholder {
+          color: #ffffff !important;
+          font-family: "Raleway" !important;
+          font-size: 1.6rem !important;
+          font-weight: 600 !important;
+          word-spacing: 0.1rem !important;
+          letter-spacing: 0.05rem !important;
+          text-align: left !important;
+        }
+
+        .Two > input:focus,
+        .One > input:focus {
+          border: 3px solid #f42424 !important;
+          border-radius: 5px !important;
+        }
+
+        .Two-Columns {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+        }
+        .Two {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .One-Column {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .One {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        #Hope-Home-Wknd-Interest-Form > button {
+          margin: 5px auto 5px auto;
+          padding: 5px 15px !important;
+          width: 130px !important;
+          height: auto;
+
+          color: #000000 !important;
+          font-family: "Raleway" !important;
+          font-size: 1.6rem !important;
+          font-weight: 600 !important;
+          word-spacing: 0.1rem !important;
+          letter-spacing: 0.05rem !important;
+          text-align: center !important;
+
+          background-color: #ffffff !important;
+          border: 2px solid #808284 !important;
+          border-radius: 5px !important;
+        }
+        #Hope-Home-Wknd-Interest-Form > button:hover {
+          color: #ffffff !important;
+          background-color: #808284 !important;
+          border: 2px solid #ffffff !important;
+        }
+      }
+-->
