@@ -1,0 +1,87 @@
+<html style="font-size: 62.5%">
+  <head>
+    <style>
+      #box-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      #GT-Donation-Button {
+        margin: 0;
+        padding: 10px 20px;
+        width: 175px;
+        height: auto;
+
+        font-size: 1.6rem;
+        font-weight: 500;
+        font-family: "Raleway", sans-serif;
+        line-height: 1.5em;
+
+        color: #ffffff;
+
+        border: 4px solid #f89a1c;
+        border-radius: 30px;
+        background-color: #971b1e;
+      }
+      #GT-Donation-Button:hover {
+        border: 4px solid #971b1e;
+        border-radius: 30px;
+        background-color: #f89a1c;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-container">
+      <button id="GT-Donation-Button" type="button">Give Now >></button>
+    </div>
+  </body>
+  <script>
+    (function (win) {
+      win.egProps = {
+        campaigns: [
+          {
+            campaignId: "449896",
+            donation: {
+              modal: {
+                urlParams: {egrn: true},
+                elementSelector: "#GT-Donation-Button",
+              },
+              nudgeTrays: [
+                {
+                  title: "GivingTuesday 2022",
+                  content: "GivingTuesday season - all gifts are currently being matched!",
+                  ctaLabel: "Give Now",
+                  ctaColor: "#971B1E",
+                  triggerEvent: "eg:donation:incomplete",
+                },
+              ],
+            },
+          },
+        ],
+      };
+      win.document.body.appendChild(makeEGScript());
+
+      function makeEGScript() {
+        var egScript = win.document.createElement("script");
+        egScript.setAttribute("type", "text/javascript");
+        egScript.setAttribute("async", "true");
+        egScript.setAttribute("src", "https://sdk.classy.org/embedded-giving.js");
+
+        return egScript;
+      }
+
+      function readURLParams() {
+        var searchParams = new URLSearchParams(location.search);
+        var validUrlParams = ["c_src", "c_src2"];
+
+        return validUrlParams.reduce(function (urlParamsSoFar, validKey) {
+          var value = searchParams.get(validKey);
+          return value === null ? urlParamsSoFar : {...urlParamsSoFar, [validKey]: value};
+        }, {});
+      }
+    })(window);
+  </script>
+</html>

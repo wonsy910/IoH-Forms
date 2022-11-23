@@ -434,9 +434,42 @@
         flex-direction: row;
       }
       .Left-Box,
-      .Right-Box {
+      .Right-Box,
+      .Middle-Box {
         margin: 0px auto;
         padding: 0px;
+      }
+      .Left-Box > .Rows {
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+        height: 32px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: right;
+      }
+      .Middle-Box > .Rows {
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+        height: 32px;
+      }
+      .Middle-Box > .Rows > p {
+        margin: 0px auto;
+        padding: 0px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: left;
       }
       .Right-Box > .Rows {
         margin: 0px auto;
@@ -456,30 +489,16 @@
 
         text-align: left;
       }
-      .Left-Box > .Rows {
-        margin: 0px auto;
-        padding: 0px;
-        width: 100%;
-        height: 32px;
-
-        font-family: "Raleway", sans-serif;
-        font-size: 1.6rem;
-        font-weight: 600;
-        line-height: 1.5em;
-        color: #ffffff;
-
-        text-align: right;
-      }
       .Rows > input[type="radio"],
       .Rows > input[type="checkbox"] {
-        margin: 5px 10px auto auto;
+        margin: 3px 10px auto auto;
         padding: 0px;
 
         text-align: right;
       }
       .Rows > input[type="text"],
       .Rows > select {
-        margin: 5px 10px auto auto;
+        margin: 25px 10px 0px 0px;
         padding: 2px 0px auto 4px;
         width: 100%;
         height: 32px;
@@ -498,6 +517,15 @@
       .Rows > input[type="checkbox"]:focus,
       .Rows > textarea:focus {
         outline: 2px solid #f89a1c;
+      }
+
+      #DP-SC-8 > .Two > .Check-Box > .Left-Box > .Rows > input[type="checkbox"],
+      #SC-11 > .Two > .Check-Box > .Left-Box > .Rows > input[type="checkbox"] {
+        margin: 36px 10px auto auto;
+      }
+      #DP-SC-8 > .Two > .Check-Box > .Right-Box > .Rows > p,
+      #SC-11 > .Two > .Check-Box > .Right-Box > .Rows > p {
+        margin: 32px auto auto auto;
       }
 
       .Button-Box {
@@ -1103,7 +1131,25 @@
           height: 32px;
         }
         .Right-Box > .Rows > p {
+          margin: 1px auto;
+          padding: 0px;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: left;
+        }
+        .Middle-Box > .Rows {
           margin: 0px auto;
+          padding: 0px;
+          width: 100%;
+          height: 32px;
+        }
+        .Middle-Box > .Rows > p {
+          margin: 2px auto;
           padding: 0px;
 
           font-family: "Raleway", sans-serif;
@@ -1130,14 +1176,14 @@
         }
         .Rows > input[type="radio"],
         .Rows > input[type="checkbox"] {
-          margin: 5px 10px auto auto;
+          margin: 5px 25px auto auto;
           padding: 0px;
 
           text-align: right;
         }
         .Rows > input[type="text"],
         .Rows > select {
-          margin: 5px 10px auto auto;
+          margin: 30px 10px auto auto;
           padding: 2px 0px auto 4px;
           width: 100%;
           height: 32px;
@@ -1156,6 +1202,15 @@
         .Rows > input[type="checkbox"]:focus,
         .Rows > textarea:focus {
           outline: 3px solid #f89a1c;
+        }
+
+        #DP-SC-8 > .Two > .Check-Box > .Left-Box > .Rows > input[type="checkbox"],
+        #SC-11 > .Two > .Check-Box > .Left-Box > .Rows > input[type="checkbox"] {
+          margin: 6px 10px auto auto;
+        }
+        #DP-SC-8 > .Two > .Check-Box > .Right-Box > .Rows > p,
+        #SC-11 > .Two > .Check-Box > .Right-Box > .Rows > p {
+          margin: 6px auto;
         }
 
         .Button-Box {
@@ -1405,11 +1460,16 @@
                     <select id="DP-Hope-Hub-Location" name="DP-Hope-Hub-Location">
                       <option value="" selected disabled hidden>Select the location...</option>
                       <option value="Washington D.C.">Washington D.C.</option>
+                      <option value="Rochester, MN">Rochester, MN</option>
                     </select>
                   </div>
                   <div id="DP-Washington-D-C" class="Location" style="display: none">
                     New Hope Church <br />
                     <a href="https://goo.gl/maps/eaMAnNE5aDUyXDX29" target="_blank">8905 Ox Road, Lorton, VA 22079</a>
+                  </div>
+                  <div id="DP-Rochester-MN" class="Location" style="display: none">
+                    Autumn Ridge Church <br />
+                    <a href="https://goo.gl/maps/EbMcBzKRUf51vsKHA" target="_blank">3611 Salem Rd. SW, Rochester, MN 55902</a>
                   </div>
                 </div>
 
@@ -1418,7 +1478,7 @@
                     <label for="DP-Life-Threatening">Is the diagnosis life-threatening?</label>
                     <small id="DP-2-Error" class="error">Required*</small>
                     <div class="Check-Box">
-                      <div class="Left-Box" style="width: 30%">
+                      <div class="Left-Box" style="width: 15%">
                         <div class="Rows">
                           <input type="radio" id="DP-Life-Threatening-No" name="DP-Life-Threatening" value="No" />
                         </div>
@@ -1426,13 +1486,15 @@
                           <input type="radio" id="DP-Life-Threatening-Yes" name="DP-Life-Threatening" value="Yes" />
                         </div>
                       </div>
-                      <div class="Right-Box" style="width: 70%">
+                      <div class="Middle-Box" style="width: 15%">
                         <div class="Rows">
                           <p>No</p>
                         </div>
                         <div class="Rows">
                           <p>Yes</p>
                         </div>
+                      </div>
+                      <div class="Right-Box" style="width: 70%">
                         <div class="Rows">
                           <input type="text" id="DP-Diagnosis-Name" name="DP-Diagnosis-Name" placeholder="What is your diagnosis?" />
                         </div>
@@ -1486,9 +1548,8 @@
                   <div class="One">
                     <label for="DP-Have-Spouse-Caregiver">Do you have a spouse or a caregiver?</label>
                     <small id="DP-4-Error" class="error">Required*</small>
-
                     <div class="Check-Box">
-                      <div class="Left-Box" style="width: 30%">
+                      <div class="Left-Box" style="width: 15%">
                         <div class="Rows">
                           <input type="radio" id="DP-Have-Spouse-Caregiver-No" name="DP-Have-Spouse-Caregiver" value="No" />
                         </div>
@@ -1496,9 +1557,11 @@
                           <input type="radio" id="DP-Have-Spouse-Caregiver-Yes" name="DP-Have-Spouse-Caregiver" value="Yes" />
                         </div>
                       </div>
-                      <div class="Right-Box" style="width: 70%">
+                      <div class="Middle-Box" style="width: 15%">
                         <div class="Rows"><p>No</p></div>
                         <div class="Rows"><p>Yes</p></div>
+                      </div>
+                      <div class="Right-Box" style="width: 70%">
                         <div class="Rows">
                           <select name="DP-Spouse-Family-Member-Friend" id="DP-Spouse-Family-Member-Friend">
                             <option value="" selected disabled hidden>Select</option>
@@ -1669,30 +1732,50 @@
                     </div>
                   </div>
 
-                  <p>
-                    If your caregiver's address is different from yours, <br />
-                    please fill out the blanks below.
-                  </p>
-
-                  <div id="DP-SC-8" class="One-Column" style="border: none">
-                    <div class="One">
-                      <label for="DP-SC-Street-Address">Street Address</label>
-                      <input type="text" id="DP-SC-Street-Address" name="DP-SC-Street-Address" />
+                  <div id="DP-SC-8" class="Two-Columns">
+                    <div class="Two" style="width: 70%">
+                      <label for="DP-SC-Same-Address">Same address as Diagnosed Parent</label>
+                      <small id="DP-SC-8-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two" style="width: 30%">
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 30%">
+                          <div class="Rows">
+                            <input type="checkbox" id="DP-SC-Same-Address" name="DP-Same-Address" value="Yes" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 70%">
+                          <div class="Rows">
+                            <p>Yes</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div id="DP-SC-9-10-11" class="Three-Columns" style="border: none">
+                  <div id="DP-SC-9" class="One-Column">
+                    <div class="One">
+                      <label for="DP-SC-Street-Address">Street Address</label>
+                      <input type="text" id="DP-SC-Street-Address" name="DP-SC-Street-Address" />
+                      <small id="DP-SC-9-Error" class="error">Required*</small>
+                    </div>
+                  </div>
+
+                  <div id="DP-SC-10-11-12" class="Three-Columns">
                     <div class="Three">
                       <label for="DP-SC-City">City</label>
                       <input type="text" id="DP-SC-City" name="DP-SC-City" />
+                      <small id="DP-SC-10-Error" class="error">Required*</small>
                     </div>
                     <div class="Three">
                       <label for="DP-SC-State">State</label>
                       <input type="text" id="DP-SC-State" name="DP-SC-State" />
+                      <small id="DP-SC-11-Error" class="error">Required*</small>
                     </div>
                     <div class="Three">
                       <label for="DP-SC-Zip">Zip</label>
                       <input type="text" id="DP-SC-Zip" name="DP-SC-Zip" />
+                      <small id="DP-SC-12-Error" class="error">Required*</small>
                     </div>
                   </div>
                 </div>
@@ -1943,11 +2026,16 @@
                     <select id="SC-Hope-Hub-Location" name="Hope-Hub-Location">
                       <option value="" selected disabled hidden>Select the location...</option>
                       <option value="Washington D.C.">Washington D.C.</option>
+                      <option value="Rochester, MN">Rochester, MN</option>
                     </select>
                   </div>
                   <div id="SC-Washington-D-C" class="Location" style="display: none">
                     New Hope Church <br />
                     <a href="https://goo.gl/maps/eaMAnNE5aDUyXDX29" target="_blank">8905 Ox Road, Lorton, VA 22079</a>
+                  </div>
+                  <div id="SC-Rochester-MN" class="Location" style="display: none">
+                    Autumn Ridge Church <br />
+                    <a href="https://goo.gl/maps/EbMcBzKRUf51vsKHA" target="_blank">3611 Salem Rd. SW, Rochester, MN 55902</a>
                   </div>
                 </div>
 
@@ -2186,32 +2274,28 @@
                     </div>
                   </div>
 
-                  <div id="SC-11" class="One-Column" style="display: none">
-                    <div class="One">
-                      <label for="SC-Different-Address">Address the same as Diagnosed Parent</label>
+                  <div id="SC-11" class="Two-Columns">
+                    <div class="Two" style="width: 70%">
+                      <label for="SC-Same-Address">Same address as Diagnosed Parent</label>
                       <small id="SC-11-Error" class="error">Required*</small>
+                    </div>
+                    <div class="Two" style="width: 30%">
                       <div class="Check-Box">
                         <div class="Left-Box" style="width: 30%">
                           <div class="Rows">
-                            <input type="radio" id="SC-Different-Address-Yes" name="SC-Different-Address" value="Yes" />
-                          </div>
-                          <div class="Rows">
-                            <input type="radio" id="SC-Different-Address-No" name="SC-Different-Address" value="No" />
+                            <input type="checkbox" id="SC-Same-Address" name="DP-Same-Address" value="Yes" />
                           </div>
                         </div>
                         <div class="Right-Box" style="width: 70%">
                           <div class="Rows">
                             <p>Yes</p>
                           </div>
-                          <div class="Rows">
-                            <p>No</p>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div id="SC-12" class="One-Column" style="display: none">
+                  <div id="SC-12" class="One-Column">
                     <div class="One">
                       <label for="SC-Street-Address">Street Address</label>
                       <input type="text" id="SC-Street-Address" name="SC-Street-Address" />
@@ -2219,7 +2303,7 @@
                     </div>
                   </div>
 
-                  <div id="SC-13-14-15" class="Three-Columns" style="display: none">
+                  <div id="SC-13-14-15" class="Three-Columns">
                     <div class="Three">
                       <label for="SC-City">City</label>
                       <input type="text" id="SC-City" name="SC-City" />
@@ -2472,11 +2556,11 @@
                 <div class="Right"></div>
               </div>
             </div>
+
+            <div id="If-Child-Of-Diagnosed-Parent-Form" style="display: none"></div>
           </div>
 
           <div id="If-Widow-Widower-Form" style="display: none"></div>
-
-          <div id="If-Child-Of-Diagnosed-Parent-Form" style="display: none"></div>
 
           <div class="Footer">
             <p>
@@ -2532,14 +2616,17 @@
 
       //DP-Form
       document.getElementById("DP-Hope-Hub-Location").addEventListener("change", function () {
-        if (document.getElementById("If-Diagnosed-Parent-Form").style.display == "block") {
-          if (document.getElementById("DP-Hope-Hub-Location").value == "Washington D.C.") {
-            document.getElementById("DP-Washington-D-C").style.display = "block";
-            document.getElementById("DP-2").style.display = "block";
-          } else {
-            document.getElementById("DP-Washington-D-C").style.display = "none";
-            document.getElementById("DP-2").style.display = "none";
-          }
+        if (document.getElementById("DP-Hope-Hub-Location").value == "Washington D.C.") {
+          document.getElementById("DP-Washington-D-C").style.display = "block";
+          document.getElementById("DP-2").style.display = "block";
+        } else {
+          document.getElementById("DP-Washington-D-C").style.display = "none";
+        }
+        if (document.getElementById("DP-Hope-Hub-Location").value == "Rochester, MN") {
+          document.getElementById("DP-Rochester-MN").style.display = "block";
+          document.getElementById("DP-2").style.display = "block";
+        } else {
+          document.getElementById("DP-Rochester-MN").style.display = "none";
         }
       });
       document.getElementById("DP-Life-Threatening-No").addEventListener("change", function () {
@@ -2570,6 +2657,15 @@
       });
       document.getElementById("DP-Have-Spouse-Caregiver-Yes").addEventListener("change", function () {
         document.getElementById("DP-Button-Box-1").style.display = "flex";
+      });
+      document.getElementById("DP-SC-Same-Address").addEventListener("change", function () {
+        if (document.getElementById("DP-SC-Same-Address").checked) {
+          document.getElementById("DP-SC-9").style.display = "none";
+          document.getElementById("DP-SC-10-11-12").style.display = "none";
+        } else {
+          document.getElementById("DP-SC-9").style.display = "flex";
+          document.getElementById("DP-SC-10-11-12").style.display = "flex";
+        }
       });
 
       document.getElementById("DP-ICA-Open").addEventListener("click", function () {
@@ -2750,8 +2846,41 @@
           } else {
             document.getElementById("DP-SC-7-Error").style.visibility = "hidden";
           }
-        } else {
-          return true;
+          if (!document.getElementById("DP-SC-Same-Address").checked) {
+            if (document.getElementById("DP-SC-Street-Address").value == "") {
+              document.getElementById("DP-SC-9-Error").style.visibility = "visible";
+              document.getElementById("DP-SC-Street-Address").focus();
+              e.preventDefault();
+            } else {
+              document.getElementById("DP-SC-9-Error").style.visibility = "hidden";
+            }
+            if (document.getElementById("DP-SC-City").value == "") {
+              document.getElementById("DP-SC-10-Error").style.visibility = "visible";
+              document.getElementById("DP-SC-City").focus();
+              e.preventDefault();
+            } else {
+              document.getElementById("DP-SC-10-Error").style.visibility = "hidden";
+            }
+            if (document.getElementById("DP-SC-State").value == "") {
+              document.getElementById("DP-SC-11-Error").style.visibility = "visible";
+              document.getElementById("DP-SC-State").focus();
+              e.preventDefault();
+            } else {
+              document.getElementById("DP-SC-11-Error").style.visibility = "hidden";
+            }
+            if (document.getElementById("DP-SC-Zip").value == "") {
+              document.getElementById("DP-SC-12-Error").style.visibility = "visible";
+              document.getElementById("DP-SC-Zip").focus();
+              e.preventDefault();
+            } else {
+              document.getElementById("DP-SC-12-Error").style.visibility = "hidden";
+            }
+          } else {
+            document.getElementById("DP-SC-9-Error").style.visibility = "hidden";
+            document.getElementById("DP-SC-10-Error").style.visibility = "hidden";
+            document.getElementById("DP-SC-11-Error").style.visibility = "hidden";
+            document.getElementById("DP-SC-12-Error").style.visibility = "hidden";
+          }
         }
       }
       function DPChildVal() {
@@ -3026,14 +3155,17 @@
 
       //SC-Form
       document.getElementById("SC-Hope-Hub-Location").addEventListener("change", function () {
-        if (document.getElementById("If-Spouse-Caregiver-Form").style.display == "block") {
-          if (document.getElementById("SC-Hope-Hub-Location").value == "Washington D.C.") {
-            document.getElementById("SC-Washington-D-C").style.display = "block";
-            document.getElementById("SC-2").style.display = "block";
-          } else {
-            document.getElementById("SC-Washington-D-C").style.display = "none";
-            document.getElementById("SC-2").style.display = "none";
-          }
+        if (document.getElementById("SC-Hope-Hub-Location").value == "Washington D.C.") {
+          document.getElementById("SC-Washington-D-C").style.display = "block";
+          document.getElementById("SC-2").style.display = "block";
+        } else {
+          document.getElementById("SC-Washington-D-C").style.display = "none";
+        }
+        if (document.getElementById("SC-Hope-Hub-Location").value == "Rochester, MN") {
+          document.getElementById("SC-Rochester-MN").style.display = "block";
+          document.getElementById("SC-2").style.display = "block";
+        } else {
+          document.getElementById("SC-Rochester-MN").style.display = "none";
         }
       });
       document.getElementById("SC-Spouse-Family-Member-Friend").addEventListener("change", function () {
@@ -3078,18 +3210,18 @@
         document.getElementById("SC-DP-10").style.display = "flex";
         document.getElementById("SC-DP-11-12-13").style.display = "flex";
         document.getElementById("SC-11").style.display = "flex";
-        document.getElementById("SC-12").style.display = "none";
-        document.getElementById("SC-13-14-15").style.display = "none";
-      });
-      document.getElementById("SC-Different-Address-No").addEventListener("change", function () {
         document.getElementById("SC-12").style.display = "flex";
         document.getElementById("SC-13-14-15").style.display = "flex";
       });
-      document.getElementById("SC-Different-Address-Yes").addEventListener("change", function () {
-        document.getElementById("SC-12").style.display = "none";
-        document.getElementById("SC-13-14-15").style.display = "none";
+      document.getElementById("SC-Same-Address").addEventListener("change", function () {
+        if (document.getElementById("SC-Same-Address").checked) {
+          document.getElementById("SC-12").style.display = "none";
+          document.getElementById("SC-13-14-15").style.display = "none";
+        } else {
+          document.getElementById("SC-12").style.display = "flex";
+          document.getElementById("SC-13-14-15").style.display = "flex";
+        }
       });
-
       document.getElementById("SC-ICA-Open").addEventListener("click", function () {
         document.getElementById("SC-Informed-Consent-Agreement").style.display = "block";
         document.getElementById("SC-ICA-Open").style.display = "none";
@@ -3273,18 +3405,7 @@
         } else {
           document.getElementById("SC-10-Error").style.visibility = "hidden";
         }
-        if (document.getElementById("SC-11").style.display == "flex") {
-          if (!document.getElementById("SC-Different-Address-Yes").checked && !document.getElementById("SC-Different-Address-No").checked) {
-            document.getElementById("SC-11-Error").style.visibility = "visible";
-            document.getElementById("SC-Different-Address-No").focus();
-            e.preventDefault();
-          } else {
-            document.getElementById("SC-11-Error").style.visibility = "hidden";
-          }
-        } else {
-          document.getElementById("SC-11-Error").style.visibility = "hidden";
-        }
-        if (document.getElementById("SC-12").style.display == "flex") {
+        if (!document.getElementById("SC-Same-Address").checked) {
           if (document.getElementById("SC-Street-Address").value == "") {
             document.getElementById("SC-12-Error").style.visibility = "visible";
             document.getElementById("SC-Street-Address").focus();
@@ -3292,8 +3413,27 @@
           } else {
             document.getElementById("SC-12-Error").style.visibility = "hidden";
           }
-        } else {
-          document.getElementById("SC-12-Error").style.visibility = "hidden";
+          if (document.getElementById("SC-City").value == "") {
+            document.getElementById("SC-13-Error").style.visibility = "visible";
+            document.getElementById("SC-City").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-13-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-State").value == "") {
+            document.getElementById("SC-14-Error").style.visibility = "visible";
+            document.getElementById("SC-State").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-14-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-Zip").value == "") {
+            document.getElementById("SC-15-Error").style.visibility = "visible";
+            document.getElementById("SC-Zip").focus();
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-15-Error").style.visibility = "hidden";
+          }
         }
         if (document.getElementById("SC-13-14-15").style.display == "flex") {
           if (document.getElementById("SC-City").value == "") {
