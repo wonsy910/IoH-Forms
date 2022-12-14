@@ -2015,6 +2015,8 @@
                 <div class="Middle"><button id="DP-Submit-Button" class="Submit-Button" type="button">Submit</button></div>
                 <div class="Right"></div>
               </div>
+
+              <textarea style="display: none" name="Pardot-to-SF" id="DP-Pardot-to-SF" cols="30" rows="10"></textarea>
             </form>
           </div>
 
@@ -2077,6 +2079,44 @@
                           <p>Yes</p>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="SC-3-Yes" class="One-Column" style="display: none">
+                  <div class="One">
+                    <label for="SC-Life-Threatening">Is the diagnosis life-threatening?*</label>
+                    <small id="SC-3-Yes-Error" class="error">Required*</small>
+                    <div class="Check-Box">
+                      <div class="Left-Box" style="width: 15%">
+                        <div class="Rows">
+                          <input type="radio" id="SC-Life-Threatening-No" name="SC-Life-Threatening" value="No" />
+                        </div>
+                        <div class="Rows">
+                          <input type="radio" id="SC-Life-Threatening-Yes" name="SC-Life-Threatening" value="Yes" />
+                        </div>
+                      </div>
+                      <div class="Middle-Box" style="width: 15%">
+                        <div class="Rows">
+                          <p>No</p>
+                        </div>
+                        <div class="Rows">
+                          <p>Yes</p>
+                        </div>
+                      </div>
+                      <div class="Right-Box" style="width: 70%">
+                        <div class="Rows">
+                          <input type="text" id="SC-Diagnosis-Name" name="SC-Diagnosis-Name" placeholder="What is the diagnosis?" />
+                        </div>
+                      </div>
+                    </div>
+                    <div id="SC-Life-Threatening-Alarm" class="Alarm" style="display: none">
+                      Thank you for your interest in Inheritance of Hope.<br />
+                      We exist to serve families who have a parent with a terminal illness. <br />
+                      Thankfully that is not you and we hope and pray that it never is! <br />
+                      For other ways to be connected to Inheritance of Hope visit our “<a href="https://inheritanceofhope.org/connect/" target="_blank"
+                        >Connect</a
+                      >” webpage.
                     </div>
                   </div>
                 </div>
@@ -2559,6 +2599,8 @@
                 <div class="Middle"><button id="SC-Submit-Button" class="Submit-Button" type="button">Submit</button></div>
                 <div class="Right"></div>
               </div>
+
+              <textarea style="display: none" name="Pardot-to-SF" id="SC-Pardot-to-SF" cols="30" rows="10"></textarea>
             </form>
           </div>
 
@@ -3148,11 +3190,11 @@
                 <div class="Middle"><button id="YA-Submit-Button" class="Submit-Button" type="button">Submit</button></div>
                 <div class="Right"></div>
               </div>
+
+              <textarea style="display: none" name="Pardot-to-SF" id="YA-Pardot-to-SF" cols="30" rows="10"></textarea>
             </form>
           </div>
         </div>
-
-        <textarea style="display: none" name="Pardot-to-SF" id="Pardot-to-SF" cols="30" rows="10"></textarea>
 
         <div class="Footer">
           <p>
@@ -3172,6 +3214,32 @@
         var y = /\S+@\S+\.\S+/;
         return y.test(e);
       }
+
+      function DPSCAddress() {
+        if (document.getElementById("DP-SC-Same-Address").checked) {
+          document.getElementById("DP-SC-Street-Address").value = document.getElementById("DP-Street-Address").value;
+          document.getElementById("DP-SC-City").value = document.getElementById("DP-City").value;
+          document.getElementById("DP-SC-State").value = document.getElementById("DP-State").value;
+          document.getElementById("DP-SC-Zip").value = document.getElementById("DP-Zip").value;
+        }
+      }
+      function SCSCAddress() {
+        if (document.getElementById("SC-Same-Address").checked) {
+          document.getElementById("SC-Street-Address").value = document.getElementById("SC-DP-Street-Address").value;
+          document.getElementById("SC-City").value = document.getElementById("SC-DP-City").value;
+          document.getElementById("SC-State").value = document.getElementById("SC-DP-State").value;
+          document.getElementById("SC-Zip").value = document.getElementById("SC-DP-Zip").value;
+        }
+      }
+      function YASCAddress() {
+        if (document.getElementById("YA-SC-Same-Address").checked) {
+          document.getElementById("YA-SC-Street-Address").value = document.getElementById("YA-DP-Street-Address").value;
+          document.getElementById("YA-SC-City").value = document.getElementById("YA-DP-City").value;
+          document.getElementById("YA-SC-State").value = document.getElementById("YA-DP-State").value;
+          document.getElementById("YA-SC-Zip").value = document.getElementById("YA-DP-Zip").value;
+        }
+      }
+
       function SCDummyEmail() {
         if (document.getElementById("SC-DP-E-Mail").value == "") {
           let DPFirstName = document.getElementById("SC-DP-First-Name").value;
@@ -3186,67 +3254,83 @@
           document.getElementById("YA-DP-E-Mail").value = DPFirstName + "." + DPLastName + "@iohparent.org";
         }
       }
-      function PdtoSf() {
+
+      function DPPardotToSF() {
         if (document.getElementById("Tell-Us-About-You").value == "Diagnosed Parent") {
-          let fname1 = document.getElementsByName("DP-C-First-Name-1").value;
-          let lname1 = document.getElementsByName("DP-C-Last-Name-1").value;
-          let bdate1 = document.getElementsByName("DP-C-Birthdate-1").value;
-          let gender1 = document.getElementsByName("DP-C-Gender-1").value;
-          let shirt1 = document.getElementsByName("DP-C-T-Shirt-1").value;
-          let needs1 = document.getElementsByName("DP-C-Special-Need-1").value;
+          /*
+          if(document.getElementById("DP-Children-1") !== null) {
+            let fname1 = document.getElementById("DP-C-First-Name-1").value;
+            let lname1 = document.getElementById("DP-C-Last-Name-1").value;
+            let bdate1 = document.getElementById("DP-C-Birthdate-1").value;
+            let gender1 = document.getElementById("DP-C-Gender-1").value;
+            let shirt1 = document.getElementById("DP-C-T-Shirt-1").value;
+            let needs1 = document.getElementById("DP-C-Special-Need-1").value;
+          }
 
-          let fname2 = document.getElementsByName("DP-C-First-Name-2").value;
-          let lname2 = document.getElementsByName("DP-C-Last-Name-2").value;
-          let bdate2 = document.getElementsByName("DP-C-Birthdate-2").value;
-          let gender2 = document.getElementsByName("DP-C-Gender-2").value;
-          let shirt2 = document.getElementsByName("DP-C-T-Shirt-2").value;
-          let needs2 = document.getElementsByName("DP-C-Special-Need-2").value;
+          if (document.getElementById("DP-Children-2") !== null) {
+            let fname2 = document.getElementById("DP-C-First-Name-2").value;
+            let lname2 = document.getElementById("DP-C-Last-Name-2").value;
+            let bdate2 = document.getElementById("DP-C-Birthdate-2").value;
+            let gender2 = document.getElementById("DP-C-Gender-2").value;
+            let shirt2 = document.getElementById("DP-C-T-Shirt-2").value;
+            let needs2 = document.getElementById("DP-C-Special-Need-2").value;
+          }
 
-          let fname3 = document.getElementsByName("DP-C-First-Name-3").value;
-          let lname3 = document.getElementsByName("DP-C-Last-Name-3").value;
-          let bdate3 = document.getElementsByName("DP-C-Birthdate-3").value;
-          let gender3 = document.getElementsByName("DP-C-Gender-3").value;
-          let shirt3 = document.getElementsByName("DP-C-T-Shirt-3").value;
-          let needs3 = document.getElementsByName("DP-C-Special-Need-3").value;
+          if (document.getElementById("DP-Children-3") !== null) {
+            let fname3 = document.getElementById("DP-C-First-Name-3").value;
+            let lname3 = document.getElementById("DP-C-Last-Name-3").value;
+            let bdate3 = document.getElementById("DP-C-Birthdate-3").value;
+            let gender3 = document.getElementById("DP-C-Gender-3").value;
+            let shirt3 = document.getElementById("DP-C-T-Shirt-3").value;
+            let needs3 = document.getElementById("DP-C-Special-Need-3").value;
+          }
 
-          let fname4 = document.getElementsByName("DP-C-First-Name-4").value;
-          let lname4 = document.getElementsByName("DP-C-Last-Name-4").value;
-          let bdate4 = document.getElementsByName("DP-C-Birthdate-4").value;
-          let gender4 = document.getElementsByName("DP-C-Gender-4").value;
-          let shirt4 = document.getElementsByName("DP-C-T-Shirt-4").value;
-          let needs4 = document.getElementsByName("DP-C-Special-Need-4").value;
+          if (document.getElementById("DP-Children-4") !== null) {
+            let fname4 = document.getElementById("DP-C-First-Name-4").value;
+            let lname4 = document.getElementById("DP-C-Last-Name-4").value;
+            let bdate4 = document.getElementById("DP-C-Birthdate-4").value;
+            let gender4 = document.getElementById("DP-C-Gender-4").value;
+            let shirt4 = document.getElementById("DP-C-T-Shirt-4").value;
+            let needs4 = document.getElementById("DP-C-Special-Need-4").value;
+          }
 
-          let fname5 = document.getElementsByName("DP-C-First-Name-5").value;
-          let lname5 = document.getElementsByName("DP-C-Last-Name-5").value;
-          let bdate5 = document.getElementsByName("DP-C-Birthdate-5").value;
-          let gender5 = document.getElementsByName("DP-C-Gender-5").value;
-          let shirt5 = document.getElementsByName("DP-C-T-Shirt-5").value;
-          let needs5 = document.getElementsByName("DP-C-Special-Need-5").value;
+          if (document.getElementById("DP-Children-5") !== null) {
+            let fname5 = document.getElementById("DP-C-First-Name-5").value;
+            let lname5 = document.getElementById("DP-C-Last-Name-5").value;
+            let bdate5 = document.getElementById("DP-C-Birthdate-5").value;
+            let gender5 = document.getElementById("DP-C-Gender-5").value;
+            let shirt5 = document.getElementById("DP-C-T-Shirt-5").value;
+            let needs5 = document.getElementById("DP-C-Special-Need-5").value;
+          }
 
-          let fname6 = document.getElementsByName("DP-C-First-Name-6").value;
-          let lname6 = document.getElementsByName("DP-C-Last-Name-6").value;
-          let bdate6 = document.getElementsByName("DP-C-Birthdate-6").value;
-          let gender6 = document.getElementsByName("DP-C-Gender-6").value;
-          let shirt6 = document.getElementsByName("DP-C-T-Shirt-6").value;
-          let needs6 = document.getElementsByName("DP-C-Special-Need-6").value;
+          if (document.getElementById("DP-Children-6") !== null) {
+            let fname6 = document.getElementById("DP-C-First-Name-6").value;
+            let lname6 = document.getElementById("DP-C-Last-Name-6").value;
+            let bdate6 = document.getElementById("DP-C-Birthdate-6").value;
+            let gender6 = document.getElementById("DP-C-Gender-6").value;
+            let shirt6 = document.getElementById("DP-C-T-Shirt-6").value;
+            let needs6 = document.getElementById("DP-C-Special-Need-6").value;
+          }
 
-          let cgfname = document.getElementsByName("DP-SC-First-Name").value;
-          let cglname = document.getElementsByName("DP-SC-Last-Name").value;
-          let cgemail = document.getElementsByName("DP-SC-E-Mail").value;
-          let cgphone = document.getElementsByName("DP-SC-Mobile").value;
-          let cgbdate = document.getElementsByName("DP-SC-Birthdate").value;
-          let cggender = document.getElementsByName("DP-SC-Gender").value;
-          let cgshirt = document.getElementsByName("DP-SC-T-Shirt").value;
-          let cgrltshp = document.getElementsByName("DP-Spouse-Family-Member-Friend").value;
-          let cgstreet1 = document.getElementsByName("DP-SC-Street-Address").value;
-          let cgcity = document.getElementsByName("DP-SC-City").value;
-          let cgstate = document.getElementsByName("DP-SC-State").value;
-          let cgzip = document.getElementsByName("DP-SC-Zip").value;
+          */
 
-          let hhlocation = document.getElementsByName("DP-Hope-Hub-Location").value;
+          let cgfname = document.getElementById("DP-SC-First-Name").value;
+          let cglname = document.getElementById("DP-SC-Last-Name").value;
+          let cgemail = document.getElementById("DP-SC-E-Mail").value;
+          let cgphone = document.getElementById("DP-SC-Mobile").value;
+          let cgbdate = document.getElementById("DP-SC-Birthdate").value;
+          let cggender = document.getElementById("DP-SC-Gender").value;
+          let cgshirt = document.getElementById("DP-SC-T-Shirt").value;
+          let cgrltshp = document.getElementById("DP-Spouse-Family-Member-Friend").value;
+          let cgstreet1 = document.getElementById("DP-SC-Street-Address").value;
+          let cgcity = document.getElementById("DP-SC-City").value;
+          let cgstate = document.getElementById("DP-SC-State").value;
+          let cgzip = document.getElementById("DP-SC-Zip").value;
+
+          let hhlocation = document.getElementById("DP-Hope-Hub-Location").value;
           let summary =
             "Diagnosis is life-threatening: " +
-            document.getElementById("Family-Eligibility-Yes").value +
+            document.getElementById("DP-Life-Threatening-Yes").value +
             " & " +
             "How did you hear about IoH?: " +
             document.getElementById("DP-Heard-About-IoH").value +
@@ -3266,118 +3350,94 @@
             "Signature Date: " +
             document.getElementById("DP-Electronic-Signature-Date").value;
 
-          document.getElementById("Pardot-to-SF").value =
+          let children = "";
+          let childID = "";
+
+          let fname = "";
+          let lname = "";
+          let bdate = "";
+          let gender = "";
+          let shirt = "";
+          let needs = "";
+
+          let fnameId = "";
+          let lnameId = "";
+          let bdateId = "";
+          let genderId = "";
+          let shirtId = "";
+          let needsId = "";
+
+          console.log(document.getElementsByClassName("Child").length);
+
+          for (var i = 1; i <= 6; i++) {
+            childID = "DP-Children-" + i;
+            if (document.getElementById(childID) !== null) {
+              fnameId = "DP-C-First-Name-" + i;
+              lnameId = "DP-C-Last-Name-" + i;
+              bdateId = "DP-C-Birthdate-" + i;
+              genderId = "DP-C-Gender-" + i;
+              shirtId = "DP-C-T-Shirt-" + i;
+              needsId = "DP-C-Special-Need-" + i;
+
+              fname = document.getElementById(fnameId).value;
+              lname = document.getElementById(lnameId).value;
+              bdate = document.getElementById(bdateId).value;
+              gender = document.getElementById(genderId).value;
+              shirt = document.getElementById(shirtId).value;
+              needs = document.getElementById(needsId).value;
+
+              children +=
+                "[fname" +
+                i +
+                "]" +
+                fname +
+                "[/fname" +
+                i +
+                "]" +
+                "[lname" +
+                i +
+                "]" +
+                lname +
+                "[/lname" +
+                i +
+                "]" +
+                "[bdate" +
+                i +
+                "]" +
+                bdate +
+                "[/bdate" +
+                i +
+                "]" +
+                "[gender" +
+                i +
+                "]" +
+                gender +
+                "[/gender" +
+                i +
+                "]" +
+                "[shirt" +
+                i +
+                "]" +
+                shirt +
+                "[/shirt" +
+                i +
+                "]" +
+                "[needs" +
+                i +
+                "]" +
+                needs +
+                "[/needs" +
+                i +
+                "]";
+            }
+            console.log(children);
+          }
+
+          document.getElementById("DP-Pardot-to-SF").value =
             "[location]" +
             hhlocation +
             "[/location]" +
-            "[fname1]" +
-            fname1 +
-            "[/fname1]" +
-            "[lname1]" +
-            lname1 +
-            "[/lname1]" +
-            "[bdate1]" +
-            bdate1 +
-            "[/bdate1]" +
-            "[gender1]" +
-            gender1 +
-            "[/gender1]" +
-            "[shirt1]" +
-            shirt1 +
-            "[/shirt1]" +
-            "[needs1]" +
-            needs1 +
-            "[/needs1]" +
-            "[fname2]" +
-            fname2 +
-            "[/fname2]" +
-            "[lname2]" +
-            lname2 +
-            "[/lname2]" +
-            "[bdate2]" +
-            bdate2 +
-            "[/bdate2]" +
-            "[gender2]" +
-            gender2 +
-            "[/gender2]" +
-            "[shirt2]" +
-            shirt2 +
-            "[/shirt2]" +
-            "[needs2]" +
-            needs2 +
-            "[/needs2]" +
-            "[fname3]" +
-            fname3 +
-            "[/fname3]" +
-            "[lname3]" +
-            lname3 +
-            "[/lname3]" +
-            "[bdate3]" +
-            bdate3 +
-            "[/bdate3]" +
-            "[gender3]" +
-            gender3 +
-            "[/gender3]" +
-            "[shirt3]" +
-            shirt3 +
-            "[/shirt3]" +
-            "[needs3]" +
-            needs3 +
-            "[/needs3]" +
-            "[fname4]" +
-            fname4 +
-            "[/fname4]" +
-            "[lname4]" +
-            lname4 +
-            "[/lname4]" +
-            "[bdate4]" +
-            bdate4 +
-            "[/bdate4]" +
-            "[gender4]" +
-            gender4 +
-            "[/gender4]" +
-            "[shirt4]" +
-            shirt4 +
-            "[/shirt4]" +
-            "[needs4]" +
-            needs4 +
-            "[/needs4]" +
-            "[fname5]" +
-            fname5 +
-            "[/fname5]" +
-            "[lname5]" +
-            lname5 +
-            "[/lname5]" +
-            "[bdate5]" +
-            bdate5 +
-            "[/bdate5]" +
-            "[gender5]" +
-            gender5 +
-            "[/gender5]" +
-            "[shirt5]" +
-            shirt5 +
-            "[/shirt5]" +
-            "[needs5]" +
-            needs5 +
-            "[/needs5]" +
-            "[fname6]" +
-            fname6 +
-            "[/fname6]" +
-            "[lname6]" +
-            lname6 +
-            "[/lname6]" +
-            "[bdate6]" +
-            bdate6 +
-            "[/bdate6]" +
-            "[gender6]" +
-            gender6 +
-            "[/gender6]" +
-            "[shirt6]" +
-            shirt6 +
-            "[/shirt6]" +
-            "[needs6]" +
-            needs6 +
-            "[/needs6]" +
+            children +
             "[cgfname]" +
             cgfname +
             "[/cgfname]" +
@@ -3418,67 +3478,70 @@
             summary +
             "[/summary]";
         }
-
+      }
+      function SCPardotToSF() {
         if (document.getElementById("Tell-Us-About-You").value == "Spouse/Caregiver") {
-          let fname1 = document.getElementsByName("SC-C-First-Name-1").value;
-          let lname1 = document.getElementsByName("SC-C-Last-Name-1").value;
-          let bdate1 = document.getElementsByName("SC-C-Birthdate-1").value;
-          let gender1 = document.getElementsByName("SC-C-Gender-1").value;
-          let shirt1 = document.getElementsByName("SC-C-T-Shirt-1").value;
-          let needs1 = document.getElementsByName("SC-C-Special-Need-1").value;
+          /*
+          var fname1 = document.getElementsByName("SC-C-First-Name-1").value;
+          var lname1 = document.getElementsByName("SC-C-Last-Name-1").value;
+          var bdate1 = document.getElementsByName("SC-C-Birthdate-1").value;
+          var gender1 = document.getElementsByName("SC-C-Gender-1").value;
+          var shirt1 = document.getElementsByName("SC-C-T-Shirt-1").value;
+          var needs1 = document.getElementsByName("SC-C-Special-Need-1").value;
 
-          let fname2 = document.getElementsByName("SC-C-First-Name-2").value;
-          let lname2 = document.getElementsByName("SC-C-Last-Name-2").value;
-          let bdate2 = document.getElementsByName("SC-C-Birthdate-2").value;
-          let gender2 = document.getElementsByName("SC-C-Gender-2").value;
-          let shirt2 = document.getElementsByName("SC-C-T-Shirt-2").value;
-          let needs2 = document.getElementsByName("SC-C-Special-Need-2").value;
+          var fname2 = document.getElementsByName("SC-C-First-Name-2").value;
+          var lname2 = document.getElementsByName("SC-C-Last-Name-2").value;
+          var bdate2 = document.getElementsByName("SC-C-Birthdate-2").value;
+          var gender2 = document.getElementsByName("SC-C-Gender-2").value;
+          var shirt2 = document.getElementsByName("SC-C-T-Shirt-2").value;
+          var needs2 = document.getElementsByName("SC-C-Special-Need-2").value;
 
-          let fname3 = document.getElementsByName("SC-C-First-Name-3").value;
-          let lname3 = document.getElementsByName("SC-C-Last-Name-3").value;
-          let bdate3 = document.getElementsByName("SC-C-Birthdate-3").value;
-          let gender3 = document.getElementsByName("SC-C-Gender-3").value;
-          let shirt3 = document.getElementsByName("SC-C-T-Shirt-3").value;
-          let needs3 = document.getElementsByName("SC-C-Special-Need-3").value;
+          var fname3 = document.getElementsByName("SC-C-First-Name-3").value;
+          var lname3 = document.getElementsByName("SC-C-Last-Name-3").value;
+          var bdate3 = document.getElementsByName("SC-C-Birthdate-3").value;
+          var gender3 = document.getElementsByName("SC-C-Gender-3").value;
+          var shirt3 = document.getElementsByName("SC-C-T-Shirt-3").value;
+          var needs3 = document.getElementsByName("SC-C-Special-Need-3").value;
 
-          let fname4 = document.getElementsByName("SC-C-First-Name-4").value;
-          let lname4 = document.getElementsByName("SC-C-Last-Name-4").value;
-          let bdate4 = document.getElementsByName("SC-C-Birthdate-4").value;
-          let gender4 = document.getElementsByName("SC-C-Gender-4").value;
-          let shirt4 = document.getElementsByName("SC-C-T-Shirt-4").value;
-          let needs4 = document.getElementsByName("SC-C-Special-Need-4").value;
+          var fname4 = document.getElementsByName("SC-C-First-Name-4").value;
+          var lname4 = document.getElementsByName("SC-C-Last-Name-4").value;
+          var bdate4 = document.getElementsByName("SC-C-Birthdate-4").value;
+          var gender4 = document.getElementsByName("SC-C-Gender-4").value;
+          var shirt4 = document.getElementsByName("SC-C-T-Shirt-4").value;
+          var needs4 = document.getElementsByName("SC-C-Special-Need-4").value;
 
-          let fname5 = document.getElementsByName("SC-C-First-Name-5").value;
-          let lname5 = document.getElementsByName("SC-C-Last-Name-5").value;
-          let bdate5 = document.getElementsByName("SC-C-Birthdate-5").value;
-          let gender5 = document.getElementsByName("SC-C-Gender-5").value;
-          let shirt5 = document.getElementsByName("SC-C-T-Shirt-5").value;
-          let needs5 = document.getElementsByName("SC-C-Special-Need-5").value;
+          var fname5 = document.getElementsByName("SC-C-First-Name-5").value;
+          var lname5 = document.getElementsByName("SC-C-Last-Name-5").value;
+          var bdate5 = document.getElementsByName("SC-C-Birthdate-5").value;
+          var gender5 = document.getElementsByName("SC-C-Gender-5").value;
+          var shirt5 = document.getElementsByName("SC-C-T-Shirt-5").value;
+          var needs5 = document.getElementsByName("SC-C-Special-Need-5").value;
 
-          let fname6 = document.getElementsByName("SC-C-First-Name-6").value;
-          let lname6 = document.getElementsByName("SC-C-Last-Name-6").value;
-          let bdate6 = document.getElementsByName("SC-C-Birthdate-6").value;
-          let gender6 = document.getElementsByName("SC-C-Gender-6").value;
-          let shirt6 = document.getElementsByName("SC-C-T-Shirt-6").value;
-          let needs6 = document.getElementsByName("SC-C-Special-Need-6").value;
+          var fname6 = document.getElementsByName("SC-C-First-Name-6").value;
+          var lname6 = document.getElementsByName("SC-C-Last-Name-6").value;
+          var bdate6 = document.getElementsByName("SC-C-Birthdate-6").value;
+          var gender6 = document.getElementsByName("SC-C-Gender-6").value;
+          var shirt6 = document.getElementsByName("SC-C-T-Shirt-6").value;
+          var needs6 = document.getElementsByName("SC-C-Special-Need-6").value;
+          */
 
-          let cgfname = document.getElementsByName("SC-First-Name").value;
-          let cglname = document.getElementsByName("SC-Last-Name").value;
-          let cgemail = document.getElementsByName("SC-E-Mail").value;
-          let cgphone = document.getElementsByName("SC-Mobile").value;
-          let cgbdate = document.getElementsByName("SC-Birthdate").value;
-          let cggender = document.getElementsByName("SC-Gender").value;
-          let cgshirt = document.getElementsByName("SC-T-Shirt").value;
-          let cgrltshp = document.getElementsByName("SC-Spouse-Family-Member-Friend").value;
-          let cgstreet1 = document.getElementsByName("SC-Street-Address").value;
-          let cgcity = document.getElementsByName("SC-City").value;
-          let cgstate = document.getElementsByName("SC-State").value;
-          let cgzip = document.getElementsByName("SC-Zip").value;
+          var cgfname = document.getElementById("SC-First-Name").value;
+          var cglname = document.getElementById("SC-Last-Name").value;
+          var cgemail = document.getElementById("SC-E-Mail").value;
+          var cgphone = document.getElementById("SC-Mobile").value;
+          var cgbdate = document.getElementById("SC-Birthdate").value;
+          var cggender = document.getElementById("SC-Gender").value;
+          var cgshirt = document.getElementById("SC-T-Shirt").value;
+          var cgrltshp = document.getElementById("SC-Spouse-Family-Member-Friend").value;
+          var cgstreet1 = document.getElementById("SC-Street-Address").value;
+          var cgcity = document.getElementById("SC-City").value;
+          var cgstate = document.getElementById("SC-State").value;
+          var cgzip = document.getElementById("SC-Zip").value;
 
-          let hhlocation = document.getElementsByName("SC-Hope-Hub-Location").value;
-          let summary =
+          var hhlocation = document.getElementById("SC-Hope-Hub-Location").value;
+          var summary =
             "Diagnosis is life-threatening: " +
-            document.getElementById("Family-Eligibility-Yes").value +
+            document.getElementById("SC-Life-Threatening-Yes").value +
             " & " +
             "How did you hear about IoH?: " +
             document.getElementById("SC-Heard-About-IoH").value +
@@ -3498,118 +3561,94 @@
             "Spouse/Caregiver Signature Date: " +
             document.getElementById("SC-Electronic-Signature-Date").value;
 
-          document.getElementById("Pardot-to-SF").value =
+          let children = "";
+          let childID = "";
+
+          let fname = "";
+          let lname = "";
+          let bdate = "";
+          let gender = "";
+          let shirt = "";
+          let needs = "";
+
+          let fnameId = "";
+          let lnameId = "";
+          let bdateId = "";
+          let genderId = "";
+          let shirtId = "";
+          let needsId = "";
+
+          console.log(document.getElementsByClassName("Child").length);
+
+          for (var i = 1; i <= 6; i++) {
+            childID = "SC-Children-" + i;
+            if (document.getElementById(childID) !== null) {
+              fnameId = "SC-C-First-Name-" + i;
+              lnameId = "SC-C-Last-Name-" + i;
+              bdateId = "SC-C-Birthdate-" + i;
+              genderId = "SC-C-Gender-" + i;
+              shirtId = "SC-C-T-Shirt-" + i;
+              needsId = "SC-C-Special-Need-" + i;
+
+              fname = document.getElementById(fnameId).value;
+              lname = document.getElementById(lnameId).value;
+              bdate = document.getElementById(bdateId).value;
+              gender = document.getElementById(genderId).value;
+              shirt = document.getElementById(shirtId).value;
+              needs = document.getElementById(needsId).value;
+
+              children +=
+                "[fname" +
+                i +
+                "]" +
+                fname +
+                "[/fname" +
+                i +
+                "]" +
+                "[lname" +
+                i +
+                "]" +
+                lname +
+                "[/lname" +
+                i +
+                "]" +
+                "[bdate" +
+                i +
+                "]" +
+                bdate +
+                "[/bdate" +
+                i +
+                "]" +
+                "[gender" +
+                i +
+                "]" +
+                gender +
+                "[/gender" +
+                i +
+                "]" +
+                "[shirt" +
+                i +
+                "]" +
+                shirt +
+                "[/shirt" +
+                i +
+                "]" +
+                "[needs" +
+                i +
+                "]" +
+                needs +
+                "[/needs" +
+                i +
+                "]";
+            }
+            console.log(children);
+          }
+
+          document.getElementById("SC-Pardot-to-SF").value =
             "[location]" +
             hhlocation +
             "[/location]" +
-            "[fname1]" +
-            fname1 +
-            "[/fname1]" +
-            "[lname1]" +
-            lname1 +
-            "[/lname1]" +
-            "[bdate1]" +
-            bdate1 +
-            "[/bdate1]" +
-            "[gender1]" +
-            gender1 +
-            "[/gender1]" +
-            "[shirt1]" +
-            shirt1 +
-            "[/shirt1]" +
-            "[needs1]" +
-            needs1 +
-            "[/needs1]" +
-            "[fname2]" +
-            fname2 +
-            "[/fname2]" +
-            "[lname2]" +
-            lname2 +
-            "[/lname2]" +
-            "[bdate2]" +
-            bdate2 +
-            "[/bdate2]" +
-            "[gender2]" +
-            gender2 +
-            "[/gender2]" +
-            "[shirt2]" +
-            shirt2 +
-            "[/shirt2]" +
-            "[needs2]" +
-            needs2 +
-            "[/needs2]" +
-            "[fname3]" +
-            fname3 +
-            "[/fname3]" +
-            "[lname3]" +
-            lname3 +
-            "[/lname3]" +
-            "[bdate3]" +
-            bdate3 +
-            "[/bdate3]" +
-            "[gender3]" +
-            gender3 +
-            "[/gender3]" +
-            "[shirt3]" +
-            shirt3 +
-            "[/shirt3]" +
-            "[needs3]" +
-            needs3 +
-            "[/needs3]" +
-            "[fname4]" +
-            fname4 +
-            "[/fname4]" +
-            "[lname4]" +
-            lname4 +
-            "[/lname4]" +
-            "[bdate4]" +
-            bdate4 +
-            "[/bdate4]" +
-            "[gender4]" +
-            gender4 +
-            "[/gender4]" +
-            "[shirt4]" +
-            shirt4 +
-            "[/shirt4]" +
-            "[needs4]" +
-            needs4 +
-            "[/needs4]" +
-            "[fname5]" +
-            fname5 +
-            "[/fname5]" +
-            "[lname5]" +
-            lname5 +
-            "[/lname5]" +
-            "[bdate5]" +
-            bdate5 +
-            "[/bdate5]" +
-            "[gender5]" +
-            gender5 +
-            "[/gender5]" +
-            "[shirt5]" +
-            shirt5 +
-            "[/shirt5]" +
-            "[needs5]" +
-            needs5 +
-            "[/needs5]" +
-            "[fname6]" +
-            fname6 +
-            "[/fname6]" +
-            "[lname6]" +
-            lname6 +
-            "[/lname6]" +
-            "[bdate6]" +
-            bdate6 +
-            "[/bdate6]" +
-            "[gender6]" +
-            gender6 +
-            "[/gender6]" +
-            "[shirt6]" +
-            shirt6 +
-            "[/shirt6]" +
-            "[needs6]" +
-            needs6 +
-            "[/needs6]" +
+            children +
             "[cgfname]" +
             cgfname +
             "[/cgfname]" +
@@ -3650,8 +3689,10 @@
             summary +
             "[/summary]";
         }
-
+      }
+      function YAPardotToSF() {
         if (document.getElementById("Tell-Us-About-You").value == "Young Adult") {
+          /*
           var fname1 = document.getElementsByName("YA-C-First-Name-1").value;
           var lname1 = document.getElementsByName("YA-C-Last-Name-1").value;
           var bdate1 = document.getElementsByName("YA-C-Birthdate-1").value;
@@ -3693,24 +3734,25 @@
           var gender6 = document.getElementsByName("YA-C-Gender-6").value;
           var shirt6 = document.getElementsByName("YA-C-T-Shirt-6").value;
           var needs6 = document.getElementsByName("YA-C-Special-Need-6").value;
+          */
 
-          var cgfname = document.getElementsByName("YA-SC-First-Name").value;
-          var cglname = document.getElementsByName("YA-SC-Last-Name").value;
-          var cgemail = document.getElementsByName("YA-SC-E-Mail").value;
-          var cgphone = document.getElementsByName("YA-SC-Mobile").value;
-          var cgbdate = document.getElementsByName("YA-SC-Birthdate").value;
-          var cggender = document.getElementsByName("YA-SC-Gender").value;
-          var cgshirt = document.getElementsByName("YA-SC-T-Shirt").value;
-          var cgrltshp = document.getElementsByName("YA-SC-Spouse-Family-Member-Friend").value;
-          var cgstreet1 = document.getElementsByName("YA-SC-Street-Address").value;
-          var cgcity = document.getElementsByName("YA-SC-City").value;
-          var cgstate = document.getElementsByName("YA-SC-State").value;
-          var cgzip = document.getElementsByName("YA-SC-Zip").value;
+          var cgfname = document.getElementById("YA-SC-First-Name").value;
+          var cglname = document.getElementById("YA-SC-Last-Name").value;
+          var cgemail = document.getElementById("YA-SC-E-Mail").value;
+          var cgphone = document.getElementById("YA-SC-Mobile").value;
+          var cgbdate = document.getElementById("YA-SC-Birthdate").value;
+          var cggender = document.getElementById("YA-SC-Gender").value;
+          var cgshirt = document.getElementById("YA-SC-T-Shirt").value;
+          var cgrltshp = document.getElementById("YA-Spouse-Family-Member-Friend").value;
+          var cgstreet1 = document.getElementById("YA-SC-Street-Address").value;
+          var cgcity = document.getElementById("YA-SC-City").value;
+          var cgstate = document.getElementById("YA-SC-State").value;
+          var cgzip = document.getElementById("YA-SC-Zip").value;
 
-          var hhlocation = document.getElementsByName("YA-Hope-Hub-Location").value;
+          var hhlocation = document.getElementById("YA-Hope-Hub-Location").value;
           var summary =
             "Diagnosis is life-threatening: " +
-            document.getElementById("Family-Eligibility-Yes").value +
+            document.getElementById("YA-Life-Threatening-Yes").value +
             " & " +
             "How did you hear about IoH?: " +
             document.getElementById("YA-Heard-About-IoH").value +
@@ -3735,118 +3777,94 @@
             "Parent/Guardian Signature Date: " +
             document.getElementById("YA-Parent-Guardian-Signature-Date").value;
 
-          document.getElementById("Pardot-to-SF").value =
+          let children = "";
+          let childID = "";
+
+          let fname = "";
+          let lname = "";
+          let bdate = "";
+          let gender = "";
+          let shirt = "";
+          let needs = "";
+
+          let fnameId = "";
+          let lnameId = "";
+          let bdateId = "";
+          let genderId = "";
+          let shirtId = "";
+          let needsId = "";
+
+          console.log(document.getElementsByClassName("Child").length);
+
+          for (var i = 1; i <= 6; i++) {
+            childID = "YA-Children-" + i;
+            if (document.getElementById(childID) !== null) {
+              fnameId = "YA-C-First-Name-" + i;
+              lnameId = "YA-C-Last-Name-" + i;
+              bdateId = "YA-C-Birthdate-" + i;
+              genderId = "YA-C-Gender-" + i;
+              shirtId = "YA-C-T-Shirt-" + i;
+              needsId = "YA-C-Special-Need-" + i;
+
+              fname = document.getElementById(fnameId).value;
+              lname = document.getElementById(lnameId).value;
+              bdate = document.getElementById(bdateId).value;
+              gender = document.getElementById(genderId).value;
+              shirt = document.getElementById(shirtId).value;
+              needs = document.getElementById(needsId).value;
+
+              children +=
+                "[fname" +
+                i +
+                "]" +
+                fname +
+                "[/fname" +
+                i +
+                "]" +
+                "[lname" +
+                i +
+                "]" +
+                lname +
+                "[/lname" +
+                i +
+                "]" +
+                "[bdate" +
+                i +
+                "]" +
+                bdate +
+                "[/bdate" +
+                i +
+                "]" +
+                "[gender" +
+                i +
+                "]" +
+                gender +
+                "[/gender" +
+                i +
+                "]" +
+                "[shirt" +
+                i +
+                "]" +
+                shirt +
+                "[/shirt" +
+                i +
+                "]" +
+                "[needs" +
+                i +
+                "]" +
+                needs +
+                "[/needs" +
+                i +
+                "]";
+            }
+            console.log(children);
+          }
+
+          document.getElementById("YA-Pardot-to-SF").value =
             "[location]" +
             hhlocation +
             "[/location]" +
-            "[fname1]" +
-            fname1 +
-            "[/fname1]" +
-            "[lname1]" +
-            lname1 +
-            "[/lname1]" +
-            "[bdate1]" +
-            bdate1 +
-            "[/bdate1]" +
-            "[gender1]" +
-            gender1 +
-            "[/gender1]" +
-            "[shirt1]" +
-            shirt1 +
-            "[/shirt1]" +
-            "[needs1]" +
-            needs1 +
-            "[/needs1]" +
-            "[fname2]" +
-            fname2 +
-            "[/fname2]" +
-            "[lname2]" +
-            lname2 +
-            "[/lname2]" +
-            "[bdate2]" +
-            bdate2 +
-            "[/bdate2]" +
-            "[gender2]" +
-            gender2 +
-            "[/gender2]" +
-            "[shirt2]" +
-            shirt2 +
-            "[/shirt2]" +
-            "[needs2]" +
-            needs2 +
-            "[/needs2]" +
-            "[fname3]" +
-            fname3 +
-            "[/fname3]" +
-            "[lname3]" +
-            lname3 +
-            "[/lname3]" +
-            "[bdate3]" +
-            bdate3 +
-            "[/bdate3]" +
-            "[gender3]" +
-            gender3 +
-            "[/gender3]" +
-            "[shirt3]" +
-            shirt3 +
-            "[/shirt3]" +
-            "[needs3]" +
-            needs3 +
-            "[/needs3]" +
-            "[fname4]" +
-            fname4 +
-            "[/fname4]" +
-            "[lname4]" +
-            lname4 +
-            "[/lname4]" +
-            "[bdate4]" +
-            bdate4 +
-            "[/bdate4]" +
-            "[gender4]" +
-            gender4 +
-            "[/gender4]" +
-            "[shirt4]" +
-            shirt4 +
-            "[/shirt4]" +
-            "[needs4]" +
-            needs4 +
-            "[/needs4]" +
-            "[fname5]" +
-            fname5 +
-            "[/fname5]" +
-            "[lname5]" +
-            lname5 +
-            "[/lname5]" +
-            "[bdate5]" +
-            bdate5 +
-            "[/bdate5]" +
-            "[gender5]" +
-            gender5 +
-            "[/gender5]" +
-            "[shirt5]" +
-            shirt5 +
-            "[/shirt5]" +
-            "[needs5]" +
-            needs5 +
-            "[/needs5]" +
-            "[fname6]" +
-            fname6 +
-            "[/fname6]" +
-            "[lname6]" +
-            lname6 +
-            "[/lname6]" +
-            "[bdate6]" +
-            bdate6 +
-            "[/bdate6]" +
-            "[gender6]" +
-            gender6 +
-            "[/gender6]" +
-            "[shirt6]" +
-            shirt6 +
-            "[/shirt6]" +
-            "[needs6]" +
-            needs6 +
-            "[/needs6]" +
+            children +
             "[cgfname]" +
             cgfname +
             "[/cgfname]" +
@@ -4435,6 +4453,7 @@
         document.getElementById("DP-CI-Button-Box").style.display = "flex";
       });
       document.getElementById("DP-NB-2").addEventListener("click", function () {
+        DPSCAddress();
         uptoTop();
         DPInfoVal();
         DPSpInfoVal();
@@ -4449,7 +4468,7 @@
 
       document.getElementById("DP-Submit-Button").addEventListener("click", function () {
         DPAgreeVal();
-        PdtoSf();
+        DPPardotToSF();
         document.getElementById("DP-Hope-Hub-Registration-Form").submit();
       });
 
@@ -4475,6 +4494,7 @@
         document.getElementById("SC-3").style.display = "block";
       });
       document.getElementById("SC-Still-Alive-No").addEventListener("change", function () {
+        document.getElementById("SC-3-Yes").style.display = "none";
         document.getElementById("SC-4").style.display = "block";
         document.getElementById("SC-DP-4-5").style.display = "flex";
         document.getElementById("SC-DP-5").style.visibility = "visible";
@@ -4488,7 +4508,7 @@
         document.getElementById("SC-14-15-16").style.display = "flex";
       });
       document.getElementById("SC-Still-Alive-Yes").addEventListener("change", function () {
-        document.getElementById("SC-4").style.display = "block";
+        document.getElementById("SC-3-Yes").style.display = "block";
         document.getElementById("SC-DP-4-5").style.display = "flex";
         document.getElementById("SC-DP-5").style.visibility = "hidden";
         document.getElementById("SC-DP-6-7").style.display = "flex";
@@ -4498,6 +4518,15 @@
         document.getElementById("SC-11").style.display = "flex";
         document.getElementById("SC-12").style.display = "flex";
         document.getElementById("SC-13-14-15").style.display = "flex";
+      });
+      document.getElementById("SC-Life-Threatening-No").addEventListener("change", function () {
+        document.getElementById("SC-Life-Threatening-Alarm").style.display = "block";
+        document.getElementById("SC-4").style.display = "none";
+        document.getElementById("SC-Button-Box-1").style.display = "none";
+      });
+      document.getElementById("SC-Life-Threatening-Yes").addEventListener("change", function () {
+        document.getElementById("SC-Life-Threatening-Alarm").style.display = "none";
+        document.getElementById("SC-4").style.display = "block";
       });
       document.getElementById("SC-Age-Child-No").addEventListener("change", function () {
         document.getElementById("SC-Age-Child-Alarm").style.display = "block";
@@ -5021,6 +5050,7 @@
         document.getElementById("If-Spouse-Caregiver-2").style.display = "block";
       });
       document.getElementById("SC-NB-2").addEventListener("click", function () {
+        SCSCAddress();
         uptoTop();
         SCDpInfoVal();
         SCInfoVal();
@@ -5036,7 +5066,7 @@
       document.getElementById("SC-Submit-Button").addEventListener("click", function () {
         SCAgreeVal();
         SCDummyEmail();
-        PdtoSf();
+        SCPardotToSF();
         document.getElementById("SC-Hope-Hub-Registration-Form").submit();
       });
 
@@ -5643,6 +5673,7 @@
         document.getElementById("YA-CI-Button-Box").style.display = "flex";
       });
       document.getElementById("YA-NB-2").addEventListener("click", function () {
+        YASCAddress();
         YADpInfoVal();
         YAScInfoVal();
         if (document.getElementById("YA-I-Am-Not-Caregiver").checked) {
@@ -5660,9 +5691,714 @@
       document.getElementById("YA-Submit-Button").addEventListener("click", function () {
         YAAgreeVal();
         YADummyEmail();
-        PdtoSf();
+        YAPardotToSF();
         document.getElementById("YA-Hope-Hub-Registration-Form").submit();
       });
     </script>
   </body>
 </html>
+
+<!--
+        function PdtoSf() {
+        if (document.getElementById("Tell-Us-About-You").value == "Diagnosed Parent") {
+          let fname1 = document.getElementById("DP-C-First-Name-1").value;
+          let lname1 = document.getElementById("DP-C-Last-Name-1").value;
+          let bdate1 = document.getElementById("DP-C-Birthdate-1").value;
+          let gender1 = document.getElementById("DP-C-Gender-1").value;
+          let shirt1 = document.getElementById("DP-C-T-Shirt-1").value;
+          let needs1 = document.getElementById("DP-C-Special-Need-1").value;
+
+          let fname2 = document.getElementById("DP-C-First-Name-2").value;
+          let lname2 = document.getElementById("DP-C-Last-Name-2").value;
+          let bdate2 = document.getElementById("DP-C-Birthdate-2").value;
+          let gender2 = document.getElementById("DP-C-Gender-2").value;
+          let shirt2 = document.getElementById("DP-C-T-Shirt-2").value;
+          let needs2 = document.getElementById("DP-C-Special-Need-2").value;
+
+          let fname3 = document.getElementById("DP-C-First-Name-3").value;
+          let lname3 = document.getElementById("DP-C-Last-Name-3").value;
+          let bdate3 = document.getElementById("DP-C-Birthdate-3").value;
+          let gender3 = document.getElementById("DP-C-Gender-3").value;
+          let shirt3 = document.getElementById("DP-C-T-Shirt-3").value;
+          let needs3 = document.getElementById("DP-C-Special-Need-3").value;
+
+          let fname4 = document.getElementById("DP-C-First-Name-4").value;
+          let lname4 = document.getElementById("DP-C-Last-Name-4").value;
+          let bdate4 = document.getElementById("DP-C-Birthdate-4").value;
+          let gender4 = document.getElementById("DP-C-Gender-4").value;
+          let shirt4 = document.getElementById("DP-C-T-Shirt-4").value;
+          let needs4 = document.getElementById("DP-C-Special-Need-4").value;
+
+          let fname5 = document.getElementById("DP-C-First-Name-5").value;
+          let lname5 = document.getElementById("DP-C-Last-Name-5").value;
+          let bdate5 = document.getElementById("DP-C-Birthdate-5").value;
+          let gender5 = document.getElementById("DP-C-Gender-5").value;
+          let shirt5 = document.getElementById("DP-C-T-Shirt-5").value;
+          let needs5 = document.getElementById("DP-C-Special-Need-5").value;
+
+          let fname6 = document.getElementById("DP-C-First-Name-6").value;
+          let lname6 = document.getElementById("DP-C-Last-Name-6").value;
+          let bdate6 = document.getElementById("DP-C-Birthdate-6").value;
+          let gender6 = document.getElementById("DP-C-Gender-6").value;
+          let shirt6 = document.getElementById("DP-C-T-Shirt-6").value;
+          let needs6 = document.getElementById("DP-C-Special-Need-6").value;
+
+          let cgfname = document.getElementById("DP-SC-First-Name").value;
+          let cglname = document.getElementById("DP-SC-Last-Name").value;
+          let cgemail = document.getElementById("DP-SC-E-Mail").value;
+          let cgphone = document.getElementById("DP-SC-Mobile").value;
+          let cgbdate = document.getElementById("DP-SC-Birthdate").value;
+          let cggender = document.getElementById("DP-SC-Gender").value;
+          let cgshirt = document.getElementById("DP-SC-T-Shirt").value;
+          let cgrltshp = document.getElementById("DP-Spouse-Family-Member-Friend").value;
+          let cgstreet1 = document.getElementById("DP-SC-Street-Address").value;
+          let cgcity = document.getElementById("DP-SC-City").value;
+          let cgstate = document.getElementById("DP-SC-State").value;
+          let cgzip = document.getElementById("DP-SC-Zip").value;
+
+          let hhlocation = document.getElementById("DP-Hope-Hub-Location").value;
+          let summary =
+            "Diagnosis is life-threatening: " +
+            document.getElementById("DP-Life-Threatening-Yes").value +
+            " & " +
+            "How did you hear about IoH?: " +
+            document.getElementById("DP-Heard-About-IoH").value +
+            " & " +
+            "Informed Consent: " +
+            document.getElementById("DP-ICA-Accept").value +
+            " & " +
+            "Release Agreement: " +
+            document.getElementById("DP-RA-Accept").value +
+            " & " +
+            "Consent Signature: " +
+            document.getElementById("DP-CES-Accept").value +
+            "&" +
+            "Signature: " +
+            document.getElementById("DP-Electronic-Signature").value +
+            " & " +
+            "Signature Date: " +
+            document.getElementById("DP-Electronic-Signature-Date").value;
+
+          document.getElementById("Pardot-to-SF").value =
+            "[location]" +
+            hhlocation +
+            "[/location]" +
+            "[fname1]" +
+            fname1 +
+            "[/fname1]" +
+            "[lname1]" +
+            lname1 +
+            "[/lname1]" +
+            "[bdate1]" +
+            bdate1 +
+            "[/bdate1]" +
+            "[gender1]" +
+            gender1 +
+            "[/gender1]" +
+            "[shirt1]" +
+            shirt1 +
+            "[/shirt1]" +
+            "[needs1]" +
+            needs1 +
+            "[/needs1]" +
+            "[fname2]" +
+            fname2 +
+            "[/fname2]" +
+            "[lname2]" +
+            lname2 +
+            "[/lname2]" +
+            "[bdate2]" +
+            bdate2 +
+            "[/bdate2]" +
+            "[gender2]" +
+            gender2 +
+            "[/gender2]" +
+            "[shirt2]" +
+            shirt2 +
+            "[/shirt2]" +
+            "[needs2]" +
+            needs2 +
+            "[/needs2]" +
+            "[fname3]" +
+            fname3 +
+            "[/fname3]" +
+            "[lname3]" +
+            lname3 +
+            "[/lname3]" +
+            "[bdate3]" +
+            bdate3 +
+            "[/bdate3]" +
+            "[gender3]" +
+            gender3 +
+            "[/gender3]" +
+            "[shirt3]" +
+            shirt3 +
+            "[/shirt3]" +
+            "[needs3]" +
+            needs3 +
+            "[/needs3]" +
+            "[fname4]" +
+            fname4 +
+            "[/fname4]" +
+            "[lname4]" +
+            lname4 +
+            "[/lname4]" +
+            "[bdate4]" +
+            bdate4 +
+            "[/bdate4]" +
+            "[gender4]" +
+            gender4 +
+            "[/gender4]" +
+            "[shirt4]" +
+            shirt4 +
+            "[/shirt4]" +
+            "[needs4]" +
+            needs4 +
+            "[/needs4]" +
+            "[fname5]" +
+            fname5 +
+            "[/fname5]" +
+            "[lname5]" +
+            lname5 +
+            "[/lname5]" +
+            "[bdate5]" +
+            bdate5 +
+            "[/bdate5]" +
+            "[gender5]" +
+            gender5 +
+            "[/gender5]" +
+            "[shirt5]" +
+            shirt5 +
+            "[/shirt5]" +
+            "[needs5]" +
+            needs5 +
+            "[/needs5]" +
+            "[fname6]" +
+            fname6 +
+            "[/fname6]" +
+            "[lname6]" +
+            lname6 +
+            "[/lname6]" +
+            "[bdate6]" +
+            bdate6 +
+            "[/bdate6]" +
+            "[gender6]" +
+            gender6 +
+            "[/gender6]" +
+            "[shirt6]" +
+            shirt6 +
+            "[/shirt6]" +
+            "[needs6]" +
+            needs6 +
+            "[/needs6]" +
+            "[cgfname]" +
+            cgfname +
+            "[/cgfname]" +
+            "[cglname]" +
+            cglname +
+            "[/cglname]" +
+            "[cgbdate]" +
+            cgbdate +
+            "[/cgbdate]" +
+            "[cgemail]" +
+            cgemail +
+            "[/cgemail]" +
+            "[cgphone]" +
+            cgphone +
+            "[/cgphone]" +
+            "[cgrltshp]" +
+            cgrltshp +
+            "[/cgrltshp]" +
+            "[cggender]" +
+            cggender +
+            "[/cggender]" +
+            "[cgshirt]" +
+            cgshirt +
+            "[/cgshirt]" +
+            "[cgstreet1]" +
+            cgstreet1 +
+            "[/cgstreet1]" +
+            "[cgcity]" +
+            cgcity +
+            "[/cgcity]" +
+            "[cgstate]" +
+            cgstate +
+            "[/cgstate]" +
+            "[cgzip]" +
+            cgzip +
+            "[/cgzip]" +
+            "[summary]" +
+            summary +
+            "[/summary]";
+        }
+
+        if (document.getElementById("Tell-Us-About-You").value == "Spouse/Caregiver") {
+          let fname1 = document.getElementsByName("SC-C-First-Name-1").value;
+          let lname1 = document.getElementsByName("SC-C-Last-Name-1").value;
+          let bdate1 = document.getElementsByName("SC-C-Birthdate-1").value;
+          let gender1 = document.getElementsByName("SC-C-Gender-1").value;
+          let shirt1 = document.getElementsByName("SC-C-T-Shirt-1").value;
+          let needs1 = document.getElementsByName("SC-C-Special-Need-1").value;
+
+          let fname2 = document.getElementsByName("SC-C-First-Name-2").value;
+          let lname2 = document.getElementsByName("SC-C-Last-Name-2").value;
+          let bdate2 = document.getElementsByName("SC-C-Birthdate-2").value;
+          let gender2 = document.getElementsByName("SC-C-Gender-2").value;
+          let shirt2 = document.getElementsByName("SC-C-T-Shirt-2").value;
+          let needs2 = document.getElementsByName("SC-C-Special-Need-2").value;
+
+          let fname3 = document.getElementsByName("SC-C-First-Name-3").value;
+          let lname3 = document.getElementsByName("SC-C-Last-Name-3").value;
+          let bdate3 = document.getElementsByName("SC-C-Birthdate-3").value;
+          let gender3 = document.getElementsByName("SC-C-Gender-3").value;
+          let shirt3 = document.getElementsByName("SC-C-T-Shirt-3").value;
+          let needs3 = document.getElementsByName("SC-C-Special-Need-3").value;
+
+          let fname4 = document.getElementsByName("SC-C-First-Name-4").value;
+          let lname4 = document.getElementsByName("SC-C-Last-Name-4").value;
+          let bdate4 = document.getElementsByName("SC-C-Birthdate-4").value;
+          let gender4 = document.getElementsByName("SC-C-Gender-4").value;
+          let shirt4 = document.getElementsByName("SC-C-T-Shirt-4").value;
+          let needs4 = document.getElementsByName("SC-C-Special-Need-4").value;
+
+          let fname5 = document.getElementsByName("SC-C-First-Name-5").value;
+          let lname5 = document.getElementsByName("SC-C-Last-Name-5").value;
+          let bdate5 = document.getElementsByName("SC-C-Birthdate-5").value;
+          let gender5 = document.getElementsByName("SC-C-Gender-5").value;
+          let shirt5 = document.getElementsByName("SC-C-T-Shirt-5").value;
+          let needs5 = document.getElementsByName("SC-C-Special-Need-5").value;
+
+          let fname6 = document.getElementsByName("SC-C-First-Name-6").value;
+          let lname6 = document.getElementsByName("SC-C-Last-Name-6").value;
+          let bdate6 = document.getElementsByName("SC-C-Birthdate-6").value;
+          let gender6 = document.getElementsByName("SC-C-Gender-6").value;
+          let shirt6 = document.getElementsByName("SC-C-T-Shirt-6").value;
+          let needs6 = document.getElementsByName("SC-C-Special-Need-6").value;
+
+          let cgfname = document.getElementsByName("SC-First-Name").value;
+          let cglname = document.getElementsByName("SC-Last-Name").value;
+          let cgemail = document.getElementsByName("SC-E-Mail").value;
+          let cgphone = document.getElementsByName("SC-Mobile").value;
+          let cgbdate = document.getElementsByName("SC-Birthdate").value;
+          let cggender = document.getElementsByName("SC-Gender").value;
+          let cgshirt = document.getElementsByName("SC-T-Shirt").value;
+          let cgrltshp = document.getElementsByName("SC-Spouse-Family-Member-Friend").value;
+          let cgstreet1 = document.getElementsByName("SC-Street-Address").value;
+          let cgcity = document.getElementsByName("SC-City").value;
+          let cgstate = document.getElementsByName("SC-State").value;
+          let cgzip = document.getElementsByName("SC-Zip").value;
+
+          let hhlocation = document.getElementsByName("SC-Hope-Hub-Location").value;
+          let summary =
+            "Diagnosis is life-threatening: " +
+            document.getElementById("SC-Life-Threatening-Yes").value +
+            " & " +
+            "How did you hear about IoH?: " +
+            document.getElementById("SC-Heard-About-IoH").value +
+            " & " +
+            "Informed Consent: " +
+            document.getElementById("SC-ICA-Accept").value +
+            " & " +
+            "Release Agreement: " +
+            document.getElementById("SC-RA-Accept").value +
+            " & " +
+            "Consent Signature: " +
+            document.getElementById("SC-CES-Accept").value +
+            "&" +
+            "Spouse/Caregiver Signature: " +
+            document.getElementById("SC-Electronic-Signature").value +
+            " & " +
+            "Spouse/Caregiver Signature Date: " +
+            document.getElementById("SC-Electronic-Signature-Date").value;
+
+          document.getElementById("Pardot-to-SF").value =
+            "[location]" +
+            hhlocation +
+            "[/location]" +
+            "[fname1]" +
+            fname1 +
+            "[/fname1]" +
+            "[lname1]" +
+            lname1 +
+            "[/lname1]" +
+            "[bdate1]" +
+            bdate1 +
+            "[/bdate1]" +
+            "[gender1]" +
+            gender1 +
+            "[/gender1]" +
+            "[shirt1]" +
+            shirt1 +
+            "[/shirt1]" +
+            "[needs1]" +
+            needs1 +
+            "[/needs1]" +
+            "[fname2]" +
+            fname2 +
+            "[/fname2]" +
+            "[lname2]" +
+            lname2 +
+            "[/lname2]" +
+            "[bdate2]" +
+            bdate2 +
+            "[/bdate2]" +
+            "[gender2]" +
+            gender2 +
+            "[/gender2]" +
+            "[shirt2]" +
+            shirt2 +
+            "[/shirt2]" +
+            "[needs2]" +
+            needs2 +
+            "[/needs2]" +
+            "[fname3]" +
+            fname3 +
+            "[/fname3]" +
+            "[lname3]" +
+            lname3 +
+            "[/lname3]" +
+            "[bdate3]" +
+            bdate3 +
+            "[/bdate3]" +
+            "[gender3]" +
+            gender3 +
+            "[/gender3]" +
+            "[shirt3]" +
+            shirt3 +
+            "[/shirt3]" +
+            "[needs3]" +
+            needs3 +
+            "[/needs3]" +
+            "[fname4]" +
+            fname4 +
+            "[/fname4]" +
+            "[lname4]" +
+            lname4 +
+            "[/lname4]" +
+            "[bdate4]" +
+            bdate4 +
+            "[/bdate4]" +
+            "[gender4]" +
+            gender4 +
+            "[/gender4]" +
+            "[shirt4]" +
+            shirt4 +
+            "[/shirt4]" +
+            "[needs4]" +
+            needs4 +
+            "[/needs4]" +
+            "[fname5]" +
+            fname5 +
+            "[/fname5]" +
+            "[lname5]" +
+            lname5 +
+            "[/lname5]" +
+            "[bdate5]" +
+            bdate5 +
+            "[/bdate5]" +
+            "[gender5]" +
+            gender5 +
+            "[/gender5]" +
+            "[shirt5]" +
+            shirt5 +
+            "[/shirt5]" +
+            "[needs5]" +
+            needs5 +
+            "[/needs5]" +
+            "[fname6]" +
+            fname6 +
+            "[/fname6]" +
+            "[lname6]" +
+            lname6 +
+            "[/lname6]" +
+            "[bdate6]" +
+            bdate6 +
+            "[/bdate6]" +
+            "[gender6]" +
+            gender6 +
+            "[/gender6]" +
+            "[shirt6]" +
+            shirt6 +
+            "[/shirt6]" +
+            "[needs6]" +
+            needs6 +
+            "[/needs6]" +
+            "[cgfname]" +
+            cgfname +
+            "[/cgfname]" +
+            "[cglname]" +
+            cglname +
+            "[/cglname]" +
+            "[cgbdate]" +
+            cgbdate +
+            "[/cgbdate]" +
+            "[cgemail]" +
+            cgemail +
+            "[/cgemail]" +
+            "[cgphone]" +
+            cgphone +
+            "[/cgphone]" +
+            "[cgrltshp]" +
+            cgrltshp +
+            "[/cgrltshp]" +
+            "[cggender]" +
+            cggender +
+            "[/cggender]" +
+            "[cgshirt]" +
+            cgshirt +
+            "[/cgshirt]" +
+            "[cgstreet1]" +
+            cgstreet1 +
+            "[/cgstreet1]" +
+            "[cgcity]" +
+            cgcity +
+            "[/cgcity]" +
+            "[cgstate]" +
+            cgstate +
+            "[/cgstate]" +
+            "[cgzip]" +
+            cgzip +
+            "[/cgzip]" +
+            "[summary]" +
+            summary +
+            "[/summary]";
+        }
+
+        if (document.getElementById("Tell-Us-About-You").value == "Young Adult") {
+          var fname1 = document.getElementsByName("YA-C-First-Name-1").value;
+          var lname1 = document.getElementsByName("YA-C-Last-Name-1").value;
+          var bdate1 = document.getElementsByName("YA-C-Birthdate-1").value;
+          var gender1 = document.getElementsByName("YA-C-Gender-1").value;
+          var shirt1 = document.getElementsByName("YA-C-T-Shirt-1").value;
+          var needs1 = document.getElementsByName("YA-C-Special-Need-1").value;
+
+          var fname2 = document.getElementsByName("YA-C-First-Name-2").value;
+          var lname2 = document.getElementsByName("YA-C-Last-Name-2").value;
+          var bdate2 = document.getElementsByName("YA-C-Birthdate-2").value;
+          var gender2 = document.getElementsByName("YA-C-Gender-2").value;
+          var shirt2 = document.getElementsByName("YA-C-T-Shirt-2").value;
+          var needs2 = document.getElementsByName("YA-C-Special-Need-2").value;
+
+          var fname3 = document.getElementsByName("YA-C-First-Name-3").value;
+          var lname3 = document.getElementsByName("YA-C-Last-Name-3").value;
+          var bdate3 = document.getElementsByName("YA-C-Birthdate-3").value;
+          var gender3 = document.getElementsByName("YA-C-Gender-3").value;
+          var shirt3 = document.getElementsByName("YA-C-T-Shirt-3").value;
+          var needs3 = document.getElementsByName("YA-C-Special-Need-3").value;
+
+          var fname4 = document.getElementsByName("YA-C-First-Name-4").value;
+          var lname4 = document.getElementsByName("YA-C-Last-Name-4").value;
+          var bdate4 = document.getElementsByName("YA-C-Birthdate-4").value;
+          var gender4 = document.getElementsByName("YA-C-Gender-4").value;
+          var shirt4 = document.getElementsByName("YA-C-T-Shirt-4").value;
+          var needs4 = document.getElementsByName("YA-C-Special-Need-4").value;
+
+          var fname5 = document.getElementsByName("YA-C-First-Name-5").value;
+          var lname5 = document.getElementsByName("YA-C-Last-Name-5").value;
+          var bdate5 = document.getElementsByName("YA-C-Birthdate-5").value;
+          var gender5 = document.getElementsByName("YA-C-Gender-5").value;
+          var shirt5 = document.getElementsByName("YA-C-T-Shirt-5").value;
+          var needs5 = document.getElementsByName("YA-C-Special-Need-5").value;
+
+          var fname6 = document.getElementsByName("YA-C-First-Name-6").value;
+          var lname6 = document.getElementsByName("YA-C-Last-Name-6").value;
+          var bdate6 = document.getElementsByName("YA-C-Birthdate-6").value;
+          var gender6 = document.getElementsByName("YA-C-Gender-6").value;
+          var shirt6 = document.getElementsByName("YA-C-T-Shirt-6").value;
+          var needs6 = document.getElementsByName("YA-C-Special-Need-6").value;
+
+          var cgfname = document.getElementsByName("YA-SC-First-Name").value;
+          var cglname = document.getElementsByName("YA-SC-Last-Name").value;
+          var cgemail = document.getElementsByName("YA-SC-E-Mail").value;
+          var cgphone = document.getElementsByName("YA-SC-Mobile").value;
+          var cgbdate = document.getElementsByName("YA-SC-Birthdate").value;
+          var cggender = document.getElementsByName("YA-SC-Gender").value;
+          var cgshirt = document.getElementsByName("YA-SC-T-Shirt").value;
+          var cgrltshp = document.getElementsByName("YA-SC-Spouse-Family-Member-Friend").value;
+          var cgstreet1 = document.getElementsByName("YA-SC-Street-Address").value;
+          var cgcity = document.getElementsByName("YA-SC-City").value;
+          var cgstate = document.getElementsByName("YA-SC-State").value;
+          var cgzip = document.getElementsByName("YA-SC-Zip").value;
+
+          var hhlocation = document.getElementsByName("YA-Hope-Hub-Location").value;
+          var summary =
+            "Diagnosis is life-threatening: " +
+            document.getElementById("YA-Life-Threatening-Yes").value +
+            " & " +
+            "How did you hear about IoH?: " +
+            document.getElementById("YA-Heard-About-IoH").value +
+            " & " +
+            "Informed Consent: " +
+            document.getElementById("YA-ICA-Accept").value +
+            " & " +
+            "Release Agreement: " +
+            document.getElementById("YA-RA-Accept").value +
+            " & " +
+            "Consent Signature: " +
+            document.getElementById("YA-CES-Accept").value +
+            "&" +
+            "Young Adult Signature: " +
+            document.getElementById("YA-Electronic-Signature").value +
+            " & " +
+            "Young Adult Signature Date: " +
+            document.getElementById("YA-Electronic-Signature-Date").value +
+            "Parent/Guardian Signature: " +
+            document.getElementById("YA-Parent-Guardian-Signature").value +
+            " & " +
+            "Parent/Guardian Signature Date: " +
+            document.getElementById("YA-Parent-Guardian-Signature-Date").value;
+
+          document.getElementById("Pardot-to-SF").value =
+            "[location]" +
+            hhlocation +
+            "[/location]" +
+            "[fname1]" +
+            fname1 +
+            "[/fname1]" +
+            "[lname1]" +
+            lname1 +
+            "[/lname1]" +
+            "[bdate1]" +
+            bdate1 +
+            "[/bdate1]" +
+            "[gender1]" +
+            gender1 +
+            "[/gender1]" +
+            "[shirt1]" +
+            shirt1 +
+            "[/shirt1]" +
+            "[needs1]" +
+            needs1 +
+            "[/needs1]" +
+            "[fname2]" +
+            fname2 +
+            "[/fname2]" +
+            "[lname2]" +
+            lname2 +
+            "[/lname2]" +
+            "[bdate2]" +
+            bdate2 +
+            "[/bdate2]" +
+            "[gender2]" +
+            gender2 +
+            "[/gender2]" +
+            "[shirt2]" +
+            shirt2 +
+            "[/shirt2]" +
+            "[needs2]" +
+            needs2 +
+            "[/needs2]" +
+            "[fname3]" +
+            fname3 +
+            "[/fname3]" +
+            "[lname3]" +
+            lname3 +
+            "[/lname3]" +
+            "[bdate3]" +
+            bdate3 +
+            "[/bdate3]" +
+            "[gender3]" +
+            gender3 +
+            "[/gender3]" +
+            "[shirt3]" +
+            shirt3 +
+            "[/shirt3]" +
+            "[needs3]" +
+            needs3 +
+            "[/needs3]" +
+            "[fname4]" +
+            fname4 +
+            "[/fname4]" +
+            "[lname4]" +
+            lname4 +
+            "[/lname4]" +
+            "[bdate4]" +
+            bdate4 +
+            "[/bdate4]" +
+            "[gender4]" +
+            gender4 +
+            "[/gender4]" +
+            "[shirt4]" +
+            shirt4 +
+            "[/shirt4]" +
+            "[needs4]" +
+            needs4 +
+            "[/needs4]" +
+            "[fname5]" +
+            fname5 +
+            "[/fname5]" +
+            "[lname5]" +
+            lname5 +
+            "[/lname5]" +
+            "[bdate5]" +
+            bdate5 +
+            "[/bdate5]" +
+            "[gender5]" +
+            gender5 +
+            "[/gender5]" +
+            "[shirt5]" +
+            shirt5 +
+            "[/shirt5]" +
+            "[needs5]" +
+            needs5 +
+            "[/needs5]" +
+            "[fname6]" +
+            fname6 +
+            "[/fname6]" +
+            "[lname6]" +
+            lname6 +
+            "[/lname6]" +
+            "[bdate6]" +
+            bdate6 +
+            "[/bdate6]" +
+            "[gender6]" +
+            gender6 +
+            "[/gender6]" +
+            "[shirt6]" +
+            shirt6 +
+            "[/shirt6]" +
+            "[needs6]" +
+            needs6 +
+            "[/needs6]" +
+            "[cgfname]" +
+            cgfname +
+            "[/cgfname]" +
+            "[cglname]" +
+            cglname +
+            "[/cglname]" +
+            "[cgbdate]" +
+            cgbdate +
+            "[/cgbdate]" +
+            "[cgemail]" +
+            cgemail +
+            "[/cgemail]" +
+            "[cgphone]" +
+            cgphone +
+            "[/cgphone]" +
+            "[cgrltshp]" +
+            cgrltshp +
+            "[/cgrltshp]" +
+            "[cggender]" +
+            cggender +
+            "[/cggender]" +
+            "[cgshirt]" +
+            cgshirt +
+            "[/cgshirt]" +
+            "[cgstreet1]" +
+            cgstreet1 +
+            "[/cgstreet1]" +
+            "[cgcity]" +
+            cgcity +
+            "[/cgcity]" +
+            "[cgstate]" +
+            cgstate +
+            "[/cgstate]" +
+            "[cgzip]" +
+            cgzip +
+            "[/cgzip]" +
+            "[summary]" +
+            summary +
+            "[/summary]";
+        }
+      }
+-->
