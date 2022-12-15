@@ -3387,96 +3387,56 @@
               needs = document.getElementById(needsId).value;
 
               children +=
-                "[fname" +
+                "[Contact" +
                 i +
-                "]" +
+                "][fname]" +
                 fname +
-                "[/fname" +
-                i +
-                "]" +
-                "[lname" +
-                i +
-                "]" +
+                "[/fname][lname]" +
                 lname +
-                "[/lname" +
-                i +
-                "]" +
-                "[bdate" +
-                i +
-                "]" +
+                "[/lname][bdate]" +
                 bdate +
-                "[/bdate" +
-                i +
-                "]" +
-                "[gender" +
-                i +
-                "]" +
+                "[/bdate][gender]" +
                 gender +
-                "[/gender" +
-                i +
-                "]" +
-                "[shirt" +
-                i +
-                "]" +
+                "[/gender][shirt]" +
                 shirt +
-                "[/shirt" +
-                i +
-                "]" +
-                "[needs" +
-                i +
-                "]" +
+                "[/shirt][needs]" +
                 needs +
-                "[/needs" +
+                "[/needs][/Contact" +
                 i +
                 "]";
             }
             console.log(children);
           }
 
-          document.getElementById("DP-Pardot-to-SF").value =
-            "[location]" +
-            hhlocation +
-            "[/location]" +
-            children +
-            "[cgfname]" +
+          let caregiver =
+            "[Caregiver][fname]" +
             cgfname +
-            "[/cgfname]" +
-            "[cglname]" +
+            "[/fname][lname]" +
             cglname +
-            "[/cglname]" +
-            "[cgbdate]" +
+            "[/lname][bdate]" +
             cgbdate +
-            "[/cgbdate]" +
-            "[cgemail]" +
-            cgemail +
-            "[/cgemail]" +
-            "[cgphone]" +
-            cgphone +
-            "[/cgphone]" +
-            "[cgrltshp]" +
-            cgrltshp +
-            "[/cgrltshp]" +
-            "[cggender]" +
+            "[/bdate][gender]" +
             cggender +
-            "[/cggender]" +
-            "[cgshirt]" +
+            "[/gender][shirt]" +
             cgshirt +
-            "[/cgshirt]" +
-            "[cgstreet1]" +
+            "[/shirt][email]" +
+            cgemail +
+            "[/email][phone]" +
+            cgphone +
+            "[/phone][rltshp]" +
+            cgrltshp +
+            "[/rltshp][street1]" +
             cgstreet1 +
-            "[/cgstreet1]" +
-            "[cgcity]" +
+            "[/street1][city]" +
             cgcity +
-            "[/cgcity]" +
-            "[cgstate]" +
+            "[/city][state]" +
             cgstate +
-            "[/cgstate]" +
-            "[cgzip]" +
+            "[/state][zip]" +
             cgzip +
-            "[/cgzip]" +
-            "[summary]" +
-            summary +
-            "[/summary]";
+            "[/zip][/Caregiver]";
+
+          document.getElementById("DP-Pardot-to-SF").value =
+            "[location]" + hhlocation + "[/location]" + children + caregiver + "[summary]" + summary + "[/summary]";
         }
       }
       function SCPardotToSF() {
@@ -3598,96 +3558,56 @@
               needs = document.getElementById(needsId).value;
 
               children +=
-                "[fname" +
+                "[Contact" +
                 i +
-                "]" +
+                "][fname]" +
                 fname +
-                "[/fname" +
-                i +
-                "]" +
-                "[lname" +
-                i +
-                "]" +
+                "[/fname][lname]" +
                 lname +
-                "[/lname" +
-                i +
-                "]" +
-                "[bdate" +
-                i +
-                "]" +
+                "[/lname][bdate]" +
                 bdate +
-                "[/bdate" +
-                i +
-                "]" +
-                "[gender" +
-                i +
-                "]" +
+                "[/bdate][gender]" +
                 gender +
-                "[/gender" +
-                i +
-                "]" +
-                "[shirt" +
-                i +
-                "]" +
+                "[/gender][shirt]" +
                 shirt +
-                "[/shirt" +
-                i +
-                "]" +
-                "[needs" +
-                i +
-                "]" +
+                "[/shirt][needs]" +
                 needs +
-                "[/needs" +
+                "[/needs][/Contact" +
                 i +
                 "]";
             }
             console.log(children);
           }
 
-          document.getElementById("SC-Pardot-to-SF").value =
-            "[location]" +
-            hhlocation +
-            "[/location]" +
-            children +
-            "[cgfname]" +
+          let caregiver =
+            "[Caregiver][fname]" +
             cgfname +
-            "[/cgfname]" +
-            "[cglname]" +
+            "[/fname][lname]" +
             cglname +
-            "[/cglname]" +
-            "[cgbdate]" +
+            "[/lname][bdate]" +
             cgbdate +
-            "[/cgbdate]" +
-            "[cgemail]" +
-            cgemail +
-            "[/cgemail]" +
-            "[cgphone]" +
-            cgphone +
-            "[/cgphone]" +
-            "[cgrltshp]" +
-            cgrltshp +
-            "[/cgrltshp]" +
-            "[cggender]" +
+            "[/bdate][gender]" +
             cggender +
-            "[/cggender]" +
-            "[cgshirt]" +
+            "[/gender][shirt]" +
             cgshirt +
-            "[/cgshirt]" +
-            "[cgstreet1]" +
+            "[/shirt][email]" +
+            cgemail +
+            "[/email][phone]" +
+            cgphone +
+            "[/phone][rltshp]" +
+            cgrltshp +
+            "[/rltshp][street1]" +
             cgstreet1 +
-            "[/cgstreet1]" +
-            "[cgcity]" +
+            "[/street1][city]" +
             cgcity +
-            "[/cgcity]" +
-            "[cgstate]" +
+            "[/city][state]" +
             cgstate +
-            "[/cgstate]" +
-            "[cgzip]" +
+            "[/state][zip]" +
             cgzip +
-            "[/cgzip]" +
-            "[summary]" +
-            summary +
-            "[/summary]";
+            "[/zip][/Caregiver]";
+
+          document.getElementById("SC-Pardot-to-SF").value =
+            "[location]" + hhlocation + "[/location]" + children + caregiver + "[summary]" + summary + "[/summary]";
         }
       }
       function YAPardotToSF() {
@@ -3814,96 +3734,56 @@
               needs = document.getElementById(needsId).value;
 
               children +=
-                "[fname" +
+                "[Contact" +
                 i +
-                "]" +
+                "][fname]" +
                 fname +
-                "[/fname" +
-                i +
-                "]" +
-                "[lname" +
-                i +
-                "]" +
+                "[/fname][lname]" +
                 lname +
-                "[/lname" +
-                i +
-                "]" +
-                "[bdate" +
-                i +
-                "]" +
+                "[/lname][bdate]" +
                 bdate +
-                "[/bdate" +
-                i +
-                "]" +
-                "[gender" +
-                i +
-                "]" +
+                "[/bdate][gender]" +
                 gender +
-                "[/gender" +
-                i +
-                "]" +
-                "[shirt" +
-                i +
-                "]" +
+                "[/gender][shirt]" +
                 shirt +
-                "[/shirt" +
-                i +
-                "]" +
-                "[needs" +
-                i +
-                "]" +
+                "[/shirt][needs]" +
                 needs +
-                "[/needs" +
+                "[/needs][/Contact" +
                 i +
                 "]";
             }
             console.log(children);
           }
 
-          document.getElementById("YA-Pardot-to-SF").value =
-            "[location]" +
-            hhlocation +
-            "[/location]" +
-            children +
-            "[cgfname]" +
+          let caregiver =
+            "[Caregiver][fname]" +
             cgfname +
-            "[/cgfname]" +
-            "[cglname]" +
+            "[/fname][lname]" +
             cglname +
-            "[/cglname]" +
-            "[cgbdate]" +
+            "[/lname][bdate]" +
             cgbdate +
-            "[/cgbdate]" +
-            "[cgemail]" +
-            cgemail +
-            "[/cgemail]" +
-            "[cgphone]" +
-            cgphone +
-            "[/cgphone]" +
-            "[cgrltshp]" +
-            cgrltshp +
-            "[/cgrltshp]" +
-            "[cggender]" +
+            "[/bdate][gender]" +
             cggender +
-            "[/cggender]" +
-            "[cgshirt]" +
+            "[/gender][shirt]" +
             cgshirt +
-            "[/cgshirt]" +
-            "[cgstreet1]" +
+            "[/shirt][email]" +
+            cgemail +
+            "[/email][phone]" +
+            cgphone +
+            "[/phone][rltshp]" +
+            cgrltshp +
+            "[/rltshp][street1]" +
             cgstreet1 +
-            "[/cgstreet1]" +
-            "[cgcity]" +
+            "[/street1][city]" +
             cgcity +
-            "[/cgcity]" +
-            "[cgstate]" +
+            "[/city][state]" +
             cgstate +
-            "[/cgstate]" +
-            "[cgzip]" +
+            "[/state][zip]" +
             cgzip +
-            "[/cgzip]" +
-            "[summary]" +
-            summary +
-            "[/summary]";
+            "[/zip][/Caregiver]";
+
+          document.getElementById("YA-Pardot-to-SF").value =
+            "[location]" + hhlocation + "[/location]" + children + caregiver + "[summary]" + summary + "[/summary]";
         }
       }
 
