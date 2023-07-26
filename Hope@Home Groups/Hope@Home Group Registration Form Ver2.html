@@ -409,7 +409,7 @@
       }
       .left-Box > .Cell > input[type="radio"],
       .left-Box > .Cell > input[type="checkbox"] {
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
 
         font-family: "Raleway", sans-serif;
@@ -496,7 +496,7 @@
       }
       .Groups-Check > .Cell > input[type="checkbox"],
       .Groups-Check > .Cell > input[type="radio"] {
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
 
         font-family: "Raleway", sans-serif;
@@ -1110,6 +1110,10 @@
         .Left-Box {
           margin: 0 auto;
           padding: 0;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
         }
         .Left-Box > .Cell {
           margin: 0 auto;
@@ -1124,6 +1128,10 @@
           color: #ffffff;
 
           text-align: right;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
         }
         .left-Box > .Cell > input[type="radio"],
         .left-Box > .Cell > input[type="checkbox"] {
@@ -1214,7 +1222,7 @@
         }
         .Groups-Check > .Cell > input[type="checkbox"],
         .Groups-Check > .Cell > input[type="radio"] {
-          margin: 0;
+          margin: 0 auto;
           padding: 0;
 
           font-family: "Raleway", sans-serif;
