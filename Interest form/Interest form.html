@@ -1,0 +1,450 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+      .scrn {
+        width: 350px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: #6b64646e;
+      }
+
+      .bigOne,
+      .bigTwo,
+      .bigThree {
+        width: 90%;
+        height: auto;
+        margin: 20px auto 20px auto;
+
+        background-color: #efefef;
+      }
+
+      .hope,
+      .legacy,
+      .VGP {
+        width: auto;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+
+        background: #334355;
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .handler {
+        width: 350px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: #efefef;
+      }
+
+      .rgist {
+        width: 100%;
+        height: auto;
+        margin: 30px auto 0px auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        background: #334355;
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .groups,
+      .weekend,
+      .app,
+      .video,
+      .retreat,
+      .event,
+      .volunteer,
+      .give,
+      .pray {
+        width: 85%;
+        height: auto;
+        margin: 10px auto 20px auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #ffffff;
+        border: 1px solid #334355;
+        border-radius: 10px 10px 10px 10px;
+      }
+
+      .cate {
+        padding: 8px;
+        background: #334355;
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .desc {
+        margin: 8px;
+        color: #000000;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .slct {
+        margin: auto auto 5px auto;
+      }
+
+      .regiBox {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .box {
+        width: 300px;
+
+        margin: 10px auto 10px auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .box > label {
+        font-size: 18px;
+      }
+
+      .fild::after {
+        content: "*";
+        color: red;
+      }
+
+      .box > input[type="text"] {
+        width: 200px;
+        padding: 4px;
+        font-size: 18px;
+        background-color: #ffffff;
+        border: 2px solid #334355;
+      }
+
+      #select {
+        width: 150px;
+        height: auto;
+        margin: 8px;
+        padding: 10px;
+
+        color: #334355;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #bfbcbc;
+        border-radius: 15px;
+      }
+
+      #sub {
+        width: 150px;
+        height: auto;
+        margin: 5px auto 50px auto;
+        padding: 10px;
+
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #334355;
+        border-radius: 15px;
+      }
+
+      #select.selected {
+        background-color: #334355;
+        color: #ffffff;
+      }
+
+      @media screen and (min-width: 768px) {
+        .scrn {
+          width: 768px;
+        }
+
+        .hope,
+        .legacy,
+        .VGP {
+          padding: 18px;
+
+          font-size: 38px;
+        }
+
+        .handler {
+          width: 768px;
+        }
+        .rgist {
+          padding-top: 18px;
+          padding-bottom: 18px;
+
+          font-size: 38px;
+        }
+
+        .cate {
+          padding: 12px;
+          font-size: 30px;
+        }
+
+        .desc {
+          margin: 8px;
+          color: #000000;
+          font-size: 24px;
+          text-align: center;
+        }
+
+        .slct {
+          margin: auto auto 5px auto;
+        }
+
+        .regiBox {
+          margin: 25px auto 10px auto;
+        }
+
+        .box {
+          width: 80%;
+          margin: 10px auto 10px auto;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .box > label {
+          font-size: 25px;
+        }
+
+        .fild::after {
+          content: " *";
+          color: red;
+        }
+
+        .box > input[type="text"] {
+          font-size: 25px;
+          width: 450px;
+        }
+
+        #select {
+          width: 180px;
+          height: auto;
+          margin: 10px;
+          padding: 12px;
+
+          color: #334355;
+          font-size: 22px;
+          font-weight: 500;
+          background-color: #bfbcbc;
+          border-radius: 15px;
+        }
+
+        #sub {
+          width: 150px;
+          height: auto;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          padding: 12px;
+
+          color: #ffffff;
+          font-size: 22px;
+          font-weight: 500;
+          background-color: #334355;
+          border-radius: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="scrn">
+      <div class="bigOne">
+        <div class="hope">For Everyone</div>
+        <div class="groups">
+          <div class="cate">Hope@Home™ Groups</div>
+          <div class="desc">
+            You are not alone. Connect with others who "get it" in weekly online gatherings for caregivers, diagnosed parents, kids, teens, young adults, and
+            those facing life after loss.
+          </div>
+          <div class="slct">
+            <button id="select" name="Hope@Home™ Groups" type="button">SELECT</button>
+          </div>
+        </div>
+        <div class="app">
+          <div class="cate">Hope@Home™ App</div>
+          <div class="desc">Enjoy Inheritance of Hope content and community anywhere, anytime!</div>
+          <div class="slct">
+            <button id="select" name="Hope@Home™ Mobile App" type="button">SELECT</button>
+          </div>
+        </div>
+        <div class="video">
+          <div class="cate">Legacy Videos™</div>
+          <div class="desc">
+            Heartfelt messages from parents recorded for their loved ones with an expert Legacy Video Coach. (In addition to being a treasure for your family, a
+            Legacy Video made with one of our coaches is required for the Legacy Retreat® application.)
+          </div>
+          <div class="slct">
+            <button id="select" name="Legacy Videos™" type="button">SELECT</button>
+          </div>
+        </div>
+        <div class="event">
+          <div class="cate">Annual Vision Event</div>
+          <div class="desc">
+            Over 7 million people in the US are in young families facing the loss of a parent. Attend our online Annual Vision Event and see for yourself what
+            no one else is offering these families. All ages are welcome.
+          </div>
+          <div class="slct">
+            <button id="select" name="Annual Legacy Events" type="button">SELECT</button>
+          </div>
+        </div>
+        <div class="event">
+          <div class="cate">Hope Hub™</div>
+          <div class="desc">Local face-to-face gatherings with families who understand the journey of a life-threatening illness.</div>
+          <div class="slct">
+            <button id="select" name="Hope Hub™" type="button">SELECT</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bigTwo">
+        <div class="legacy">Family Application Required</div>
+        <div class="weekend">
+          <div class="cate">Hope@Home™ Weekends</div>
+          <div class="desc">
+            Young families facing ALS, cancer, or other life-threatening illness of a parent often feel alone. You’re not. If your family is facing the loss of
+            a parent while raising kids, connect with other families across the U.S. who "get it" — all from the comfort of home.
+          </div>
+          <div class="slct">
+            <button id="select" class="HHWknd" name="Hope@Home™ Weekends" type="button">SELECT</button>
+          </div>
+        </div>
+        <div class="retreat">
+          <div class="cate">Legacy Retreats&reg;</div>
+          <div class="desc">
+            You are not alone. If your family is facing the loss of a parent while raising kids, connect with others from across the U.S. who "get it" — at an
+            on-site event. (Specific locations and dates will be provided on the family application.)
+          </div>
+          <div class="slct">
+            <button id="select" class="LR" name="Legacy Retreats®" type="button">SELECT</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bigThree">
+        <div class="VGP">How to Help</div>
+        <div class="volunteer">
+          <div class="cate">Volunteer</div>
+          <div class="desc">Top-notch volunteers bring about the best of this mission. Apply to be part of this hope-filled team!</div>
+          <div class="slct">
+            <button id="select" name="Volunteer" type="button">SELECT</button>
+          </div>
+        </div>
+        <div class="give">
+          <div class="cate">Legacy Builder</div>
+          <div class="desc">Monthly Giving | Lifelong Impact</div>
+          <div class="slct">
+            <button id="select" name="Give" type="button">SELECT</button>
+          </div>
+        </div>
+        <div class="pray">
+          <div class="cate">Pray</div>
+          <div class="desc">Prayer is a vital part of our service to IoH families. We are very grateful for prayer care!</div>
+          <div class="slct">
+            <button id="select" name="Pray" type="button">SELECT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="handler">
+      <div class="rgist">Your Info:</div>
+      <form id="pardot-handler" action="https://www2.inheritanceofhope.org/l/739893/2021-09-22/pwjpg" method="post">
+        <div class="regiBox">
+          <div class="box">
+            <label class="fild" for="First-Name">First Name:</label>
+            <input type="text" name="First-Name" required />
+          </div>
+          <div class="box">
+            <label class="fild" for="Last-Name">Last Name:</label>
+            <input type="text" name="Last-Name" required />
+          </div>
+          <div class="box">
+            <label class="fild" for="Email-Address">Email:</label>
+            <input type="text" name="Email-Address" required />
+          </div>
+          <div class="box">
+            <label for="Phone-Number">Phone:</label>
+            <input type="text" name="Phone-Number" />
+          </div>
+          <div class="box" style="display: none">
+            <label for="InterestedIn">Your Selected Interests:</label>
+            <select size="8" name="interestedIn" id="interestedIn" multiple="multiple">
+              <option value="Hope@Home™ Groups">Hope@Home™ Groups</option>
+              <option value="Hope@Home™ Weekends">Hope@Home™ Weekends</option>
+              <option value="Hope@Home™ Mobile App">Hope@Home™ App</option>
+              <option value="Legacy Videos™">Legacy Videos™</option>
+              <option value="Legacy Retreats®">Legacy Retreats®</option>
+              <!--<option value="Legacy Retreats®/Hope@Home™ Weekends">Hope@Home Weekends and Legacy Retreats</option>-->
+              <option value="Annual Legacy Events">Annual Legacy Events</option>
+              <option value="Hope Hub™">Hope Hub™</option>
+              <option value="Volunteer">Volunteer</option>
+              <option value="Give">Give</option>
+              <option value="Pray">Pray</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <button id="sub" type="submit" form="pardot-handler" value="Submit">SUBMIT</button>
+    </div>
+
+    <script>
+      function selectBtn(btn) {}
+
+      $(".slct > button").click(function () {
+        var btnSelected = $(this);
+        var optionSelected = $(this).attr("name");
+        optionSelected = '"' + optionSelected + '"';
+        console.log("optionSelected: " + optionSelected);
+        //If selection is H@H Weekend or Legacy Retreat, then select both
+        if (btnSelected.is(".selected")) {
+          //Change text
+          btnSelected.text("SELECT");
+          //Unselect item in multiselect field - interestedIn
+          $("#interestedIn option[value=" + optionSelected + "]").prop("selected", false);
+        } else {
+          btnSelected.text("SELECTED");
+          //Select item in multiselect field - interestedIn
+          $("#interestedIn option[value=" + optionSelected + "]").prop("selected", true);
+        }
+        //Toggle button color
+        btnSelected.toggleClass("selected");
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+            function volunteering() {
+                window.open("https://inheritanceofhope.org/iohvolunteer/", "_blank");
+            }
+            function legacyBuilder() {
+                window.open("https://inheritanceofhope.org/legacybuilders/", "_blank");
+            }
+            function prayerGroup() {
+                window.open("https://www.facebook.com/groups/288553401646988/", "_blank");
+            }
+-->

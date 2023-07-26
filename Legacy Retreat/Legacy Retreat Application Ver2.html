@@ -1,0 +1,3629 @@
+<html style="font-size: 62.5%">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <style>
+      .Form-Paper {
+        margin: 0 auto;
+        padding: 0;
+        width: 360px;
+        height: auto;
+
+        background: #334355;
+      }
+      .Form-Content {
+        margin: 0 auto;
+        padding: 0;
+        width: 350px;
+        height: auto;
+      }
+      .Legacy-Retreat-Application {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      #If-Diagnosed-Parent-Form,
+      #If-Spouse-Caregiver-Form {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .mission {
+        margin: 0 auto;
+        padding: 15px 0 45px 0;
+
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .mission > span {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway";
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        color: #f89a1c;
+
+        word-spacing: 0.3rem;
+        letter-spacing: 0.15rem;
+      }
+      .Form-Name {
+        margin: 0 auto;
+        padding: 30px 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Form-Name > span {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 1em;
+
+        color: #ffffff;
+      }
+      .Applicants {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .Pages {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .Section-Name {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Section-Name > span {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 1em;
+
+        color: #f89a1c;
+      }
+      .Questions {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .One-Column {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        border-top: 1px solid #ffffff;
+      }
+      .One {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .One > p {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
+      .One > span {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #f89a1c;
+
+        text-align: center;
+      }
+      .One > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .One > input[type="text"],
+      .One > input[type="date"],
+      .One > select,
+      .One > textarea {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .One > select:focus,
+      .One > input[type="text"]:focus,
+      .One > input[type="date"]:focus,
+      .One > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Two-Columns {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Two {
+        margin: 0 auto;
+        padding: 0;
+        width: 48%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .Two > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Two > select {
+        margin: 0 auto;
+        padding: 2px 0px 0 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Two > input[type="text"],
+      .Two > input[type="date"] {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 96%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Two > select:focus,
+      .Two > input[type="text"]:focus,
+      .Two > input[type="date"]:focus,
+      .Two > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Three-Columns {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Three {
+        margin: 0 auto;
+        padding: 0;
+        width: 33%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .Three > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Three > select {
+        margin: 0 auto;
+        padding: 2px 0px 0 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Three > input[type="text"],
+      .Three > input[type="date"] {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 96%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Three > select:focus,
+      .Three > input[type="text"]:focus,
+      .Three > input[type="date"]:focus,
+      .Three > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Check-Box {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+      }
+      .Left-Box {
+        margin: 0 auto;
+        padding: 0;
+      }
+      .Left-Box > .Cell {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: right;
+      }
+      .left-Box > .Cell > input[type="radio"],
+      .left-Box > .Cell > input[type="checkbox"] {
+        margin: 0;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: right;
+      }
+      .Right-Box {
+        margin: 0 auto;
+        padding: 0;
+      }
+      .Right-Box > .Cell {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: left;
+      }
+      .Right-Box > .Cell > p {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: left;
+      }
+
+      .Button-Box {
+        margin: 30px auto 15px;
+        padding: 0px;
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Left,
+      .Middle,
+      .Right {
+        margin: 5px auto;
+        padding: 0px;
+        width: 33%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Back-Button,
+      .Next-Button,
+      .Submit-Button {
+        margin: 0px auto;
+        padding: 5px 10px;
+        width: 85%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.8rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Back-Button:hover,
+      .Next-Button:hover,
+      .Submit-Button:hover {
+        border: 2px solid #f89a1c;
+        background-color: #334355;
+        color: #f89a1c;
+      }
+      .Add,
+      .Remove {
+        margin: 5px auto;
+        padding: 0px;
+        width: 50%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Add-Child,
+      .Remove-Child {
+        margin: 0px auto;
+        padding: 5px 5px;
+        width: 90%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Add-Child:hover,
+      .Remove-Child:hover {
+        border: 2px solid #f89a1c;
+        background-color: #334355;
+        color: #f89a1c;
+      }
+      .Read {
+        margin: 0px auto;
+        padding: 2px 18px;
+        width: auto;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Close {
+        margin: 0px auto;
+        padding: 2px 18px;
+        width: auto;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Read:hover {
+        border: 2px solid #f89a1c;
+        background-color: #808284;
+        color: #ffffff;
+      }
+      .Close:hover {
+        border: 2px solid #f89a1c;
+        background-color: #808284;
+        color: #ffffff;
+      }
+
+      .Agreement {
+        margin: 10px auto 25px auto;
+        padding: 0px 15px 0px 15px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
+      .Agreement > a {
+        color: #f89a1c;
+      }
+      .Agreement > a:hover {
+        color: #808284;
+      }
+
+      .Errors {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        visibility: hidden;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1em;
+        color: #ff0000;
+
+        text-align: center;
+      }
+      .Notes {
+        margin: 15px auto;
+        padding: 5px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: -1px;
+        border-radius: 5px;
+      }
+      .Notes > a {
+        color: #f89a1c;
+      }
+      .Notes > a:hover {
+        color: #808284;
+      }
+
+      .Footer {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%;
+        height: auto;
+      }
+      .Footer > p {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Footer > p > a {
+        color: #f89a1c;
+      }
+      .Footer > p > a:hover {
+        color: #808284;
+      }
+
+      @media screen and (min-width: 740px) {
+        .Form-Paper {
+          margin: 0 auto;
+          padding: 0;
+          width: 740px;
+          height: auto;
+
+          background: #334355;
+        }
+        .Form-Content {
+          margin: 0 auto;
+          padding: 0;
+          width: 700px;
+          height: auto;
+        }
+        .Legacy-Retreat-Application {
+          margin: 0 auto;
+          padding: 0;
+          width: 80%;
+          height: auto;
+        }
+        #If-Diagnosed-Parent-Form,
+        #If-Spouse-Caregiver-Form {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .mission {
+          margin: 0 auto;
+          padding: 15px 0 45px 0;
+
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .mission > span {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway";
+          font-size: 2.2rem;
+          font-weight: 600;
+
+          color: #f89a1c;
+
+          word-spacing: 0.3rem;
+          letter-spacing: 0.15rem;
+        }
+        .Form-Name {
+          margin: 0 auto;
+          padding: 30px 0;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Form-Name > span {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 500;
+          font-size: 5.5rem;
+          line-height: 1em;
+
+          color: #ffffff;
+        }
+        .Applicants {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .Pages {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .Section-Name {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Section-Name > span {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          font-size: 2.2rem;
+          line-height: 1em;
+
+          color: #f89a1c;
+        }
+        .Questions {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+
+        .One-Column {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+
+          border-top: 1px solid #ffffff;
+        }
+        .One {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .One > p {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: 3px;
+          border-radius: 5px;
+        }
+        .One > span {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #f89a1c;
+
+          text-align: center;
+        }
+        .One > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .One > input[type="text"],
+        .One > input[type="date"],
+        .One > select,
+        .One > textarea {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .One > select:focus,
+        .One > input[type="text"]:focus,
+        .One > input[type="date"]:focus,
+        .One > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Two-Columns {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Two {
+          margin: 0 auto;
+          padding: 0;
+          width: 48%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .Two > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Two > select {
+          margin: 0 auto;
+          padding: 2px 0px 0 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Two > input[type="text"],
+        .Two > input[type="date"] {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 96%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Two > select:focus,
+        .Two > input[type="text"]:focus,
+        .Two > input[type="date"]:focus,
+        .Two > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Three-Columns {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Three {
+          margin: 0 auto;
+          padding: 0;
+          width: 33%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .Three > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Three > select {
+          margin: 0 auto;
+          padding: 2px 0px 0 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Three > input[type="text"],
+        .Three > input[type="date"] {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 96%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Three > select:focus,
+        .Three > input[type="text"]:focus,
+        .Three > input[type="date"]:focus,
+        .Three > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Check-Box {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+        }
+        .Left-Box {
+          margin: 0 auto;
+          padding: 0;
+        }
+        .Left-Box > .Cell {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: right;
+        }
+        .left-Box > .Cell > input[type="radio"],
+        .left-Box > .Cell > input[type="checkbox"] {
+          margin: 0;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: right;
+        }
+        .Right-Box {
+          margin: 0 auto;
+          padding: 0;
+        }
+        .Right-Box > .Cell {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: left;
+        }
+        .Right-Box > .Cell > p {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: left;
+        }
+
+        .Button-Box {
+          margin: 30px auto 15px;
+          padding: 0px;
+          width: 100%;
+          height: 50px;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Left,
+        .Middle,
+        .Right {
+          margin: 5px auto;
+          padding: 0px;
+          width: 33%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Back-Button,
+        .Next-Button,
+        .Submit-Button {
+          margin: 0px auto;
+          padding: 5px 10px;
+          width: 85%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Back-Button:hover,
+        .Next-Button:hover,
+        .Submit-Button:hover {
+          border: 2px solid #f89a1c;
+          background-color: #334355;
+          color: #f89a1c;
+        }
+        .Add,
+        .Remove {
+          margin: 5px auto;
+          padding: 0px;
+          width: 50%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Add-Child,
+        .Remove-Child {
+          margin: 0px auto;
+          padding: 5px 5px;
+          width: 90%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Add-Child:hover,
+        .Remove-Child:hover {
+          border: 2px solid #f89a1c;
+          background-color: #334355;
+          color: #f89a1c;
+        }
+        .Read {
+          margin: 0px auto;
+          padding: 2px 18px;
+          width: auto;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Close {
+          margin: 0px auto;
+          padding: 2px 18px;
+          width: auto;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Read:hover {
+          border: 2px solid #f89a1c;
+          background-color: #808284;
+          color: #ffffff;
+        }
+        .Close:hover {
+          border: 2px solid #f89a1c;
+          background-color: #808284;
+          color: #ffffff;
+        }
+
+        .Agreement {
+          margin: 10px auto 25px auto;
+          padding: 0px 15px 0px 15px;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: 3px;
+          border-radius: 5px;
+        }
+        .Agreement > a {
+          color: #f89a1c;
+        }
+        .Agreement > a:hover {
+          color: #808284;
+        }
+
+        .Errors {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          visibility: hidden;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 1em;
+          color: #ff0000;
+
+          text-align: center;
+        }
+        .Notes {
+          margin: 15px auto;
+          padding: 5px;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: -1px;
+          border-radius: 5px;
+        }
+        .Notes > a {
+          color: #f89a1c;
+        }
+        .Notes > a:hover {
+          color: #808284;
+        }
+
+        .Footer {
+          margin: 0 auto;
+          padding: 20px 0;
+          width: 100%;
+          height: auto;
+        }
+        .Footer > p {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Footer > p > a {
+          color: #f89a1c;
+        }
+        .Footer > p > a:hover {
+          color: #808284;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="" class="Form-Paper">
+      <div id="" class="Form-Content">
+        <div id="" class="Form-Name">
+          <span>Legacy Retreat&reg; Application</span>
+        </div>
+
+        <div id="Form-Entrance" class="Pages">
+          <div class="mission">
+            <span>
+              Our mission is to inspire hope in young families, with children 18 or under, facing the loss of a parent to a life-threatening illness.
+            </span>
+          </div>
+          <div id="Entrance-Question" class="Questions">
+            <div id="" class="One-Column">
+              <div id="" class="One">
+                <label for="Tell-Us-About-You"> Who are you? </label>
+                <select id="Tell-Us-About-You" name="Tell-Us-About-You">
+                  <option value="" selected disabled hidden>Select your status...</option>
+                  <option value="Diagnosed Parent">I am a diagnosed parent.</option>
+                  <option value="Spouse/Caregiver">I am a spouse/caregiver to the diagnosed parent.</option>
+                </select>
+                <small id="Entrance-Error" class="Errors">Required*</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="If-Diagnosed-Parent-Form" style="display: none">
+          <form
+            id="DP-Legacy-Retreat-Application"
+            class="Legacy-Retreat-Application"
+            action="https://www2.inheritanceofhope.org/l/739893/2023-04-10/8vsyrj"
+            method="post"
+          >
+            <div id="DP-Applicant" class="Applicants">
+              <div id="DP-Page-One" class="Pages">
+                <div id="DP-DP-Question-1" class="Questions">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="">Is the Diagnosis life-threatening?</label>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="radio" id="DP-Life-Threatening-Diagnosis-Yes" name="DP-Life-Threatening-Diagnosis" value="Yes" />
+                          </div>
+                          <div class="Cell">
+                            <input type="radio" id="DP-Life-Threatening-Diagnosis-No" name="DP-Life-Threatening-Diagnosis" value="No" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Yes</p></div>
+                          <div class="Cell"><p>No</p></div>
+                        </div>
+                      </div>
+                      <div id="DP-Life-Threatening-Diagnosis-Note" class="Notes" style="display: none">
+                        Thank you for your interest in Inheritance of Hope. We exist to serve families who have a parent with a terminal illness. <br />
+                        Thankfully that is not you and we hope and pray that it never is! For other ways to be connected to Inheritance of Hope visit our <br />
+                        “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage.
+                      </div>
+                      <small id="DP-DP-Question-1-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-DP-Question-2" class="Questions" style="display: none">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="DP-What-Is-The-Diagnosis">What is your diagnosis (type/stage)?</label>
+                      <input type="text" id="DP-What-Is-The-Diagnosis" name="DP-What-Is-The-Diagnosis" />
+                      <small id="DP-DP-Question-2-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-DP-Question-3" class="Questions" style="display: none">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="DP-Do-You-Have-Children">Do you have children 18 or younger?</label>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="radio" id="DP-Do-You-Have-Children-Yes" name="DP-Do-You-Have-Children" value="Yes" />
+                          </div>
+                          <div class="Cell">
+                            <input type="radio" id="DP-Do-You-Have-Children-No" name="DP-Do-You-Have-Children" value="No" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Yes</p></div>
+                          <div class="Cell"><p>No</p></div>
+                        </div>
+                      </div>
+                      <div id="DP-Do-You-Have-Children-Note" class="Notes" style="display: none">
+                        We are so sorry to hear about your diagnosis, but so glad you are being proactive in finding support for your family. <br />
+                        One of our qualifications for Legacy Retreats is that families have at least one child that is 18 or younger. <br />
+                        However, Inheritance of Hope DOES offer other programs that could benefit your family. <br />
+                        The best fit would likely be in <a href="https://inheritanceofhope.org/hopeathome/" target="_blank">Groups</a>, <br />
+                        which are online weekly gatherings. <br />
+                        Signing up doesn't commit you each week, but means you will come when you can and be welcomed with open arms--and there are lots of
+                        times/options! <br /><br />
+                        We are sorry that we can’t support your family through a Legacy Retreat, but we sure hope you join our online community of folks who
+                        understand what you are experiencing.
+                      </div>
+                      <small id="DP-DP-Question-3-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-DP-Question-4" class="Questions" style="display: none">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="DP-Do-You-Have-Spouse-Caregiver">Do you have a spouse or a caregiver?</label>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="radio" id="DP-Do-You-Have-Spouse-Caregiver-Yes" name="DP-Do-You-Have-Spouse-Caregiver" value="Yes" />
+                          </div>
+                          <div class="Cell">
+                            <input type="radio" id="DP-Do-You-Have-Spouse-Caregiver-No" name="DP-Do-You-Have-Spouse-Caregiver" value="No" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Yes</p></div>
+                          <div class="Cell"><p>No</p></div>
+                        </div>
+                      </div>
+                      <small id="DP-DP-Question-4-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-DP-Question-5" class="Questions" style="display: none">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="DP-What-Is-Their-Relationship-To-You">What is their relationship to you?</label>
+                      <select id="DP-What-Is-Their-Relationship-To-You" name="DP-What-Is-Their-Relationship-To-You">
+                        <option value="" selected disabled hidden>Select your status...</option>
+                        <option value="Spouse/Caregiver">Spouse/Caregiver</option>
+                        <option value="Family Member">Family Member</option>
+                        <option value="Friend">Friend</option>
+                      </select>
+                      <small id="DP-DP-Question-5-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="DP-Page-Buttons-1" class="Button-Box" style="display: none">
+                  <div class="Left">
+                    <button id="DP-Page-Back-1" class="Back-Button" type="button" style="display: none">Back</button>
+                  </div>
+                  <div class="Middle">
+                    <button id="DP-Form-Button-1" class="Submit-Button" type="button" style="display: none">Submit</button>
+                  </div>
+                  <div class="Right">
+                    <button id="DP-Page-Next-1" class="Next-Button" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+              <div id="DP-Page-Two" class="Pages" style="display: none">
+                <div id="DP-DP-Info-Section">
+                  <div class="Section-Name">
+                    <span> Diagnosed Parent Info: </span>
+                  </div>
+                  <div id="DP-DP-Info-1-2" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two">
+                        <label for="DP-First-Name">First Name*</label>
+                        <input type="text" id="DP-DP-First-Name" name="DP-First-Name" />
+                        <small id="DP-DP-Info-1-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two">
+                        <label for="DP-Last-Name">Last Name*</label>
+                        <input type="text" id="DP-DP-Last-Name" name="DP-Last-Name" />
+                        <small id="DP-DP-Info-2-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-DP-Info-3-4" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two">
+                        <label for="DP-Birthdate">Birthdate*</label>
+                        <input type="date" id="DP-DP-Birthdate" name="DP-Birthdate" placeholder="MM/DD/YYYY" />
+                        <small id="DP-DP-Info-3-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two">
+                        <label for="DP-Gender">Gender</label>
+                        <input type="text" id="DP-DP-Gender" name="DP-Gender" />
+                        <small id="DP-DP-Info-4-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-DP-Info-5-6" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two">
+                        <label for="DP-E-Mail">E-Mail*</label>
+                        <input type="text" id="DP-DP-E-Mail" name="DP-E-Mail" placeholder="xxx@example.xxx" />
+                        <small id="DP-DP-Info-5-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two">
+                        <label for="DP-Mobile">Mobile*</label>
+                        <input type="text" id="DP-DP-Mobile" name="DP-Mobile" placeholder="xxx-xxx-xxxx" />
+                        <small id="DP-DP-Info-6-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-DP-Info-7" class="Questions">
+                    <div id="" class="One-Column">
+                      <div class="One">
+                        <label for="DP-Street-Address">Street Address*</label>
+                        <input type="text" id="DP-DP-Street-Address" name="DP-Street-Address" />
+                        <small id="DP-DP-Info-7-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-DP-Info-8-9-10" class="Questions">
+                    <div id="" class="Three-Columns">
+                      <div class="Three">
+                        <label for="DP-City">City*</label>
+                        <input type="text" id="DP-DP-City" name="DP-City" />
+                        <small id="DP-DP-Info-8-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Three">
+                        <label for="DP-State">State*</label>
+                        <input type="text" id="DP-DP-State" name="DP-State" />
+                        <small id="DP-DP-Info-9-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Three">
+                        <label for="DP-Zip">Zip*</label>
+                        <input type="text" id="DP-DP-Zip" name="DP-Zip" />
+                        <small id="DP-DP-Info-10-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="DP-SC-Info-Section">
+                  <div class="Section-Name">
+                    <span> Spouse/Caregiver Info: </span>
+                  </div>
+                  <div id="DP-SC-Info-1-2" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div id="" class="Two">
+                        <label for="DP-SC-First-Name">First Name*</label>
+                        <input type="text" id="DP-SC-First-Name" name="DP-SC-First-Name" />
+                        <small id="DP-SC-Info-1-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Two">
+                        <label for="DP-SC-Last-Name">Last Name*</label>
+                        <input type="text" id="DP-SC-Last-Name" name="DP-SC-Last-Name" />
+                        <small id="DP-SC-Info-2-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-SC-Info-3-4" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div id="" class="Two">
+                        <label for="DP-SC-Birthdate">Birthdate*</label>
+                        <input type="date" id="DP-SC-Birthdate" name="DP-SC-Birthdate" placeholder="MM/DD/YYYY" />
+                        <small id="DP-SC-Info-3-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Two">
+                        <label for="DP-SC-Gender">Gender</label>
+                        <input type="text" id="DP-SC-Gender" name="DP-SC-Gender" />
+                        <small id="DP-SC-Info-4-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-SC-Info-5-6" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div id="" class="Two">
+                        <label for="DP-SC-E-Mail">E-Mail*</label>
+                        <input type="text" id="DP-SC-E-Mail" name="DP-SC-E-Mail" placeholder="xxx@example.xxx" />
+                        <small id="DP-SC-Info-5-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Two">
+                        <label for="DP-SC-Mobile">Mobile*</label>
+                        <input type="text" id="DP-SC-Mobile" name="DP-SC-Mobile" placeholder="xxx-xxx-xxxx" />
+                        <small id="DP-SC-Info-6-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-SC-Info-7" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two" style="width: 70%">
+                        <label for="DP-SC-Same-Address">Same address as Diagnosed Parent*</label>
+                        <small id="DP-SC-Info-7-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two" style="width: 30%">
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 30%">
+                            <div class="Cell">
+                              <input type="checkbox" id="DP-SC-Same-Address" name="DP-SC-Same-Address" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 70%">
+                            <div class="Cell">
+                              <p>Yes</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-SC-Info-8" class="Questions">
+                    <div id="" class="One-Column">
+                      <div class="One">
+                        <label for="DP-SC-Street-Address">Street Address*</label>
+                        <input type="text" id="DP-SC-Street-Address" name="DP-SC-Street-Address" />
+                        <small id="DP-SC-Info-8-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="DP-SC-Info-9-10-11" class="Questions">
+                    <div id="" class="Three-Columns">
+                      <div id="" class="Three">
+                        <label for="DP-SC-City">City*</label>
+                        <input type="text" id="DP-SC-City" name="DP-SC-City" />
+                        <small id="DP-SC-Info-9-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Three">
+                        <label for="DP-SC-State">State*</label>
+                        <input type="text" id="DP-SC-State" name="DP-SC-State" />
+                        <small id="DP-SC-Info-10-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Three">
+                        <label for="DP-SC-Zip">Zip*</label>
+                        <input type="text" id="DP-SC-Zip" name="DP-SC-Zip" />
+                        <small id="DP-SC-Info-11-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="DP-Child-Info-Section">
+                  <div class="Section-Name">
+                    <span> Children Info: </span>
+                  </div>
+                  <div id="DP-Child-Info-1" class="Child">
+                    <div class="Two-Columns">
+                      <div id="DP-Child-1" class="Two">
+                        <label for="DP-Child-First-Name-1">First Name*</label>
+                        <input type="text" id="DP-Child-First-Name-1" name="DP-Child-First-Name-1" />
+                        <small id="DP-Child-1-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="DP-Child-2" class="Two">
+                        <label for="DP-Child-Last-Name-1">Last Name*</label>
+                        <input type="text" id="DP-Child-Last-Name-1" name="DP-Child-Last-Name-1" />
+                        <small id="DP-Child-2-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                    <div class="Two-Columns">
+                      <div id="DP-Child-3" class="Two">
+                        <label for="DP-Child-Birthdate-1">Birthdate*</label>
+                        <input type="date" id="DP-Child-Birthdate-1" name="DP-Child-Birthdate-1" placeholder="MM/DD/YYYY" />
+                        <small id="DP-Child-3-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="DP-Child-4" class="Two">
+                        <label for="DP-Child-Gender-1">Gender</label>
+                        <input type="text" id="DP-Child-Gender-1" name="DP-Child-Gender-1" />
+                        <small id="DP-Child-4-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                    <div class="One-Column">
+                      <div id="DP-Child-5" class="One">
+                        <label for="DP-Child-Special-Need-1">Special Needs for the Child</label>
+                        <textarea id="DP-Child-Special-Need-1" name="DP-Child-Special-Need-1" cols="30" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-Child-Buttons" class="Button-Box">
+                  <div id="DP-Child-Add" class="Add">
+                    <button id="DP-Add-Child" class="Add-Child" type="button">Add another child</button>
+                  </div>
+                  <div id="DP-Child-Remove" class="Remove">
+                    <button id="DP-Remove-Child" class="Remove-Child" type="button">Remove child</button>
+                  </div>
+                </div>
+
+                <div id="DP-Page-Buttons-2" class="Button-Box">
+                  <div class="Left">
+                    <button id="DP-Page-Back-2" class="Back-Button" type="button">Back</button>
+                  </div>
+                  <div class="Middle">
+                    <button id="DP-Form-Button-2" class="Submit-Button" type="button" style="display: none">Submit</button>
+                  </div>
+                  <div class="Right">
+                    <button id="DP-Page-Next-2" class="Next-Button" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+              <div id="DP-Page-Three" class="Pages" style="display: none">
+                <div class="Section-Name">
+                  <span> Page 3 </span>
+                </div>
+                <div id="DP-Agreement-1" class="Questions">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="DP-Heard-About-IoH">How did you hear about Inheritance of Hope?*</label>
+                      <input type="text" id="DP-Heard-About-IoH" name="DP-Heard-About-IoH" style="display: none" />
+                      <select id="DP-HAI" type="text">
+                        <option value="" selected disabled hidden>Please Select...</option>
+                        <option value="Facebook Post/Ad">Facebook Post/Ad</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Google Ad">Google Ad</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Internet Search">Internet Search</option>
+                        <option value="Friend/Family Member Served">Friend/Family Member Served</option>
+                        <option value="Medical Professional/Social Worker">Medical Professional/Social Worker</option>
+                        <option value="OTHER">OTHER</option>
+                      </select>
+                      <input type="text" id="DP-HAI-Other" style="margin-top: 10px; display: none" placeholder="Other: " />
+                      <small id="DP-HAI-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-Agreement-2" class="Questions">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="DP-Release-Agreement">Release Agreement*</label>
+                      <button id="DP-RA-Open" class="Read" type="button">Read</button>
+                      <small id="DP-RA-Error" class="Errors">You must agree to the term*</small>
+                      <div id="DP-Release-Agreement" class="Agreement" style="display: none">
+                        <strong>A)</strong> &nbsp I understand that participation in an Inheritance of Hope event is purely voluntary.<br /><br />
+                        <strong>B)</strong> &nbsp On behalf of myself and all the Participants listed on this form, their heirs, personal representatives,
+                        guardians, successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify and
+                        hold harmless Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and assigns, and
+                        any parent organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of action, costs or
+                        expenses (including attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly or indirectly, or
+                        in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                        <strong>C)</strong> &nbsp I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation in
+                        the event. I understand that participation in the event may result in injury, property damage, interaction with persons having
+                        potentially communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and
+                        risks associated with the event and voluntarily assume the risks associated with participation in the event. I hereby unconditionally,
+                        irrevocably, and absolutely release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers,
+                        employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries, from
+                        any and all loss, liability, claims, demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits of any
+                        type, whether in law and/or in equity, in the event of injury, property damage, disease, and/or death related directly or indirectly, or
+                        in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                        <strong>D)</strong> &nbsp I understand, recognize, and agree that I am fully responsible for my child(ren) throughout the event.
+                        <br /><br />
+                        <strong>E)</strong> &nbsp By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or
+                        electronically record interviews with me/us in such a manner as they choose. I further give permission and consent that any such
+                        photographs, films, and/or electronically recorded interviews may be published and used by Inheritance of Hope and its agents to
+                        illustrate and promote the event experience and Inheritance of Hope. <br /><br />
+                        <strong>F)</strong> &nbsp By my signature set forth below, I the Applicant understand that I am unconditionally, irrevocably, and
+                        absolutely authorizing Inheritance of Hope to share the medical information contained in this application with its directors, officers,
+                        employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries.
+                        <br /><br />
+                        <strong>G)</strong> &nbsp I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State
+                        of South Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in
+                        full legal force and effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the event must be
+                        submitted to binding arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration shall
+                        be sited in Oconee County, South Carolina. <br /><br />
+                        <button id="DP-RA-Close" class="Close" type="button">Close</button>
+                      </div>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="checkbox" id="DP-RA-Accept" name="DP-RA-Accept" value="Yes" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Accept</p></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-Agreement-3" class="Questions">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="DP-Informed-Consent-Agreement">Informed Consent Agreement*</label>
+                      <button id="DP-ICA-Open" class="Read" type="button">Read</button>
+                      <small id="DP-ICA-Error" class="Errors">You must agree to the term*</small>
+                      <div id="DP-Informed-Consent-Agreement" class="Agreement" style="display: none">
+                        <strong>A)</strong> &nbsp I understand, recognize, and agree that Inheritance of Hope employs a variety of facilitators in order to
+                        provide a quality experience to all Participants. I understand that I can request information regarding my facilitators' education and
+                        experience backgrounds from Inheritance of Hope.<br /><br />
+                        <strong>B)</strong> &nbsp I understand, recognize, and agree that a safe group environment is created and maintained by both the
+                        facilitators and the group members offering mutual respect and trust. Confidentiality is also primary for a safe group environment.
+                        Group facilitators are bound by law to maintain confidentiality. Participants are bound by honor to maintain confidentiality. Should I
+                        desire to share what I learn in group, I agree to do so without using group members' names or in any way compromising group members'
+                        confidentiality. I acknowledge that there are legal and professional limits to confidentiality. I understand that I can request more
+                        information about these limits from Inheritance of Hope.<br /><br />
+                        <strong>C)</strong> &nbsp I understand, recognize, and agree that my children and/or teenagers will have age-appropriate group
+                        experiences for healthy emotional processing. The above elements also apply to children and teenager groups. I understand that children
+                        and teenagers will not focus on specific details of any parent's illness but will address the fact that all have an ill parent in
+                        common.<br /><br />
+                        <strong>D)</strong> &nbsp I understand and agree to all terms of event group participation. I also understand and agree that any
+                        Participant can contact Inheritance of Hope for more information about any aspect of the group experience. <br /><br />
+                        <button id="DP-ICA-Close" class="Close" type="button">Close</button>
+                      </div>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="checkbox" id="DP-ICA-Accept" name="DP-ICA-Accept" value="Yes" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Accept</p></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-LR-Location" class="Questions">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="DP-LR-Location">
+                        My family is interested in attending a Legacy Retreat: <br />
+                        (please check all that apply)
+                      </label>
+                      <small id="DP-LR-Location-Error" class="Errors">You must agree to the term*</small>
+                    </div>
+                    <div class="One" style="outline: 2px solid #f89a1c">
+                      <input type="text" id="DP-Additional-Notes" name="DP-Additional-Notes" style="display: none" />
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 20%">
+                          <div class="Cell" style="display: none">
+                            <input type="checkbox" id="DP-LR-Location-1" name="" value="St. Louis, Missouri" />
+                          </div>
+                          <div class="Cell">
+                            <input type="checkbox" id="DP-LR-Location-2" name="" value="Randalman, North Carolina (October 13-15)" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 80%">
+                          <div class="Cell" style="display: none">
+                            <p>in St.louis (Filled out)</p>
+                          </div>
+                          <div class="Cell">
+                            <p>in Randalman, North Carolina (October 13-15)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="One">
+                      <div class="Notes" style="outline: none">
+                        and would like you to check back when future retreats are scheduled <br /><br />
+                        Note: this does not guarantee your spot on a retreat but lets us know how to follow up with you!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-Agreement-4" class="Questions">
+                  <div id="" class="Two-Columns">
+                    <div class="Two" style="width: 70%">
+                      <label for="DP-Travel-Responsibility">
+                        I understand I am responsible to arrange and pay my own travel to and from the event, including airfare if applicable.*
+                      </label>
+                      <small id="DP-Travel-Responsibility-Error" class="Errors">Required*</small>
+                    </div>
+                    <div class="Two" style="width: 30%">
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 30%">
+                          <div class="Cell">
+                            <input type="checkbox" id="DP-Travel-Responsibility" name="DP-Travel-Responsibility" value="Yes" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 70%">
+                          <div class="Cell">
+                            <p>Yes</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="DP-Agreement-5" class="Questions">
+                  <div class="Two-Columns">
+                    <div class="Two">
+                      <label for="DP-Electronic-Signature">Signature*</label>
+                      <input type="text" id="DP-Electronic-Signature" name="DP-Electronic-Signature" />
+                      <small id="DP-ES-Error" class="Errors">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="DP-Electronic-Signature-Date">Signature Date*</label>
+                      <input type="date" id="DP-Electronic-Signature-Date" name="DP-Electronic-Signature-Date" />
+                      <small id="DP-ESD-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="DP-Page-Buttons-3" class="Button-Box">
+                  <div class="Left">
+                    <button id="DP-Page-Back-3" class="Back-Button" type="button">Back</button>
+                  </div>
+                  <div class="Middle">
+                    <button id="DP-Form-Button-3" class="Submit-Button" type="button">Submit</button>
+                  </div>
+                  <div class="Right">
+                    <button id="DP-Page-Next-3" class="Next-Button" type="button" style="display: none">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="textarea" id="DP-PD-To-SF" name="PD-To-SF" style="display: none" />
+          </form>
+        </div>
+
+        <div id="If-Spouse-Caregiver-Form" style="display: none">
+          <form
+            id="SC-Legacy-Retreat-Application"
+            class="Legacy-Retreat-Application"
+            action="https://www2.inheritanceofhope.org/l/739893/2023-04-10/8vsyrj"
+            method="post"
+          >
+            <div id="SC-Applicant" class="Applicants">
+              <div id="SC-Page-One" class="Pages">
+                <div id="SC-DP-Question-1" class="Questions">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="">Is the Diagnosed Parent still alive?</label>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="radio" id="SC-Diagnosed-Parent-Alive-Yes" name="DP-Diagnosed-Parent-Alive" value="Yes" />
+                          </div>
+                          <div class="Cell">
+                            <input type="radio" id="SC-Diagnosed-Parent-Alive-No" name="DP-Diagnosed-Parent-Alive" value="No" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Yes</p></div>
+                          <div class="Cell"><p>No</p></div>
+                        </div>
+                      </div>
+                      <div id="SC-Diagnosed-Parent-Alive-Note" class="Notes" style="display: none">
+                        Thank you for your interest in Inheritance of Hope. We exist to serve families who have a parent with a terminal illness. <br />
+                        Thankfully that is not you and we hope and pray that it never is! For other ways to be connected to Inheritance of Hope visit our <br />
+                        “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage.
+                      </div>
+                      <small id="SC-DP-Question-1-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-DP-Question-2" class="Questions" style="display: none">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="">Is the Diagnosis life-threatening?</label>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="radio" id="SC-Life-Threatening-Diagnosis-Yes" name="SC-Life-Threatening-Diagnosis" value="Yes" />
+                          </div>
+                          <div class="Cell">
+                            <input type="radio" id="SC-Life-Threatening-Diagnosis-No" name="SC-Life-Threatening-Diagnosis" value="No" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Yes</p></div>
+                          <div class="Cell"><p>No</p></div>
+                        </div>
+                      </div>
+                      <div id="SC-Life-Threatening-Diagnosis-Note" class="Notes" style="display: none">
+                        Thank you for your interest in Inheritance of Hope. We exist to serve families who have a parent with a terminal illness. <br />
+                        Thankfully that is not you and we hope and pray that it never is! For other ways to be connected to Inheritance of Hope visit our <br />
+                        “<a href="https://inheritanceofhope.org/connect/" target="_blank">Connect</a>” webpage.
+                      </div>
+                      <small id="SC-DP-Question-1-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-DP-Question-3" class="Questions" style="display: none">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="SC-What-Is-The-Diagnosis">What is the diagnosis (type/stage)?</label>
+                      <input type="text" id="SC-What-Is-The-Diagnosis" name="DP-What-Is-The-Diagnosis" />
+                      <small id="SC-DP-Question-3-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-DP-Question-4" class="Questions" style="display: none">
+                  <div id="" class="One-Column">
+                    <div id="" class="One">
+                      <label for="SC-Relationship-to-Diagnosed-Parent">Relationship to the diagnosed parent</label>
+                      <select id="SC-Relationship-to-Diagnosed-Parent" name="SC-Relationship-to-Diagnosed-Parent">
+                        <option value="" selected disabled hidden>Select your status...</option>
+                        <option value="Spouse/Caregiver">Spouse/Caregiver</option>
+                        <option value="Family Member">Family Member</option>
+                        <option value="Friend">Friend</option>
+                      </select>
+                      <small id="SC-DP-Question-4-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-DP-Question-5" class="Questions" style="display: none">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="SC-Do-You-Have-Children">Do you/they have children 18 or younger?</label>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="radio" id="SC-Do-You-Have-Children-Yes" name="SC-Do-You-Have-Children" value="Yes" />
+                          </div>
+                          <div class="Cell">
+                            <input type="radio" id="SC-Do-You-Have-Children-No" name="SC-Do-You-Have-Children" value="No" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Yes</p></div>
+                          <div class="Cell"><p>No</p></div>
+                        </div>
+                      </div>
+                      <div id="SC-Do-You-Have-Children-Note" class="Notes" style="display: none">
+                        We are so sorry to hear about your diagnosis, but so glad you are being proactive in finding support for your family. <br />
+                        One of our qualifications for Legacy Retreats is that families have at least one child that is 18 or younger. <br />
+                        However, Inheritance of Hope DOES offer other programs that could benefit your family. <br />
+                        The best fit would likely be in <a href="https://inheritanceofhope.org/hopeathome/" target="_blank">Groups</a>, <br />
+                        which are online weekly gatherings. <br />
+                        Signing up doesn't commit you each week, but means you will come when you can and be welcomed with open arms--and there are lots of
+                        times/options! <br /><br />
+                        We are sorry that we can’t support your family through a Legacy Retreat, but we sure hope you join our online community of folks who
+                        understand what you are experiencing.
+                      </div>
+                      <small id="SC-DP-Question-5-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-Page-Buttons-1" class="Button-Box" style="display: none">
+                  <div class="Left">
+                    <button id="SC-Page-Back-1" class="Back-Button" type="button" style="display: none">Back</button>
+                  </div>
+                  <div class="Middle">
+                    <button id="SC-Form-Button-1" class="Submit-Button" type="button" style="display: none">Submit</button>
+                  </div>
+                  <div class="Right">
+                    <button id="SC-Page-Next-1" class="Next-Button" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+              <div id="SC-Page-Two" class="Pages" style="display: none">
+                <div id="SC-DP-Info-Section">
+                  <div class="Section-Name">
+                    <span> Diagnosed Parent Info: </span>
+                  </div>
+                  <div id="SC-DP-Info-1-2" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two">
+                        <label for="DP-First-Name">First Name*</label>
+                        <input type="text" id="SC-DP-First-Name" name="DP-First-Name" />
+                        <small id="SC-DP-Info-1-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two">
+                        <label for="DP-Last-Name">Last Name*</label>
+                        <input type="text" id="SC-DP-Last-Name" name="DP-Last-Name" />
+                        <small id="SC-DP-Info-2-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-DP-Info-3-4-5" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two">
+                        <label for="DP-Birthdate">Birthdate*</label>
+                        <input type="date" id="SC-DP-Birthdate" name="DP-Birthdate" placeholder="MM/DD/YYYY" />
+                        <small id="SC-DP-Info-3-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="If-Deceased-Deathdate" class="Two" style="display: none">
+                        <label for="SC-DP-Deathdate">Date of Death*</label>
+                        <input type="date" id="SC-DP-Deathdate" name="DP-Deathdate" placeholder="MM/DD/YYYY" />
+                        <small id="SC-DP-Info-4-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="If-Alive-Gender" class="Two">
+                        <label for="DP-Gender">Gender</label>
+                        <input type="text" id="SC-DP-Gender" name="DP-Gender" />
+                        <small id="SC-DP-Info-5-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-DP-Info-6-7" class="Questions">
+                    <div class="Two-Columns">
+                      <div class="Two">
+                        <label for="DP-E-Mail">E-Mail*</label>
+                        <input type="text" id="SC-DP-E-Mail" name="DP-E-Mail" placeholder="xxx@example.xxx" />
+                        <small id="SC-DP-Info-6-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two">
+                        <label for="DP-Mobile">Mobile*</label>
+                        <input type="text" id="SC-DP-Mobile" name="DP-Mobile" placeholder="xxx-xxx-xxxx" />
+                        <small id="SC-DP-Info-7-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-DP-Info-8" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="DP-Street-Address">Street Address*</label>
+                        <input type="text" id="SC-DP-Street-Address" name="DP-Street-Address" />
+                        <small id="SC-DP-Info-8-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-DP-Info-9-10-11" class="Questions">
+                    <div class="Three-Columns">
+                      <div class="Three">
+                        <label for="DP-City">City*</label>
+                        <input type="text" id="SC-DP-City" name="DP-City" />
+                        <small id="SC-DP-Info-9-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Three">
+                        <label for="DP-State">State*</label>
+                        <input type="text" id="SC-DP-State" name="DP-State" />
+                        <small id="SC-DP-Info-10-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Three">
+                        <label for="DP-Zip">Zip*</label>
+                        <input type="text" id="SC-DP-Zip" name="DP-Zip" />
+                        <small id="SC-DP-Info-11-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-SC-Info-Section">
+                  <div class="Section-Name">
+                    <span> Spouse/Caregiver Info: </span>
+                  </div>
+                  <div id="SC-SC-Info-1-2" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div id="" class="Two">
+                        <label for="SC-SC-First-Name">First Name*</label>
+                        <input type="text" id="SC-SC-First-Name" name="SC-SC-First-Name" />
+                        <small id="SC-SC-Info-1-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Two">
+                        <label for="SC-SC-Last-Name">Last Name*</label>
+                        <input type="text" id="SC-SC-Last-Name" name="SC-SC-Last-Name" />
+                        <small id="SC-SC-Info-2-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-SC-Info-3-4" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div id="" class="Two">
+                        <label for="SC-SC-Birthdate">Birthdate*</label>
+                        <input type="date" id="SC-SC-Birthdate" name="SC-SC-Birthdate" placeholder="MM/DD/YYYY" />
+                        <small id="SC-SC-Info-3-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Two">
+                        <label for="SC-SC-Gender">Gender</label>
+                        <input type="text" id="SC-SC-Gender" name="SC-SC-Gender" />
+                        <small id="SC-SC-Info-4-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-SC-Info-5-6" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div id="" class="Two">
+                        <label for="SC-SC-E-Mail">E-Mail*</label>
+                        <input type="text" id="SC-SC-E-Mail" name="SC-SC-E-Mail" placeholder="xxx@example.xxx" />
+                        <small id="SC-SC-Info-5-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Two">
+                        <label for="SC-SC-Mobile">Mobile*</label>
+                        <input type="text" id="SC-SC-Mobile" name="SC-SC-Mobile" placeholder="xxx-xxx-xxxx" />
+                        <small id="SC-SC-Info-6-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-SC-Info-7" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two" style="width: 70%">
+                        <label for="SC-SC-Same-Address">Same address as Diagnosed Parent*</label>
+                        <small id="SC-SC-Info-7-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two" style="width: 30%">
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 30%">
+                            <div class="Cell">
+                              <input type="checkbox" id="SC-SC-Same-Address" name="SC-SC-Same-Address" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 70%">
+                            <div class="Cell">
+                              <p>Yes</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-SC-Info-8" class="Questions">
+                    <div id="" class="One-Column">
+                      <div class="One">
+                        <label for="SC-SC-Street-Address">Street Address*</label>
+                        <input type="text" id="SC-SC-Street-Address" name="SC-SC-Street-Address" />
+                        <small id="SC-SC-Info-8-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="SC-SC-Info-9-10-11" class="Questions">
+                    <div id="" class="Three-Columns">
+                      <div id="" class="Three">
+                        <label for="SC-SC-City">City*</label>
+                        <input type="text" id="SC-SC-City" name="SC-SC-City" />
+                        <small id="SC-SC-Info-9-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Three">
+                        <label for="SC-SC-State">State*</label>
+                        <input type="text" id="SC-SC-State" name="SC-SC-State" />
+                        <small id="SC-SC-Info-10-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="" class="Three">
+                        <label for="SC-SC-Zip">Zip*</label>
+                        <input type="text" id="SC-SC-Zip" name="SC-SC-Zip" />
+                        <small id="SC-SC-Info-11-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-Child-Info-Section">
+                  <div class="Section-Name">
+                    <span> Children Info: </span>
+                  </div>
+                  <div id="SC-Child-Info-1" class="Child">
+                    <div class="Two-Columns">
+                      <div id="SC-Child-1" class="Two">
+                        <label for="SC-Child-First-Name-1">First Name*</label>
+                        <input type="text" id="SC-Child-First-Name-1" name="SC-Child-First-Name-1" />
+                        <small id="SC-Child-1-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="SC-Child-2" class="Two">
+                        <label for="SC-Child-Last-Name-1">Last Name*</label>
+                        <input type="text" id="SC-Child-Last-Name-1" name="SC-Child-Last-Name-1" />
+                        <small id="SC-Child-2-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                    <div class="Two-Columns">
+                      <div id="SC-Child-3" class="Two">
+                        <label for="SC-Child-Birthdate-1">Birthdate*</label>
+                        <input type="date" id="SC-Child-Birthdate-1" name="SC-Child-Birthdate-1" placeholder="MM/DD/YYYY" />
+                        <small id="SC-Child-3-Error" class="Errors">Required*</small>
+                      </div>
+                      <div id="SC-Child-4" class="Two">
+                        <label for="SC-Child-Gender-1">Gender</label>
+                        <input type="text" id="SC-Child-Gender-1" name="SC-Child-Gender-1" />
+                        <small id="SC-Child-4-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                    <div class="One-Column">
+                      <div id="SC-Child-5" class="One">
+                        <label for="SC-Child-Special-Need-1">Special Needs for the Child</label>
+                        <textarea id="SC-Child-Special-Need-1" name="SC-Child-Special-Need-1" cols="30" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-Child-Buttons" class="Button-Box">
+                  <div id="SC-Child-Add" class="Add">
+                    <button id="SC-Add-Child" class="Add-Child" type="button">Add another child</button>
+                  </div>
+                  <div id="SC-Child-Remove" class="Remove">
+                    <button id="SC-Remove-Child" class="Remove-Child" type="button">Remove child</button>
+                  </div>
+                </div>
+                <div id="SC-Page-Buttons-2" class="Button-Box">
+                  <div class="Left">
+                    <button id="SC-Page-Back-2" class="Back-Button" type="button">Back</button>
+                  </div>
+                  <div class="Middle">
+                    <button id="SC-Form-Button-2" class="Submit-Button" type="button" style="display: none">Submit</button>
+                  </div>
+                  <div class="Right">
+                    <button id="SC-Page-Next-2" class="Next-Button" type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+              <div id="SC-Page-Three" class="Pages" style="display: none">
+                <div class="Section-Name">
+                  <span> Page 3 </span>
+                </div>
+
+                <div id="SC-Agreement-1" class="Questions">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="SC-Heard-About-IoH">How did you hear about Inheritance of Hope?*</label>
+                      <input type="text" id="SC-Heard-About-IoH" name="SC-Heard-About-IoH" style="display: none" />
+                      <select id="SC-HAI" type="text">
+                        <option value="" selected disabled hidden>Please Select...</option>
+                        <option value="Facebook Post/Ad">Facebook Post/Ad</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Google Ad">Google Ad</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Internet Search">Internet Search</option>
+                        <option value="Friend/Family Member Served">Friend/Family Member Served</option>
+                        <option value="Medical Professional/Social Worker">Medical Professional/Social Worker</option>
+                        <option value="OTHER">OTHER</option>
+                      </select>
+                      <input type="text" id="SC-HAI-Other" style="margin-top: 10px; display: none" placeholder="Other: " />
+                      <small id="SC-HAI-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-Agreement-2" class="Questions">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="SC-Release-Agreement">Release Agreement*</label>
+                      <button id="SC-RA-Open" class="Read" type="button">Read</button>
+                      <small id="SC-RA-Error" class="Errors">You must agree to the term*</small>
+                      <div id="SC-Release-Agreement" class="Agreement" style="display: none">
+                        <strong>A)</strong> &nbsp I understand that participation in an Inheritance of Hope event is purely voluntary.<br /><br />
+                        <strong>B)</strong> &nbsp On behalf of myself and all the Participants listed on this form, their heirs, personal representatives,
+                        guardians, successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify and
+                        hold harmless Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and assigns, and
+                        any parent organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of action, costs or
+                        expenses (including attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly or indirectly, or
+                        in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                        <strong>C)</strong> &nbsp I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation in
+                        the event. I understand that participation in the event may result in injury, property damage, interaction with persons having
+                        potentially communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and
+                        risks associated with the event and voluntarily assume the risks associated with participation in the event. I hereby unconditionally,
+                        irrevocably, and absolutely release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers,
+                        employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries, from
+                        any and all loss, liability, claims, demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits of any
+                        type, whether in law and/or in equity, in the event of injury, property damage, disease, and/or death related directly or indirectly, or
+                        in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                        <strong>D)</strong> &nbsp I understand, recognize, and agree that I am fully responsible for my child(ren) throughout the event.
+                        <br /><br />
+                        <strong>E)</strong> &nbsp By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or
+                        electronically record interviews with me/us in such a manner as they choose. I further give permission and consent that any such
+                        photographs, films, and/or electronically recorded interviews may be published and used by Inheritance of Hope and its agents to
+                        illustrate and promote the event experience and Inheritance of Hope. <br /><br />
+                        <strong>F)</strong> &nbsp By my signature set forth below, I the Applicant understand that I am unconditionally, irrevocably, and
+                        absolutely authorizing Inheritance of Hope to share the medical information contained in this application with its directors, officers,
+                        employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries.
+                        <br /><br />
+                        <strong>G)</strong> &nbsp I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State
+                        of South Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in
+                        full legal force and effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the event must be
+                        submitted to binding arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration shall
+                        be sited in Oconee County, South Carolina. <br /><br />
+                        <button id="SC-RA-Close" class="Close" type="button">Close</button>
+                      </div>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="checkbox" id="SC-RA-Accept" name="SC-RA-Accept" value="Yes" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Accept</p></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-Agreement-3" class="Questions">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="SC-Informed-Consent-Agreement">Informed Consent Agreement*</label>
+                      <button id="SC-ICA-Open" class="Read" type="button">Read</button>
+                      <small id="SC-ICA-Error" class="Errors">You must agree to the term*</small>
+                      <div id="SC-Informed-Consent-Agreement" class="Agreement" style="display: none">
+                        <strong>A)</strong> &nbsp I understand, recognize, and agree that Inheritance of Hope employs a variety of facilitators in order to
+                        provide a quality experience to all Participants. I understand that I can request information regarding my facilitators' education and
+                        experience backgrounds from Inheritance of Hope.<br /><br />
+                        <strong>B)</strong> &nbsp I understand, recognize, and agree that a safe group environment is created and maintained by both the
+                        facilitators and the group members offering mutual respect and trust. Confidentiality is also primary for a safe group environment.
+                        Group facilitators are bound by law to maintain confidentiality. Participants are bound by honor to maintain confidentiality. Should I
+                        desire to share what I learn in group, I agree to do so without using group members' names or in any way compromising group members'
+                        confidentiality. I acknowledge that there are legal and professional limits to confidentiality. I understand that I can request more
+                        information about these limits from Inheritance of Hope.<br /><br />
+                        <strong>C)</strong> &nbsp I understand, recognize, and agree that my children and/or teenagers will have age-appropriate group
+                        experiences for healthy emotional processing. The above elements also apply to children and teenager groups. I understand that children
+                        and teenagers will not focus on specific details of any parent's illness but will address the fact that all have an ill parent in
+                        common.<br /><br />
+                        <strong>D)</strong> &nbsp I understand and agree to all terms of event group participation. I also understand and agree that any
+                        Participant can contact Inheritance of Hope for more information about any aspect of the group experience. <br /><br />
+                        <button id="SC-ICA-Close" class="Close" type="button">Close</button>
+                      </div>
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 50%">
+                          <div class="Cell">
+                            <input type="checkbox" id="SC-ICA-Accept" name="SC-ICA-Accept" value="Yes" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 50%">
+                          <div class="Cell"><p>Accept</p></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-LR-Location" class="Questions">
+                  <div class="One-Column">
+                    <div class="One">
+                      <label for="SC-LR-Location">
+                        My family is interested in attending a Legacy Retreat: <br />
+                        (please check all that apply)
+                      </label>
+                      <small id="SC-LR-Location-Error" class="Errors">You must agree to the term*</small>
+                    </div>
+                    <div class="One" style="outline: 2px solid #f89a1c">
+                      <input type="text" id="SC-Additional-Notes" name="SC-Additional-Notes" style="display: none" />
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 20%">
+                          <div class="Cell" style="display: none">
+                            <input type="checkbox" id="SC-LR-Location-1" name="" value="St. Louis, Missouri" />
+                          </div>
+                          <div class="Cell">
+                            <input type="checkbox" id="SC-LR-Location-2" name="" value="Randalman, North Carolina (October 13-15)" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 80%">
+                          <div class="Cell" style="display: none">
+                            <p>in St.louis (Filled out)</p>
+                          </div>
+                          <div class="Cell">
+                            <p>in Randalman, North Carolina (October 13-15)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="One">
+                      <div class="Notes" style="outline: none">
+                        and would like you to check back when future retreats are scheduled <br /><br />
+                        Note: this does not guarantee your spot on a retreat but lets us know how to follow up with you!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-Agreement-4" class="Questions">
+                  <div id="" class="Two-Columns">
+                    <div class="Two" style="width: 70%">
+                      <label for="SC-Travel-Responsibility">
+                        I understand I am responsible to arrange and pay my own travel to and from the event, including airfare if applicable.*
+                      </label>
+                      <small id="SC-Travel-Responsibility-Error" class="Errors">Required*</small>
+                    </div>
+                    <div class="Two" style="width: 30%">
+                      <div class="Check-Box">
+                        <div class="Left-Box" style="width: 30%">
+                          <div class="Cell">
+                            <input type="checkbox" id="SC-Travel-Responsibility" name="SC-Travel-Responsibility" value="Yes" />
+                          </div>
+                        </div>
+                        <div class="Right-Box" style="width: 70%">
+                          <div class="Cell">
+                            <p>Yes</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="SC-Agreement-5" class="Questions">
+                  <div class="Two-Columns">
+                    <div class="Two">
+                      <label for="SC-Electronic-Signature">Signature*</label>
+                      <input type="text" id="SC-Electronic-Signature" name="SC-Electronic-Signature" />
+                      <small id="SC-ES-Error" class="Errors">Required*</small>
+                    </div>
+                    <div class="Two">
+                      <label for="SC-Electronic-Signature-Date">Signature Date*</label>
+                      <input type="date" id="SC-Electronic-Signature-Date" name="SC-Electronic-Signature-Date" />
+                      <small id="SC-ESD-Error" class="Errors">Required*</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="SC-Page-Buttons-3" class="Button-Box">
+                  <div class="Left">
+                    <button id="SC-Page-Back-3" class="Back-Button" type="button">Back</button>
+                  </div>
+                  <div class="Middle">
+                    <button id="SC-Form-Button-3" class="Submit-Button" type="button">Submit</button>
+                  </div>
+                  <div class="Right">
+                    <button id="SC-Page-Next-3" class="Next-Button" type="button" style="display: none">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="textarea" id="SC-PD-To-SF" name="PD-To-SF" style="display: none" />
+          </form>
+        </div>
+
+        <div class="Footer">
+          <p>
+            If you have any technical issues with this form, <br />
+            please email <a href="mailto:tech@inheritanceofhope.org">Tech@InheritanceOfHope.Org</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function uptoTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      function emailCorrectPattern(e) {
+        var y = /\S+@\S+\.\S+/;
+        return y.test(e);
+      }
+
+      document.getElementById("Tell-Us-About-You").addEventListener("change", function () {
+        if (document.getElementById("Tell-Us-About-You").value == "Diagnosed Parent") {
+          document.getElementById("If-Diagnosed-Parent-Form").style.display = "block";
+          document.getElementById("If-Spouse-Caregiver-Form").style.display = "none";
+        }
+        if (document.getElementById("Tell-Us-About-You").value == "Spouse/Caregiver") {
+          document.getElementById("If-Spouse-Caregiver-Form").style.display = "block";
+          document.getElementById("If-Diagnosed-Parent-Form").style.display = "none";
+        }
+      });
+
+      //Diagnosed parent Scenario
+      document.getElementById("DP-Life-Threatening-Diagnosis-Yes").addEventListener("click", function () {
+        document.getElementById("DP-DP-Question-2").style.display = "block";
+        document.getElementById("DP-Life-Threatening-Diagnosis-Note").style.display = "none";
+      });
+      document.getElementById("DP-Life-Threatening-Diagnosis-No").addEventListener("click", function () {
+        document.getElementById("DP-Life-Threatening-Diagnosis-Note").style.display = "block";
+        document.getElementById("DP-DP-Question-2").style.display = "none";
+      });
+      document.getElementById("DP-What-Is-The-Diagnosis").addEventListener("change", function () {
+        if (document.getElementById("DP-What-Is-The-Diagnosis").value != "") {
+          document.getElementById("DP-DP-Question-3").style.display = "block";
+        } else {
+          document.getElementById("DP-DP-Question-3").style.display = "none";
+        }
+      });
+      document.getElementById("DP-Do-You-Have-Children-Yes").addEventListener("click", function () {
+        document.getElementById("DP-DP-Question-4").style.display = "block";
+        document.getElementById("DP-Do-You-Have-Children-Note").style.display = "none";
+      });
+      document.getElementById("DP-Do-You-Have-Children-No").addEventListener("click", function () {
+        document.getElementById("DP-Do-You-Have-Children-Note").style.display = "block";
+        document.getElementById("DP-DP-Question-4").style.display = "none";
+      });
+      document.getElementById("DP-Do-You-Have-Spouse-Caregiver-No").addEventListener("click", function () {
+        document.getElementById("DP-DP-Question-5").style.display = "none";
+        document.getElementById("DP-SC-Info-Section").style.display = "none";
+        document.getElementById("DP-What-Is-Their-Relationship-To-You").value = "";
+        document.getElementById("DP-Page-Buttons-1").style.display = "flex";
+      });
+      document.getElementById("DP-Do-You-Have-Spouse-Caregiver-Yes").addEventListener("click", function () {
+        document.getElementById("DP-DP-Question-5").style.display = "block";
+        document.getElementById("DP-SC-Info-Section").style.display = "block";
+        document.getElementById("DP-Page-Buttons-1").style.display = "none";
+      });
+      document.getElementById("DP-What-Is-Their-Relationship-To-You").addEventListener("change", function () {
+        if (document.getElementById("DP-What-Is-Their-Relationship-To-You").value != "") {
+          document.getElementById("DP-Page-Buttons-1").style.display = "flex";
+        } else {
+          document.getElementById("DP-Page-Buttons-1").style.display = "none";
+        }
+      });
+
+      document.getElementById("DP-SC-Same-Address").addEventListener("change", function () {
+        if (document.getElementById("DP-SC-Same-Address").checked) {
+          document.getElementById("DP-SC-Info-8").style.display = "none";
+          document.getElementById("DP-SC-Info-9-10-11").style.display = "none";
+          document.getElementById("DP-SC-Street-Address").value = document.getElementById("DP-DP-Street-Address").value;
+          document.getElementById("DP-SC-City").value = document.getElementById("DP-DP-City").value;
+          document.getElementById("DP-SC-State").value = document.getElementById("DP-DP-State").value;
+          document.getElementById("DP-SC-Zip").value = document.getElementById("DP-DP-Zip").value;
+        } else {
+          document.getElementById("DP-SC-Info-8").style.display = "block";
+          document.getElementById("DP-SC-Info-9-10-11").style.display = "block";
+        }
+      });
+      document.getElementById("DP-HAI").addEventListener("change", function () {
+        if (document.getElementById("DP-HAI").value == "OTHER") {
+          document.getElementById("DP-HAI-Other").style.display = "block";
+        } else {
+          document.getElementById("DP-HAI-Other").style.display = "none";
+        }
+      });
+
+      //Pardot to Salesforce
+      function DPPDtoSF() {
+        let DPScenario = "[who]" + document.getElementById("Tell-Us-About-You").value + "[/who]";
+        let DPFirstName = "[fname]" + document.getElementById("DP-DP-First-Name").value + "[/fname]";
+        let DPLastName = "[lname]" + document.getElementById("DP-DP-Last-Name").value + "[/lname]";
+        let DPBirthdate = "[bdate]" + document.getElementById("DP-DP-Birthdate").value + "[/bdate]";
+        let DPEmail = "[email]" + document.getElementById("DP-DP-E-Mail").value + "[/email]";
+
+        let DPapp = "[DP]" + DPScenario + DPFirstName + DPLastName + DPBirthdate + DPEmail + "[/DP]";
+
+        if (document.getElementById("DP-HAI-Other").value != "") {
+          document.getElementById("DP-Heard-About-IoH").value = document.getElementById("DP-HAI-Other").value;
+        } else {
+          document.getElementById("DP-Heard-About-IoH").value = document.getElementById("DP-HAI").value;
+        }
+
+        let cgfname = document.getElementById("DP-SC-First-Name").value;
+        let cglname = document.getElementById("DP-SC-Last-Name").value;
+        let cgemail = document.getElementById("DP-SC-E-Mail").value;
+        let cgphone = document.getElementById("DP-SC-Mobile").value;
+        let cgbdate = document.getElementById("DP-SC-Birthdate").value;
+        let cggender = document.getElementById("DP-SC-Gender").value;
+        let cgrltshp = document.getElementById("DP-What-Is-Their-Relationship-To-You").value;
+        let cgstreet1 = document.getElementById("DP-SC-Street-Address").value;
+        let cgcity = document.getElementById("DP-SC-City").value;
+        let cgstate = document.getElementById("DP-SC-State").value;
+        let cgzip = document.getElementById("DP-SC-Zip").value;
+
+        let caregiver = "";
+
+        if (document.getElementById("DP-Do-You-Have-Spouse-Caregiver-Yes").checked) {
+          caregiver =
+            "[Caregiver][fname]" +
+            cgfname +
+            "[/fname][lname]" +
+            cglname +
+            "[/lname][bdate]" +
+            cgbdate +
+            "[/bdate][gender]" +
+            cggender +
+            "[/gender][email]" +
+            cgemail +
+            "[/email][phone]" +
+            cgphone +
+            "[/phone][rltshp]" +
+            cgrltshp +
+            "[/rltshp][street1]" +
+            cgstreet1 +
+            "[/street1][city]" +
+            cgcity +
+            "[/city][state]" +
+            cgstate +
+            "[/state][zip]" +
+            cgzip +
+            "[/zip][/Caregiver]";
+        } else {
+          caregiver = "No caregiver";
+        }
+
+        let children = "";
+        let childID = "";
+
+        let fname = "";
+        let lname = "";
+        let bdate = "";
+        let gender = "";
+        let needs = "";
+
+        let fnameId = "";
+        let lnameId = "";
+        let bdateId = "";
+        let genderId = "";
+        let needsId = "";
+
+        console.log(document.getElementsByClassName("Child").length);
+
+        for (var i = 1; i <= 6; i++) {
+          childID = "DP-Child-Info-" + i;
+          if (document.getElementById(childID) !== null) {
+            fnameId = "DP-Child-First-Name-" + i;
+            lnameId = "DP-Child-Last-Name-" + i;
+            bdateId = "DP-Child-Birthdate-" + i;
+            genderId = "DP-Child-Gender-" + i;
+            needsId = "DP-Child-Special-Need-" + i;
+
+            fname = document.getElementById(fnameId).value;
+            lname = document.getElementById(lnameId).value;
+            bdate = document.getElementById(bdateId).value;
+            gender = document.getElementById(genderId).value;
+            needs = document.getElementById(needsId).value;
+
+            children +=
+              "[Contact" +
+              i +
+              "][fname]" +
+              fname +
+              "[/fname][lname]" +
+              lname +
+              "[/lname][bdate]" +
+              bdate +
+              "[/bdate][gender]" +
+              gender +
+              "[/gender][needs]" +
+              needs +
+              "[/needs][/Contact" +
+              i +
+              "]";
+          }
+          console.log(children);
+        }
+
+        //let TravelResponsibility = document.getElementById("DP-Travel-Responsibility").value;
+
+        var summary =
+          "Diagnosis is life-threatening: " +
+          document.getElementById("DP-Life-Threatening-Diagnosis-Yes").value +
+          " & " +
+          "How did you hear about IoH?: " +
+          document.getElementById("DP-Heard-About-IoH").value;
+
+        let location1 = "";
+        let location2 = "";
+        if (document.getElementById("DP-LR-Location-1").checked) {
+          location1 = document.getElementById("DP-LR-Location-1").value;
+        } else {
+          location1 = location1;
+        }
+        if (document.getElementById("DP-LR-Location-2").checked) {
+          location2 = document.getElementById("DP-LR-Location-2").value;
+        } else {
+          location2 = location2;
+        }
+        document.getElementById("DP-Additional-Notes").value = "My family is interested in " + location1 + " & " + location2;
+
+        document.getElementById("DP-PD-To-SF").value =
+          DPapp +
+          children +
+          caregiver +
+          "[summary]" +
+          summary +
+          "[/summary]" +
+          "[notes]" +
+          "My family is interested in " +
+          location1 +
+          " & " +
+          location2 +
+          "[/notes]";
+      }
+
+      //Diagnosed parent validation
+      function DPDPInfoVal() {
+        if (document.getElementById("DP-DP-First-Name").value == "") {
+          document.getElementById("DP-DP-First-Name").focus();
+          document.getElementById("DP-DP-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-DP-Last-Name").value == "") {
+          document.getElementById("DP-DP-Last-Name").focus();
+          document.getElementById("DP-DP-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-DP-Birthdate").value == "") {
+          document.getElementById("DP-DP-Birthdate").focus();
+          document.getElementById("DP-DP-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-DP-E-Mail").value == "") {
+          document.getElementById("DP-DP-Info-5-Error").style.visibility = "visible";
+          document.getElementById("DP-DP-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("DP-DP-E-Mail").value) === false) {
+          document.getElementById("DP-DP-Info-5-Error").innerHTML = "Invalid Format*";
+          document.getElementById("DP-DP-E-Mail").focus();
+          document.getElementById("DP-DP-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-5-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-DP-Mobile").value == "") {
+          document.getElementById("DP-DP-Mobile").focus();
+          document.getElementById("DP-DP-Info-6-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-6-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-DP-Street-Address").value == "") {
+          document.getElementById("DP-DP-Street-Address").focus();
+          document.getElementById("DP-DP-Info-7-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-7-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-DP-City").value == "") {
+          document.getElementById("DP-DP-City").focus();
+          document.getElementById("DP-DP-Info-8-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-8-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-DP-State").value == "") {
+          document.getElementById("DP-DP-State").focus();
+          document.getElementById("DP-DP-Info-9-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-9-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-DP-Zip").value == "") {
+          document.getElementById("DP-DP-Zip").focus();
+          document.getElementById("DP-DP-Info-10-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-DP-Info-10-Error").style.visibility = "hidden";
+        }
+      }
+      function DPSCInfoVal() {
+        if (document.getElementById("DP-SC-First-Name").value == "") {
+          document.getElementById("DP-SC-First-Name").focus();
+          document.getElementById("DP-SC-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-SC-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-SC-Last-Name").value == "") {
+          document.getElementById("DP-SC-Last-Name").focus();
+          document.getElementById("DP-SC-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-SC-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-SC-Birthdate").value == "") {
+          document.getElementById("DP-SC-Birthdate").focus();
+          document.getElementById("DP-SC-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-SC-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-SC-E-Mail").value == "") {
+          document.getElementById("DP-SC-Info-5-Error").style.visibility = "visible";
+          document.getElementById("DP-SC-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("DP-SC-E-Mail").value) === false) {
+          document.getElementById("DP-SC-Info-5-Error").innerHTML = "Invalid Format*";
+          document.getElementById("DP-SC-E-Mail").focus();
+          document.getElementById("DP-SC-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-SC-Info-5-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-SC-Mobile").value == "") {
+          document.getElementById("DP-SC-Mobile").focus();
+          document.getElementById("DP-SC-Info-6-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-SC-Info-6-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("DP-SC-Same-Address").checked) {
+          if (document.getElementById("DP-SC-Street-Address").value == "") {
+            document.getElementById("DP-SC-Street-Address").focus();
+            document.getElementById("DP-SC-Info-8-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("DP-SC-Info-8-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("DP-SC-City").value == "") {
+            document.getElementById("DP-SC-City").focus();
+            document.getElementById("DP-SC-Info-9-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("DP-SC-Info-9-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("DP-SC-State").value == "") {
+            document.getElementById("DP-SC-State").focus();
+            document.getElementById("DP-SC-Info-10-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("DP-SC-Info-10-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("DP-SC-Zip").value == "") {
+            document.getElementById("DP-SC-Zip").focus();
+            document.getElementById("DP-SC-Info-11-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("DP-SC-Info-11-Error").style.visibility = "hidden";
+          }
+        }
+      }
+      function DPChildVal() {
+        if (document.getElementById("DP-Child-First-Name-1").value == "") {
+          document.getElementById("DP-Child-First-Name-1").focus();
+          document.getElementById("DP-Child-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-Child-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-Child-Last-Name-1").value == "") {
+          document.getElementById("DP-Child-Last-Name-1").focus();
+          document.getElementById("DP-Child-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-Child-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-Child-Birthdate-1").value == "") {
+          document.getElementById("DP-Child-Birthdate-1").focus();
+          document.getElementById("DP-Child-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-Child-3-Error").style.visibility = "hidden";
+        }
+      }
+      function DPAgreeVal() {
+        if (document.getElementById("DP-HAI").value == "") {
+          document.getElementById("DP-HAI").focus();
+          document.getElementById("DP-HAI-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          if (document.getElementById("DP-HAI-Other").style.display == "block") {
+            if (document.getElementById("DP-HAI-Other").value == "") {
+              document.getElementById("DP-HAI-Error").style.visibility = "visible";
+              document.getElementById("DP-Heard-About-IoH-Other").focus();
+              e.preventDefault();
+            } else {
+              document.getElementById("DP-HAI-Error").style.visibility = "hidden";
+            }
+          }
+          document.getElementById("DP-HAI-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("DP-RA-Accept").checked) {
+          document.getElementById("DP-RA-Error").style.visibility = "visible";
+          document.getElementById("DP-RA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-RA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("DP-ICA-Accept").checked) {
+          document.getElementById("DP-ICA-Error").style.visibility = "visible";
+          document.getElementById("DP-ICA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-ICA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("DP-LR-Location-1").checked && !document.getElementById("DP-LR-Location-2").checked) {
+          document.getElementById("DP-LR-Location-Error").style.visibility = "visible";
+          document.getElementById("DP-LR-Location-1").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-LR-Location-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("DP-Travel-Responsibility").checked) {
+          document.getElementById("DP-Travel-Responsibility").focus();
+          document.getElementById("DP-Travel-Responsibility-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-Travel-Responsibility-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-Electronic-Signature").value == "") {
+          document.getElementById("DP-ES-Error").style.visibility = "visible";
+          document.getElementById("DP-Electronic-Signature").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-ES-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-Electronic-Signature-Date").value == "") {
+          document.getElementById("DP-ESD-Error").style.visibility = "visible";
+          document.getElementById("DP-Electronic-Signature-Date").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-ESD-Error").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("DP-ICA-Open").addEventListener("click", function () {
+        document.getElementById("DP-Informed-Consent-Agreement").style.display = "block";
+        document.getElementById("DP-ICA-Open").style.display = "none";
+      });
+      document.getElementById("DP-ICA-Close").addEventListener("click", function () {
+        document.getElementById("DP-Informed-Consent-Agreement").style.display = "none";
+        document.getElementById("DP-ICA-Open").style.display = "block";
+      });
+      document.getElementById("DP-RA-Open").addEventListener("click", function () {
+        document.getElementById("DP-Release-Agreement").style.display = "block";
+        document.getElementById("DP-RA-Open").style.display = "none";
+      });
+      document.getElementById("DP-RA-Close").addEventListener("click", function () {
+        document.getElementById("DP-Release-Agreement").style.display = "none";
+        document.getElementById("DP-RA-Open").style.display = "block";
+      });
+
+      function DPNoAdd(e) {
+        if (document.getElementById("DP-Child-First-Name-1").value == "") {
+          document.getElementById("DP-Child-First-Name-1").focus();
+          document.getElementById("DP-Child-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-Child-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-Child-Last-Name-1").value == "") {
+          document.getElementById("DP-Child-Last-Name-1").focus();
+          document.getElementById("DP-Child-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-Child-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("DP-Child-Birthdate-1").value == "") {
+          document.getElementById("DP-Child-Birthdate-1").focus();
+          document.getElementById("DP-Child-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("DP-Child-3-Error").style.visibility = "hidden";
+        }
+      }
+      function DPAdd(e) {
+        //Validation for guest fields
+        //Get number of guests
+        var NumChildren = document.getElementById("DP-Child-Info-Section").getElementsByClassName("Child").length + 1;
+        console.log(NumChildren);
+        var ChildBox = document.getElementById("DP-Child-Info-1");
+        var Clone = ChildBox.cloneNode(true);
+
+        Clone.id = "DP-Child-Info-" + NumChildren;
+        Clone.classList.add("Child");
+        ChildBox.parentNode.append(Clone);
+
+        var ParentNode = document.getElementById(Clone.id);
+
+        var ChildrenFirstName = ParentNode.querySelector("#DP-Child-1 > #DP-Child-First-Name-1");
+        var ChildrenLastName = ParentNode.querySelector("#DP-Child-2 > #DP-Child-Last-Name-1");
+        var ChildrenBirthDate = ParentNode.querySelector("#DP-Child-3 > #DP-Child-Birthdate-1");
+        var ChildrenGender = ParentNode.querySelector("#DP-Child-4 > #DP-Child-Gender-1");
+        var ChildrenSpecialNeed = ParentNode.querySelector("#DP-Child-5 > #DP-Child-Special-Need-1");
+
+        /*
+          var ChildrenFirstName = ParentNode.querySelector("#Two-Columns > #Two > #C-First-Name-1");
+          var ChildrenLastName = ParentNode.querySelector("#Two-Columns > #Two > #C-Last-Name-1");
+          var ChilLastFullName = ParentNode.querySelector("#Two-Columns > #C-Full-Name-1");
+          var ChildrenGender = ParentNode.querySelector("#Three-Columns > #Three > #C-Gender-1");
+          var ChildrenBirthDate = ParentNode.querySelector("#Three-Columns > #Three > #C-Birthdate-1");
+          var ChildrenTShirtSize = ParentNode.querySelector("#Three-Columns > #Three > #C-T-Shirt-1");
+          var ChildrenSpecialNeed = ParentNode.querySelector("#One-Column > #One > #C-Special-Need-1");
+        */
+
+        //First Name
+        ChildrenFirstName.id = "DP-Child-First-Name-" + NumChildren;
+        ChildrenFirstName.name = "DP-Child-First-Name-" + NumChildren;
+        ChildrenFirstName.value = "";
+
+        //Last Name
+        ChildrenLastName.id = "DP-Child-Last-Name-" + NumChildren;
+        ChildrenLastName.name = "DP-Child-Last-Name-" + NumChildren;
+        ChildrenLastName.value = "";
+
+        //Birth Date
+        ChildrenBirthDate.id = "DP-Child-Birthdate-" + NumChildren;
+        ChildrenBirthDate.name = "DP-Child-Birthdate-" + NumChildren;
+        ChildrenBirthDate.value = "";
+
+        //Gender
+        ChildrenGender.id = "DP-Child-Gender-" + NumChildren;
+        ChildrenGender.name = "DP-Child-Gender-" + NumChildren;
+        ChildrenGender.value = "";
+
+        //Special Need
+        ChildrenSpecialNeed.id = "DP-Child-Special-Need-" + NumChildren;
+        ChildrenSpecialNeed.name = "DP-Child-Special-Need-" + NumChildren;
+        ChildrenSpecialNeed.value = "";
+
+        if (NumChildren == 6) {
+          document.getElementById("DP-Add-Child").disabled = true;
+          document.getElementById("DP-Remove-Child").disabled = false;
+        } else {
+          document.getElementById("DP-Add-Child").disabled = false;
+          document.getElementById("DP-Remove-Child").disabled = false;
+        }
+      }
+      document.getElementById("DP-Add-Child").addEventListener("click", () => {
+        DPNoAdd();
+        DPAdd();
+      });
+      document.getElementById("DP-Remove-Child").addEventListener("click", function () {
+        //Get list of children
+        var Children = document.getElementById("DP-Child-Info-Section").getElementsByClassName("Child");
+        //Get last kid
+        var LastChildren = Children[Children.length - 1];
+        //Error if only 1 child. At least 1 child is required.
+        if (Children.length == 1) {
+          document.getElementById("DP-Remove-Child").disabled = true;
+          document.getElementById("DP-Add-Child").disabled = false;
+        } else {
+          document.getElementById("DP-Add-Child").disabled = false;
+          document.getElementById("DP-Remove-Child").disabled = false;
+          LastChildren.remove();
+        }
+      });
+
+      document.getElementById("DP-Page-Next-1").addEventListener("click", function () {
+        document.getElementById("DP-Page-Two").style.display = "block";
+        document.getElementById("DP-Page-One").style.display = "none";
+        document.getElementById("Form-Entrance").style.display = "none";
+        uptoTop();
+      });
+      document.getElementById("DP-Page-Back-2").addEventListener("click", function () {
+        document.getElementById("DP-Page-Two").style.display = "none";
+        document.getElementById("DP-Page-One").style.display = "block";
+        document.getElementById("Form-Entrance").style.display = "block";
+        uptoTop();
+      });
+      document.getElementById("DP-Page-Next-2").addEventListener("click", function () {
+        DPDPInfoVal();
+        if (document.getElementById("DP-SC-Info-Section").style.display == "block") {
+          DPSCInfoVal();
+        }
+        DPChildVal();
+        document.getElementById("DP-Page-Three").style.display = "block";
+        document.getElementById("DP-Page-Two").style.display = "none";
+        uptoTop();
+      });
+      document.getElementById("DP-Page-Back-3").addEventListener("click", function () {
+        document.getElementById("DP-Page-Three").style.display = "none";
+        document.getElementById("DP-Page-Two").style.display = "block";
+        uptoTop();
+      });
+      document.getElementById("DP-Form-Button-3").addEventListener("click", function () {
+        DPAgreeVal();
+        DPPDtoSF();
+        document.getElementById("DP-Legacy-Retreat-Application").submit();
+      });
+
+      //Spouse/Caregiver Scenario
+      document.getElementById("SC-Diagnosed-Parent-Alive-Yes").addEventListener("click", function () {
+        document.getElementById("SC-DP-Question-2").style.display = "block";
+        document.getElementById("If-Deceased-Deathdate").style.display = "none";
+        document.getElementById("If-Alive-Gender").style.display = "flex";
+        document.getElementById("SC-DP-Info-6-7").style.display = "flex";
+        document.getElementById("SC-DP-Info-8").style.display = "flex";
+        document.getElementById("SC-DP-Info-9-10-11").style.display = "flex";
+        document.getElementById("SC-SC-Info-7").style.display = "flex";
+      });
+      document.getElementById("SC-Diagnosed-Parent-Alive-No").addEventListener("click", function () {
+        document.getElementById("SC-DP-Question-2").style.display = "none";
+        document.getElementById("SC-DP-Question-3").style.display = "none";
+        document.getElementById("SC-DP-Question-4").style.display = "flex";
+        document.getElementById("If-Deceased-Deathdate").style.display = "flex";
+        document.getElementById("If-Alive-Gender").style.display = "none";
+        document.getElementById("SC-DP-Info-6-7").style.display = "none";
+        document.getElementById("SC-DP-Info-8").style.display = "none";
+        document.getElementById("SC-DP-Info-9-10-11").style.display = "none";
+        document.getElementById("SC-SC-Info-7").style.display = "none";
+      });
+      document.getElementById("SC-Life-Threatening-Diagnosis-Yes").addEventListener("click", function () {
+        document.getElementById("SC-DP-Question-3").style.display = "block";
+        document.getElementById("SC-Life-Threatening-Diagnosis-Note").style.display = "none";
+      });
+      document.getElementById("SC-Life-Threatening-Diagnosis-No").addEventListener("click", function () {
+        document.getElementById("SC-DP-Question-3").style.display = "none";
+        document.getElementById("SC-Life-Threatening-Diagnosis-Note").style.display = "block";
+      });
+      document.getElementById("SC-What-Is-The-Diagnosis").addEventListener("change", function () {
+        if (document.getElementById("SC-What-Is-The-Diagnosis").value != "") {
+          document.getElementById("SC-DP-Question-4").style.display = "block";
+        } else {
+          document.getElementById("SC-DP-Question-4").style.display = "none";
+        }
+      });
+      document.getElementById("SC-Relationship-to-Diagnosed-Parent").addEventListener("change", function () {
+        document.getElementById("SC-DP-Question-5").style.display = "block";
+      });
+      document.getElementById("SC-Do-You-Have-Children-Yes").addEventListener("click", function () {
+        document.getElementById("SC-Do-You-Have-Children-Note").style.display = "none";
+        document.getElementById("SC-Page-Buttons-1").style.display = "flex";
+      });
+      document.getElementById("SC-Do-You-Have-Children-No").addEventListener("click", function () {
+        document.getElementById("SC-Do-You-Have-Children-Note").style.display = "block";
+        document.getElementById("SC-Page-Buttons-1").style.display = "none";
+      });
+
+      document.getElementById("SC-SC-Same-Address").addEventListener("change", function () {
+        if (document.getElementById("SC-SC-Same-Address").checked) {
+          document.getElementById("SC-SC-Info-8").style.display = "none";
+          document.getElementById("SC-SC-Info-9-10-11").style.display = "none";
+          document.getElementById("SC-SC-Street-Address").value = document.getElementById("SC-DP-Street-Address").value;
+          document.getElementById("SC-SC-City").value = document.getElementById("SC-DP-City").value;
+          document.getElementById("SC-SC-State").value = document.getElementById("SC-DP-State").value;
+          document.getElementById("SC-SC-Zip").value = document.getElementById("SC-DP-Zip").value;
+        } else {
+          document.getElementById("SC-SC-Info-8").style.display = "block";
+          document.getElementById("SC-SC-Info-9-10-11").style.display = "block";
+        }
+      });
+      document.getElementById("SC-HAI").addEventListener("change", function () {
+        if (document.getElementById("SC-HAI").value == "OTHER") {
+          document.getElementById("SC-HAI-Other").style.display = "block";
+        } else {
+          document.getElementById("SC-HAI-Other").style.display = "none";
+        }
+      });
+
+      function SCDummyEmail() {
+        if (document.getElementById("SC-DP-E-Mail").value == "") {
+          let DPFirstName = document.getElementById("SC-DP-First-Name").value;
+          let DPLastName = document.getElementById("SC-DP-Last-Name").value;
+          document.getElementById("SC-DP-E-Mail").value = DPFirstName + "." + DPLastName + "@iohparent.org";
+        }
+      }
+      function SCPDtoSF() {
+        if (document.getElementById("SC-HAI-Other").value != "") {
+          document.getElementById("SC-Heard-About-IoH").value = document.getElementById("SC-HAI-Other").value;
+        } else {
+          document.getElementById("SC-Heard-About-IoH").value = document.getElementById("SC-HAI").value;
+        }
+
+        let cgfname = document.getElementById("SC-SC-First-Name").value;
+        let cglname = document.getElementById("SC-SC-Last-Name").value;
+        let cgemail = document.getElementById("SC-SC-E-Mail").value;
+        let cgphone = document.getElementById("SC-SC-Mobile").value;
+        let cgbdate = document.getElementById("SC-SC-Birthdate").value;
+        let cggender = document.getElementById("SC-SC-Gender").value;
+        let cgrltshp = document.getElementById("SC-Relationship-to-Diagnosed-Parent").value;
+        let cgstreet1 = document.getElementById("SC-SC-Street-Address").value;
+        let cgcity = document.getElementById("SC-SC-City").value;
+        let cgstate = document.getElementById("SC-SC-State").value;
+        let cgzip = document.getElementById("SC-SC-Zip").value;
+
+        let caregiver =
+          "[Caregiver][fname]" +
+          cgfname +
+          "[/fname][lname]" +
+          cglname +
+          "[/lname][bdate]" +
+          cgbdate +
+          "[/bdate][gender]" +
+          cggender +
+          "[/gender][email]" +
+          cgemail +
+          "[/email][phone]" +
+          cgphone +
+          "[/phone][rltshp]" +
+          cgrltshp +
+          "[/rltshp][street1]" +
+          cgstreet1 +
+          "[/street1][city]" +
+          cgcity +
+          "[/city][state]" +
+          cgstate +
+          "[/state][zip]" +
+          cgzip +
+          "[/zip][/Caregiver]";
+
+        let children = "";
+        let childID = "";
+
+        let fname = "";
+        let lname = "";
+        let bdate = "";
+        let gender = "";
+        let needs = "";
+
+        let fnameId = "";
+        let lnameId = "";
+        let bdateId = "";
+        let genderId = "";
+        let needsId = "";
+
+        console.log(document.getElementsByClassName("Child").length);
+
+        for (var i = 1; i <= 6; i++) {
+          childID = "SC-Child-Info-" + i;
+          if (document.getElementById(childID) !== null) {
+            fnameId = "SC-Child-First-Name-" + i;
+            lnameId = "SC-Child-Last-Name-" + i;
+            bdateId = "SC-Child-Birthdate-" + i;
+            genderId = "SC-Child-Gender-" + i;
+            needsId = "SC-Child-Special-Need-" + i;
+
+            fname = document.getElementById(fnameId).value;
+            lname = document.getElementById(lnameId).value;
+            bdate = document.getElementById(bdateId).value;
+            gender = document.getElementById(genderId).value;
+            needs = document.getElementById(needsId).value;
+
+            children +=
+              "[Contact" +
+              i +
+              "][fname]" +
+              fname +
+              "[/fname][lname]" +
+              lname +
+              "[/lname][bdate]" +
+              bdate +
+              "[/bdate][gender]" +
+              gender +
+              "[/gender][needs]" +
+              needs +
+              "[/needs][/Contact" +
+              i +
+              "]";
+          }
+          console.log(children);
+        }
+
+        //let TravelResponsibility = document.getElementById("SC-Travel-Responsibility").value;
+
+        var summary =
+          "Diagnosis is life-threatening: " +
+          document.getElementById("SC-Life-Threatening-Diagnosis-Yes").value +
+          " & " +
+          "How did you hear about IoH?: " +
+          document.getElementById("SC-Heard-About-IoH").value;
+
+        let location1 = "";
+        let location2 = "";
+        if (document.getElementById("SC-LR-Location-1").checked) {
+          location1 = document.getElementById("SC-LR-Location-1").value;
+        } else {
+          location1 = location1;
+        }
+        if (document.getElementById("SC-LR-Location-2").checked) {
+          location2 = document.getElementById("SC-LR-Location-2").value;
+        } else {
+          location2 = location2;
+        }
+        document.getElementById("SC-Additional-Notes").value = "My family is interested in " + location1 + " & " + location2;
+
+        document.getElementById("SC-PD-To-SF").value =
+          children + caregiver + "[summary]" + summary + "[/summary]" + "[notes]" + "My family is interested in " + location1 + " & " + location2 + "[/notes]";
+      }
+
+      //Spouse/Caregiver validation
+      function SCDPInfoVal() {
+        if (document.getElementById("SC-DP-First-Name").value == "") {
+          document.getElementById("SC-DP-First-Name").focus();
+          document.getElementById("SC-DP-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-DP-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-DP-Last-Name").value == "") {
+          document.getElementById("SC-DP-Last-Name").focus();
+          document.getElementById("SC-DP-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-DP-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-DP-Birthdate").value == "") {
+          document.getElementById("SC-DP-Birthdate").focus();
+          document.getElementById("SC-DP-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-DP-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("If-Deceased-Deathdate").style.display == "flex") {
+          if (document.getElementById("SC-DP-Deathdate").value == "") {
+            document.getElementById("SC-DP-Deathdate").focus();
+            document.getElementById("SC-DP-Info-4-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-Info-4-Error").style.visibility = "hidden";
+          }
+        } else {
+          if (document.getElementById("SC-DP-E-Mail").value == "") {
+            document.getElementById("SC-DP-Info-6-Error").style.visibility = "visible";
+            document.getElementById("SC-DP-E-Mail").focus();
+            e.preventDefault();
+          } else if (emailCorrectPattern(document.getElementById("SC-DP-E-Mail").value) === false) {
+            document.getElementById("SC-DP-Info-6-Error").innerHTML = "Invalid Format*";
+            document.getElementById("SC-DP-E-Mail").focus();
+            document.getElementById("SC-DP-Info-6-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-Info-6-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-Mobile").value == "") {
+            document.getElementById("SC-DP-Mobile").focus();
+            document.getElementById("SC-DP-Info-7-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-Info-7-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-Street-Address").value == "") {
+            document.getElementById("SC-DP-Street-Address").focus();
+            document.getElementById("SC-DP-Info-8-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-Info-8-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-City").value == "") {
+            document.getElementById("SC-DP-City").focus();
+            document.getElementById("SC-DP-Info-9-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-Info-9-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-State").value == "") {
+            document.getElementById("SC-DP-State").focus();
+            document.getElementById("SC-DP-Info-10-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-Info-10-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-DP-Zip").value == "") {
+            document.getElementById("SC-DP-Zip").focus();
+            document.getElementById("SC-DP-Info-11-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-DP-Info-11-Error").style.visibility = "hidden";
+          }
+        }
+      }
+      function SCSCInfoVal() {
+        if (document.getElementById("SC-SC-First-Name").value == "") {
+          document.getElementById("SC-SC-First-Name").focus();
+          document.getElementById("SC-SC-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-SC-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-SC-Last-Name").value == "") {
+          document.getElementById("SC-SC-Last-Name").focus();
+          document.getElementById("SC-SC-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-SC-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-SC-Birthdate").value == "") {
+          document.getElementById("SC-SC-Birthdate").focus();
+          document.getElementById("SC-SC-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-SC-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-SC-E-Mail").value == "") {
+          document.getElementById("SC-SC-Info-5-Error").style.visibility = "visible";
+          document.getElementById("SC-SC-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("SC-SC-E-Mail").value) === false) {
+          document.getElementById("SC-SC-Info-5-Error").innerHTML = "Invalid Format*";
+          document.getElementById("SC-SC-E-Mail").focus();
+          document.getElementById("SC-SC-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-SC-Info-5-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-SC-Mobile").value == "") {
+          document.getElementById("SC-SC-Mobile").focus();
+          document.getElementById("SC-SC-Info-6-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-SC-Info-6-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-SC-Same-Address").checked) {
+          if (document.getElementById("SC-SC-Street-Address").value == "") {
+            document.getElementById("SC-SC-Street-Address").focus();
+            document.getElementById("SC-SC-Info-8-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-SC-Info-8-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-SC-City").value == "") {
+            document.getElementById("SC-SC-City").focus();
+            document.getElementById("SC-SC-Info-9-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-SC-Info-9-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-SC-State").value == "") {
+            document.getElementById("SC-SC-State").focus();
+            document.getElementById("SC-SC-Info-10-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-SC-Info-10-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("SC-SC-Zip").value == "") {
+            document.getElementById("SC-SC-Zip").focus();
+            document.getElementById("SC-SC-Info-11-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("SC-SC-Info-11-Error").style.visibility = "hidden";
+          }
+        }
+      }
+      function SCChildVal() {
+        if (document.getElementById("SC-Child-First-Name-1").value == "") {
+          document.getElementById("SC-Child-First-Name-1").focus();
+          document.getElementById("SC-Child-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-Child-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Child-Last-Name-1").value == "") {
+          document.getElementById("SC-Child-Last-Name-1").focus();
+          document.getElementById("SC-Child-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-Child-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Child-Birthdate-1").value == "") {
+          document.getElementById("SC-Child-Birthdate-1").focus();
+          document.getElementById("SC-Child-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-Child-3-Error").style.visibility = "hidden";
+        }
+      }
+      function SCAgreeVal() {
+        if (document.getElementById("SC-HAI").value == "") {
+          document.getElementById("SC-HAI").focus();
+          document.getElementById("SC-HAI-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          if (document.getElementById("SC-HAI-Other").style.display == "block") {
+            if (document.getElementById("SC-HAI-Other").value == "") {
+              document.getElementById("SC-HAI-Error").style.visibility = "visible";
+              document.getElementById("SC-Heard-About-IoH-Other").focus();
+              e.preventDefault();
+            } else {
+              document.getElementById("SC-HAI-Error").style.visibility = "hidden";
+            }
+          }
+          document.getElementById("SC-HAI-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-RA-Accept").checked) {
+          document.getElementById("SC-RA-Error").style.visibility = "visible";
+          document.getElementById("SC-RA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-RA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-ICA-Accept").checked) {
+          document.getElementById("SC-ICA-Error").style.visibility = "visible";
+          document.getElementById("SC-ICA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-ICA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-LR-Location-1").checked && !document.getElementById("SC-LR-Location-2").checked) {
+          document.getElementById("SC-LR-Location-Error").style.visibility = "visible";
+          document.getElementById("SC-LR-Location-1").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-LR-Location-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("SC-Travel-Responsibility").checked) {
+          document.getElementById("SC-Travel-Responsibility").focus();
+          document.getElementById("SC-Travel-Responsibility-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-Travel-Responsibility-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Electronic-Signature").value == "") {
+          document.getElementById("SC-ES-Error").style.visibility = "visible";
+          document.getElementById("SC-Electronic-Signature").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-ES-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Electronic-Signature-Date").value == "") {
+          document.getElementById("SC-ESD-Error").style.visibility = "visible";
+          document.getElementById("SC-Electronic-Signature-Date").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-ESD-Error").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("SC-ICA-Open").addEventListener("click", function () {
+        document.getElementById("SC-Informed-Consent-Agreement").style.display = "block";
+        document.getElementById("SC-ICA-Open").style.display = "none";
+      });
+      document.getElementById("SC-ICA-Close").addEventListener("click", function () {
+        document.getElementById("SC-Informed-Consent-Agreement").style.display = "none";
+        document.getElementById("SC-ICA-Open").style.display = "block";
+      });
+      document.getElementById("SC-RA-Open").addEventListener("click", function () {
+        document.getElementById("SC-Release-Agreement").style.display = "block";
+        document.getElementById("SC-RA-Open").style.display = "none";
+      });
+      document.getElementById("SC-RA-Close").addEventListener("click", function () {
+        document.getElementById("SC-Release-Agreement").style.display = "none";
+        document.getElementById("SC-RA-Open").style.display = "block";
+      });
+
+      function SCNoAdd(e) {
+        if (document.getElementById("SC-Child-First-Name-1").value == "") {
+          document.getElementById("SC-Child-First-Name-1").focus();
+          document.getElementById("SC-Child-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-Child-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Child-Last-Name-1").value == "") {
+          document.getElementById("SC-Child-Last-Name-1").focus();
+          document.getElementById("SC-Child-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-Child-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("SC-Child-Birthdate-1").value == "") {
+          document.getElementById("SC-Child-Birthdate-1").focus();
+          document.getElementById("SC-Child-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("SC-Child-3-Error").style.visibility = "hidden";
+        }
+      }
+      function SCAdd(e) {
+        //Validation for guest fields
+        //Get number of guests
+        var NumChildren = document.getElementById("SC-Child-Info-Section").getElementsByClassName("Child").length + 1;
+        console.log(NumChildren);
+        var ChildBox = document.getElementById("SC-Child-Info-1");
+        var Clone = ChildBox.cloneNode(true);
+
+        Clone.id = "SC-Child-Info-" + NumChildren;
+        Clone.classList.add("Child");
+        ChildBox.parentNode.append(Clone);
+
+        var ParentNode = document.getElementById(Clone.id);
+
+        var ChildrenFirstName = ParentNode.querySelector("#SC-Child-1 > #SC-Child-First-Name-1");
+        var ChildrenLastName = ParentNode.querySelector("#SC-Child-2 > #SC-Child-Last-Name-1");
+        var ChildrenBirthDate = ParentNode.querySelector("#SC-Child-3 > #SC-Child-Birthdate-1");
+        var ChildrenGender = ParentNode.querySelector("#SC-Child-4 > #SC-Child-Gender-1");
+        var ChildrenSpecialNeed = ParentNode.querySelector("#SC-Child-5 > #SC-Child-Special-Need-1");
+
+        /*
+          var ChildrenFirstName = ParentNode.querySelector("#Two-Columns > #Two > #C-First-Name-1");
+          var ChildrenLastName = ParentNode.querySelector("#Two-Columns > #Two > #C-Last-Name-1");
+          var ChilLastFullName = ParentNode.querySelector("#Two-Columns > #C-Full-Name-1");
+          var ChildrenGender = ParentNode.querySelector("#Three-Columns > #Three > #C-Gender-1");
+          var ChildrenBirthDate = ParentNode.querySelector("#Three-Columns > #Three > #C-Birthdate-1");
+          var ChildrenTShirtSize = ParentNode.querySelector("#Three-Columns > #Three > #C-T-Shirt-1");
+          var ChildrenSpecialNeed = ParentNode.querySelector("#One-Column > #One > #C-Special-Need-1");
+        */
+
+        //First Name
+        ChildrenFirstName.id = "SC-Child-First-Name-" + NumChildren;
+        ChildrenFirstName.name = "SC-Child-First-Name-" + NumChildren;
+        ChildrenFirstName.value = "";
+
+        //Last Name
+        ChildrenLastName.id = "SC-Child-Last-Name-" + NumChildren;
+        ChildrenLastName.name = "SC-Child-Last-Name-" + NumChildren;
+        ChildrenLastName.value = "";
+
+        //Birth Date
+        ChildrenBirthDate.id = "SC-Child-Birthdate-" + NumChildren;
+        ChildrenBirthDate.name = "SC-Child-Birthdate-" + NumChildren;
+        ChildrenBirthDate.value = "";
+
+        //Gender
+        ChildrenGender.id = "SC-Child-Gender-" + NumChildren;
+        ChildrenGender.name = "SC-Child-Gender-" + NumChildren;
+        ChildrenGender.value = "";
+
+        //Special Need
+        ChildrenSpecialNeed.id = "SC-Child-Special-Need-" + NumChildren;
+        ChildrenSpecialNeed.name = "SC-Child-Special-Need-" + NumChildren;
+        ChildrenSpecialNeed.value = "";
+
+        if (NumChildren == 6) {
+          document.getElementById("SC-Add-Child").disabled = true;
+          document.getElementById("SC-Remove-Child").disabled = false;
+        } else {
+          document.getElementById("SC-Add-Child").disabled = false;
+          document.getElementById("SC-Remove-Child").disabled = false;
+        }
+      }
+      document.getElementById("SC-Add-Child").addEventListener("click", () => {
+        SCNoAdd();
+        SCAdd();
+      });
+      document.getElementById("SC-Remove-Child").addEventListener("click", function () {
+        //Get list of children
+        var Children = document.getElementById("SC-Child-Info-Section").getElementsByClassName("Child");
+        //Get last kid
+        var LastChildren = Children[Children.length - 1];
+        //Error if only 1 child. At least 1 child is required.
+        if (Children.length == 1) {
+          document.getElementById("SC-Remove-Child").disabled = true;
+          document.getElementById("SC-Add-Child").disabled = false;
+        } else {
+          document.getElementById("SC-Add-Child").disabled = false;
+          document.getElementById("SC-Remove-Child").disabled = false;
+          LastChildren.remove();
+        }
+      });
+
+      document.getElementById("SC-Page-Next-1").addEventListener("click", function () {
+        document.getElementById("SC-Page-Two").style.display = "block";
+        document.getElementById("SC-Page-One").style.display = "none";
+        document.getElementById("Form-Entrance").style.display = "none";
+        uptoTop();
+      });
+      document.getElementById("SC-Page-Back-2").addEventListener("click", function () {
+        document.getElementById("SC-Page-Two").style.display = "none";
+        document.getElementById("SC-Page-One").style.display = "block";
+        document.getElementById("Form-Entrance").style.display = "block";
+        uptoTop();
+      });
+      document.getElementById("SC-Page-Next-2").addEventListener("click", function () {
+        SCDPInfoVal();
+        SCSCInfoVal();
+        SCChildVal();
+        document.getElementById("SC-Page-Three").style.display = "block";
+        document.getElementById("SC-Page-Two").style.display = "none";
+        uptoTop();
+      });
+      document.getElementById("SC-Page-Back-3").addEventListener("click", function () {
+        document.getElementById("SC-Page-Three").style.display = "none";
+        document.getElementById("SC-Page-Two").style.display = "block";
+        uptoTop();
+      });
+      document.getElementById("SC-Form-Button-3").addEventListener("click", function () {
+        SCAgreeVal();
+        SCDummyEmail();
+        SCPDtoSF();
+        document.getElementById("SC-Legacy-Retreat-Application").submit();
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+
+    <div id="SC-Physician-Note" class="Notes">
+      This physician note is required for a Legacy Retreat&reg;<br />
+      <a href="https://inheritanceofhope.org/wp-content/uploads/2022/11/Physician_Letter_11.18.22.pdf" target="_blank">Download now >></a>
+    </div>
+
+    <div id="DP-Physician-Note" class="Notes">
+      This physician note is required for a Legacy Retreat&reg;<br />
+      <a href="https://inheritanceofhope.org/wp-content/uploads/2022/11/Physician_Letter_11.18.22.pdf" target="_blank">Download now >></a>
+    </div>
+
+-->

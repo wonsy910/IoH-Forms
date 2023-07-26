@@ -1,0 +1,4081 @@
+<html style="font-size: 62.5%">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <style>
+      .Form-Paper {
+        margin: 0 auto;
+        padding: 0;
+        width: 360px;
+        height: auto;
+
+        background: #334355;
+      }
+      .Form-Content {
+        margin: 0 auto;
+        padding: 0;
+        width: 350px;
+        height: auto;
+      }
+      .Legacy-Retreat-Registration {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      #FAM-LR-Registration,
+      #VG-LR-Registration {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .mission {
+        margin: 0 auto;
+        padding: 15px 0 45px 0;
+
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .mission > span {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway";
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        color: #f89a1c;
+
+        word-spacing: 0.3rem;
+        letter-spacing: 0.15rem;
+      }
+      .Form-Name {
+        margin: 0 auto;
+        padding: 30px 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Form-Name > span {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 1em;
+
+        color: #ffffff;
+      }
+      .Applicants {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .Pages {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .Sections {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .Section-Name {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Section-Name > span {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1em;
+
+        color: #f89a1c;
+      }
+      .Mini-Section-Name {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Mini-Section-Name > span {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1em;
+
+        color: #f89a1c;
+      }
+      .Questions {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .One-Column {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        border-top: 1px solid #ffffff;
+      }
+      .One {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .One > p {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
+      .One > span {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #f89a1c;
+
+        text-align: center;
+      }
+      .One > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .One > label > a {
+        color: #f89a1c;
+      }
+      .One > label > a:hover {
+        color: #808284;
+      }
+      .One > input[type="text"],
+      .One > input[type="date"],
+      .One > input[type="number"],
+      .One > select,
+      .One > textarea {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .One > select:focus,
+      .One > input[type="text"]:focus,
+      .One > input[type="date"]:focus,
+      .One > input[type="number"]:focus,
+      .One > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Two-Columns {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Two {
+        margin: 0 auto;
+        padding: 0;
+        width: 48%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .Two > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Two > label > a {
+        color: #f89a1c;
+      }
+      .Two > label > a:hover {
+        color: #808284;
+      }
+      .Two > select {
+        margin: 0 auto;
+        padding: 2px 0px 0 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Two > input[type="text"],
+      .Two > input[type="date"],
+      .Two > input[type="number"] {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 96%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Two > select:focus,
+      .Two > input[type="text"]:focus,
+      .Two > input[type="date"]:focus,
+      .Two > input[type="number"]:focus,
+      .Two > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Three-Columns {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Three {
+        margin: 0 auto;
+        padding: 0;
+        width: 33%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .Three > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Three > label > a {
+        color: #f89a1c;
+      }
+      .Three > label > a:hover {
+        color: #808284;
+      }
+      .Three > select {
+        margin: 0 auto;
+        padding: 2px 0px 0 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Three > input[type="text"],
+      .Three > input[type="date"],
+      .Three > input[type="number"] {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 96%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Three > select:focus,
+      .Three > input[type="text"]:focus,
+      .Three > input[type="date"]:focus,
+      .Three > input[type="number"]:focus,
+      .Three > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Check-Box {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+      }
+      .Left-Box {
+        margin: 0 auto;
+        padding: 0;
+      }
+      .Left-Box > .Cell {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: right;
+      }
+      .left-Box > .Cell > input[type="radio"],
+      .left-Box > .Cell > input[type="checkbox"] {
+        margin: 0;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: right;
+      }
+      .Right-Box {
+        margin: 0 auto;
+        padding: 0;
+      }
+      .Right-Box > .Cell {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: left;
+      }
+      .Right-Box > .Cell > p {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: left;
+      }
+
+      .Button-Box {
+        margin: 30px auto 15px;
+        padding: 0px;
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Left,
+      .Middle,
+      .Right {
+        margin: 5px auto;
+        padding: 0px;
+        width: 33%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Back-Button,
+      .Next-Button,
+      .Submit-Button {
+        margin: 0px auto;
+        padding: 5px 10px;
+        width: 85%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.8rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Back-Button:hover,
+      .Next-Button:hover,
+      .Submit-Button:hover {
+        border: 2px solid #f89a1c;
+        background-color: #334355;
+        color: #f89a1c;
+      }
+      .Add,
+      .Remove {
+        margin: 5px auto;
+        padding: 0px;
+        width: 50%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Add-Child,
+      .Remove-Child {
+        margin: 0px auto;
+        padding: 5px 5px;
+        width: 90%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Add-Child:hover,
+      .Remove-Child:hover {
+        border: 2px solid #f89a1c;
+        background-color: #334355;
+        color: #f89a1c;
+      }
+      .Read {
+        margin: 0px auto;
+        padding: 2px 18px;
+        width: auto;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Close {
+        margin: 0px auto;
+        padding: 2px 18px;
+        width: auto;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Read:hover {
+        border: 2px solid #f89a1c;
+        background-color: #808284;
+        color: #ffffff;
+      }
+      .Close:hover {
+        border: 2px solid #f89a1c;
+        background-color: #808284;
+        color: #ffffff;
+      }
+
+      .Agreement {
+        margin: 10px auto 25px auto;
+        padding: 0px 15px 0px 15px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
+      .Agreement > a {
+        color: #f89a1c;
+      }
+      .Agreement > a:hover {
+        color: #808284;
+      }
+
+      .Errors {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        visibility: hidden;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1em;
+        color: #ff0000;
+
+        text-align: center;
+      }
+      .Notes {
+        margin: 15px auto;
+        padding: 5px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: -1px;
+        border-radius: 5px;
+      }
+      .Notes > a {
+        color: #f89a1c;
+      }
+      .Notes > a:hover {
+        color: #808284;
+      }
+
+      .Footer {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%;
+        height: auto;
+      }
+      .Footer > p {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Footer > p > a {
+        color: #f89a1c;
+      }
+      .Footer > p > a:hover {
+        color: #808284;
+      }
+
+      @media screen and (min-width: 740px) {
+        .Form-Paper {
+          margin: 0 auto;
+          padding: 0;
+          width: 740px;
+          height: auto;
+
+          background: #334355;
+        }
+        .Form-Content {
+          margin: 0 auto;
+          padding: 0;
+          width: 700px;
+          height: auto;
+        }
+        .Legacy-Retreat-Registration {
+          margin: 0 auto;
+          padding: 0;
+          width: 80%;
+          height: auto;
+        }
+        #FAM-LR-Registration,
+        #VG-LR-Registration {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .mission {
+          margin: 0 auto;
+          padding: 15px 0 45px 0;
+
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .mission > span {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway";
+          font-size: 2.2rem;
+          font-weight: 600;
+
+          color: #f89a1c;
+
+          word-spacing: 0.3rem;
+          letter-spacing: 0.15rem;
+        }
+        .Form-Name {
+          margin: 0 auto;
+          padding: 30px 0;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Form-Name > span {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 500;
+          font-size: 5.5rem;
+          line-height: 1em;
+
+          color: #ffffff;
+        }
+        .Applicants {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .Pages {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .Section-Name {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Section-Name > span {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          font-size: 2.2rem;
+          line-height: 1em;
+
+          color: #f89a1c;
+        }
+        .Mini-Section-Name {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Mini-Section-Name > span {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          font-size: 2rem;
+          line-height: 1em;
+
+          color: #f89a1c;
+        }
+        .Questions {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+
+        .One-Column {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+
+          border-top: 1px solid #ffffff;
+        }
+        .One {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .One > p {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: 3px;
+          border-radius: 5px;
+        }
+        .One > span {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #f89a1c;
+
+          text-align: center;
+        }
+        .One > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .One > input[type="text"],
+        .One > input[type="date"],
+        .One > select,
+        .One > textarea {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .One > select:focus,
+        .One > input[type="text"]:focus,
+        .One > input[type="date"]:focus,
+        .One > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Two-Columns {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Two {
+          margin: 0 auto;
+          padding: 0;
+          width: 48%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .Two > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Two > select {
+          margin: 0 auto;
+          padding: 2px 0px 0 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Two > input[type="text"],
+        .Two > input[type="date"] {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 96%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Two > select:focus,
+        .Two > input[type="text"]:focus,
+        .Two > input[type="date"]:focus,
+        .Two > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Three-Columns {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Three {
+          margin: 0 auto;
+          padding: 0;
+          width: 33%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .Three > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Three > select {
+          margin: 0 auto;
+          padding: 2px 0px 0 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Three > input[type="text"],
+        .Three > input[type="date"] {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 96%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Three > select:focus,
+        .Three > input[type="text"]:focus,
+        .Three > input[type="date"]:focus,
+        .Three > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Check-Box {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+        }
+        .Left-Box {
+          margin: 0 auto;
+          padding: 0;
+        }
+        .Left-Box > .Cell {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: right;
+        }
+        .left-Box > .Cell > input[type="radio"],
+        .left-Box > .Cell > input[type="checkbox"] {
+          margin: 0;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: right;
+        }
+        .Right-Box {
+          margin: 0 auto;
+          padding: 0;
+        }
+        .Right-Box > .Cell {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: left;
+        }
+        .Right-Box > .Cell > p {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: left;
+        }
+
+        .Button-Box {
+          margin: 30px auto 15px;
+          padding: 0px;
+          width: 100%;
+          height: 50px;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Left,
+        .Middle,
+        .Right {
+          margin: 5px auto;
+          padding: 0px;
+          width: 33%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Back-Button,
+        .Next-Button,
+        .Submit-Button {
+          margin: 0px auto;
+          padding: 5px 10px;
+          width: 85%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Back-Button:hover,
+        .Next-Button:hover,
+        .Submit-Button:hover {
+          border: 2px solid #f89a1c;
+          background-color: #334355;
+          color: #f89a1c;
+        }
+        .Add,
+        .Remove {
+          margin: 5px auto;
+          padding: 0px;
+          width: 50%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Add-Child,
+        .Remove-Child {
+          margin: 0px auto;
+          padding: 5px 5px;
+          width: 90%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Add-Child:hover,
+        .Remove-Child:hover {
+          border: 2px solid #f89a1c;
+          background-color: #334355;
+          color: #f89a1c;
+        }
+        .Read {
+          margin: 0px auto;
+          padding: 2px 18px;
+          width: auto;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Close {
+          margin: 0px auto;
+          padding: 2px 18px;
+          width: auto;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Read:hover {
+          border: 2px solid #f89a1c;
+          background-color: #808284;
+          color: #ffffff;
+        }
+        .Close:hover {
+          border: 2px solid #f89a1c;
+          background-color: #808284;
+          color: #ffffff;
+        }
+
+        .Agreement {
+          margin: 10px auto 25px auto;
+          padding: 0px 15px 0px 15px;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: 3px;
+          border-radius: 5px;
+        }
+        .Agreement > a {
+          color: #f89a1c;
+        }
+        .Agreement > a:hover {
+          color: #808284;
+        }
+
+        .Errors {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          visibility: hidden;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 1em;
+          color: #ff0000;
+
+          text-align: center;
+        }
+        .Notes {
+          margin: 15px auto;
+          padding: 5px;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: -1px;
+          border-radius: 5px;
+        }
+        .Notes > a {
+          color: #f89a1c;
+        }
+        .Notes > a:hover {
+          color: #808284;
+        }
+
+        .Footer {
+          margin: 0 auto;
+          padding: 20px 0;
+          width: 100%;
+          height: auto;
+        }
+        .Footer > p {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Footer > p > a {
+          color: #f89a1c;
+        }
+        .Footer > p > a:hover {
+          color: #808284;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="" class="Form-Paper">
+      <div id="" class="Form-Content">
+        <div id="" class="Form-Name">
+          <span>Legacy Retreat&reg; Registration</span>
+        </div>
+
+        <div id="Entire-Form" class="Pages">
+          <div id="Entrance-Question" class="Questions">
+            <div id="mission" class="mission">
+              <span>
+                Our mission is to inspire hope in young families, with children 18 or under, facing the loss of a parent to a life-threatening illness.
+              </span>
+            </div>
+            <div id="Entrance-1" class="One-Column">
+              <div id="" class="One">
+                <label for="Tell-Us-About-You"> Who are you? </label>
+                <select id="Tell-Us-About-You" name="Tell-Us-About-You">
+                  <option value="" selected disabled hidden>Select your status...</option>
+                  <option value="Family">Family Attending a Legacy Retreat&reg;</option>
+                  <option value="Team">Retreat Team Member</option>
+                  <option value="Retreat Guest" hidden>Retreat Guest</option>
+                </select>
+                <small id="Entrance-1-Error" class="Errors">Required*</small>
+              </div>
+            </div>
+            <div id="Entrance-2" class="One-Column" style="display: none">
+              <div id="" class="One">
+                <label for="How-Many-People-Registering">
+                  How many people are you registering? <br />
+                  (including yourself)
+                </label>
+                <input
+                  type="text"
+                  id="How-Many-People-Registering"
+                  name="How-Many-People-Registering"
+                  max="7"
+                  style="width: 15%; text-align: right; padding-right: 5px"
+                />
+                <small id="Entrance-2-Error" class="Errors">Required*</small>
+              </div>
+            </div>
+          </div>
+
+          <div id="FAM-LR-Registration" style="display: none">
+            <form
+              id="FAM-Legacy-Retreat-Registration"
+              class="Legacy-Retreat-Registration"
+              action="https://www2.inheritanceofhope.org/l/739893/2023-04-12/8wbcsx"
+              method="post"
+            >
+              <div id="FAM-Applicant" class="Applicants">
+                <div id="FAM-Page-One" class="Pages">
+                  <div class="Section-Name">
+                    <span> Family Info: </span>
+                  </div>
+                  <div id="FAM-APP-Info-Section" class="Sections">
+                    <div id="FAM-APP-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-APP-First-Name">First Name*</label>
+                          <input type="text" id="FAM-APP-First-Name" name="Applicant-First-Name" />
+                          <small id="FAM-APP-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-APP-Last-Name">Last Name*</label>
+                          <input type="text" id="FAM-APP-Last-Name" name="Applicant-Last-Name" />
+                          <small id="FAM-APP-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-APP-Info-3-4" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-APP-E-Mail">E-Mail*</label>
+                          <input type="text" id="FAM-APP-E-Mail" name="Applicant-E-Mail" />
+                          <small id="FAM-APP-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-APP-T-Shirt">T-Shirt Size*</label>
+                          <select type="text" id="FAM-APP-T-Shirt" name="Applicant-T-Shirt-Size">
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="5XL">5XL</option>
+                            <option value="4XL">4XL</option>
+                            <option value="3XL">3XL</option>
+                            <option value="XXL">XXL</option>
+                            <option value="XL">XL</option>
+                            <option value="Adult L">L</option>
+                            <option value="Adult M">M</option>
+                            <option value="Adult S">S</option>
+                            <option value="Youth L">Youth L</option>
+                            <option value="Youth M">Youth M</option>
+                            <option value="Youth S">Youth S</option>
+                            <option value="Youth XS">Youth XS</option>
+                          </select>
+                          <small id="FAM-APP-Info-4-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-APP-Info-5" class="Questions">
+                      <div id="" class="Two-Columns">
+                        <div class="Two" style="width: 70%">
+                          <label for="FAM-APP-Update-Address" style="text-align: left">Has your address changed since you filled out your application?</label>
+                          <small id="FAM-APP-Info-5-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two" style="width: 30%">
+                          <div class="Check-Box">
+                            <div class="Left-Box" style="width: 30%">
+                              <div class="Cell">
+                                <input type="checkbox" id="FAM-APP-Update-Address" name="FAM-APP-Update-Address" value="Yes" />
+                              </div>
+                            </div>
+                            <div class="Right-Box" style="width: 70%">
+                              <div class="Cell">
+                                <p>Yes</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-APP-Info-6" class="Questions" style="display: none">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-APP-Street-Address">Street Address*</label>
+                          <input type="text" id="FAM-APP-Street-Address" name="Applicant-Street-Address" />
+                          <small id="FAM-APP-Info-6-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-APP-Info-7-8-9" class="Questions" style="display: none">
+                      <div class="Three-Columns">
+                        <div class="Three">
+                          <label for="FAM-APP-City">City*</label>
+                          <input type="text" id="FAM-APP-City" name="Applicant-City" />
+                          <small id="FAM-APP-Info-7-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Three">
+                          <label for="FAM-APP-State">State*</label>
+                          <input type="text" id="FAM-APP-State" name="Applicant-State" />
+                          <small id="FAM-APP-Info-8-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Three">
+                          <label for="FAM-APP-Zip">Zip*</label>
+                          <input type="text" id="FAM-APP-Zip" name="Applicant-Zip" />
+                          <small id="FAM-APP-Info-9-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-APP-Info-10" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-APP-Allergies-Dietary-Needs" style="text-align: left"> Do you have any allergies or special dietary needs?* </label>
+                          <textarea id="FAM-APP-Allergies-Dietary-Needs" name="Applicant-Allergies" cols="30" rows="3"></textarea>
+                          <small id="FAM-APP-Info-10-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-APP-Info-11" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-APP-Special-Notes" style="text-align: left">
+                            Is there anything special to note that will help us serve your family?* <br />
+                            Ex. Olivia has non-verbal autism and requires sensory accommodations.
+                          </label>
+                          <textarea id="FAM-APP-Special-Notes" name="FAM-APP-Special-Notes" cols="30" rows="3"></textarea>
+                          <small id="FAM-APP-Info-11-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-App-Info-12" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-APP-Name-Tag" style="text-align: left"> What full name do you want on your name tag?* </label>
+                          <input type="text" id="FAM-APP-Name-Tag" name="FAM-APP-Name-Tag" />
+                          <small id="FAM-APP-Info-12-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-App-Info-13" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-APP-Photo-Upload">Please share a photo of your family with us!</label>
+                          <label for=""> <a href="https://www.dropbox.com/request/ilAfSWVqU2Dv1iq0ph8P" target="_blank">Link</a></label>
+                          <small id="FAM-APP-Info-13-Error" class="Errors">Required*</small>
+                          <div class="Check-Box">
+                            <div class="Left-Box" style="width: 50%">
+                              <div class="Cell">
+                                <input type="checkbox" id="FAM-APP-Photo-Upload" name="FAM-APP-Photo-Upload" value="Uploaded" />
+                              </div>
+                            </div>
+                            <div class="Right-Box" style="width: 50%">
+                              <div class="Cell"><p>Uploaded</p></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-APP-Info-15" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-APP-Preferred-Last-Name" style="text-align: left">
+                            What last name would you like us to use to refer to your family?*<br />
+                            Ex. "The Smith Family"
+                          </label>
+                          <input type="text" id="FAM-APP-Preferred-Last-Name" name="Applicant-Pref-Last-Name" placeholder="The Smith Family" />
+                          <small id="FAM-APP-Info-15-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="FAM-MEM-Info-Section" class="Sections">
+                    <div id="FAM-MEM-1" class="Sections">
+                      <div class="Notes">Additional Family Member Info:</div>
+                      <div id="FAM-MEM-Info-1-2" class="Questions">
+                        <div class="Two-Columns">
+                          <div class="Two">
+                            <label for="FAM-MEM-First-Name-1">First Name*</label>
+                            <input type="text" id="FAM-MEM-First-Name-1" name="FAM-MEM-First-Name-1" />
+                            <small id="FAM-MEM-Info-1-Error" class="Errors">Required*</small>
+                          </div>
+                          <div class="Two">
+                            <label for="FAM-MEM-Last-Name-1">Last Name*</label>
+                            <input type="text" id="FAM-MEM-Last-Name-1" name="FAM-MEM-Last-Name-1" />
+                            <small id="FAM-MEM-Info-2-Error" class="Errors">Required*</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="FAM-MEM-Info-3-4" class="Questions">
+                        <div class="Two-Columns">
+                          <div class="Two">
+                            <label for="FAM-MEM-Name-Tag-1">Full Name on Tag*</label>
+                            <input type="text" id="FAM-MEM-Name-Tag-1" name="FAM-MEM-Name-Tag-1" />
+                            <small id="FAM-MEM-Info-3-Error" class="Errors">Required*</small>
+                          </div>
+                          <div class="Two">
+                            <label for="FAM-MEM-T-Shirt-1">T-Shirt Size*</label>
+                            <select type="text" id="FAM-MEM-T-Shirt-1" name="FAM-MEM-T-Shirt-1">
+                              <option value="" disabled selected hidden>Select</option>
+                              <option value="5XL">5XL</option>
+                              <option value="4XL">4XL</option>
+                              <option value="3XL">3XL</option>
+                              <option value="XXL">XXL</option>
+                              <option value="XL">XL</option>
+                              <option value="Adult L">L</option>
+                              <option value="Adult M">M</option>
+                              <option value="Adult S">S</option>
+                              <option value="Youth L">Youth L</option>
+                              <option value="Youth M">Youth M</option>
+                              <option value="Youth S">Youth S</option>
+                              <option value="Youth XS">Youth XS</option>
+                            </select>
+                            <small id="FAM-MEM-Info-4-Error" class="Errors">Required*</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="FAM-MEM-Info-5" class="Questions">
+                        <div class="One-Column">
+                          <div class="One">
+                            <label for="FAM-MEM-Allergies-Dietary-Needs-1" style="text-align: left">
+                              Do you have any allergies or special dietary needs?*
+                            </label>
+                            <textarea id="FAM-MEM-Allergies-Dietary-Needs-1" name="FAM-MEM-Allergies-Dietary-Needs-1" cols="30" rows="3"></textarea>
+                            <small id="FAM-MEM-Info-5-Error" class="Errors">Required*</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="FAM-MEM-Info-6" class="Questions">
+                        <div class="One-Column">
+                          <div class="One">
+                            <label for="FAM-MEM-Special-Notes-1" style="text-align: left">
+                              Is there anything special to note about this individual that will help us serve your family?*
+                            </label>
+                            <textarea id="FAM-MEM-Special-Notes-1" name="FAM-MEM-Special-Notes-1" cols="30" rows="3"></textarea>
+                            <small id="FAM-MEM-Info-6-Error" class="Errors">Required*</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="FAM-FLW-Info-Section" class="Sections">
+                    <div class="Section-Name">
+                      <span>
+                        Please list 1-3 close friends or family <br />
+                        who love and care about you:
+                      </span>
+                    </div>
+                    <div class="Mini-Section-Name">
+                      <span>Close Friend & Family Info: </span>
+                    </div>
+                    <div id="FAM-FLW1-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-FLW1-First-Name">First Name*</label>
+                          <input type="text" id="FAM-FLW1-First-Name" name="FAM-FLW1-First-Name" />
+                          <small id="FAM-FLW1-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-FLW1-Last-Name">Last Name*</label>
+                          <input type="text" id="FAM-FLW1-Last-Name" name="FAM-FLW1-Last-Name" />
+                          <small id="FAM-FLW1-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-FLW1-Info-3-4" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-FLW1-E-Mail">E-Mail*</label>
+                          <input type="text" id="FAM-FLW1-E-Mail" name="FAM-FLW1-E-Mail" />
+                          <small id="FAM-FLW1-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-FLW1-Mobile">Phone*</label>
+                          <input type="text" id="FAM-FLW1-Mobile" name="FAM-FLW1-Mobile" />
+                          <small id="FAM-FLW1-Info-4-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-FLW1-Info-5" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-FLW1-Relationship">Relationship to the diagnosed parent*</label>
+                          <input type="text" id="FAM-FLW1-Relationship" name="FAM-FLW1-Relationship" />
+                          <small id="FAM-FLW1-Info-5-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="Mini-Section-Name">
+                      <span>Close Friend & Family Info: </span>
+                    </div>
+                    <div id="FAM-FLW2-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-FLW2-First-Name">First Name</label>
+                          <input type="text" id="FAM-FLW2-First-Name" name="FAM-FLW2-First-Name" />
+                          <small id="FAM-FLW2-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-FLW2-Last-Name">Last Name</label>
+                          <input type="text" id="FAM-FLW2-Last-Name" name="FAM-FLW2-Last-Name" />
+                          <small id="FAM-FLW2-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-FLW2-Info-3-4" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-FLW2-E-Mail">E-Mail</label>
+                          <input type="text" id="FAM-FLW2-E-Mail" name="FAM-FLW2-E-Mail" />
+                          <small id="FAM-FLW2-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-FLW2-Mobile">Phone</label>
+                          <input type="text" id="FAM-FLW2-Mobile" name="FAM-FLW2-Mobile" />
+                          <small id="FAM-FLW2-Info-4-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-FLW2-Info-5" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-FLW2-Relationship">Relationship to the diagnosed parent</label>
+                          <input type="text" id="FAM-FLW2-Relationship" name="FAM-FLW2-Relationship" />
+                          <small id="FAM-FLW2-Info-5-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="Mini-Section-Name">
+                      <span>Close Friend & Family Info: </span>
+                    </div>
+                    <div id="FAM-FLW3-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-FLW3-First-Name">First Name</label>
+                          <input type="text" id="FAM-FLW3-First-Name" name="FAM-FLW3-First-Name" />
+                          <small id="FAM-FLW3-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-FLW3-Last-Name">Last Name</label>
+                          <input type="text" id="FAM-FLW3-Last-Name" name="FAM-FLW3-Last-Name" />
+                          <small id="FAM-FLW3-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-FLW3-Info-3-4" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-FLW3-E-Mail">E-Mail</label>
+                          <input type="text" id="FAM-FLW3-E-Mail" name="FAM-FLW3-E-Mail" />
+                          <small id="FAM-FLW3-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-FLW3-Mobile">Phone</label>
+                          <input type="text" id="FAM-FLW3-Mobile" name="FAM-FLW3-Mobile" />
+                          <small id="FAM-FLW3-Info-4-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-FLW3-Info-5" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-FLW3-Relationship">Relationship to the diagnosed parent</label>
+                          <input type="text" id="FAM-FLW3-Relationship" name="FAM-FLW3-Relationship" />
+                          <small id="FAM-FLW3-Info-5-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="FAM-EMG-Info-Section" class="Sections">
+                    <div class="Section-Name">
+                      <span> Emergency Contact: </span> <br />
+                      <span style="font-size: 1.5rem">(Someone who is not on the retreat*)</span>
+                    </div>
+                    <div id="FAM-EMG-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-EMG-First-Name">First Name*</label>
+                          <input type="text" id="FAM-EMG-First-Name" name="FAM-EMG-First-Name" />
+                          <small id="FAM-EMG-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-EMG-Last-Name">Last Name*</label>
+                          <input type="text" id="FAM-EMG-Last-Name" name="FAM-EMG-Last-Name" />
+                          <small id="FAM-EMG-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-EMG-Info-3-4" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-EMG-E-Mail">E-Mail*</label>
+                          <input type="text" id="FAM-EMG-E-Mail" name="FAM-EMG-E-Mail" />
+                          <small id="FAM-EMG-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-EMG-Mobile">Mobile*</label>
+                          <input type="text" id="FAM-EMG-Mobile" name="FAM-EMG-Mobile" />
+                          <small id="FAM-EMG-Info-4-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-EMG-Info-5" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-EMG-Relationship">Relationship to the diagnosed parent*</label>
+                          <input type="text" id="FAM-EMG-Relationship" name="FAM-EMG-Relationship" />
+                          <small id="FAM-EMG-Info-5-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="FAM-Flight-Info-Section" class="Sections">
+                    <div class="Section-Name">
+                      <span> Flight Info: </span>
+                    </div>
+                    <div id="FAM-Flight-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="FAM-Flight-Arrival-Time">Arrival Time</label>
+                          <input type="text" id="FAM-Flight-Arrival-Time" name="FAM-Flight-Arrival-Time" placeholder="MM/DD TIME" />
+                          <small id="FAM-Flight-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="FAM-Flight-Departure-Time">Departure Time</label>
+                          <input type="text" id="FAM-Flight-Departure-Time" name="FAM-Flight-Departure-Time" placeholder="MM/DD TIME" />
+                          <small id="FAM-Flight-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="FAM-Flight-Info-3" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-Flight-Travel-Notes">Travel Method and Notes</label>
+                          <textarea type="text" id="FAM-Flight-Travel-Notes" name="FAM-Flight-Travel-Notes" cols="30" rows="3"></textarea>
+                          <small id="FAM-Flight-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="FAM-Page-Buttons-1" class="Button-Box">
+                    <div class="Left">
+                      <button id="FAM-Page-Back-1" class="Back-Button" type="button" style="display: none">Back</button>
+                    </div>
+                    <div class="Middle">
+                      <button id="FAM-Form-Button-1" class="Submit-Button" type="button" style="display: none">Submit</button>
+                    </div>
+                    <div class="Right">
+                      <button id="FAM-Page-Next-1" class="Next-Button" type="button">Next</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="FAM-Page-Two" class="Pages" style="display: none">
+                  <div class="Section-Name">
+                    <span> Agreements and Submission: </span>
+                  </div>
+
+                  <div id="FAM-Agreement-2" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="FAM-Release-Agreement">Release Agreement*</label>
+                        <button id="FAM-RA-Open" class="Read" type="button">Read</button>
+                        <small id="FAM-RA-Error" class="Errors">You must agree to the term*</small>
+                        <div id="FAM-Release-Agreement" class="Agreement" style="display: none">
+                          <strong>A)</strong> &nbsp I understand that participation in an Inheritance of Hope event is purely voluntary.<br /><br />
+                          <strong>B)</strong> &nbsp On behalf of myself and all the Participants listed on this form, their heirs, personal representatives,
+                          guardians, successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify
+                          and hold harmless Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and
+                          assigns, and any parent organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of
+                          action, costs or expenses (including attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly
+                          or indirectly, or in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                          <strong>C)</strong> &nbsp I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation
+                          in the event. I understand that participation in the event may result in injury, property damage, interaction with persons having
+                          potentially communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and
+                          risks associated with the event and voluntarily assume the risks associated with participation in the event. I hereby unconditionally,
+                          irrevocably, and absolutely release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers,
+                          employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries,
+                          from any and all loss, liability, claims, demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits
+                          of any type, whether in law and/or in equity, in the event of injury, property damage, disease, and/or death related directly or
+                          indirectly, or in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                          <strong>D)</strong> &nbsp I understand, recognize, and agree that I am fully responsible for my child(ren) throughout the event.
+                          <br /><br />
+                          <strong>E)</strong> &nbsp By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or
+                          electronically record interviews with me/us in such a manner as they choose. I further give permission and consent that any such
+                          photographs, films, and/or electronically recorded interviews may be published and used by Inheritance of Hope and its agents to
+                          illustrate and promote the event experience and Inheritance of Hope. <br /><br />
+                          <strong>F)</strong> &nbsp By my signature set forth below, I the Applicant understand that I am unconditionally, irrevocably, and
+                          absolutely authorizing Inheritance of Hope to share the medical information contained in this application with its directors,
+                          officers, employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or
+                          subsidiaries. <br /><br />
+                          <strong>G)</strong> &nbsp I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State
+                          of South Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in
+                          full legal force and effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the event must be
+                          submitted to binding arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration
+                          shall be sited in Oconee County, South Carolina. <br /><br />
+                          <button id="FAM-RA-Close" class="Close" type="button">Close</button>
+                        </div>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="FAM-RA-Accept" name="FAM-RA-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="FAM-Agreement-3" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="FAM-Informed-Consent-Agreement">Informed Consent Agreement*</label>
+                        <button id="FAM-ICA-Open" class="Read" type="button">Read</button>
+                        <small id="FAM-ICA-Error" class="Errors">You must agree to the term*</small>
+                        <div id="FAM-Informed-Consent-Agreement" class="Agreement" style="display: none">
+                          <strong>A)</strong> &nbsp I understand, recognize, and agree that Inheritance of Hope employs a variety of facilitators in order to
+                          provide a quality experience to all Participants. I understand that I can request information regarding my facilitators' education and
+                          experience backgrounds from Inheritance of Hope.<br /><br />
+                          <strong>B)</strong> &nbsp I understand, recognize, and agree that a safe group environment is created and maintained by both the
+                          facilitators and the group members offering mutual respect and trust. Confidentiality is also primary for a safe group environment.
+                          Group facilitators are bound by law to maintain confidentiality. Participants are bound by honor to maintain confidentiality. Should I
+                          desire to share what I learn in group, I agree to do so without using group members' names or in any way compromising group members'
+                          confidentiality. I acknowledge that there are legal and professional limits to confidentiality. I understand that I can request more
+                          information about these limits from Inheritance of Hope.<br /><br />
+                          <strong>C)</strong> &nbsp I understand, recognize, and agree that my children and/or teenagers will have age-appropriate group
+                          experiences for healthy emotional processing. The above elements also apply to children and teenager groups. I understand that
+                          children and teenagers will not focus on specific details of any parent's illness but will address the fact that all have an ill
+                          parent in common.<br /><br />
+                          <strong>D)</strong> &nbsp I understand and agree to all terms of event group participation. I also understand and agree that any
+                          Participant can contact Inheritance of Hope for more information about any aspect of the group experience. <br /><br />
+                          <button id="FAM-ICA-Close" class="Close" type="button">Close</button>
+                        </div>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="FAM-ICA-Accept" name="FAM-ICA-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="FAM-Agreement-4" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="FAM-COVID-Accept">Covid Release Form*</label>
+                        <div class="Agreement">
+                          By attending Legacy Retreat&reg;, my family assumes all risks associated with exposure to COVID-19 and forever releases and holds
+                          harmless Inheritance of Hope and each of their officers, directors, agents, employees, or other representatives from any liability or
+                          claims including for personal injuries, death, disease or property losses, or any other loss, including but not limited to claims of
+                          negligence and give up any claims we may have to seek damages, whether known or unknown, foreseen or unforeseen, in connection with
+                          exposure, infection and/or spread of COVID-19 related to participation in this event.
+                        </div>
+                        <small id="FAM-COVID-Error" class="Errors">Required*</small>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="FAM-COVID-Accept" name="FAM-COVID-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="FAM-Agreement-5" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two" style="width: 70%">
+                        <label for="FAM-Travel-Responsibility">
+                          I understand I am responsible to arrange and pay my own travel to and from the event, including airfare if applicable.*
+                        </label>
+                        <small id="FAM-Travel-Responsibility-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two" style="width: 30%">
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 30%">
+                            <div class="Cell">
+                              <input type="checkbox" id="FAM-Travel-Responsibility" name="FAM-Travel-Responsibility" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 70%">
+                            <div class="Cell">
+                              <p>Yes</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="FAM-Agreement-6" class="Questions">
+                    <div class="Two-Columns">
+                      <div class="Two">
+                        <label for="FAM-Electronic-Signature">Signature*</label>
+                        <input type="text" id="FAM-Electronic-Signature" name="FAM-Electronic-Signature" />
+                        <small id="FAM-ES-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two">
+                        <label for="FAM-Electronic-Signature-Date">Signature Date*</label>
+                        <input type="date" id="FAM-Electronic-Signature-Date" name="FAM-Electronic-Signature-Date" />
+                        <small id="FAM-ESD-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <textarea name="PD-To-SF" id="FAM-APP-PD-To-SF" cols="30" rows="10" style="display: none"></textarea>
+
+                  <div id="FAM-Page-Buttons-2" class="Button-Box">
+                    <div class="Left">
+                      <button id="FAM-Page-Back-2" class="Back-Button" type="button">Back</button>
+                    </div>
+                    <div class="Middle">
+                      <button id="FAM-Form-Button-2" class="Submit-Button" type="button">Submit</button>
+                    </div>
+                    <div class="Right">
+                      <button id="FAM-Page-Next-2" class="Next-Button" type="button" style="display: none">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div id="Retreat-Team-Registration" style="display: none">
+            <form
+              id="Retreat-Team-Legacy-Retreat-Registration"
+              class="Legacy-Retreat-Registration"
+              action="https://www2.inheritanceofhope.org/l/739893/2023-06-27/97bgpr"
+              method="post"
+            >
+              <div id="Retreat-Team-Applicant" class="Applicants">
+                <div id="Retreat-Team-Page-One" class="Pages">
+                  <div class="Section-Name">
+                    <span> Family Info: </span>
+                  </div>
+                  <div id="Retreat-Team-Info-Section" class="Sections">
+                    <div id="Retreat-Team-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Team-First-Name">First Name*</label>
+                          <input type="text" id="Retreat-Team-First-Name" name="Applicant-First-Name" />
+                          <small id="Retreat-Team-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Team-Last-Name">Last Name*</label>
+                          <input type="text" id="Retreat-Team-Last-Name" name="Applicant-Last-Name" />
+                          <small id="Retreat-Team-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-3-4" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Team-E-Mail">E-Mail*</label>
+                          <input type="text" id="Retreat-Team-E-Mail" name="Applicant-E-Mail" />
+                          <small id="Retreat-Team-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Team-T-Shirt">T-Shirt Size*</label>
+                          <select type="text" id="Retreat-Team-T-Shirt" name="Applicant-T-Shirt-Size">
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="5XL">5XL</option>
+                            <option value="4XL">4XL</option>
+                            <option value="3XL">3XL</option>
+                            <option value="XXL">XXL</option>
+                            <option value="XL">XL</option>
+                            <option value="Adult L">L</option>
+                            <option value="Adult M">M</option>
+                            <option value="Adult S">S</option>
+                            <option value="Youth L">Youth L</option>
+                            <option value="Youth M">Youth M</option>
+                            <option value="Youth S">Youth S</option>
+                            <option value="Youth XS">Youth XS</option>
+                          </select>
+                          <small id="Retreat-Team-Info-4-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-5" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-Role">What are your roles on this retreat?*</label>
+                          <textarea id="Retreat-Team-Role" cols="30" rows="10" style="display: none"></textarea>
+                          <small id="Retreat-Team-Info-5-Error" class="Errors">Required*</small>
+                          <div class="Check-Box">
+                            <div class="Left-Box" style="width: 30%">
+                              <div class="Cell">
+                                <input type="checkbox" id="Retreat-Team-Roles-1" name="Retreat-Team-Roles" value="Family Volunteer" />
+                              </div>
+                              <div class="Cell">
+                                <input type="checkbox" name="Retreat-Team-Roles" value="Facilitator" />
+                              </div>
+                              <div class="Cell">
+                                <input type="checkbox" name="Retreat-Team-Roles" value="Navigator" />
+                              </div>
+                              <div class="Cell">
+                                <input type="checkbox" name="Retreat-Team-Roles" value="Photographer" />
+                              </div>
+                              <div class="Cell">
+                                <input type="checkbox" name="Retreat-Team-Roles" value="Staff" />
+                              </div>
+                            </div>
+                            <div class="Right-Box" style="width: 70%">
+                              <div class="Cell">
+                                <p>Family Volunteer</p>
+                              </div>
+                              <div class="Cell">
+                                <p>Facilitator</p>
+                              </div>
+                              <div class="Cell">
+                                <p>Navigator</p>
+                              </div>
+                              <div class="Cell">
+                                <p>Photographer</p>
+                              </div>
+                              <div class="Cell">
+                                <p>Staff</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-6" class="Questions">
+                      <div id="" class="Two-Columns">
+                        <div class="Two" style="width: 70%">
+                          <label for="Retreat-Team-Update-Address" style="text-align: left"
+                            >Has your address changed since you filled out your application?*</label
+                          >
+                          <small id="Retreat-Team-Info-6-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two" style="width: 30%">
+                          <div class="Check-Box">
+                            <div class="Left-Box" style="width: 30%">
+                              <div class="Cell">
+                                <input type="checkbox" id="Retreat-Team-Update-Address" name="Retreat-Team-Update-Address" value="Yes" />
+                              </div>
+                            </div>
+                            <div class="Right-Box" style="width: 70%">
+                              <div class="Cell">
+                                <p>Yes</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-7" class="Questions" style="display: none">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-Street-Address">Street Address*</label>
+                          <input type="text" id="Retreat-Team-Street-Address" name="Applicant-Street-Address" />
+                          <small id="Retreat-Team-Info-7-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-8-9-10" class="Questions" style="display: none">
+                      <div class="Three-Columns">
+                        <div class="Three">
+                          <label for="Retreat-Team-City">City*</label>
+                          <input type="text" id="Retreat-Team-City" name="Applicant-City" />
+                          <small id="Retreat-Team-Info-8-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Three">
+                          <label for="Retreat-Team-State">State*</label>
+                          <input type="text" id="Retreat-Team-State" name="Applicant-State" />
+                          <small id="Retreat-Team-Info-9-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Three">
+                          <label for="Retreat-Team-Zip">Zip*</label>
+                          <input type="text" id="Retreat-Team-Zip" name="Applicant-Zip" />
+                          <small id="Retreat-Team-Info-10-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-11" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-Allergies-Dietary-Needs" style="text-align: left">
+                            Do you have any allergies or special dietary needs?*
+                          </label>
+                          <textarea id="Retreat-Team-Allergies-Dietary-Needs" name="Applicant-Allergies" cols="30" rows="3"></textarea>
+                          <small id="Retreat-Team-Info-11-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-12" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-Special-Notes" style="text-align: left">
+                            Is there anything special to note about you?* <br />
+                            Ex. I have non-verbal autism and require sensory accommodations.
+                          </label>
+                          <textarea id="Retreat-Team-Special-Notes" name="Retreat-Team-Special-Notes" cols="30" rows="3"></textarea>
+                          <small id="Retreat-Team-Info-12-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-13" class="Questions">
+                      <div id="" class="Two-Columns">
+                        <div class="Two" style="width: 70%">
+                          <label for="Retreat-Team-First-Time-Serving" style="text-align: left">Is this your first time serving on a Legacy Retreat?*</label>
+                          <small id="Retreat-Team-Info-13-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two" style="width: 30%">
+                          <div class="Check-Box">
+                            <div class="Left-Box" style="width: 30%">
+                              <div class="Cell">
+                                <input type="radio" id="Retreat-Team-First-Time-Serving-Yes" name="Retreat-Team-First-Time-Serving" value="Yes" />
+                              </div>
+                              <div class="Cell">
+                                <input type="radio" id="Retreat-Team-First-Time-Serving-No" name="Retreat-Team-First-Time-Serving" value="No" />
+                              </div>
+                            </div>
+                            <div class="Right-Box" style="width: 70%">
+                              <div class="Cell">
+                                <p>Yes</p>
+                              </div>
+                              <div class="Cell">
+                                <p>No</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-14" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-Special-Serving-Interests" style="text-align: left">
+                            Is there any information that would help us pair you with a partner and family to serve?* <br />
+                            Ex. I prefer to work with teens. Or I do well with a partner who can handle all the "technology".
+                          </label>
+                          <textarea id="Retreat-Team-Special-Serving-Interests" name="Retreat-Team-Special-Serving-Interests" cols="30" rows="3"></textarea>
+                          <small id="Retreat-Team-Info-14-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Info-15" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-Name-Tag" style="text-align: left">
+                            Is there a different first or last name you would like us to use on your name tag?*
+                          </label>
+                          <input type="text" id="Retreat-Team-Name-Tag" name="Applicant-Pref-Last-Name" />
+                          <small id="Retreat-Team-Info-15-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="Retreat-Team-EMG-Info-Section" class="Sections">
+                    <div class="Section-Name">
+                      <span> Emergency Contact: </span> <br />
+                      <span style="font-size: 1.5rem">(Someone who is not on the retreat*)</span>
+                    </div>
+                    <div id="Retreat-Team-EMG-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Team-EMG-First-Name">First Name</label>
+                          <input type="text" id="Retreat-Team-EMG-First-Name" name="Retreat-Team-EMG-First-Name" />
+                          <small id="Retreat-Team-EMG-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Team-EMG-Last-Name">Last Name</label>
+                          <input type="text" id="Retreat-Team-EMG-Last-Name" name="Retreat-Team-EMG-Last-Name" />
+                          <small id="Retreat-Team-EMG-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-EMG-Info-3-4" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Team-EMG-E-Mail">E-Mail</label>
+                          <input type="text" id="Retreat-Team-EMG-E-Mail" name="Retreat-Team-EMG-E-Mail" />
+                          <small id="Retreat-Team-EMG-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Team-EMG-Mobile">Mobile</label>
+                          <input type="text" id="Retreat-Team-EMG-Mobile" name="Retreat-Team-EMG-Mobile" />
+                          <small id="Retreat-Team-EMG-Info-4-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-EMG-Info-5" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-EMG-Relationship">Relationship to you</label>
+                          <input type="text" id="Retreat-Team-EMG-Relationship" name="Retreat-Team-EMG-Relationship" />
+                          <small id="Retreat-Team-EMG-Info-5-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="Retreat-Team-Flight-Info-Section" class="Sections">
+                    <div class="Section-Name">
+                      <span> Flight Info: </span>
+                    </div>
+                    <div id="Retreat-Team-Flight-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Team-Flight-Arrival-Time">Arrival Time</label>
+                          <input type="text" id="Retreat-Team-Flight-Arrival-Time" name="Retreat-Team-Flight-Arrival-Time" placeholder="MM/DD TIME" />
+                          <small id="Retreat-Team-Flight-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Team-Flight-Departure-Time">Departure Time</label>
+                          <input type="text" id="Retreat-Team-Flight-Departure-Time" name="Retreat-Team-Flight-Departure-Time" placeholder="MM/DD TIME" />
+                          <small id="Retreat-Team-Flight-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Team-Flight-Info-3" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-Flight-Travel-Notes">Travel Method and Notes</label>
+                          <textarea type="text" id="Retreat-Team-Flight-Travel-Notes" name="Retreat-Team-Flight-Travel-Notes" cols="30" rows="3"></textarea>
+                          <small id="Retreat-Team-Flight-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="Retreat-Team-Page-Buttons-1" class="Button-Box">
+                    <div class="Left">
+                      <button id="Retreat-Team-Page-Back-1" class="Back-Button" type="button" style="display: none">Back</button>
+                    </div>
+                    <div class="Middle">
+                      <button id="Retreat-Team-Form-Button-1" class="Submit-Button" type="button" style="display: none">Submit</button>
+                    </div>
+                    <div class="Right">
+                      <button id="Retreat-Team-Page-Next-1" class="Next-Button" type="button">Next</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="Retreat-Team-Page-Two" class="Pages" style="display: none">
+                  <div class="Section-Name">
+                    <span> Agreements and Submission: </span>
+                  </div>
+                  <div id="Retreat-Team-Agreement-2" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="Retreat-Team-Release-Agreement">Release Agreement*</label>
+                        <button id="Retreat-Team-RA-Open" class="Read" type="button">Read</button>
+                        <small id="Retreat-Team-RA-Error" class="Errors">You must agree to the term*</small>
+                        <div id="Retreat-Team-Release-Agreement" class="Agreement" style="display: none">
+                          <strong>A)</strong> &nbsp I understand that participation in an Inheritance of Hope event is purely voluntary.<br /><br />
+                          <strong>B)</strong> &nbsp On behalf of myself and all the Participants listed on this form, their heirs, personal representatives,
+                          guardians, successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify
+                          and hold harmless Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and
+                          assigns, and any parent organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of
+                          action, costs or expenses (including attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly
+                          or indirectly, or in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                          <strong>C)</strong> &nbsp I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation
+                          in the event. I understand that participation in the event may result in injury, property damage, interaction with persons having
+                          potentially communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and
+                          risks associated with the event and voluntarily assume the risks associated with participation in the event. I hereby unconditionally,
+                          irrevocably, and absolutely release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers,
+                          employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries,
+                          from any and all loss, liability, claims, demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits
+                          of any type, whether in law and/or in equity, in the event of injury, property damage, disease, and/or death related directly or
+                          indirectly, or in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                          <strong>D)</strong> &nbsp I understand, recognize, and agree that I am fully responsible for my child(ren) throughout the event.
+                          <br /><br />
+                          <strong>E)</strong> &nbsp By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or
+                          electronically record interviews with me/us in such a manner as they choose. I further give permission and consent that any such
+                          photographs, films, and/or electronically recorded interviews may be published and used by Inheritance of Hope and its agents to
+                          illustrate and promote the event experience and Inheritance of Hope. <br /><br />
+                          <strong>F)</strong> &nbsp By my signature set forth below, I the Applicant understand that I am unconditionally, irrevocably, and
+                          absolutely authorizing Inheritance of Hope to share the medical information contained in this application with its directors,
+                          officers, employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or
+                          subsidiaries. <br /><br />
+                          <strong>G)</strong> &nbsp I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State
+                          of South Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in
+                          full legal force and effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the event must be
+                          submitted to binding arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration
+                          shall be sited in Oconee County, South Carolina. <br /><br />
+                          <button id="Retreat-Team-RA-Close" class="Close" type="button">Close</button>
+                        </div>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="Retreat-Team-RA-Accept" name="Retreat-Team-RA-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Retreat-Team-Agreement-3" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="Retreat-Team-Informed-Consent-Agreement">Informed Consent Agreement*</label>
+                        <button id="Retreat-Team-ICA-Open" class="Read" type="button">Read</button>
+                        <small id="Retreat-Team-ICA-Error" class="Errors">You must agree to the term*</small>
+                        <div id="Retreat-Team-Informed-Consent-Agreement" class="Agreement" style="display: none">
+                          <strong>A)</strong> &nbsp I understand, recognize, and agree that Inheritance of Hope employs a variety of facilitators in order to
+                          provide a quality experience to all Participants. I understand that I can request information regarding my facilitators' education and
+                          experience backgrounds from Inheritance of Hope.<br /><br />
+                          <strong>B)</strong> &nbsp I understand, recognize, and agree that a safe group environment is created and maintained by both the
+                          facilitators and the group members offering mutual respect and trust. Confidentiality is also primary for a safe group environment.
+                          Group facilitators are bound by law to maintain confidentiality. Participants are bound by honor to maintain confidentiality. Should I
+                          desire to share what I learn in group, I agree to do so without using group members' names or in any way compromising group members'
+                          confidentiality. I acknowledge that there are legal and professional limits to confidentiality. I understand that I can request more
+                          information about these limits from Inheritance of Hope.<br /><br />
+                          <strong>C)</strong> &nbsp I understand and agree to all terms of event group participation. I also understand and agree that any
+                          Participant can contact Inheritance of Hope for more information about any aspect of the group experience. <br /><br />
+                          <button id="Retreat-Team-ICA-Close" class="Close" type="button">Close</button>
+                        </div>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="Retreat-Team-ICA-Accept" name="Retreat-Team-ICA-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Retreat-Team-Agreement-4" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="Retreat-Team-COVID-Accept">Covid Release Form*</label>
+                        <div class="Agreement">
+                          By attending this Inheritance of Hope Legacy Retreat®, I assume all risks associated with exposure to COVID-19 and forever release and
+                          hold harmless Inheritance of Hope and each of their officers, directors, agents, employees, or other representatives from any
+                          liability or claims including for personal injuries, death, disease or property losses, or any other loss, including but not limited
+                          to claims of negligence and give up any claims we may have to seek damages, whether known or unknown, foreseen or unforeseen, in
+                          connection with exposure, infection and/or spread of COVID-19 related to participation in this event.
+                        </div>
+                        <small id="Retreat-Team-COVID-Error" class="Errors">Required*</small>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="Retreat-Team-COVID-Accept" name="Retreat-Team-COVID-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Retreat-Team-Agreement-5" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two" style="width: 70%">
+                        <label for="Retreat-Team-Travel-Responsibility">
+                          I understand I am responsible to arrange and pay my own travel to and from the event, including airfare if applicable.*
+                        </label>
+                        <small id="Retreat-Team-Travel-Responsibility-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two" style="width: 30%">
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 30%">
+                            <div class="Cell">
+                              <input type="checkbox" id="Retreat-Team-Travel-Responsibility" name="Retreat-Team-Travel-Responsibility" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 70%">
+                            <div class="Cell">
+                              <p>Yes</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Retreat-Team-Agreement-6" class="Questions">
+                    <div class="Two-Columns">
+                      <div class="Two">
+                        <label for="Retreat-Team-Electronic-Signature">Signature*</label>
+                        <input type="text" id="Retreat-Team-Electronic-Signature" name="Retreat-Team-Electronic-Signature" />
+                        <small id="Retreat-Team-ES-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two">
+                        <label for="Retreat-Team-Electronic-Signature-Date">Signature Date*</label>
+                        <input type="date" id="Retreat-Team-Electronic-Signature-Date" name="Retreat-Team-Electronic-Signature-Date" />
+                        <small id="Retreat-Team-ESD-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <textarea name="PD-To-SF" id="Retreat-Team-PD-To-SF" cols="30" rows="10" style="display: none"></textarea>
+
+                  <div id="Retreat-Team-Page-Buttons-2" class="Button-Box">
+                    <div class="Left">
+                      <button id="Retreat-Team-Page-Back-2" class="Back-Button" type="button">Back</button>
+                    </div>
+                    <div class="Middle">
+                      <button id="Retreat-Team-Form-Button-2" class="Submit-Button" type="button">Submit</button>
+                    </div>
+                    <div class="Right">
+                      <button id="Retreat-Team-Page-Next-2" class="Next-Button" type="button" style="display: none">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div id="Retreat-Guest-Registration" style="display: none">
+            <form
+              id="Retreat-Guest-Legacy-Retreat-Registration"
+              class="Legacy-Retreat-Registration"
+              action="https://www2.inheritanceofhope.org/l/739893/2023-04-12/8wbcsx"
+              method="post"
+            >
+              <div id="Retreat-Guest-Applicant" class="Applicants">
+                <div id="Retreat-Guest-Page-One" class="Pages">
+                  <div class="Section-Name">
+                    <span> Family Info: </span>
+                  </div>
+                  <div id="Retreat-Guest-Info-Section" class="Sections">
+                    <div id="Retreat-Guest-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Guest-First-Name">First Name*</label>
+                          <input type="text" id="Retreat-Guest-First-Name" name="Applicant-First-Name" />
+                          <small id="Retreat-Guest-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Guest-Last-Name">Last Name*</label>
+                          <input type="text" id="Retreat-Guest-Last-Name" name="Applicant-Last-Name" />
+                          <small id="Retreat-Guest-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Info-3-4" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Guest-E-Mail">E-Mail*</label>
+                          <input type="text" id="Retreat-Guest-E-Mail" name="Applicant-E-Mail" />
+                          <small id="Retreat-Guest-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Guest-Phone-Number">Mobile*</label>
+                          <input type="text" id="Retreat-Guest-Phone-Number" name="Applicant-Phone-Number" />
+                          <small id="Retreat-Guest-Info-4-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Info-5-6" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Guest-Birthdate">Birthdate*</label>
+                          <input type="date" id="Retreat-Guest-Birthdate" name="Applicant-Birthdate" />
+                          <small id="Retreat-Guest-Info-5-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Guest-Gender">Gender*</label>
+                          <input type="text" id="Retreat-Guest-Gender" name="Applicant-Gender" />
+                          <small id="Retreat-Guest-Info-6-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Info-7" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Guest-T-Shirt">T-Shirt Size*</label>
+                          <select type="text" id="Retreat-Guest-T-Shirt" name="Applicant-T-Shirt-Size">
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="5XL">5XL</option>
+                            <option value="4XL">4XL</option>
+                            <option value="3XL">3XL</option>
+                            <option value="XXL">XXL</option>
+                            <option value="XL">XL</option>
+                            <option value="Adult L">L</option>
+                            <option value="Adult M">M</option>
+                            <option value="Adult S">S</option>
+                            <option value="Youth L">Youth L</option>
+                            <option value="Youth M">Youth M</option>
+                            <option value="Youth S">Youth S</option>
+                            <option value="Youth XS">Youth XS</option>
+                          </select>
+                          <small id="Retreat-Guest-Info-7-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Info-8" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Guest-Street-Address">Street Address*</label>
+                          <input type="text" id="Retreat-Guest-Street-Address" name="Applicant-Street-Address" />
+                          <small id="Retreat-Guest-Info-8-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Info-9-10-11" class="Questions">
+                      <div class="Three-Columns">
+                        <div class="Three">
+                          <label for="Retreat-Guest-City">City*</label>
+                          <input type="text" id="Retreat-Guest-City" name="Applicant-City" />
+                          <small id="Retreat-Guest-Info-9-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Three">
+                          <label for="Retreat-Guest-State">State*</label>
+                          <input type="text" id="Retreat-Guest-State" name="Applicant-State" />
+                          <small id="Retreat-Guest-Info-10-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Three">
+                          <label for="Retreat-Guest-Zip">Zip*</label>
+                          <input type="text" id="Retreat-Guest-Zip" name="Applicant-Zip" />
+                          <small id="Retreat-Guest-Info-11-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Info-12" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Guest-Allergies-Dietary-Needs" style="text-align: left">
+                            Do you have any allergies or special dietary needs?*
+                          </label>
+                          <textarea id="Retreat-Guest-Allergies-Dietary-Needs" name="Applicant-Allergies" cols="30" rows="3"></textarea>
+                          <small id="Retreat-Guest-Info-12-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Info-13" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Guest-Special-Notes" style="text-align: left">
+                            Is there anything special to note about you?* <br />
+                            Ex. Olivia has non-verbal autism and requires sensory accommodations.
+                          </label>
+                          <textarea id="Retreat-Guest-Special-Notes" name="Retreat-Guest-Special-Notes" cols="30" rows="3"></textarea>
+                          <small id="Retreat-Guest-Info-13-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Info-14" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Guest-Name-Tag" style="text-align: left">
+                            Is there a different first or last name you would like us to use on your name tag?*
+                          </label>
+                          <input type="text" id="Retreat-Guest-Name-Tag" name="Applicant-Pref-Last-Name" />
+                          <small id="Retreat-Guest-Info-14-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="Retreat-Guest-Flight-Info-Section" class="Sections">
+                    <div class="Section-Name">
+                      <span> Flight Info: </span>
+                    </div>
+                    <div id="Retreat-Guest-Flight-Info-1-2" class="Questions">
+                      <div class="Two-Columns">
+                        <div class="Two">
+                          <label for="Retreat-Guest-Flight-Arrival-Time">Arrival Time*</label>
+                          <input type="text" id="Retreat-Guest-Flight-Arrival-Time" name="Retreat-Guest-Flight-Arrival-Time" placeholder="MM/DD TIME" />
+                          <small id="Retreat-Guest-Flight-Info-1-Error" class="Errors">Required*</small>
+                        </div>
+                        <div class="Two">
+                          <label for="Retreat-Guest-Flight-Departure-Time">Departure Time*</label>
+                          <input type="text" id="Retreat-Guest-Flight-Departure-Time" name="Retreat-Guest-Flight-Departure-Time" placeholder="MM/DD TIME" />
+                          <small id="Retreat-Guest-Flight-Info-2-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Retreat-Guest-Flight-Info-3" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Guest-Flight-Travel-Notes">Travel Method and Notes</label>
+                          <textarea type="text" id="Retreat-Guest-Flight-Travel-Notes" name="Retreat-Guest-Flight-Travel-Notes" cols="30" rows="3"></textarea>
+                          <small id="Retreat-Guest-Flight-Info-3-Error" class="Errors">Required*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="Retreat-Guest-Page-Buttons-1" class="Button-Box">
+                    <div class="Left">
+                      <button id="Retreat-Guest-Page-Back-1" class="Back-Button" type="button" style="display: none">Back</button>
+                    </div>
+                    <div class="Middle">
+                      <button id="Retreat-Guest-Form-Button-1" class="Submit-Button" type="button" style="display: none">Submit</button>
+                    </div>
+                    <div class="Right">
+                      <button id="Retreat-Guest-Page-Next-1" class="Next-Button" type="button">Next</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="Retreat-Guest-Page-Two" class="Pages" style="display: none">
+                  <div class="Section-Name">
+                    <span> Agreements and Submission: </span>
+                  </div>
+                  <div id="Retreat-Guest-Agreement-1" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="Retreat-Guest-Release-Agreement">Release Agreement*</label>
+                        <button id="Retreat-Guest-RA-Open" class="Read" type="button">Read</button>
+                        <small id="Retreat-Guest-RA-Error" class="Errors">You must agree to the term*</small>
+                        <div id="Retreat-Guest-Release-Agreement" class="Agreement" style="display: none">
+                          <strong>A)</strong> &nbsp I understand that participation in an Inheritance of Hope event is purely voluntary.<br /><br />
+                          <strong>B)</strong> &nbsp On behalf of myself and all the Participants listed on this form, their heirs, personal representatives,
+                          guardians, successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify
+                          and hold harmless Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and
+                          assigns, and any parent organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of
+                          action, costs or expenses (including attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly
+                          or indirectly, or in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                          <strong>C)</strong> &nbsp I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation
+                          in the event. I understand that participation in the event may result in injury, property damage, interaction with persons having
+                          potentially communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and
+                          risks associated with the event and voluntarily assume the risks associated with participation in the event. I hereby unconditionally,
+                          irrevocably, and absolutely release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers,
+                          employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries,
+                          from any and all loss, liability, claims, demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits
+                          of any type, whether in law and/or in equity, in the event of injury, property damage, disease, and/or death related directly or
+                          indirectly, or in any way connected with the Participants’ participation in the Inheritance of Hope event. <br /><br />
+                          <strong>D)</strong> &nbsp I understand, recognize, and agree that I am fully responsible for my child(ren) throughout the event.
+                          <br /><br />
+                          <strong>E)</strong> &nbsp By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or
+                          electronically record interviews with me/us in such a manner as they choose. I further give permission and consent that any such
+                          photographs, films, and/or electronically recorded interviews may be published and used by Inheritance of Hope and its agents to
+                          illustrate and promote the event experience and Inheritance of Hope. <br /><br />
+                          <strong>F)</strong> &nbsp By my signature set forth below, I the Applicant understand that I am unconditionally, irrevocably, and
+                          absolutely authorizing Inheritance of Hope to share the medical information contained in this application with its directors,
+                          officers, employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or
+                          subsidiaries. <br /><br />
+                          <strong>G)</strong> &nbsp I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State
+                          of South Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in
+                          full legal force and effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the event must be
+                          submitted to binding arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration
+                          shall be sited in Oconee County, South Carolina. <br /><br />
+                          <button id="Retreat-Guest-RA-Close" class="Close" type="button">Close</button>
+                        </div>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="Retreat-Guest-RA-Accept" name="Retreat-Guest-RA-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Retreat-Guest-Agreement-2" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="Retreat-Guest-Informed-Consent-Agreement">Informed Consent Agreement*</label>
+                        <button id="Retreat-Guest-ICA-Open" class="Read" type="button">Read</button>
+                        <small id="Retreat-Guest-ICA-Error" class="Errors">You must agree to the term*</small>
+                        <div id="Retreat-Guest-Informed-Consent-Agreement" class="Agreement" style="display: none">
+                          <strong>A)</strong> &nbsp I understand, recognize, and agree that Inheritance of Hope employs a variety of facilitators in order to
+                          provide a quality experience to all Participants. I understand that I can request information regarding my facilitators' education and
+                          experience backgrounds from Inheritance of Hope.<br /><br />
+                          <strong>B)</strong> &nbsp I understand, recognize, and agree that a safe group environment is created and maintained by both the
+                          facilitators and the group members offering mutual respect and trust. Confidentiality is also primary for a safe group environment.
+                          Group facilitators are bound by law to maintain confidentiality. Participants are bound by honor to maintain confidentiality. Should I
+                          desire to share what I learn in group, I agree to do so without using group members' names or in any way compromising group members'
+                          confidentiality. I acknowledge that there are legal and professional limits to confidentiality. I understand that I can request more
+                          information about these limits from Inheritance of Hope.<br /><br />
+                          <strong>C)</strong> &nbsp I understand, recognize, and agree that my children and/or teenagers will have age-appropriate group
+                          experiences for healthy emotional processing. The above elements also apply to children and teenager groups. I understand that
+                          children and teenagers will not focus on specific details of any parent's illness but will address the fact that all have an ill
+                          parent in common.<br /><br />
+                          <strong>D)</strong> &nbsp I understand and agree to all terms of event group participation. I also understand and agree that any
+                          Participant can contact Inheritance of Hope for more information about any aspect of the group experience. <br /><br />
+                          <button id="Retreat-Guest-ICA-Close" class="Close" type="button">Close</button>
+                        </div>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="Retreat-Guest-ICA-Accept" name="Retreat-Guest-ICA-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Retreat-Guest-Agreement-3" class="Questions">
+                    <div class="One-Column">
+                      <div class="One">
+                        <label for="Retreat-Guest-COVID-Accept">Covid Release Form*</label>
+                        <label for="">Link</label>
+                        <small id="Retreat-Guest-COVID-Error" class="Errors">Required*</small>
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 50%">
+                            <div class="Cell">
+                              <input type="checkbox" id="Retreat-Guest-COVID-Accept" name="Retreat-Guest-COVID-Accept" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 50%">
+                            <div class="Cell"><p>Accept</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Retreat-Guest-Agreement-4" class="Questions">
+                    <div id="" class="Two-Columns">
+                      <div class="Two" style="width: 70%">
+                        <label for="Retreat-Guest-Travel-Responsibility">
+                          I understand I am responsible to arrange and pay my own travel to and from the event, including airfare if applicable.*
+                        </label>
+                        <small id="Retreat-Guest-Travel-Responsibility-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two" style="width: 30%">
+                        <div class="Check-Box">
+                          <div class="Left-Box" style="width: 30%">
+                            <div class="Cell">
+                              <input type="checkbox" id="Retreat-Guest-Travel-Responsibility" name="Retreat-Guest-Travel-Responsibility" value="Yes" />
+                            </div>
+                          </div>
+                          <div class="Right-Box" style="width: 70%">
+                            <div class="Cell">
+                              <p>Yes</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Retreat-Guest-Agreement-5" class="Questions">
+                    <div class="Two-Columns">
+                      <div class="Two">
+                        <label for="Retreat-Guest-Electronic-Signature">Signature*</label>
+                        <input type="text" id="Retreat-Guest-Electronic-Signature" name="Retreat-Guest-Electronic-Signature" />
+                        <small id="Retreat-Guest-ES-Error" class="Errors">Required*</small>
+                      </div>
+                      <div class="Two">
+                        <label for="Retreat-Guest-Electronic-Signature-Date">Signature Date*</label>
+                        <input type="date" id="Retreat-Guest-Electronic-Signature-Date" name="Retreat-Guest-Electronic-Signature-Date" />
+                        <small id="Retreat-Guest-ESD-Error" class="Errors">Required*</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="Retreat-Guest-Page-Buttons-2" class="Button-Box">
+                    <div class="Left">
+                      <button id="Retreat-Guest-Page-Back-2" class="Back-Button" type="button">Back</button>
+                    </div>
+                    <div class="Middle">
+                      <button id="Retreat-Guest-Form-Button-2" class="Submit-Button" type="button">Submit</button>
+                    </div>
+                    <div class="Right">
+                      <button id="Retreat-Guest-Page-Next-2" class="Next-Button" type="button" style="display: none">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <textarea name="PD-To-SF" id="Retreat-Guest-PD-To-SF" cols="30" rows="10" style="display: none"></textarea>
+            </form>
+          </div>
+        </div>
+
+        <div class="Footer">
+          <p>
+            If you have any technical issues with this form, <br />
+            please email <a href="mailto:tech@inheritanceofhope.org">Tech@InheritanceOfHope.Org</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function uptoTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      function emailCorrectPattern(e) {
+        var y = /\S+@\S+\.\S+/;
+        return y.test(e);
+      }
+
+      document.getElementById("Tell-Us-About-You").addEventListener("change", function () {
+        if (document.getElementById("Tell-Us-About-You").value == "Family") {
+          document.getElementById("Entrance-2").style.display = "block";
+          FamMemRemove();
+          document.getElementById("How-Many-People-Registering").value = "";
+          document.getElementById("Retreat-Team-Registration").style.display = "none";
+          document.getElementById("Retreat-Team-Legacy-Retreat-Registration").reset();
+          document.getElementById("Retreat-Guest-Registration").style.display = "none";
+          document.getElementById("Retreat-Guest-Legacy-Retreat-Registration").reset();
+        }
+        if (document.getElementById("Tell-Us-About-You").value == "Team") {
+          document.getElementById("Retreat-Team-Registration").style.display = "block";
+          document.getElementById("mission").style.display = "none";
+          document.getElementById("Entrance-2").style.display = "none";
+          FamMemRemove();
+          document.getElementById("How-Many-People-Registering").disabled = false;
+          document.getElementById("How-Many-People-Registering").value = "";
+          document.getElementById("FAM-LR-Registration").style.display = "none";
+          document.getElementById("FAM-Legacy-Retreat-Registration").reset();
+          document.getElementById("Retreat-Guest-Registration").style.display = "none";
+          document.getElementById("Retreat-Guest-Legacy-Retreat-Registration").reset();
+        }
+        if (document.getElementById("Tell-Us-About-You").value == "Retreat Guest") {
+          document.getElementById("Retreat-Guest-Registration").style.display = "block";
+          document.getElementById("mission").style.display = "none";
+          document.getElementById("Entrance-2").style.display = "none";
+          FamMemRemove();
+          document.getElementById("How-Many-People-Registering").disabled = false;
+          document.getElementById("How-Many-People-Registering").value = "";
+          document.getElementById("FAM-LR-Registration").style.display = "none";
+          document.getElementById("FAM-Legacy-Retreat-Registration").reset();
+          document.getElementById("Retreat-Team-Registration").style.display = "none";
+          document.getElementById("Retreat-Team-Legacy-Retreat-Registration").reset();
+        }
+      });
+      document.getElementById("How-Many-People-Registering").addEventListener("change", function () {
+        if (document.getElementById("How-Many-People-Registering").value != "") {
+          if (document.getElementById("How-Many-People-Registering").value > 7) {
+            document.getElementById("Entrance-2-Error").innerHTML = "Max is 7 people";
+            document.getElementById("Entrance-2-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("Entrance-2-Error").innerHTML = "Required*";
+            document.getElementById("Entrance-2-Error").style.visibility = "hidden";
+          }
+          document.getElementById("How-Many-People-Registering").disabled = true;
+          document.getElementById("FAM-LR-Registration").style.display = "block";
+          document.getElementById("mission").style.display = "none";
+          document.getElementById("Retreat-Team-Registration").style.display = "none";
+          document.getElementById("Retreat-Guest-Registration").style.display = "none";
+          for (let i = 2; i < document.getElementById("How-Many-People-Registering").value; i++) {
+            FamMemAdd();
+          }
+        } else {
+          document.getElementById("How-Many-People-Registering").disabled = false;
+        }
+      });
+
+      /* Family Member */
+      document.getElementById("FAM-APP-Update-Address").addEventListener("change", function () {
+        if (document.getElementById("FAM-APP-Update-Address").checked) {
+          document.getElementById("FAM-APP-Info-6").style.display = "block";
+          document.getElementById("FAM-APP-Info-7-8-9").style.display = "block";
+        } else {
+          document.getElementById("FAM-APP-Info-6").style.display = "none";
+          document.getElementById("FAM-APP-Info-7-8-9").style.display = "none";
+        }
+      });
+
+      function FamMemAdd(e) {
+        //Validation for guest fields
+        //Get number of guests
+        var NumMember = document.getElementById("FAM-MEM-Info-Section").getElementsByClassName("Sections").length + 1;
+        console.log(NumMember);
+        var MemBox = document.getElementById("FAM-MEM-1");
+        var Clone = MemBox.cloneNode(true);
+
+        Clone.id = "FAM-MEM-" + NumMember;
+        Clone.classList.add("Sections");
+        MemBox.parentNode.append(Clone);
+
+        var ParentNode = document.getElementById(Clone.id);
+
+        var ChildrenFirstName = ParentNode.querySelector("#FAM-MEM-First-Name-1");
+        var ChildrenLastName = ParentNode.querySelector("#FAM-MEM-Last-Name-1");
+        var ChildrenNameTag = ParentNode.querySelector("#FAM-MEM-Name-Tag-1");
+        var ChildrenTshirts = ParentNode.querySelector("#FAM-MEM-T-Shirt-1");
+        var ChildrenAllergies = ParentNode.querySelector("#FAM-MEM-Allergies-Dietary-Needs-1");
+        var ChildrenSpecialNeed = ParentNode.querySelector("#FAM-MEM-Special-Notes-1");
+
+        /*
+          var ChildrenFirstName = ParentNode.querySelector("#Two-Columns > #Two > #C-First-Name-1");
+          var ChildrenLastName = ParentNode.querySelector("#Two-Columns > #Two > #C-Last-Name-1");
+          var ChilLastFullName = ParentNode.querySelector("#Two-Columns > #C-Full-Name-1");
+          var ChildrenGender = ParentNode.querySelector("#Three-Columns > #Three > #C-Gender-1");
+          var ChildrenBirthDate = ParentNode.querySelector("#Three-Columns > #Three > #C-Birthdate-1");
+          var ChildrenTShirtSize = ParentNode.querySelector("#Three-Columns > #Three > #C-T-Shirt-1");
+          var ChildrenSpecialNeed = ParentNode.querySelector("#One-Column > #One > #C-Special-Need-1");
+        */
+
+        //First Name
+        ChildrenFirstName.id = "FAM-MEM-First-Name-" + NumMember;
+        ChildrenFirstName.name = "FAM-MEM-First-Name-" + NumMember;
+        ChildrenFirstName.value = "";
+
+        //Last Name
+        ChildrenLastName.id = "FAM-MEM-Last-Name-" + NumMember;
+        ChildrenLastName.name = "FAM-MEM-Last-Name-" + NumMember;
+        ChildrenLastName.value = "";
+
+        //Birth Date
+        ChildrenNameTag.id = "FAM-MEM-Name-Tag-" + NumMember;
+        ChildrenNameTag.name = "FAM-MEM-Name-Tag-" + NumMember;
+        ChildrenNameTag.value = "";
+
+        //Gender
+        ChildrenTshirts.id = "FAM-MEM-T-Shirt-" + NumMember;
+        ChildrenTshirts.name = "FAM-MEM-T-Shirt-" + NumMember;
+        ChildrenTshirts.value = "";
+
+        //Allergies and Dietary Needs
+        ChildrenAllergies.id = "FAM-MEM-Allergies-Dietary-Needs-" + NumMember;
+        ChildrenAllergies.name = "FAM-MEM-Allergies-Dietary-Needs-" + NumMember;
+        ChildrenAllergies.value = "";
+
+        //Special Need
+        ChildrenSpecialNeed.id = "FAM-MEM-Special-Notes-" + NumMember;
+        ChildrenSpecialNeed.name = "FAM-MEM-Special-Notes-" + NumMember;
+        ChildrenSpecialNeed.value = "";
+      }
+      function FamMemRemove(e) {
+        //Get list of children
+        var Children = document.getElementById("FAM-MEM-Info-Section").getElementsByClassName("Sections");
+        //Get last kid
+        var LastChildren = Children[Children.length - 1];
+        //Error if only 1 child. At least 1 child is required.
+        for (let i = document.getElementById("FAM-MEM-Info-Section").getElementsByClassName("Sections").length; i > 1; i--) {
+          LastChildren.remove();
+        }
+      }
+
+      function FamAppVal() {
+        if (document.getElementById("FAM-APP-First-Name").value == "") {
+          document.getElementById("FAM-APP-First-Name").focus();
+          document.getElementById("FAM-APP-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-APP-Last-Name").value == "") {
+          document.getElementById("FAM-APP-Last-Name").focus();
+          document.getElementById("FAM-APP-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-APP-E-Mail").value == "") {
+          document.getElementById("FAM-APP-Info-3-Error").style.visibility = "visible";
+          document.getElementById("FAM-APP-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("FAM-APP-E-Mail").value) === false) {
+          document.getElementById("FAM-APP-Info-3-Error").innerHTML = "Invalid Format*";
+          document.getElementById("FAM-APP-E-Mail").focus();
+          document.getElementById("FAM-APP-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-APP-T-Shirt").value == "") {
+          document.getElementById("FAM-APP-T-Shirt").focus();
+          document.getElementById("FAM-APP-Info-4-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-4-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-APP-Update-Address").checked) {
+          if (document.getElementById("FAM-APP-Street-Address").value == "") {
+            document.getElementById("FAM-APP-Update-Address").focus();
+            document.getElementById("FAM-APP-Info-6-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("FAM-APP-Info-6-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("FAM-APP-City").value == "") {
+            document.getElementById("FAM-APP-City").focus();
+            document.getElementById("FAM-APP-Info-7-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("FAM-APP-Info-7-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("FAM-APP-State").value == "") {
+            document.getElementById("FAM-APP-State").focus();
+            document.getElementById("FAM-APP-Info-8-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("FAM-APP-Info-8-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("FAM-APP-Zip").value == "") {
+            document.getElementById("FAM-APP-Zip").focus();
+            document.getElementById("FAM-APP-Info-9-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("FAM-APP-Info-9-Error").style.visibility = "hidden";
+          }
+        } else {
+          document.getElementById("FAM-APP-Info-5-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-APP-Allergies-Dietary-Needs").value == "") {
+          document.getElementById("FAM-APP-Allergies-Dietary-Needs").focus();
+          document.getElementById("FAM-APP-Info-10-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-10-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-APP-Special-Notes").value == "") {
+          document.getElementById("FAM-APP-Special-Notes").focus();
+          document.getElementById("FAM-APP-Info-11-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-11-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-APP-Name-Tag").value == "") {
+          document.getElementById("FAM-APP-Name-Tag").focus();
+          document.getElementById("FAM-APP-Info-12-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-12-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-APP-Preferred-Last-Name").value == "") {
+          document.getElementById("FAM-APP-Preferred-Last-Name").focus();
+          document.getElementById("FAM-APP-Info-15-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-15-Error").style.visibility = "hidden";
+        }
+      }
+      function FamMemVal() {
+        var FamMemSections = document.getElementById("FAM-MEM-Info-Section");
+        var FamMemInputs = FamMemSections.getElementsByTagName("input");
+        var FamMemSelects = FamMemSections.getElementsByTagName("select");
+        var FamMemTextareas = FamMemSections.getElementsByTagName("textarea");
+        for (let i = 0; i <= FamMemInputs.length - 1; i++) {
+          if (FamMemInputs[i].value == "") {
+            FamMemInputs[i].focus();
+            return false;
+          }
+        }
+        for (let i = 0; i <= FamMemSelects.length - 1; i++) {
+          if (FamMemSelects[i].value == "") {
+            FamMemSelects[i].focus();
+            return false;
+          }
+        }
+        for (let i = 0; i <= FamMemTextareas.length - 1; i++) {
+          if (FamMemTextareas[i].value == "") {
+            FamMemTextareas[i].focus();
+            return false;
+          }
+        }
+      }
+      function FamFLWVal() {
+        if (document.getElementById("FAM-FLW1-First-Name").value == "") {
+          document.getElementById("FAM-FLW1-First-Name").focus();
+          document.getElementById("FAM-FLW1-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW1-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW1-Last-Name").value == "") {
+          document.getElementById("FAM-FLW1-Last-Name").focus();
+          document.getElementById("FAM-FLW1-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW1-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW1-E-Mail").value == "") {
+          document.getElementById("FAM-FLW1-Info-3-Error").style.visibility = "visible";
+          document.getElementById("FAM-FLW1-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("FAM-FLW1-E-Mail").value) === false) {
+          document.getElementById("FAM-FLW1-Info-3-Error").innerHTML = "Invalid Format*";
+          document.getElementById("FAM-FLW1-E-Mail").focus();
+          document.getElementById("FAM-FLW1-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW1-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW1-Mobile").value == "") {
+          document.getElementById("FAM-FLW1-Mobile").focus();
+          document.getElementById("FAM-FLW1-Info-4-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW1-Info-4-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW1-Relationship").value == "") {
+          document.getElementById("FAM-FLW1-Relationship").focus();
+          document.getElementById("FAM-FLW1-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW1-Info-5-Error").style.visibility = "hidden";
+        }
+      }
+      function FamEmgVal() {
+        if (document.getElementById("FAM-EMG-First-Name").value == "") {
+          document.getElementById("FAM-EMG-First-Name").focus();
+          document.getElementById("FAM-EMG-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-EMG-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-EMG-Last-Name").value == "") {
+          document.getElementById("FAM-EMG-Last-Name").focus();
+          document.getElementById("FAM-EMG-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-EMG-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-EMG-E-Mail").value == "") {
+          document.getElementById("FAM-EMG-Info-3-Error").style.visibility = "visible";
+          document.getElementById("FAM-EMG-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("FAM-EMG-E-Mail").value) === false) {
+          document.getElementById("FAM-EMG-Info-3-Error").innerHTML = "Invalid Format*";
+          document.getElementById("FAM-EMG-E-Mail").focus();
+          document.getElementById("FAM-EMG-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-EMG-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-EMG-Mobile").value == "") {
+          document.getElementById("FAM-EMG-Mobile").focus();
+          document.getElementById("FAM-EMG-Info-4-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-EMG-Info-4-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-EMG-Relationship").value == "") {
+          document.getElementById("FAM-EMG-Relationship").focus();
+          document.getElementById("FAM-EMG-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-EMG-Info-5-Error").style.visibility = "hidden";
+        }
+      }
+      function FamAgreementVal() {
+        if (!document.getElementById("FAM-RA-Accept").checked) {
+          document.getElementById("FAM-RA-Error").style.visibility = "visible";
+          document.getElementById("FAM-RA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-RA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("FAM-ICA-Accept").checked) {
+          document.getElementById("FAM-ICA-Error").style.visibility = "visible";
+          document.getElementById("FAM-ICA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-ICA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("FAM-COVID-Accept").checked) {
+          document.getElementById("FAM-COVID-Error").style.visibility = "visible";
+          document.getElementById("FAM-COVID-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-COVID-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("FAM-Travel-Responsibility").checked) {
+          document.getElementById("FAM-Travel-Responsibility-Error").style.visibility = "visible";
+          document.getElementById("FAM-Travel-Responsibility").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-Travel-Responsibility-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-Electronic-Signature").value == "") {
+          document.getElementById("FAM-ES-Error").style.visibility = "visible";
+          document.getElementById("FAM-Electronic-Signature").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-ES-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-Electronic-Signature-Date").value == "") {
+          document.getElementById("FAM-ESD-Error").style.visibility = "visible";
+          document.getElementById("FAM-Electronic-Signature-Date").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-ESD-Error").style.visibility = "hidden";
+        }
+      }
+
+      function FamAppPDToSF() {
+        let Applicant = "[who]" + document.getElementById("Tell-Us-About-You").value + "[/who]";
+        let ApplicantFirstName = "[fname]" + document.getElementById("FAM-APP-First-Name").value + "[/fname]";
+        let ApplicantLastName = "[lname]" + document.getElementById("FAM-APP-Last-Name").value + "[/lname]";
+        let ApplicantSpecialNotes = "[notes]" + document.getElementById("FAM-APP-Special-Notes").value + "[/notes]";
+        let ApplicantNameTag = "[tag]" + document.getElementById("FAM-APP-Name-Tag").value + "[/tag]";
+
+        let FamApp = "[FamApp]" + ApplicantFirstName + ApplicantLastName + ApplicantSpecialNotes + ApplicantNameTag + "[/FamApp]";
+
+        let children = "";
+        let childID = "";
+
+        let fname = "";
+        let lname = "";
+        let tag = "";
+        let shirt = "";
+        let diet = "";
+        let needs = "";
+
+        let fnameId = "";
+        let lnameId = "";
+        let tagId = "";
+        let shirtId = "";
+        let dietId = "";
+        let needsId = "";
+
+        console.log(document.getElementsByClassName("Child").length);
+
+        for (var i = 1; i <= 6; i++) {
+          childID = "FAM-MEM-" + i;
+          if (document.getElementById(childID) !== null) {
+            fnameId = "FAM-MEM-First-Name-" + i;
+            lnameId = "FAM-MEM-Last-Name-" + i;
+            tagId = "FAM-MEM-Name-Tag-" + i;
+            shirtId = "FAM-MEM-T-Shirt-" + i;
+            dietId = "FAM-MEM-Allergies-Dietary-Needs-" + i;
+            needsId = "FAM-MEM-Special-Notes-" + i;
+
+            fname = document.getElementById(fnameId).value;
+            lname = document.getElementById(lnameId).value;
+            tag = document.getElementById(tagId).value;
+            shirt = document.getElementById(shirtId).value;
+            diet = document.getElementById(dietId).value;
+            needs = document.getElementById(needsId).value;
+
+            children +=
+              "[Contact" +
+              i +
+              "][fname]" +
+              fname +
+              "[/fname][lname]" +
+              lname +
+              "[/lname][tag]" +
+              tag +
+              "[/tag][shirt]" +
+              shirt +
+              "[/shirt][diet]" +
+              diet +
+              "[/diet][needs]" +
+              needs +
+              "[/needs][/Contact" +
+              i +
+              "]";
+          }
+          console.log(children);
+        }
+
+        let Flw1 =
+          "[FLW1][fname]" +
+          document.getElementById("FAM-FLW1-First-Name").value +
+          "[/fname][lname]" +
+          document.getElementById("FAM-FLW1-Last-Name").value +
+          "[/lname][email]" +
+          document.getElementById("FAM-FLW1-E-Mail").value +
+          "[/email][phone]" +
+          document.getElementById("FAM-FLW1-Mobile").value +
+          "[/phone][rltshp]" +
+          document.getElementById("FAM-FLW1-Relationship").value +
+          "[/rltshp][/FLW1]";
+
+        let Flw2 =
+          "[FLW2][fname]" +
+          document.getElementById("FAM-FLW2-First-Name").value +
+          "[/fname][lname]" +
+          document.getElementById("FAM-FLW2-Last-Name").value +
+          "[/lname][email]" +
+          document.getElementById("FAM-FLW2-E-Mail").value +
+          "[/email][phone]" +
+          document.getElementById("FAM-FLW2-Mobile").value +
+          "[/phone][rltshp]" +
+          document.getElementById("FAM-FLW2-Relationship").value +
+          "[/rltshp][/FLW2]";
+
+        let Flw3 =
+          "[FLW3][fname]" +
+          document.getElementById("FAM-FLW3-First-Name").value +
+          "[/fname][lname]" +
+          document.getElementById("FAM-FLW3-Last-Name").value +
+          "[/lname][email]" +
+          document.getElementById("FAM-FLW3-E-Mail").value +
+          "[/email][phone]" +
+          document.getElementById("FAM-FLW3-Mobile").value +
+          "[/phone][rltshp]" +
+          document.getElementById("FAM-FLW3-Relationship").value +
+          "[/rltshp][/FLW3]";
+
+        let EmergencyContact =
+          "[EmergencyContact][fname]" +
+          document.getElementById("FAM-EMG-First-Name").value +
+          "[/fname][lname]" +
+          document.getElementById("FAM-EMG-Last-Name").value +
+          "[/lname][email]" +
+          document.getElementById("FAM-EMG-E-Mail").value +
+          "[/email][phone]" +
+          document.getElementById("FAM-EMG-Mobile").value +
+          "[/phone][rltshp]" +
+          document.getElementById("FAM-EMG-Relationship").value +
+          "[/rltshp][/EmergencyContact]";
+
+        let ArrivalTime = "[arrival]" + document.getElementById("FAM-Flight-Arrival-Time").value + "[/arrival]";
+        let DepartureTime = "[departure]" + document.getElementById("FAM-Flight-Departure-Time").value + "[/departure]";
+        let TravelNote = "[Tnotes]" + document.getElementById("FAM-Flight-Travel-Notes").value + "[/Tnotes]";
+
+        document.getElementById("FAM-APP-PD-To-SF").value =
+          Applicant +
+          ApplicantFirstName +
+          ApplicantLastName +
+          FamApp +
+          children +
+          Flw1 +
+          Flw2 +
+          Flw3 +
+          EmergencyContact +
+          ArrivalTime +
+          DepartureTime +
+          TravelNote;
+      }
+
+      document.getElementById("FAM-ICA-Open").addEventListener("click", function () {
+        document.getElementById("FAM-Informed-Consent-Agreement").style.display = "block";
+        document.getElementById("FAM-ICA-Open").style.display = "none";
+      });
+      document.getElementById("FAM-ICA-Close").addEventListener("click", function () {
+        document.getElementById("FAM-Informed-Consent-Agreement").style.display = "none";
+        document.getElementById("FAM-ICA-Open").style.display = "block";
+      });
+      document.getElementById("FAM-RA-Open").addEventListener("click", function () {
+        document.getElementById("FAM-Release-Agreement").style.display = "block";
+        document.getElementById("FAM-RA-Open").style.display = "none";
+      });
+      document.getElementById("FAM-RA-Close").addEventListener("click", function () {
+        document.getElementById("FAM-Release-Agreement").style.display = "none";
+        document.getElementById("FAM-RA-Open").style.display = "block";
+      });
+
+      document.getElementById("FAM-Page-Next-1").addEventListener("click", function () {
+        FamAppVal();
+        FamMemVal();
+        FamFLWVal();
+        FamEmgVal();
+        uptoTop();
+        document.getElementById("Entrance-Question").style.display = "none";
+        document.getElementById("FAM-Page-One").style.display = "none";
+        document.getElementById("FAM-Page-Two").style.display = "block";
+      });
+      document.getElementById("FAM-Page-Back-2").addEventListener("click", function () {
+        uptoTop();
+        document.getElementById("FAM-Page-Two").style.display = "none";
+        document.getElementById("Entrance-Question").style.display = "block";
+        document.getElementById("FAM-Page-One").style.display = "block";
+      });
+      document.getElementById("FAM-Form-Button-2").addEventListener("click", function () {
+        FamAgreementVal();
+        FamAppPDToSF();
+        document.getElementById("FAM-Legacy-Retreat-Registration").submit();
+      });
+
+      //Retreat Team
+      document.getElementById("Retreat-Team-Update-Address").addEventListener("change", function () {
+        if (document.getElementById("Retreat-Team-Update-Address").checked) {
+          document.getElementById("Retreat-Team-Info-7").style.display = "block";
+          document.getElementById("Retreat-Team-Info-8-9-10").style.display = "block";
+        } else {
+          document.getElementById("Retreat-Team-Info-7").style.display = "none";
+          document.getElementById("Retreat-Team-Info-8-9-10").style.display = "none";
+        }
+      });
+
+      function RetreatTeamAppVal() {
+        if (document.getElementById("Retreat-Team-First-Name").value == "") {
+          document.getElementById("Retreat-Team-First-Name").focus();
+          document.getElementById("Retreat-Team-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-Last-Name").value == "") {
+          document.getElementById("Retreat-Team-Last-Name").focus();
+          document.getElementById("Retreat-Team-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-E-Mail").value == "") {
+          document.getElementById("Retreat-Team-Info-3-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Team-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("Retreat-Team-E-Mail").value) === false) {
+          document.getElementById("Retreat-Team-Info-3-Error").innerHTML = "Invalid Format*";
+          document.getElementById("Retreat-Team-E-Mail").focus();
+          document.getElementById("Retreat-Team-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-T-Shirt").value == "") {
+          document.getElementById("Retreat-Team-T-Shirt").focus();
+          document.getElementById("Retreat-Team-Info-4-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-4-Error").style.visibility = "hidden";
+        }
+        let roles = document.getElementsByName("Retreat-Team-Roles");
+        if (!roles[0].checked && !roles[1].checked && !roles[2].checked && !roles[3].checked && !roles[4].checked) {
+          document.getElementById("Retreat-Team-Roles-1").focus();
+          document.getElementById("Retreat-Team-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-5-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-Update-Address").checked) {
+          if (document.getElementById("Retreat-Team-Street-Address").value == "") {
+            document.getElementById("Retreat-Team-Update-Address").focus();
+            document.getElementById("Retreat-Team-Info-7-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("Retreat-Team-Info-7-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("Retreat-Team-City").value == "") {
+            document.getElementById("Retreat-Team-City").focus();
+            document.getElementById("Retreat-Team-Info-8-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("Retreat-Team-Info-8-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("Retreat-Team-State").value == "") {
+            document.getElementById("Retreat-Team-State").focus();
+            document.getElementById("Retreat-Team-Info-9-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("Retreat-Team-Info-9-Error").style.visibility = "hidden";
+          }
+          if (document.getElementById("Retreat-Team-Zip").value == "") {
+            document.getElementById("Retreat-Team-Zip").focus();
+            document.getElementById("Retreat-Team-Info-10-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("Retreat-Team-Info-10-Error").style.visibility = "hidden";
+          }
+        } else {
+          document.getElementById("Retreat-Team-Info-6-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-Allergies-Dietary-Needs").value == "") {
+          document.getElementById("Retreat-Team-Allergies-Dietary-Needs").focus();
+          document.getElementById("Retreat-Team-Info-11-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-11-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-Special-Notes").value == "") {
+          document.getElementById("Retreat-Team-Special-Notes").focus();
+          document.getElementById("Retreat-Team-Info-12-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-12-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("Retreat-Team-First-Time-Serving-Yes").checked && !document.getElementById("Retreat-Team-First-Time-Serving-No").checked) {
+          document.getElementById("Retreat-Team-First-Time-Serving-No").focus();
+          document.getElementById("Retreat-Team-Info-13-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-13-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-Special-Serving-Interests").value == "") {
+          document.getElementById("Retreat-Team-Special-Serving-Interests").focus();
+          document.getElementById("Retreat-Team-Info-14-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-14-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-Name-Tag").value == "") {
+          document.getElementById("Retreat-Team-Name-Tag").focus();
+          document.getElementById("Retreat-Team-Info-15-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-15-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-EMG-E-Mail").value != "") {
+          if (emailCorrectPattern(document.getElementById("Retreat-Team-EMG-E-Mail").value) === false) {
+            document.getElementById("Retreat-Team-EMG-Info-3-Error").innerHTML = "Invalid Format*";
+            document.getElementById("Retreat-Team-EMG-E-Mail").focus();
+            document.getElementById("Retreat-Team-EMG-Info-3-Error").style.visibility = "visible";
+            e.preventDefault();
+          } else {
+            document.getElementById("Retreat-Team-EMG-Info-3-Error").style.visibility = "hidden";
+          }
+        } else {
+          document.getElementById("Retreat-Team-EMG-Info-3-Error").style.visibility = "hidden";
+        }
+      }
+      function RetreatTeamAgreementVal() {
+        if (!document.getElementById("Retreat-Team-RA-Accept").checked) {
+          document.getElementById("Retreat-Team-RA-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Team-RA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-RA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("Retreat-Team-ICA-Accept").checked) {
+          document.getElementById("Retreat-Team-ICA-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Team-ICA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-ICA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("Retreat-Team-COVID-Accept").checked) {
+          document.getElementById("Retreat-Team-COVID-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Team-COVID-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-COVID-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("Retreat-Team-Travel-Responsibility").checked) {
+          document.getElementById("Retreat-Team-Travel-Responsibility-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Team-Travel-Responsibility").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Travel-Responsibility-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-Electronic-Signature").value == "") {
+          document.getElementById("Retreat-Team-ES-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Team-Electronic-Signature").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-ES-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Team-Electronic-Signature-Date").value == "") {
+          document.getElementById("Retreat-Team-ESD-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Team-Electronic-Signature-Date").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-ESD-Error").style.visibility = "hidden";
+        }
+      }
+
+      function RetreatTeamRoles() {
+        var Roles = document.getElementsByName("Retreat-Team-Roles");
+        var allRoles = "";
+        for (var i = 0; i < Roles.length; i++) {
+          if (Roles[i].checked) {
+            allRoles += Roles[i].value + ",";
+          }
+        }
+        document.getElementById("Retreat-Team-Role").value = allRoles;
+        console.log(document.getElementById("Retreat-Team-Role").value);
+      }
+      function RetreatTeamPDToSF() {
+        let Applicant = "[who]" + document.getElementById("Tell-Us-About-You").value + "[/who]";
+        let ApplicantFirstName = "[fname]" + document.getElementById("Retreat-Team-First-Name").value + "[/fname]";
+        let ApplicantLastName = "[lname]" + document.getElementById("Retreat-Team-Last-Name").value + "[/lname]";
+        let ApplicantEmail = "[email]" + document.getElementById("Retreat-Team-E-Mail").value + "[/email]";
+        let ApplicantShirt = "[shirt]" + document.getElementById("Retreat-Team-T-Shirt").value + "[/shirt]";
+        let ApplicantNameTag = "[tag]" + document.getElementById("Retreat-Team-Name-Tag").value + "[/tag]";
+        let ApplicantSpecialNotes = "[notes]" + document.getElementById("Retreat-Team-Special-Notes").value + "[/notes]";
+        let ApplicantRole = "[role]" + document.getElementById("Retreat-Team-Role").value + "[/role]";
+
+        let ApplicantFirstTimeServing;
+        if (document.getElementById("Retreat-Team-First-Time-Serving-Yes").checked) {
+          ApplicantFirstTimeServing = "[exp]" + document.getElementById("Retreat-Team-First-Time-Serving-Yes").value + "[/exp]";
+        }
+        if (document.getElementById("Retreat-Team-First-Time-Serving-No").checked) {
+          ApplicantFirstTimeServing = "[exp]" + document.getElementById("Retreat-Team-First-Time-Serving-No").value + "[/exp]";
+        }
+
+        let ApplicantSpecialServing = "[interests]" + document.getElementById("Retreat-Team-Special-Serving-Interests").value + "[/interests]";
+
+        let Volunteer =
+          "[Volunteer]" +
+          ApplicantFirstName +
+          ApplicantLastName +
+          ApplicantEmail +
+          ApplicantShirt +
+          ApplicantNameTag +
+          ApplicantSpecialNotes +
+          ApplicantFirstTimeServing +
+          ApplicantSpecialServing +
+          ApplicantRole +
+          "[/Volunteer]";
+
+        let EmergencyContact =
+          "[EmergencyContact][fname]" +
+          document.getElementById("Retreat-Team-EMG-First-Name").value +
+          "[/fname][lname]" +
+          document.getElementById("Retreat-Team-EMG-Last-Name").value +
+          "[/lname][email]" +
+          document.getElementById("Retreat-Team-EMG-E-Mail").value +
+          "[/email][phone]" +
+          document.getElementById("Retreat-Team-EMG-Mobile").value +
+          "[/phone][rltshp]" +
+          document.getElementById("Retreat-Team-EMG-Relationship").value +
+          "[/rltshp][/EmergencyContact]";
+
+        let ArrivalTime = "[arrival]" + document.getElementById("Retreat-Team-Flight-Arrival-Time").value + "[/arrival]";
+        let DepartureTime = "[departure]" + document.getElementById("Retreat-Team-Flight-Departure-Time").value + "[/departure]";
+        let TravelNote = "[Tnotes]" + document.getElementById("Retreat-Team-Flight-Travel-Notes").value + "[/Tnotes]";
+
+        document.getElementById("Retreat-Team-PD-To-SF").value =
+          Applicant + ApplicantFirstName + ApplicantLastName + Volunteer + EmergencyContact + ArrivalTime + DepartureTime + TravelNote;
+      }
+
+      document.getElementById("Retreat-Team-ICA-Open").addEventListener("click", function () {
+        document.getElementById("Retreat-Team-Informed-Consent-Agreement").style.display = "block";
+        document.getElementById("Retreat-Team-ICA-Open").style.display = "none";
+      });
+      document.getElementById("Retreat-Team-ICA-Close").addEventListener("click", function () {
+        document.getElementById("Retreat-Team-Informed-Consent-Agreement").style.display = "none";
+        document.getElementById("Retreat-Team-ICA-Open").style.display = "block";
+      });
+      document.getElementById("Retreat-Team-RA-Open").addEventListener("click", function () {
+        document.getElementById("Retreat-Team-Release-Agreement").style.display = "block";
+        document.getElementById("Retreat-Team-RA-Open").style.display = "none";
+      });
+      document.getElementById("Retreat-Team-RA-Close").addEventListener("click", function () {
+        document.getElementById("Retreat-Team-Release-Agreement").style.display = "none";
+        document.getElementById("Retreat-Team-RA-Open").style.display = "block";
+      });
+
+      document.getElementById("Retreat-Team-Page-Next-1").addEventListener("click", function () {
+        RetreatTeamAppVal();
+        RetreatTeamRoles();
+        uptoTop();
+        document.getElementById("Entrance-Question").style.display = "none";
+        document.getElementById("Retreat-Team-Page-One").style.display = "none";
+        document.getElementById("Retreat-Team-Page-Two").style.display = "block";
+      });
+      document.getElementById("Retreat-Team-Page-Back-2").addEventListener("click", function () {
+        uptoTop();
+        document.getElementById("Retreat-Team-Page-Two").style.display = "none";
+        document.getElementById("Entrance-Question").style.display = "block";
+        document.getElementById("Retreat-Team-Page-One").style.display = "block";
+      });
+      document.getElementById("Retreat-Team-Form-Button-2").addEventListener("click", function () {
+        RetreatTeamAgreementVal();
+        RetreatTeamPDToSF();
+        document.getElementById("Retreat-Team-Legacy-Retreat-Registration").submit();
+      });
+
+      //Retreat Guest
+      function RetreatGuestAppVal() {
+        if (document.getElementById("Retreat-Guest-First-Name").value == "") {
+          document.getElementById("Retreat-Guest-First-Name").focus();
+          document.getElementById("Retreat-Guest-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Last-Name").value == "") {
+          document.getElementById("Retreat-Guest-Last-Name").focus();
+          document.getElementById("Retreat-Guest-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-E-Mail").value == "") {
+          document.getElementById("Retreat-Guest-Info-3-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Guest-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("Retreat-Guest-E-Mail").value) === false) {
+          document.getElementById("Retreat-Guest-Info-3-Error").innerHTML = "Invalid Format*";
+          document.getElementById("Retreat-Guest-E-Mail").focus();
+          document.getElementById("Retreat-Guest-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Phone-Number").value == "") {
+          document.getElementById("Retreat-Guest-Phone-Number").focus();
+          document.getElementById("Retreat-Guest-Info-4-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-4-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Birthdate").value == "") {
+          document.getElementById("Retreat-Guest-Birthdate").focus();
+          document.getElementById("Retreat-Guest-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-5-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Gender").value == "") {
+          document.getElementById("Retreat-Guest-Gender").focus();
+          document.getElementById("Retreat-Guest-Info-6-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-6-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-T-Shirt").value == "") {
+          document.getElementById("Retreat-Guest-T-Shirt").focus();
+          document.getElementById("Retreat-Guest-Info-7-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-7-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Street-Address").value == "") {
+          document.getElementById("Retreat-Guest-Street-Address").focus();
+          document.getElementById("Retreat-Guest-Info-8-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-8-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-City").value == "") {
+          document.getElementById("Retreat-Guest-City").focus();
+          document.getElementById("Retreat-Guest-Info-9-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-9-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-State").value == "") {
+          document.getElementById("Retreat-Guest-State").focus();
+          document.getElementById("Retreat-Guest-Info-10-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-10-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Zip").value == "") {
+          document.getElementById("Retreat-Guest-Zip").focus();
+          document.getElementById("Retreat-Guest-Info-11-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-11-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Allergies-Dietary-Needs").value == "") {
+          document.getElementById("Retreat-Guest-Allergies-Dietary-Needs").focus();
+          document.getElementById("Retreat-Guest-Info-12-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-12-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Special-Notes").value == "") {
+          document.getElementById("Retreat-Guest-Special-Notes").focus();
+          document.getElementById("Retreat-Guest-Info-13-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-13-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Name-Tag").value == "") {
+          document.getElementById("Retreat-Guest-Name-Tag").focus();
+          document.getElementById("Retreat-Guest-Info-14-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Info-14-Error").style.visibility = "hidden";
+        }
+      }
+      function RetreatGuestFlightVal() {
+        if (document.getElementById("Retreat-Guest-Flight-Arrival-Time").value == "") {
+          document.getElementById("Retreat-Guest-Flight-Arrival-Time").focus();
+          document.getElementById("Retreat-Guest-Flight-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Flight-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Flight-Departure-Time").value == "") {
+          document.getElementById("Retreat-Guest-Flight-Departure-Time").focus();
+          document.getElementById("Retreat-Guest-Flight-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Flight-Info-2-Error").style.visibility = "hidden";
+        }
+      }
+      function RetreatGuestAgreementVal() {
+        if (!document.getElementById("Retreat-Guest-RA-Accept").checked) {
+          document.getElementById("Retreat-Guest-RA-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Guest-RA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-RA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("Retreat-Guest-ICA-Accept").checked) {
+          document.getElementById("Retreat-Guest-ICA-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Guest-ICA-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-ICA-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("Retreat-Guest-COVID-Accept").checked) {
+          document.getElementById("Retreat-Guest-COVID-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Guest-COVID-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-COVID-Error").style.visibility = "hidden";
+        }
+        if (!document.getElementById("Retreat-Guest-Travel-Responsibility").checked) {
+          document.getElementById("Retreat-Guest-Travel-Responsibility-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Guest-Travel-Responsibility").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-Travel-Responsibility-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Electronic-Signature").value == "") {
+          document.getElementById("Retreat-Guest-ES-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Guest-Electronic-Signature").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-ES-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("Retreat-Guest-Electronic-Signature-Date").value == "") {
+          document.getElementById("Retreat-Guest-ESD-Error").style.visibility = "visible";
+          document.getElementById("Retreat-Guest-Electronic-Signature-Date").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Guest-ESD-Error").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("Retreat-Guest-ICA-Open").addEventListener("click", function () {
+        document.getElementById("Retreat-Guest-Informed-Consent-Agreement").style.display = "block";
+        document.getElementById("Retreat-Guest-ICA-Open").style.display = "none";
+      });
+      document.getElementById("Retreat-Guest-ICA-Close").addEventListener("click", function () {
+        document.getElementById("Retreat-Guest-Informed-Consent-Agreement").style.display = "none";
+        document.getElementById("Retreat-Guest-ICA-Open").style.display = "block";
+      });
+      document.getElementById("Retreat-Guest-RA-Open").addEventListener("click", function () {
+        document.getElementById("Retreat-Guest-Release-Agreement").style.display = "block";
+        document.getElementById("Retreat-Guest-RA-Open").style.display = "none";
+      });
+      document.getElementById("Retreat-Guest-RA-Close").addEventListener("click", function () {
+        document.getElementById("Retreat-Guest-Release-Agreement").style.display = "none";
+        document.getElementById("Retreat-Guest-RA-Open").style.display = "block";
+      });
+
+      document.getElementById("Retreat-Guest-Page-Next-1").addEventListener("click", function () {
+        RetreatGuestAppVal();
+        RetreatGuestFlightVal();
+        uptoTop();
+        document.getElementById("Entrance-Question").style.display = "none";
+        document.getElementById("Retreat-Guest-Page-One").style.display = "none";
+        document.getElementById("Retreat-Guest-Page-Two").style.display = "block";
+      });
+      document.getElementById("Retreat-Guest-Page-Back-2").addEventListener("click", function () {
+        uptoTop();
+        document.getElementById("Retreat-Guest-Page-Two").style.display = "none";
+        document.getElementById("Entrance-Question").style.display = "block";
+        document.getElementById("Retreat-Guest-Page-One").style.display = "block";
+      });
+      document.getElementById("Retreat-Guest-Form-Button-2").addEventListener("click", function () {
+        RetreatGuestAgreementVal();
+        document.getElementById("Retreat-Guest-Legacy-Retreat-Registration").submit();
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+
+          if (!document.getElementById("FAM-APP-Photo-Upload").checked) {
+          document.getElementById("FAM-APP-Photo-Upload").focus();
+          document.getElementById("FAM-APP-Info-13-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-13-Error").style.visibility = "hidden";
+        }
+
+                    <div id="FAM-App-Info-14" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="FAM-APP-Phycisian-Note-Upload">Please upload your physician note!*</label>
+                          <label for="">Link</label>
+                          <small id="FAM-APP-Info-14-Error" class="Errors">Required*</small>
+                          <div class="Check-Box">
+                            <div class="Left-Box" style="width: 50%">
+                              <div class="Cell">
+                                <input type="checkbox" id="FAM-APP-Phycisian-Note-Upload" name="FAM-APP-Phycisian-Note-Upload" value="Uploaded" />
+                              </div>
+                            </div>
+                            <div class="Right-Box" style="width: 50%">
+                              <div class="Cell"><p>Uploaded</p></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+        if (!document.getElementById("FAM-APP-Phycisian-Note-Upload").checked) {
+          document.getElementById("FAM-APP-Phycisian-Note-Upload").focus();
+          document.getElementById("FAM-APP-Info-14-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-APP-Info-14-Error").style.visibility = "hidden";
+        }
+
+
+        if (document.getElementById("FAM-FLW2-First-Name").value == "") {
+          document.getElementById("FAM-FLW2-First-Name").focus();
+          document.getElementById("FAM-FLW2-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW2-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW2-Last-Name").value == "") {
+          document.getElementById("FAM-FLW2-Last-Name").focus();
+          document.getElementById("FAM-FLW2-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW2-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW2-E-Mail").value == "") {
+          document.getElementById("FAM-FLW2-Info-3-Error").style.visibility = "visible";
+          document.getElementById("FAM-FLW2-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("FAM-FLW2-E-Mail").value) === false) {
+          document.getElementById("FAM-FLW2-Info-3-Error").innerHTML = "Invalid Format*";
+          document.getElementById("FAM-FLW2-E-Mail").focus();
+          document.getElementById("FAM-FLW2-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW2-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW2-Mobile").value == "") {
+          document.getElementById("FAM-FLW2-Mobile").focus();
+          document.getElementById("FAM-FLW2-Info-4-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW2-Info-4-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW2-Relationship").value == "") {
+          document.getElementById("FAM-FLW2-Relationship").focus();
+          document.getElementById("FAM-FLW2-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW2-Info-5-Error").style.visibility = "hidden";
+        }
+
+        if (document.getElementById("FAM-FLW3-First-Name").value == "") {
+          document.getElementById("FAM-FLW3-First-Name").focus();
+          document.getElementById("FAM-FLW3-Info-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW3-Info-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW3-Last-Name").value == "") {
+          document.getElementById("FAM-FLW3-Last-Name").focus();
+          document.getElementById("FAM-FLW3-Info-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW3-Info-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW3-E-Mail").value == "") {
+          document.getElementById("FAM-FLW3-Info-3-Error").style.visibility = "visible";
+          document.getElementById("FAM-FLW3-E-Mail").focus();
+          e.preventDefault();
+        } else if (emailCorrectPattern(document.getElementById("FAM-FLW3-E-Mail").value) === false) {
+          document.getElementById("FAM-FLW3-Info-3-Error").innerHTML = "Invalid Format*";
+          document.getElementById("FAM-FLW3-E-Mail").focus();
+          document.getElementById("FAM-FLW3-Info-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW3-Info-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW3-Mobile").value == "") {
+          document.getElementById("FAM-FLW3-Mobile").focus();
+          document.getElementById("FAM-FLW3-Info-4-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW3-Info-4-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("FAM-FLW3-Relationship").value == "") {
+          document.getElementById("FAM-FLW3-Relationship").focus();
+          document.getElementById("FAM-FLW3-Info-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-FLW3-Info-5-Error").style.visibility = "hidden";
+        }
+
+
+        <div id="FAM-Agreement-1" class="Questions">
+          <div class="One-Column">
+            <div class="One">
+              <label for="FAM-KID-Accept">Kid's Night Out Release Form*</label>
+              <label for="">Link</label>
+              <small id="FAM-Kid-Error" class="Errors">Required*</small>
+              <div class="Check-Box">
+                <div class="Left-Box" style="width: 50%">
+                  <div class="Cell">
+                    <input type="checkbox" id="FAM-Kid-Accept" name="FAM-Kid-Accept" value="Yes" />
+                  </div>
+                </div>
+                <div class="Right-Box" style="width: 50%">
+                  <div class="Cell"><p>Accept</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        if (!document.getElementById("FAM-Kid-Accept").checked) {
+          document.getElementById("FAM-Kid-Error").style.visibility = "visible";
+          document.getElementById("FAM-Kid-Accept").focus();
+          e.preventDefault();
+        } else {
+          document.getElementById("FAM-Kid-Error").style.visibility = "hidden";
+        }
+
+                    <div id="Retreat-Team-Info-10" class="Questions">
+                      <div class="One-Column">
+                        <div class="One">
+                          <label for="Retreat-Team-Lunch-Order">Friday Lunch Order</label>
+                          <label for="">Link</label>
+                          <small id="Retreat-Team-Info-10-Error" class="Errors">Required*</small>
+                          <div class="Check-Box">
+                            <div class="Left-Box" style="width: 50%">
+                              <div class="Cell">
+                                <input type="checkbox" id="Retreat-Team-Lunch-Order" name="Retreat-Team-Lunch-Order" value="Yes" />
+                              </div>
+                            </div>
+                            <div class="Right-Box" style="width: 50%">
+                              <div class="Cell"><p>Ordered</p></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+        if (!document.getElementById("Retreat-Team-Lunch-Order").checked) {
+          document.getElementById("Retreat-Team-Lunch-Order").focus();
+          document.getElementById("Retreat-Team-Info-10-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("Retreat-Team-Info-10-Error").style.visibility = "hidden";
+        }
+
+
+
+        var FamMemInputs = document.getElementById("FAM-MEM-1").getElementsByTagName("input");
+        var FamMemInputsLength = FamMemInputs.length;
+        for(let i = 0; i <= FamMemInputsLength - 1; i++) {
+          if(FamMemInputs[i].value == "") {
+            FamMemInputs[i].focus();
+            FamMemInputs[i].parentNode.getElementsByClassName("Errors").style.visibility = "visible";
+            return false;
+          } 
+          else {
+            FamMemInputs[i].getElementsByClassName("Errors").style.visibility = "hidden";
+          }
+        }
+
+          <form id="Legacy-Retreat-Registration" class="Legacy-Retreat-Registration" action="" method="post">
+            <div id="Registrant" class="Applicants">
+              
+            </div>
+          </form>
+
+-->

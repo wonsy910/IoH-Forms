@@ -1,0 +1,1431 @@
+<html style="font-size: 62.5%">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <style>
+      .Form-Paper {
+        margin: 0 auto;
+        padding: 0;
+        width: 360px;
+        height: auto;
+
+        background: #334355;
+      }
+      .Form-Content {
+        margin: 0 auto;
+        padding: 0;
+        width: 350px;
+        height: auto;
+      }
+      .Hope-Home-Group-Basic-Form {
+        margin: 0 auto;
+        padding: 0;
+        width: 95%;
+        height: auto;
+      }
+      .mission {
+        margin: 0 auto;
+        padding: 10px 0 10px 0;
+
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .mission > span {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway";
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        color: #f89a1c;
+
+        word-spacing: 0.3rem;
+        letter-spacing: 0.15rem;
+      }
+      .Form-Name {
+        margin: 0 auto;
+        padding: 30px 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Form-Name > span {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 1em;
+
+        color: #ffffff;
+      }
+      .Applicants {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .Pages {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .Sections {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      .Section-Name {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Section-Name > span {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1em;
+
+        color: #f89a1c;
+      }
+      .Mini-Section-Name {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Mini-Section-Name > span {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1em;
+
+        color: #f89a1c;
+      }
+      .Questions {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .One-Column {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        border-top: 1px solid #ffffff;
+      }
+      .One {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .One > p {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
+      .One > span {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #f89a1c;
+
+        text-align: center;
+      }
+      .One > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .One > label > a {
+        color: #f89a1c;
+      }
+      .One > label > a:hover {
+        color: #808284;
+      }
+      .One > input[type="text"],
+      .One > input[type="date"],
+      .One > input[type="number"],
+      .One > select,
+      .One > textarea {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .One > select:focus,
+      .One > input[type="text"]:focus,
+      .One > input[type="date"]:focus,
+      .One > input[type="number"]:focus,
+      .One > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Two-Columns {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Two {
+        margin: 0 auto;
+        padding: 0;
+        width: 50%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .Two > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Two > label > a {
+        color: #f89a1c;
+      }
+      .Two > label > a:hover {
+        color: #808284;
+      }
+      .Two > select {
+        margin: 0 auto;
+        padding: 2px 0px 0 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Two > input[type="text"],
+      .Two > input[type="date"],
+      .Two > input[type="number"] {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 98%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Two > select:focus,
+      .Two > input[type="text"]:focus,
+      .Two > input[type="date"]:focus,
+      .Two > input[type="number"]:focus,
+      .Two > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Three-Columns {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Three {
+        margin: 0 auto;
+        padding: 0;
+        width: 33%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .Three > label {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Three > label > a {
+        color: #f89a1c;
+      }
+      .Three > label > a:hover {
+        color: #808284;
+      }
+      .Three > select {
+        margin: 0 auto;
+        padding: 2px 0px 0 4px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Three > input[type="text"],
+      .Three > input[type="date"],
+      .Three > input[type="number"] {
+        margin: 0 auto;
+        padding: 2px 0px 2px 4px;
+        width: 96%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .Three > select:focus,
+      .Three > input[type="text"]:focus,
+      .Three > input[type="date"]:focus,
+      .Three > input[type="number"]:focus,
+      .Three > textarea:focus {
+        outline: 2px solid #f89a1c;
+      }
+
+      .Check-Box {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+      }
+      .Left-Box {
+        margin: 0 auto;
+        padding: 0;
+      }
+      .Left-Box > .Cell {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: right;
+      }
+      .left-Box > .Cell > input[type="radio"] {
+        margin: 5px 10px 5px 0;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: right;
+      }
+      .Right-Box {
+        margin: 0 auto;
+        padding: 0;
+      }
+      .Right-Box > .Cell {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: left;
+      }
+      .Right-Box > .Cell > p {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: left;
+      }
+
+      .Button-Box {
+        margin: 5px auto 5px;
+        padding: 0px;
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        flex-direction: row;
+
+        border-top: 1px solid #ffffff;
+      }
+      .Left,
+      .Middle,
+      .Right {
+        margin: 5px auto;
+        padding: 0px;
+        width: 33%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Back-Button,
+      .Next-Button,
+      .Submit-Button {
+        margin: 0px auto;
+        padding: 5px 0px;
+        width: 90%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Back-Button:hover,
+      .Next-Button:hover,
+      .Submit-Button:hover {
+        border: 2px solid #f89a1c;
+        background-color: #334355;
+        color: #f89a1c;
+      }
+      .Add,
+      .Remove {
+        margin: 5px auto;
+        padding: 0px;
+        width: 50%;
+        height: auto;
+
+        text-align: center;
+      }
+      .Add-Child,
+      .Remove-Child {
+        margin: 0px auto;
+        padding: 5px 5px;
+        width: 90%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Add-Child:hover,
+      .Remove-Child:hover {
+        border: 2px solid #f89a1c;
+        background-color: #334355;
+        color: #f89a1c;
+      }
+      .Read {
+        margin: 0px auto;
+        padding: 2px 18px;
+        width: auto;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Close {
+        margin: 0px auto;
+        padding: 2px 18px;
+        width: auto;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+        background-color: #f89a1c;
+        color: #334355;
+      }
+      .Read:hover {
+        border: 2px solid #f89a1c;
+        background-color: #808284;
+        color: #ffffff;
+      }
+      .Close:hover {
+        border: 2px solid #f89a1c;
+        background-color: #808284;
+        color: #ffffff;
+      }
+
+      .Agreement {
+        margin: 10px auto 25px auto;
+        padding: 0px 15px 0px 15px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: 3px;
+        border-radius: 5px;
+      }
+      .Agreement > a {
+        color: #f89a1c;
+      }
+      .Agreement > a:hover {
+        color: #808284;
+      }
+
+      .Errors {
+        margin: 0 auto;
+        padding: 5px 0;
+
+        visibility: hidden;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1em;
+        color: #ff0000;
+
+        text-align: center;
+      }
+      .Notes {
+        margin: 15px auto;
+        padding: 5px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+
+        outline: 2px solid #f89a1c;
+        outline-offset: -1px;
+        border-radius: 5px;
+      }
+      .Notes > a {
+        color: #f89a1c;
+      }
+      .Notes > a:hover {
+        color: #808284;
+      }
+
+      .Footer {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%;
+        height: auto;
+      }
+      .Footer > p {
+        margin: 0 auto;
+        padding: 0;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #ffffff;
+
+        text-align: center;
+      }
+      .Footer > p > a {
+        color: #f89a1c;
+      }
+      .Footer > p > a:hover {
+        color: #808284;
+      }
+
+      @media screen and (min-width: 740px) {
+        .Form-Paper {
+          margin: 0 auto;
+          padding: 0;
+          width: 740px;
+          height: auto;
+
+          background: #334355;
+        }
+        .Form-Content {
+          margin: 0 auto;
+          padding: 0;
+          width: 700px;
+          height: auto;
+        }
+        .Hope-Home-Group-Basic-Form {
+          margin: 0 auto;
+          padding: 0;
+          width: 80%;
+          height: auto;
+        }
+        .mission {
+          margin: 0 auto;
+          padding: 15px 0 15px 0;
+
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .mission > span {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway";
+          font-size: 2.2rem;
+          font-weight: 600;
+
+          color: #f89a1c;
+
+          word-spacing: 0.3rem;
+          letter-spacing: 0.15rem;
+        }
+        .Form-Name {
+          margin: 0 auto;
+          padding: 30px 0;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Form-Name > span {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 500;
+          font-size: 5.5rem;
+          line-height: 1em;
+
+          color: #ffffff;
+        }
+        .Applicants {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .Pages {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .Section-Name {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Section-Name > span {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          font-size: 2.2rem;
+          line-height: 1em;
+
+          color: #f89a1c;
+        }
+        .Mini-Section-Name {
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Mini-Section-Name > span {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          font-size: 2rem;
+          line-height: 1em;
+
+          color: #f89a1c;
+        }
+        .Questions {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+
+        .One-Column {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+
+          border-top: 1px solid #ffffff;
+        }
+        .One {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .One > p {
+          margin: 0 auto;
+          padding: 15px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: 3px;
+          border-radius: 5px;
+        }
+        .One > span {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #f89a1c;
+
+          text-align: center;
+        }
+        .One > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .One > input[type="text"],
+        .One > input[type="date"],
+        .One > select,
+        .One > textarea {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .One > select:focus,
+        .One > input[type="text"]:focus,
+        .One > input[type="date"]:focus,
+        .One > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Two-Columns {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Two {
+          margin: 0 auto;
+          padding: 0;
+          width: 50%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .Two > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Two > select {
+          margin: 0 auto;
+          padding: 2px 0px 0 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Two > input[type="text"],
+        .Two > input[type="date"] {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 98%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Two > select:focus,
+        .Two > input[type="text"]:focus,
+        .Two > input[type="date"]:focus,
+        .Two > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Three-Columns {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Three {
+          margin: 0 auto;
+          padding: 0;
+          width: 33%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .Three > label {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Three > select {
+          margin: 0 auto;
+          padding: 2px 0px 0 4px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Three > input[type="text"],
+        .Three > input[type="date"] {
+          margin: 0 auto;
+          padding: 2px 0px 2px 4px;
+          width: 96%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .Three > select:focus,
+        .Three > input[type="text"]:focus,
+        .Three > input[type="date"]:focus,
+        .Three > textarea:focus {
+          outline: 2px solid #f89a1c;
+        }
+
+        .Check-Box {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+        }
+        .Left-Box {
+          margin: 0 auto;
+          padding: 0;
+        }
+        .Left-Box > .Cell {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: right;
+        }
+        .left-Box > .Cell > input[type="radio"] {
+          margin: 5px 10px 5px 0;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: right;
+        }
+        .Right-Box {
+          margin: 0 auto;
+          padding: 0;
+        }
+        .Right-Box > .Cell {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: left;
+        }
+        .Right-Box > .Cell > p {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: left;
+        }
+
+        .Button-Box {
+          margin: 5px auto 5px auto;
+          padding: 0px;
+          width: 100%;
+          height: 50px;
+
+          display: flex;
+          flex-direction: row;
+
+          border-top: 1px solid #ffffff;
+        }
+        .Left,
+        .Middle,
+        .Right {
+          margin: 5px auto;
+          padding: 0px;
+          width: 33%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Back-Button,
+        .Next-Button,
+        .Submit-Button {
+          margin: 0px auto;
+          padding: 5px 5px;
+          width: 85%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Back-Button:hover,
+        .Next-Button:hover,
+        .Submit-Button:hover {
+          border: 2px solid #f89a1c;
+          background-color: #334355;
+          color: #f89a1c;
+        }
+        .Add,
+        .Remove {
+          margin: 5px auto;
+          padding: 0px;
+          width: 50%;
+          height: auto;
+
+          text-align: center;
+        }
+        .Add-Child,
+        .Remove-Child {
+          margin: 0px auto;
+          padding: 5px 5px;
+          width: 90%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Add-Child:hover,
+        .Remove-Child:hover {
+          border: 2px solid #f89a1c;
+          background-color: #334355;
+          color: #f89a1c;
+        }
+        .Read {
+          margin: 0px auto;
+          padding: 2px 18px;
+          width: auto;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Close {
+          margin: 0px auto;
+          padding: 2px 18px;
+          width: auto;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          border-radius: 15px;
+          border: 2px solid #ffffff;
+          background-color: #f89a1c;
+          color: #334355;
+        }
+        .Read:hover {
+          border: 2px solid #f89a1c;
+          background-color: #808284;
+          color: #ffffff;
+        }
+        .Close:hover {
+          border: 2px solid #f89a1c;
+          background-color: #808284;
+          color: #ffffff;
+        }
+
+        .Agreement {
+          margin: 10px auto 25px auto;
+          padding: 0px 15px 0px 15px;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: 3px;
+          border-radius: 5px;
+        }
+        .Agreement > a {
+          color: #f89a1c;
+        }
+        .Agreement > a:hover {
+          color: #808284;
+        }
+
+        .Errors {
+          margin: 0 auto;
+          padding: 5px 0;
+
+          visibility: hidden;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 1em;
+          color: #ff0000;
+
+          text-align: center;
+        }
+        .Notes {
+          margin: 15px auto;
+          padding: 5px;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+
+          outline: 2px solid #f89a1c;
+          outline-offset: -1px;
+          border-radius: 5px;
+        }
+        .Notes > a {
+          color: #f89a1c;
+        }
+        .Notes > a:hover {
+          color: #808284;
+        }
+
+        .Footer {
+          margin: 0 auto;
+          padding: 20px 0;
+          width: 100%;
+          height: auto;
+        }
+        .Footer > p {
+          margin: 0 auto;
+          padding: 0;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.5em;
+          color: #ffffff;
+
+          text-align: center;
+        }
+        .Footer > p > a {
+          color: #f89a1c;
+        }
+        .Footer > p > a:hover {
+          color: #808284;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="" class="Form-Paper">
+      <div id="" class="Form-Content">
+        <form
+          action="https://www2.inheritanceofhope.org/l/739893/2023-05-09/8ypqdm"
+          id="Hope-Home-Group-Basic-Form"
+          class="Hope-Home-Group-Basic-Form"
+          method="post"
+        >
+          <div id="Form-Entrance" class="Pages">
+            <div id="Entrance-Question" class="Questions">
+              <div class="mission">
+                <span>
+                  To see which groups align with your needs, <br />
+                  which applies to you?
+                </span>
+              </div>
+              <div id="Entrance-1" class="One-Column">
+                <div id="" class="One">
+                  <select id="Register-For-Who" name="Register-For-Who" style="text-align: center">
+                    <option value="" selected disabled hidden>-- Select Your Status --</option>
+                    <option value="Diagnosed parent/Spouse or Caregiver">Diagnosed parent/Spouse or Caregiver</option>
+                    <option value="Widow/Widower">I have experienced the loss of a spouse</option>
+                    <option value="Child(ren) of Diagnosed/deceased parent">Child(ren) of Diagnosed/deceased parent</option>
+                    <option value="Supporter of IoH">Desiring to Support Others in their Illness/Loss</option>
+                  </select>
+                  <small id="Entrance-1-Error" class="Errors">Required*</small>
+                </div>
+              </div>
+              <div id="Register-Name" class="Two-Columns" style="display: none">
+                <div id="" class="Two">
+                  <label for="Applicant-First-Name"> First Name* </label>
+                  <input type="text" id="Applicant-First-Name" name="Applicant-First-Name" />
+                  <small id="Entrance-1-Error" class="Errors">Required*</small>
+                </div>
+                <div id="" class="Two">
+                  <label for="Applicant-Last-Name"> Last Name* </label>
+                  <input type="text" id="Applicant-Last-Name" name="Applicant-Last-Name" />
+                  <small id="Entrance-2-Error" class="Errors">Required*</small>
+                </div>
+              </div>
+              <div id="Register-Email" class="One-Column" style="display: none">
+                <div class="One">
+                  <label for="Applicant-Email-Address"> E-Mail* </label>
+                  <input type="text" id="Applicant-Email-Address" Mail="Applicant-Email-Address" />
+                  <small id="Entrance-3-Error" class="Errors">Required*</small>
+                </div>
+              </div>
+            </div>
+            <div id="Submit-Button-Box" class="Button-Box" style="display: none">
+              <div class="Left">
+                <button id="" class="Back-Button" type="button" style="display: none">Back</button>
+              </div>
+              <div class="Middle">
+                <button id="Hope-Home-Group-Basic-Form-Submit" class="Submit-Button" type="button">Register</button>
+              </div>
+              <div class="Right">
+                <button id="" class="Next-Button" type="button" style="display: none">Next</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    function emailCorrectPattern(e) {
+      var y = /\S+@\S+\.\S+/;
+      return y.test(e);
+    }
+    document.getElementById("Register-For-Who").addEventListener("change", function () {
+      if (document.getElementById("Register-For-Who").value == "Diagnosed parent/Spouse or Caregiver") {
+        document.getElementById("Register-Name").style.display = "flex";
+        document.getElementById("Register-Email").style.display = "flex";
+        document.getElementById("Submit-Button-Box").style.display = "flex";
+        document.getElementById("DP-Schedule").style.display = "block";
+        document.getElementById("WW-Schedule").style.display = "none";
+        document.getElementById("Child-Schedule").style.display = "none";
+        document.getElementById("Supporter-Schedule").style.display = "none";
+      }
+      if (document.getElementById("Register-For-Who").value == "Widow/Widower") {
+        document.getElementById("Register-Name").style.display = "flex";
+        document.getElementById("Register-Email").style.display = "flex";
+        document.getElementById("Submit-Button-Box").style.display = "flex";
+        document.getElementById("DP-Schedule").style.display = "none";
+        document.getElementById("WW-Schedule").style.display = "block";
+        document.getElementById("Child-Schedule").style.display = "none";
+        document.getElementById("Supporter-Schedule").style.display = "none";
+      }
+      if (document.getElementById("Register-For-Who").value == "Child(ren) of Diagnosed/deceased parent") {
+        document.getElementById("Register-Name").style.display = "flex";
+        document.getElementById("Register-Email").style.display = "flex";
+        document.getElementById("Submit-Button-Box").style.display = "flex";
+        document.getElementById("DP-Schedule").style.display = "none";
+        document.getElementById("WW-Schedule").style.display = "none";
+        document.getElementById("Child-Schedule").style.display = "block";
+        document.getElementById("Supporter-Schedule").style.display = "none";
+      }
+      if (document.getElementById("Register-For-Who").value == "Supporter of IoH") {
+        document.getElementById("Register-Name").style.display = "flex";
+        document.getElementById("Register-Email").style.display = "flex";
+        document.getElementById("Submit-Button-Box").style.display = "flex";
+        document.getElementById("DP-Schedule").style.display = "none";
+        document.getElementById("WW-Schedule").style.display = "none";
+        document.getElementById("Child-Schedule").style.display = "none";
+        document.getElementById("Supporter-Schedule").style.display = "block";
+      }
+    });
+    function Validation() {
+      if (document.getElementById("Applicant-First-Name").value == "") {
+        document.getElementById("Applicant-First-Name").focus();
+        document.getElementById("Entrance-1-Error").style.visibility = "visible";
+        e.preventDefault();
+      } else {
+        document.getElementById("Entrance-1-Error").style.visibility = "hidden";
+      }
+      if (document.getElementById("Applicant-Last-Name").value == "") {
+        document.getElementById("Applicant-Last-Name").focus();
+        document.getElementById("Entrance-2-Error").style.visibility = "visible";
+        e.preventDefault();
+      } else {
+        document.getElementById("Entrance-2-Error").style.visibility = "hidden";
+      }
+      if (document.getElementById("Applicant-Email-Address").value == "") {
+        document.getElementById("Entrance-3-Error").style.visibility = "visible";
+        document.getElementById("Applicant-Email-Address").focus();
+        e.preventDefault();
+      } else if (emailCorrectPattern(document.getElementById("Applicant-Email-Address").value) === false) {
+        document.getElementById("Entrance-3-Error").innerHTML = "Invalid Format*";
+        document.getElementById("Applicant-Email-Address").focus();
+        document.getElementById("Entrance-3-Error").style.visibility = "visible";
+        e.preventDefault();
+      } else {
+        document.getElementById("Entrance-3-Error").style.visibility = "hidden";
+      }
+    }
+    document.getElementById("Hope-Home-Group-Basic-Form-Submit").addEventListener("click", function () {
+      Validation();
+      document.getElementById("Hope-Home-Group-Basic-Form").submit();
+    });
+  </script>
+</html>
+
+<!--
+
+    <div id="SC-Physician-Note" class="Notes">
+      This physician note is required for a Legacy Retreat&reg;<br />
+      <a href="https://inheritanceofhope.org/wp-content/uploads/2022/11/Physician_Letter_11.18.22.pdf" target="_blank">Download now >></a>
+    </div>
+
+    <div id="DP-Physician-Note" class="Notes">
+      This physician note is required for a Legacy Retreat&reg;<br />
+      <a href="https://inheritanceofhope.org/wp-content/uploads/2022/11/Physician_Letter_11.18.22.pdf" target="_blank">Download now >></a>
+    </div>
+
+-->

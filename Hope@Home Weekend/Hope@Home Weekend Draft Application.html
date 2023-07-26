@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
 
     <style>
-      .legacy-retreat {
+      .hope-home-weekend {
         margin: auto;
 
         width: 360px;
@@ -13,7 +13,7 @@
         background: #334355;
       }
 
-      .legacy-retreat-paper {
+      .hh-weekend-paper {
         margin: auto;
         padding: 30px 0 30px 0;
 
@@ -32,7 +32,7 @@
 
       .form-name > span {
         font-family: "Bebas neue";
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         font-weight: 400;
         color: #ffffff;
       }
@@ -163,8 +163,7 @@
       .page-three,
       .page-four,
       .page-five,
-      .page-six,
-      .page-seven {
+      .page-six {
         display: flex;
         flex-direction: column;
 
@@ -176,8 +175,7 @@
       #page-three,
       #page-four,
       #page-five,
-      #page-six,
-      #page-seven {
+      #page-six {
         display: none;
       }
 
@@ -609,37 +607,6 @@
         text-align: center;
       }
 
-      #COVID-Release-Form {
-        margin: 20px auto 5px auto;
-        width: 100%;
-
-        color: #f89a1c;
-        font-family: "Raleway";
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-        word-spacing: 0.1rem;
-        font-weight: 500;
-        text-align: center;
-      }
-
-      .upload-doctor {
-        width: 60%;
-
-        color: #334355;
-        font-family: "Raleway";
-        font-size: 1.4rem;
-        font-weight: 600;
-        text-align: center;
-
-        background-color: #f89a1c;
-        border: 3px solid #808284;
-        border-radius: 5px;
-      }
-
-      .upload-doctor:hover {
-        cursor: pointer;
-      }
-
       .error {
         visibility: hidden;
 
@@ -666,22 +633,6 @@
         word-spacing: 0.1rem;
         font-weight: 500;
         text-align: center;
-      }
-
-      .note {
-        padding: 30px 0 0 0;
-
-        color: #f89a1c;
-        font-family: "Raleway";
-        font-size: 1.2rem;
-        letter-spacing: 0.1rem;
-        word-spacing: 0.1rem;
-        font-weight: 500;
-        text-align: center;
-      }
-
-      .note a {
-        color: #ffffff;
       }
 
       .extra-child {
@@ -761,12 +712,12 @@
       }
 
       @media screen and (min-width: 720px) {
-        .legacy-retreat {
+        .hope-home-weekend {
           width: 720px;
           min-height: 740px;
         }
 
-        .legacy-retreat-paper {
+        .hh-weekend-paper {
           width: 700px;
           min-height: 740px;
         }
@@ -936,14 +887,6 @@
           font-size: 2.2rem;
         }
 
-        #COVID-Release-Form {
-          font-size: 2.2rem;
-        }
-
-        .upload-doctor {
-          font-size: 2.4rem;
-        }
-
         .error {
           padding: 5px 0 2px 2px;
 
@@ -952,10 +895,6 @@
 
         .message {
           font-size: 1.8rem;
-        }
-
-        .note {
-          font-size: 2rem;
         }
 
         .extra-child {
@@ -976,11 +915,11 @@
     </style>
   </head>
   <body>
-    <div id="legacy-retreat" class="legacy-retreat">
-      <div id="legacy-retreat-paper" class="legacy-retreat-paper">
-        <form id="legacy-retreat-form" class="legacy-retreat-form" action="https://www2.inheritanceofhope.org/l/739893/2022-05-02/26n37p" method="post">
+    <div id="hope-home-weekend" class="hope-home-weekend">
+      <div id="hh-weekend-paper" class="hh-weekend-paper">
+        <form id="hh-weekend-form" class="hh-weekend-form" action="https://www2.inheritanceofhope.org/l/739893/2022-01-10/x6bkc" method="post">
           <div id="form-name" class="form-name">
-            <span> Legacy Retreat&reg; Application </span>
+            <span> Hope@Home&trade; Weekend Application </span>
           </div>
 
           <div id="page-one" class="page-one">
@@ -1010,11 +949,6 @@
                 facing the loss of a parent to a life-threatening illness. Since you do not meet those specific requirements we are unable to serve you through
                 our family events. Please feel free to check out our website and Hope@Home&trade; app for some resources that might be helpful to you.
               </div>
-            </div>
-
-            <div id="" class="note">
-              This physician note is required for a Legacy Retreat&reg;<br />
-              <a href="https://inheritanceofhope.org/wp-content/uploads/2022/11/Physician_Letter_11.18.22.pdf" target="_blank">Download now >></a>
             </div>
 
             <div class="button-box">
@@ -1915,6 +1849,42 @@
               </div>
             </div>
 
+            <div class="one-field">
+              <div class="one-box">
+                <label for="HHW-Date-Selection" style="text-align: center">
+                  Please indicate below <br />
+                  which event works for your family:
+                </label>
+                <small id="HHWDS-error" class="error" style="margin: auto">You must select the date. &#42;</small>
+                <div class="left-right-box">
+                  <div class="left-box" style="width: 20%; margin-right: 0">
+                    <input type="radio" id="HHWDateSelection-1" name="HHW-Date-Selection" value="June 2023" />
+                    <input type="radio" id="HHWDateSelection-2" name="HHW-Date-Selection" value="September 2023" />
+                  </div>
+                  <div class="right-box" style="width: 80%">
+                    <span style="color: #f89a1c">June 23-25, 2023</span>
+                    <span style="color: #f89a1c">September 15-17, 2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="one-field">
+              <div class="one-box">
+                <div class="left-right-box">
+                  <div class="left-box" style="width: 20%; margin-right: 0">
+                    <input type="radio" id="HHWDateSelection-3" name="HHW-Date-Selection" value="Waitlist" />
+                  </div>
+                  <div class="right-box" style="width: 80%">
+                    <span style="color: #f89a1c">
+                      These dates don’t work, <br />
+                      please put me on a waiting list.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="section-name">
               <span> Diagnosed Parent's Signature </span>
             </div>
@@ -1971,146 +1941,6 @@
                 <label for="Heard-About-IoH">How did you hear about Inheritance of Hope?</label>
                 <textarea name="Heard-About-IoH" id="HeardAboutIoH" cols="30" rows="3"></textarea>
                 <small id="" class="error">Required Field &#42;</small>
-              </div>
-            </div>
-
-            <div class="button-box">
-              <div class="left">
-                <button id="back" class="back" type="button">BACK</button>
-              </div>
-              <div class="middle"></div>
-              <div class="right">
-                <button id="next" class="next" type="button">NEXT</button>
-              </div>
-            </div>
-          </div>
-
-          <div id="page-seven" class="page-seven">
-            <div class="page-name">
-              <span> Legacy Retreat: </span>
-            </div>
-
-            <div class="one-field">
-              <div class="one-box">
-                <div class="note">
-                  This physician note is required for a Legacy Retreat&reg;.<br />
-                  <a href="https://inheritanceofhope.org/wp-content/uploads/2022/11/Physician_Letter_11.18.22.pdf" target="_blank">Download now >></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="one-field">
-              <div class="one-box">
-                <div class="note">
-                  <a href="https://www2.inheritanceofhope.org/doctorsnote" target="_blank">
-                    <button id="upload-doctor" class="upload-doctor" type="button">Upload Physician Note</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="one-field">
-              <div class="one-box">
-                <br /><br />
-                <div class="left-right-box">
-                  <div class="left-box" style="width: 20%">
-                    <input type="checkbox" id="DoctorNoteUpload" name="Doctor-Note-Upload" value="TRUE" />
-                  </div>
-                  <div class="right-box" style="width: 80%">
-                    <br /><br />
-                    <span>
-                      I understand that my application will not be completed until I upload a completed doctor's note. I will check my email (including spam
-                      folder) for the link to submit my completed doctor's note. &#42;&#42;
-                    </span>
-                    <small id="dnu-error" class="error">You must agree to the term. &#42;</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-name">
-              <span> COVID-19 Release </span>
-            </div>
-
-            <div class="one-field">
-              <div class="one-box">
-                <div id="COVID-Release-Form" class="covid">
-                  By attending Legacy Retreat&reg;, my family assumes all risks associated with exposure to COVID-19 and forever releases and holds harmless
-                  Inheritance of Hope and each of their officers, directors, agents, employees, or other representatives from any liability or claims including
-                  for personal injuries, death, disease or property losses, or any other loss, including but not limited to claims of negligence and give up any
-                  claims we may have to seek damages, whether known or unknown, foreseen or unforeseen, in connection with exposure, infection and/or spread of
-                  COVID-19 related to participation in this event.
-                </div>
-                <small id="covid-error" class="error" style="margin: auto">You must agree to the term. &#42;</small>
-                <br />
-                <div class="left-right-box">
-                  <div class="left-box" style="width: 50%; margin-right: 0">
-                    <input type="checkbox" id="KSCovidRelease" name="KS-Covid-Release" value="TRUE" />
-                  </div>
-                  <div class="right-box" style="width: 50%">
-                    <span>Agree</span>
-                  </div>
-                </div>
-                <br />
-              </div>
-            </div>
-
-            <div class="section-name">
-              <span> Emergency Contact: </span>
-            </div>
-
-            <div class="one-field">
-              <div class="one-box">
-                <label for="Emergency-Contact-Name">Name&#42;</label>
-                <input type="text" id="EmergencyContactName" name="Emergency-Contact-Name" />
-                <small id="ecn-error" class="error">Required Field &#42;</small>
-              </div>
-            </div>
-
-            <div class="one-field">
-              <div class="one-box">
-                <label for="Emergency-Contact-Relationship-Applicant">Relationship to Applicant&#42;</label>
-                <input type="text" id="EmergencyContactRelationshipApplicant" name="Emergency-Contact-Relationship-Applicant" />
-                <small id="ecra-error" class="error">Required Field &#42;</small>
-              </div>
-            </div>
-
-            <div class="two-field">
-              <div class="two-box">
-                <label for="Emergency-Contact-Cell-Phone-Number">Mobile Number&#42;</label>
-                <input type="text" id="EmergencyContactCellPhoneNumber" name="Emergency-Contact-Cell-Phone-Number" />
-                <small id="eccpn-error" class="error">Required Field &#42;</small>
-              </div>
-              <div class="two-box">
-                <label for="Emergency-Contact-Other-Phone">Other mobile</label>
-                <input type="text" id="EmergencyContactOtherPhone" name="Emergency-Contact-Other-Phone" />
-                <small id="ecop-error" class="error">Required Field &#42;</small>
-              </div>
-            </div>
-
-            <div class="one-field">
-              <div class="one-box">
-                <label for="Emergency-Contact-Email">Email Address&#42;</label>
-                <input type="email" id="EmergencyContactEmail" name="Emergency-Contact-Email" />
-                <small id="ece-error" class="error">Invalid format &#42;</small>
-              </div>
-            </div>
-
-            <div class="one-field">
-              <div class="one-box">
-                <br /><br />
-                <div class="left-right-box">
-                  <div class="left-box" style="width: 20%">
-                    <input type="checkbox" id="TravelResponsibility" name="Travel-Responsibility" value="TRUE" />
-                  </div>
-                  <div class="right-box" style="width: 80%">
-                    <br /><br />
-                    <span>
-                      I understand I am responsible to arrange and pay my own travel to and from the event, including airfare if applicable. &#42;&#42;
-                    </span>
-                    <small id="tr-error" class="error">You must agree to the term. &#42;</small>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -2777,7 +2607,6 @@
           document.getElementById("acpn-error").style.visibility = "hidden";
         }
         if (document.getElementById("ApplicantEmailAddress").value == "") {
-          document.getElementById("aea-error").innerHTML = "Required*";
           document.getElementById("aea-error").style.visibility = "visible";
           document.getElementById("ApplicantEmailAddress").focus();
           e.preventDefault();
@@ -2893,7 +2722,6 @@
           document.getElementById("fflwp-error").style.visibility = "hidden";
         }
         if (document.getElementById("FirstFLWEmail").value == "") {
-          document.getElementById("fflwe-error").innerHTML = "Required*";
           document.getElementById("FirstFLWEmail").focus();
           document.getElementById("fflwe-error").style.visibility = "visible";
           e.preventDefault();
@@ -2928,7 +2756,6 @@
           document.getElementById("sflwp-error").style.visibility = "hidden";
         }
         if (document.getElementById("SecondFLWEmail").value == "") {
-          document.getElementById("sflwe-error").innerHTML = "Required*";
           document.getElementById("SecondFLWEmail").focus();
           document.getElementById("sflwe-error").style.dvisibility = "visible";
           e.preventDefault();
@@ -2963,7 +2790,6 @@
           document.getElementById("tflwp-error").style.visibility = "hidden";
         }
         if (document.getElementById("ThirdFLWEmail").value == "") {
-          document.getElementById("tflwe-error").innerHTML = "Required*";
           document.getElementById("ThirdFLWEmail").focus();
           document.getElementById("tflwe-error").style.visibility = "visible";
           e.preventDefault();
@@ -2999,6 +2825,17 @@
         } else {
           document.getElementById("ces-error").style.visibility = "hidden";
         }
+        if (
+          !document.getElementById("HHWDateSelection-1").checked &&
+          !document.getElementById("HHWDateSelection-2").checked &&
+          !document.getElementById("HHWDateSelection-3").checked
+        ) {
+          document.getElementById("HHWDateSelection-1").focus();
+          document.getElementById("HHWDS-error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("HHWDS-error").style.visibility = "hidden";
+        }
         if (document.getElementById("ElectronicSignature").value == "") {
           document.getElementById("ElectronicSignature").focus();
           document.getElementById("es-error").style.visibility = "visible";
@@ -3026,64 +2863,6 @@
           e.preventDefault();
         } else {
           document.getElementById("pgsd-error").style.visibility = "hidden";
-        }
-      }
-      function LRCheck() {
-        if (!document.getElementById("DoctorNoteUpload").checked) {
-          document.getElementById("DoctorNoteUpload").focus();
-          document.getElementById("dnu-error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("dnu-error").style.visibility = "hidden";
-        }
-        if (!document.getElementById("KSCovidRelease").checked) {
-          document.getElementById("KSCovidRelease").focus();
-          document.getElementById("covid-error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("covid-error").style.visibility = "hidden";
-        }
-        if (document.getElementById("EmergencyContactName").value == "") {
-          document.getElementById("EmergencyContactName").focus();
-          document.getElementById("ecn-error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("ecn-error").style.visibility = "hidden";
-        }
-        if (document.getElementById("EmergencyContactRelationshipApplicant").value == "") {
-          document.getElementById("EmergencyContactRelationshipApplicant").focus();
-          document.getElementById("ecra-error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("ecra-error").style.visibility = "hidden";
-        }
-        if (document.getElementById("EmergencyContactCellPhoneNumber").value == "") {
-          document.getElementById("EmergencyContactCellPhoneNumber").focus();
-          document.getElementById("eccpn-error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("eccpn-error").style.visibility = "hidden";
-        }
-        if (document.getElementById("EmergencyContactEmail").value == "") {
-          document.getElementById("ece-error").innerHTML = "Required*";
-          document.getElementById("EmergencyContactEmail").focus();
-          document.getElementById("ece-error").style.visibility = "visible";
-          e.preventDefault();
-        } else if (emailCorrectPattern(document.getElementById("EmergencyContactEmail").value) === false) {
-          document.getElementById("ece-error").innerHTML = "Invalid Format*";
-          document.getElementById("EmergencyContactEmail").focus();
-          document.getElementById("ece-error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("ece-error").innerHTML = "Required*";
-          document.getElementById("ece-error").style.visibility = "hidden";
-        }
-        if (!document.getElementById("TravelResponsibility").checked) {
-          document.getElementById("TravelResponsibility").focus();
-          document.getElementById("tr-error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("tr-error").style.visibility = "hidden";
         }
       }
 
@@ -3137,12 +2916,6 @@
         uptoTop();
         document.getElementById("page-six").style.display = "block";
       });
-      next[5].addEventListener("click", function () {
-        AgreementCheck();
-        document.getElementById("page-six").style.display = "none";
-        uptoTop();
-        document.getElementById("page-seven").style.display = "block";
-      });
 
       back[0].addEventListener("click", function () {
         document.getElementById("page-two").style.display = "none";
@@ -3168,11 +2941,6 @@
         document.getElementById("page-six").style.display = "none";
         uptoTop();
         document.getElementById("page-five").style.display = "block";
-      });
-      back[5].addEventListener("click", function () {
-        document.getElementById("page-seven").style.display = "none";
-        uptoTop();
-        document.getElementById("page-six").style.display = "block";
       });
 
       document.getElementById("snd-child-add").addEventListener("click", function () {
@@ -3296,8 +3064,8 @@
       });
 
       document.getElementById("FormSubmit").addEventListener("click", function () {
-        LRCheck();
-        document.getElementById("legacy-retreat-form").submit();
+        AgreementCheck();
+        document.getElementById("hh-weekend-form").submit();
       });
     </script>
   </body>

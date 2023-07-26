@@ -1120,7 +1120,6 @@
                         <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Hope@Home™ Weekends" />
                         <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Legacy Retreats®" />
                         <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="National Legacy Day™" />
-                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Annual Vision Event" />
                         <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Legacy Videos™" />
                       </div>
                       <div id="right-row" class="right-row">
@@ -1129,7 +1128,6 @@
                         <label for="">Hope@Home&trade; Weekends</label>
                         <label for="">Legacy Retreats&reg;</label>
                         <label for="">National Legacy Day&trade;</label>
-                        <label for="">Annual Vision Event</label>
                         <label for="">Legacy Videos&trade;</label>
                       </div>
                     </div>
@@ -1236,6 +1234,14 @@
               </span>
               <textarea name="Goals-Gifts-Talents" id="GoalsGiftsTalents" cols="30" rows="2"></textarea>
               <small id="ggt-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Religious-Denomination">What denomination(s) have you been involved with, and how?&#42;</label>
+              <textarea name="Religious-Denomination" id="ReligiousDenomination" cols="30" rows="2"></textarea>
+              <small id="rd-error" class="error">Please provide the information.&#42;</small>
             </div>
           </div>
 
@@ -1681,9 +1687,7 @@
           !interest[18].checked &&
           !interest[19].checked &&
           !interest[20].checked &&
-          !interest[21].checked &&
-          !interest[22].checked &&
-          !interest[23].checked
+          !interest[21].checked
         ) {
           document.getElementById("vsi-error").style.visibility = "visible";
           interest[0].focus();
