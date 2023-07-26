@@ -2513,7 +2513,13 @@
                             <input type="checkbox" class="CODP-Group-3" id="7016e000002JJao" name="CODP-Groups-Interests" value="Teen Group (13-18)" />
                           </div>
                           <div class="Cell">
-                            <input type="checkbox" class="CODP-Group-4" id="7016e000002JJat" name="CODP-Groups-Interests" value="Young Adult Group (18 and up)" />
+                            <input
+                              type="checkbox"
+                              class="CODP-Group-4"
+                              id="7016e000002JJat"
+                              name="CODP-Groups-Interests"
+                              value="Young Adult Group (18 and up)"
+                            />
                           </div>
                         </div>
                         <div class="Groups-Name">
@@ -3946,13 +3952,7 @@
 
       function WWPageOneVal() {
         let interests = document.getElementsByName("WW-Groups-Interests");
-        if (
-          !interests[0].checked &&
-          !interests[1].checked &&
-          !interests[2].checked &&
-          !interests[3].checked &&
-          !interests[4].checked
-        ) {
+        if (!interests[0].checked && !interests[1].checked && !interests[2].checked && !interests[3].checked && !interests[4].checked) {
           interests[0].focus();
           document.getElementById("WW-Groups-Error").style.visibility = "visible";
           e.preventDefault();
@@ -5083,3 +5083,7 @@
     </script>
   </body>
 </html>
+
+<!--
+  Please don't forget to update validation functions every time when adding a new group or erasing a group from the group select.
+-->
