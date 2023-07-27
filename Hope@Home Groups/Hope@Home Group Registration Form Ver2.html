@@ -2884,7 +2884,7 @@
                       </div>
                       <div class="One-Column">
                         <div id="CODP-Child-5" class="One">
-                          <label for="CODP-Child-PIH-1">Please tell us a little bit about this child’s personality, interests, and hobbies.</label>
+                          <label for="CODP-Child-PIH-1">Please tell us a little bit about this child’s personality, interests, and hobbies. *</label>
                           <textarea id="CODP-Child-PIH-1" name="CODP-Child-PIH-1" cols="30" rows="3"></textarea>
                           <small id="CODP-Child-5-Error" class="Errors">Required*</small>
                         </div>
@@ -4477,7 +4477,6 @@
         }
         if (document.getElementById("CODP-Child-Last-Name-1").value == "") {
           document.getElementById("CODP-Child-Last-Name-1").focus();
-          document.getElementById("CODP-Child-2-Error").style.visibility = "visible";
           e.preventDefault();
         } else {
           document.getElementById("CODP-Child-2-Error").style.visibility = "hidden";
@@ -4502,6 +4501,120 @@
           e.preventDefault();
         } else {
           document.getElementById("CODP-Child-5-Error").style.visibility = "hidden";
+        }
+        if(document.getElementById("CODP-Child-Info-2")) {
+          if (document.getElementById("CODP-Child-First-Name-2").value == "") {
+            document.getElementById("CODP-Child-First-Name-2").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-2").value == "") {
+            document.getElementById("CODP-Child-Last-Name-2").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-2").value == "") {
+            document.getElementById("CODP-Child-Birthdate-2").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-2").value == "") {
+            document.getElementById("CODP-Child-Relationship-2").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-2").value == "") {
+            document.getElementById("CODP-Child-PIH-2").focus();
+            e.preventDefault();
+          } 
+        }
+
+        if(document.getElementById("CODP-Child-Info-3")) {
+          if (document.getElementById("CODP-Child-First-Name-3").value == "") {
+            document.getElementById("CODP-Child-First-Name-3").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-3").value == "") {
+            document.getElementById("CODP-Child-Last-Name-3").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-3").value == "") {
+            document.getElementById("CODP-Child-Birthdate-3").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-3").value == "") {
+            document.getElementById("CODP-Child-Relationship-3").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-3").value == "") {
+            document.getElementById("CODP-Child-PIH-3").focus();
+            e.preventDefault();
+          } 
+        }
+        
+        if(document.getElementById("CODP-Child-Info-4")) {
+          if (document.getElementById("CODP-Child-First-Name-4").value == "") {
+            document.getElementById("CODP-Child-First-Name-4").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-4").value == "") {
+            document.getElementById("CODP-Child-Last-Name-4").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-4").value == "") {
+            document.getElementById("CODP-Child-Birthdate-4").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-4").value == "") {
+            document.getElementById("CODP-Child-Relationship-4").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-4").value == "") {
+            document.getElementById("CODP-Child-PIH-4").focus();
+            e.preventDefault();
+          } 
+        }
+
+        if(document.getElementById("CODP-Child-Info-5")) {
+          if (document.getElementById("CODP-Child-First-Name-5").value == "") {
+            document.getElementById("CODP-Child-First-Name-5").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-5").value == "") {
+            document.getElementById("CODP-Child-Last-Name-5").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-5").value == "") {
+            document.getElementById("CODP-Child-Birthdate-5").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-5").value == "") {
+            document.getElementById("CODP-Child-Relationship-5").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-5").value == "") {
+            document.getElementById("CODP-Child-PIH-5").focus();
+            e.preventDefault();
+          } 
+        }
+
+        if(document.getElementById("CODP-Child-Info-6")) {
+          if (document.getElementById("CODP-Child-First-Name-6").value == "") {
+            document.getElementById("CODP-Child-First-Name-6").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-6").value == "") {
+            document.getElementById("CODP-Child-Last-Name-6").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-6").value == "") {
+            document.getElementById("CODP-Child-Birthdate-6").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-6").value == "") {
+            document.getElementById("CODP-Child-Relationship-6").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-6").value == "") {
+            document.getElementById("CODP-Child-PIH-6").focus();
+            e.preventDefault();
+          } 
         }
       }
       function CODPPageFourVal() {
@@ -4719,6 +4832,157 @@
         }
       }
       document.getElementById("CODP-Add-Child").addEventListener("click", function () {
+        if (document.getElementById("CODP-Child-First-Name-1").value == "") {
+          document.getElementById("CODP-Child-First-Name-1").focus();
+          document.getElementById("CODP-Child-1-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("CODP-Child-1-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("CODP-Child-Last-Name-1").value == "") {
+          document.getElementById("CODP-Child-Last-Name-1").focus();
+          document.getElementById("CODP-Child-2-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("CODP-Child-2-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("CODP-Child-Birthdate-1").value == "") {
+          document.getElementById("CODP-Child-Birthdate-1").focus();
+          document.getElementById("CODP-Child-3-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("CODP-Child-3-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("CODP-Child-Relationship-1").value == "") {
+          document.getElementById("CODP-Child-Relationship-1").focus();
+          document.getElementById("CODP-Child-4-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("CODP-Child-4-Error").style.visibility = "hidden";
+        }
+        if (document.getElementById("CODP-Child-PIH-1").value == "") {
+          document.getElementById("CODP-Child-PIH-1").focus();
+          document.getElementById("CODP-Child-5-Error").style.visibility = "visible";
+          e.preventDefault();
+        } else {
+          document.getElementById("CODP-Child-5-Error").style.visibility = "hidden";
+        }
+
+        if(document.getElementById("CODP-Child-Info-2")) {
+          if (document.getElementById("CODP-Child-First-Name-2").value == "") {
+            document.getElementById("CODP-Child-First-Name-2").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-2").value == "") {
+            document.getElementById("CODP-Child-Last-Name-2").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-2").value == "") {
+            document.getElementById("CODP-Child-Birthdate-2").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-2").value == "") {
+            document.getElementById("CODP-Child-Relationship-2").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-2").value == "") {
+            document.getElementById("CODP-Child-PIH-2").focus();
+            e.preventDefault();
+          } 
+        }
+
+        if(document.getElementById("CODP-Child-Info-3")) {
+          if (document.getElementById("CODP-Child-First-Name-3").value == "") {
+            document.getElementById("CODP-Child-First-Name-3").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-3").value == "") {
+            document.getElementById("CODP-Child-Last-Name-3").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-3").value == "") {
+            document.getElementById("CODP-Child-Birthdate-3").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-3").value == "") {
+            document.getElementById("CODP-Child-Relationship-3").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-3").value == "") {
+            document.getElementById("CODP-Child-PIH-3").focus();
+            e.preventDefault();
+          } 
+        }
+        
+        if(document.getElementById("CODP-Child-Info-4")) {
+          if (document.getElementById("CODP-Child-First-Name-4").value == "") {
+            document.getElementById("CODP-Child-First-Name-4").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-4").value == "") {
+            document.getElementById("CODP-Child-Last-Name-4").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-4").value == "") {
+            document.getElementById("CODP-Child-Birthdate-4").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-4").value == "") {
+            document.getElementById("CODP-Child-Relationship-4").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-4").value == "") {
+            document.getElementById("CODP-Child-PIH-4").focus();
+            e.preventDefault();
+          } 
+        }
+
+        if(document.getElementById("CODP-Child-Info-5")) {
+          if (document.getElementById("CODP-Child-First-Name-5").value == "") {
+            document.getElementById("CODP-Child-First-Name-5").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-5").value == "") {
+            document.getElementById("CODP-Child-Last-Name-5").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-5").value == "") {
+            document.getElementById("CODP-Child-Birthdate-5").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-5").value == "") {
+            document.getElementById("CODP-Child-Relationship-5").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-5").value == "") {
+            document.getElementById("CODP-Child-PIH-5").focus();
+            e.preventDefault();
+          } 
+        }
+
+        if(document.getElementById("CODP-Child-Info-6")) {
+          if (document.getElementById("CODP-Child-First-Name-6").value == "") {
+            document.getElementById("CODP-Child-First-Name-6").focus();
+            e.preventDefault();
+          }
+          if (document.getElementById("CODP-Child-Last-Name-6").value == "") {
+            document.getElementById("CODP-Child-Last-Name-6").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Birthdate-6").value == "") {
+            document.getElementById("CODP-Child-Birthdate-6").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-Relationship-6").value == "") {
+            document.getElementById("CODP-Child-Relationship-6").focus();
+            e.preventDefault();
+          } 
+          if (document.getElementById("CODP-Child-PIH-6").value == "") {
+            document.getElementById("CODP-Child-PIH-6").focus();
+            e.preventDefault();
+          } 
+        }
+
         var NumChildren = document.getElementById("CODP-Child-Info-Section").getElementsByClassName("Sections").length;
         if (NumChildren == 6) {
           document.getElementById("CODP-Additional-Children-Info").style.display = "block";
@@ -4726,6 +4990,7 @@
         } else {
           document.getElementById("CODP-Additional-Children-Info").style.display = "none";
         }
+
         CODPAdd();
       });
       document.getElementById("CODP-Remove-Child").addEventListener("click", CODPRemove);
@@ -5117,5 +5382,8 @@
 </html>
 
 <!--
+
+
+
   Please don't forget to update validation functions every time when adding a new group or erasing a group from the group select.
 -->
