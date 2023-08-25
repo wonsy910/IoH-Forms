@@ -4759,6 +4759,33 @@
           Who + Diagnosis + Groups + GroupNames + PrimeLang + Services + Situation + Coping + Gain + Notes + children + extraChild + DirectContact;
       }
 
+      function childAddPrevent() {
+        var childNumAdded = document.querySelectorAll(".Sections > .Two-Columns > .Two > input, select, textarea");
+
+        for (let i = 0; i < childNumAdded.length; i++) {
+          var inputs = childNumAdded[i].getElementsByTagName("input");
+          var selects = childNumAdded[i].getElementsByTagName("select");
+          var texts = childNumAdded[i].getElementsByTagName("textarea");
+          if (inputs[i].value == "") {
+            e.preventDefault();
+          }
+          if (selects[i].value == "") {
+            e.preventDefault();
+          }
+          if (texts[i].value == "") {
+            e.preventDefault();
+          }
+        }
+
+        var classestest = document.querySelectorAll(".Two > input");
+        for (i = 0; i < classestest.length; i++) {
+          var tagname = classestest[i].getElementsByTagName("input");
+          console.log("class:" + classestest[i].id);
+          //for(j=0; j<tagname.length;j++){
+          //console.log("tag:" + tagname[j].id);}
+        }
+      }
+
       function CODPAdd(e) {
         //Validation for guest fields
         //Get number of guests
@@ -4832,163 +4859,21 @@
         }
       }
       document.getElementById("CODP-Add-Child").addEventListener("click", function () {
-        if (document.getElementById("CODP-Child-First-Name-1").value == "") {
-          document.getElementById("CODP-Child-First-Name-1").focus();
-          document.getElementById("CODP-Child-1-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("CODP-Child-1-Error").style.visibility = "hidden";
-        }
-        if (document.getElementById("CODP-Child-Last-Name-1").value == "") {
-          document.getElementById("CODP-Child-Last-Name-1").focus();
-          document.getElementById("CODP-Child-2-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("CODP-Child-2-Error").style.visibility = "hidden";
-        }
-        if (document.getElementById("CODP-Child-Birthdate-1").value == "") {
-          document.getElementById("CODP-Child-Birthdate-1").focus();
-          document.getElementById("CODP-Child-3-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("CODP-Child-3-Error").style.visibility = "hidden";
-        }
-        if (document.getElementById("CODP-Child-Relationship-1").value == "") {
-          document.getElementById("CODP-Child-Relationship-1").focus();
-          document.getElementById("CODP-Child-4-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("CODP-Child-4-Error").style.visibility = "hidden";
-        }
-        if (document.getElementById("CODP-Child-PIH-1").value == "") {
-          document.getElementById("CODP-Child-PIH-1").focus();
-          document.getElementById("CODP-Child-5-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("CODP-Child-5-Error").style.visibility = "hidden";
-        }
+        var childNumAdded = document.querySelectorAll(".Sections > .Two-Columns > .Two > input, select, textarea");
 
-        if (document.getElementById("CODP-Child-Info-2")) {
-          if (document.getElementById("CODP-Child-First-Name-2").value == "") {
-            document.getElementById("CODP-Child-First-Name-2").focus();
+        for (let i = 0; i < childNumAdded.length; i++) {
+          var inputs = childNumAdded[i].getElementsByTagName("input");
+          var selects = childNumAdded[i].getElementsByTagName("select");
+          var texts = childNumAdded[i].getElementsByTagName("textarea");
+          if (inputs[i].value == "") {
             e.preventDefault();
           }
-          if (document.getElementById("CODP-Child-Last-Name-2").value == "") {
-            document.getElementById("CODP-Child-Last-Name-2").focus();
+          if (selects[i].value == "") {
             e.preventDefault();
           }
-          if (document.getElementById("CODP-Child-Birthdate-2").value == "") {
-            document.getElementById("CODP-Child-Birthdate-2").focus();
+          if (texts[i].value == "") {
             e.preventDefault();
           }
-          if (document.getElementById("CODP-Child-Relationship-2").value == "") {
-            document.getElementById("CODP-Child-Relationship-2").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-PIH-2").value == "") {
-            document.getElementById("CODP-Child-PIH-2").focus();
-            e.preventDefault();
-          }
-        }
-
-        if (document.getElementById("CODP-Child-Info-3")) {
-          if (document.getElementById("CODP-Child-First-Name-3").value == "") {
-            document.getElementById("CODP-Child-First-Name-3").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Last-Name-3").value == "") {
-            document.getElementById("CODP-Child-Last-Name-3").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Birthdate-3").value == "") {
-            document.getElementById("CODP-Child-Birthdate-3").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Relationship-3").value == "") {
-            document.getElementById("CODP-Child-Relationship-3").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-PIH-3").value == "") {
-            document.getElementById("CODP-Child-PIH-3").focus();
-            e.preventDefault();
-          }
-        }
-
-        if (document.getElementById("CODP-Child-Info-4")) {
-          if (document.getElementById("CODP-Child-First-Name-4").value == "") {
-            document.getElementById("CODP-Child-First-Name-4").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Last-Name-4").value == "") {
-            document.getElementById("CODP-Child-Last-Name-4").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Birthdate-4").value == "") {
-            document.getElementById("CODP-Child-Birthdate-4").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Relationship-4").value == "") {
-            document.getElementById("CODP-Child-Relationship-4").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-PIH-4").value == "") {
-            document.getElementById("CODP-Child-PIH-4").focus();
-            e.preventDefault();
-          }
-        }
-
-        if (document.getElementById("CODP-Child-Info-5")) {
-          if (document.getElementById("CODP-Child-First-Name-5").value == "") {
-            document.getElementById("CODP-Child-First-Name-5").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Last-Name-5").value == "") {
-            document.getElementById("CODP-Child-Last-Name-5").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Birthdate-5").value == "") {
-            document.getElementById("CODP-Child-Birthdate-5").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Relationship-5").value == "") {
-            document.getElementById("CODP-Child-Relationship-5").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-PIH-5").value == "") {
-            document.getElementById("CODP-Child-PIH-5").focus();
-            e.preventDefault();
-          }
-        }
-
-        if (document.getElementById("CODP-Child-Info-6")) {
-          if (document.getElementById("CODP-Child-First-Name-6").value == "") {
-            document.getElementById("CODP-Child-First-Name-6").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Last-Name-6").value == "") {
-            document.getElementById("CODP-Child-Last-Name-6").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Birthdate-6").value == "") {
-            document.getElementById("CODP-Child-Birthdate-6").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-Relationship-6").value == "") {
-            document.getElementById("CODP-Child-Relationship-6").focus();
-            e.preventDefault();
-          }
-          if (document.getElementById("CODP-Child-PIH-6").value == "") {
-            document.getElementById("CODP-Child-PIH-6").focus();
-            e.preventDefault();
-          }
-        }
-
-        var NumChildren = document.getElementById("CODP-Child-Info-Section").getElementsByClassName("Sections").length;
-        if (NumChildren == 6) {
-          document.getElementById("CODP-Additional-Children-Info").style.display = "block";
-          e.preventDefault();
-        } else {
-          document.getElementById("CODP-Additional-Children-Info").style.display = "none";
         }
 
         CODPAdd();
