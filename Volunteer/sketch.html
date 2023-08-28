@@ -1,0 +1,1764 @@
+<html style="font-size: 62.5%">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+
+    <style>
+      #volunteer-application {
+        margin: 0px auto;
+        padding: 0px;
+        width: 360px;
+        min-height: 720px;
+
+        background: #334355;
+      }
+      #volunteer-application-form {
+        margin: 0px;
+        height: 0px;
+        width: 100%;
+        height: auto;
+      }
+      #application-form {
+        margin: auto;
+        padding: 0px;
+        width: 96%;
+        height: auto;
+      }
+
+      #form-name {
+        margin: 0px;
+        padding: 15px 0px 15px 0px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      #form-name span {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #f89a1c;
+        font-size: 3.5rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+      }
+      #section-name {
+        margin: 0px;
+        padding: 10px 0px 5px 0px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      #section-name span {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #f89a1c;
+        font-size: 2.2rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+      }
+      #instruction {
+        margin: 0px auto;
+        padding: 5px;
+        width: 96%;
+        height: auto;
+
+        color: #f89a1c;
+        font-size: 1.2rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        line-height: 1.5em;
+
+        text-align: center;
+      }
+
+      #title {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      #title span {
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #f89a1c;
+      }
+      #category-1,
+      #category-2,
+      #category-3,
+      #category-4 {
+        margin: 0px;
+        padding: 0px;
+        width: 95%;
+        height: auto;
+      }
+      #two-rows {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+      }
+      #left-row {
+        margin: 0px;
+        padding: 0px;
+        width: 20%;
+        height: auto;
+      }
+      #left-row input[type="radio"] {
+        margin: 7.5px 10px 7.5px auto;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+      }
+      #right-row {
+        margin: 0px;
+        padding: 0px;
+        width: 80%;
+        height: auto;
+      }
+      #right-row label {
+        margin: 6px auto 6px auto;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.2rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      #category-4 > #two-rows > #left-row input[type="radio"]:nth-child(1) {
+        margin: 15px 10px 15px auto;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+      }
+      #category-4 > #two-rows > #left-row input[type="radio"]:nth-child(3) {
+        margin: 14px 10px 14px auto;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .one-column {
+        margin: 5px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .one {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .one label {
+        margin: 3px auto 3px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #ffffff;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.2em;
+      }
+      .one input[type="text"],
+      .one input[type="date"] {
+        margin: 0px;
+        padding: 2px 0px 2px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .one input::placeholder {
+        margin: 0px;
+        padding: 0px 0px 0px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+      }
+      .one textarea {
+        margin: 0px;
+        padding: 2px 0px 2px 2px;
+        width: 100%;
+        min-height: 70px;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .one input[type="text"]:focus,
+      .one input[type="date"]:focus {
+        outline: solid 3px #808284;
+      }
+      .one textarea:focus {
+        outline: solid 3px #808284;
+      }
+      .one small {
+        visibility: hidden;
+        margin: 2px auto 2px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #ff0004;
+        font-size: 1rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+      }
+      .one span {
+        margin: 5px auto 5px auto;
+        padding: 0px 5px 0px 5px;
+        width: 95%;
+        height: auto;
+
+        color: #f89a1c;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.3em;
+      }
+
+      .two-columns {
+        margin: 5px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .two {
+        margin: 0px;
+        padding: 0px;
+        width: 48%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .two label {
+        margin: 3px auto 3px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #ffffff;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.2em;
+      }
+      .two input[type="text"],
+      .two input[type="date"] {
+        margin: 0px;
+        padding: 2px 0px 2px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .two input[type="text"]:focus,
+      .two input[type="date"]:focus {
+        outline: solid 3px #808284;
+      }
+      .two input::placeholder {
+        margin: 0px;
+        padding: 0px 0px 0px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+      }
+      .two small {
+        visibility: hidden;
+        margin: 2px auto 2px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #ff0004;
+        font-size: 1rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+      }
+
+      .three-columns {
+        margin: 5px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .three {
+        margin: 0px;
+        padding: 0px;
+        width: 32%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .three label {
+        margin: 3px auto 3px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #ffffff;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.2em;
+      }
+      .three input[type="text"],
+      .three input[type="date"] {
+        margin: 0px;
+        padding: 2px 0px 2px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .three input[type="text"]:focus,
+      .three input[type="date"]:focus {
+        outline: solid 3px #808284;
+      }
+      .three select[type="text"] {
+        margin: 0px;
+        padding: 2px 0px 2px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+
+        background: #ffffff;
+      }
+      .three select[type="text"]:focus {
+        outline: solid 3px #808284;
+      }
+      .three input::placeholder {
+        margin: 0px;
+        padding: 0px 0px 0px 2px;
+        width: 100%;
+        height: auto;
+
+        color: #000000;
+        font-size: 1.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1.5em;
+      }
+      .three small {
+        visibility: hidden;
+        margin: 2px auto 2px auto;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+
+        color: #ff0004;
+        font-size: 0.7rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+      }
+
+      .check-box {
+        margin: auto;
+        padding: 5px 0px 5px 0px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .left-box,
+      .right-box {
+        margin: 0px;
+        padding: 0px;
+        width: 48%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .right-box span {
+        margin: 0px;
+        padding: 2px 2px 2px;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.5em;
+
+        color: #ffffff;
+      }
+      .left-box input[type="checkbox"],
+      .left-box input[type="radio"] {
+        margin: auto 10px auto auto;
+      }
+
+      #button-box {
+        margin: 10px auto 10px auto;
+        padding: 0px;
+        width: 60%;
+        height: 50px;
+
+        text-align: center;
+      }
+      #button-box button {
+        cursor: pointer;
+        margin: auto;
+        padding: 5px 10px 5px 10px;
+        width: 50%;
+        height: auto;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.5em;
+
+        color: #334355;
+        background-color: #f89a1c;
+        border: 2px solid #334355;
+        border-radius: 15px;
+      }
+      #button-box button:hover {
+        color: #808284;
+        border-color: #808284;
+      }
+
+      @media screen and (min-width: 740px) {
+        #volunteer-application {
+          margin: 0px auto;
+          padding: 0px;
+          width: 750px;
+          height: auto;
+
+          background: #334355;
+        }
+        #volunteer-application-form {
+          margin: 0px;
+          height: 0px;
+          width: 100%;
+          height: auto;
+        }
+        #application-form {
+          margin: auto;
+          padding: 0px;
+          width: 96%;
+          height: auto;
+        }
+
+        #form-name {
+          margin: 0px;
+          padding: 30px 0px 30px 0px;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        #form-name span {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #f89a1c;
+          font-size: 5rem;
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+        }
+        #section-name {
+          margin: 0px;
+          padding: 30px 0px 15px 0px;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        #section-name span {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #f89a1c;
+          font-size: 3.2rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+        }
+        #instruction {
+          margin: 0px auto;
+          padding: 5px;
+          width: 60%;
+          height: auto;
+
+          color: #f89a1c;
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 400;
+          line-height: 1.5em;
+
+          text-align: center;
+        }
+
+        #title {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          text-align: center;
+        }
+        #title span {
+          font-size: 2.4rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          color: #f89a1c;
+        }
+        #category-1,
+        #category-2,
+        #category-3,
+        #category-4 {
+          margin: 0px;
+          padding: 0px;
+          width: 95%;
+          height: auto;
+        }
+        #two-rows {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+        }
+        #left-row {
+          margin: 0px;
+          padding: 0px;
+          width: 20%;
+          height: auto;
+        }
+        #left-row input[type="radio"] {
+          margin: 14px 10px 16px auto;
+          padding: 0px;
+
+          display: flex;
+          flex-direction: column;
+        }
+        #right-row {
+          margin: 0px;
+          padding: 0px;
+          width: 80%;
+          height: auto;
+        }
+        #right-row label {
+          margin: 10px auto 10px auto;
+          padding: 0px;
+
+          display: flex;
+          flex-direction: column;
+
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          color: #ffffff;
+        }
+
+        #category-4 > #two-rows > #left-row input[type="radio"]:nth-child(1) {
+          margin: 14px 10px 16px auto;
+          padding: 0px;
+
+          display: flex;
+          flex-direction: column;
+        }
+        #category-4 > #two-rows > #left-row input[type="radio"]:nth-child(3) {
+          margin: 14px 10px 16px auto;
+          padding: 0px;
+
+          display: flex;
+          flex-direction: column;
+        }
+
+        .one-column {
+          margin: 10px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .one-column:nth-last-child(6) > .one input {
+          margin: 0px auto 0px auto;
+          width: 50%;
+        }
+        .one-column:nth-last-child(5) > .one input {
+          margin: 0px auto 0px auto;
+          width: 50%;
+        }
+        .one-column:nth-last-child(4) > .one input {
+          margin: 0px auto 0px auto;
+          width: 50%;
+        }
+        .one-column:nth-last-child(3) > .one input {
+          margin: 0px auto 0px auto;
+          width: 50%;
+        }
+
+        .one {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .one label {
+          margin: 6px auto 6px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #ffffff;
+          font-size: 2rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.2em;
+        }
+        .one input[type="text"],
+        .one input[type="date"] {
+          margin: 0px;
+          padding: 2px 0px 2px 5px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .one input::placeholder {
+          margin: 0px;
+          padding: 0px 0px 0px 2px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+        }
+        .one textarea {
+          margin: 0px;
+          padding: 2px 0px 2px 2px;
+          width: 100%;
+          min-height: 70px;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .one input[type="text"]:focus,
+        .one input[type="date"]:focus {
+          outline: solid 4px #808284;
+        }
+        .one textarea:focus {
+          outline: solid 4px #808284;
+        }
+        .one small {
+          visibility: hidden;
+          margin: 3px auto 3px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #ff0004;
+          font-size: 1.2rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+        }
+        .one span {
+          margin: 10px auto 10px auto;
+          padding: 0px 5px 0px 5px;
+          width: 95%;
+          height: auto;
+
+          color: #f89a1c;
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.3em;
+        }
+
+        .two-columns {
+          margin: 10px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .two {
+          margin: 0px;
+          padding: 0px;
+          width: 48%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .two label {
+          margin: 6px auto 6px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #ffffff;
+          font-size: 2rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.2em;
+        }
+        .two input[type="text"],
+        .two input[type="date"] {
+          margin: 0px;
+          padding: 2px 0px 2px 5px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .two input[type="text"]:focus,
+        .two input[type="date"]:focus {
+          outline: solid 4px #808284;
+        }
+        .two input::placeholder {
+          margin: 0px;
+          padding: 0px 0px 0px 2px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+        }
+        .two small {
+          visibility: hidden;
+          margin: 3px auto 3px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #ff0004;
+          font-size: 1.2rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+        }
+
+        .three-columns {
+          margin: 10px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .three {
+          margin: 0px;
+          padding: 0px;
+          width: 32%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+        }
+        .three label {
+          margin: 6px auto 6px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #ffffff;
+          font-size: 2rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.2em;
+        }
+        .three input[type="text"],
+        .three input[type="date"] {
+          margin: 0px;
+          padding: 2px 0px 2px 5px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .three input[type="text"]:focus,
+        .three input[type="date"]:focus {
+          outline: solid 4px #808284;
+        }
+        .three select[type="text"] {
+          margin: 0px;
+          padding: 2px 0px 2px 5px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.8rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+
+          background: #ffffff;
+        }
+        .three select[type="text"]:focus {
+          outline: solid 4px #808284;
+        }
+        .three input::placeholder {
+          margin: 0px;
+          padding: 0px 0px 0px 2px;
+          width: 100%;
+          height: auto;
+
+          color: #000000;
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          line-height: 1.5em;
+        }
+        .three small {
+          visibility: hidden;
+          margin: 3px auto 3px auto;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+
+          color: #ff0004;
+          font-size: 1.2rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 600;
+          line-height: 1.5em;
+        }
+
+        .check-box {
+          margin: auto;
+          padding: 10px 0px 10px 0px;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .left-box,
+        .right-box {
+          margin: 0px;
+          padding: 0px;
+          width: 48%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .right-box span {
+          margin: 0px;
+          padding: 3px 5px 3px 5px;
+          font-family: "Raleway", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 1.5em;
+
+          color: #ffffff;
+        }
+        .left-box input[type="checkbox"],
+        .left-box input[type="radio"] {
+          margin: auto 10px auto auto;
+        }
+
+        #button-box {
+          margin: 30px auto 30px auto;
+          padding: 0px;
+          width: 40%;
+          height: auto;
+
+          text-align: center;
+        }
+        #button-box button {
+          cursor: pointer;
+          margin: 15px auto 15px auto;
+          padding: 5px 10px 5px 10px;
+          width: 80%;
+          height: auto;
+
+          font-family: "Raleway", sans-serif;
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 1.5em;
+
+          color: #334355;
+          background-color: #f89a1c;
+          border: 2px solid #334355;
+          border-radius: 15px;
+        }
+        #button-box button:hover {
+          color: #808284;
+          border-color: #808284;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="volunteer-application" class="volunteer-application">
+      <form
+        action="https://www2.inheritanceofhope.org/l/739893/2022-09-20/53n1jg"
+        method="post"
+        id="volunteer-applicaiton-form"
+        class="volunteer-application-form"
+      >
+        <div id="application-form" class="application-form">
+          <div id="form-name" class="form-name">
+            <span> Volunteer Application </span>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Volunteer-Serving-Interests" style="text-align: center">
+                I am interested in <strong style="color: #f89a1c; text-decoration: underline">FIRST</strong> serving for:&#42;
+              </label>
+              <small id="vsi-error" class="error" style="text-align: center">Please provide the information. &#42;</small>
+              <div id="two-columns" class="two-columns">
+                <div id="two" class="two">
+                  <div id="category-1" class="category-1">
+                    <div id="title">
+                      <span>Marketing</span>
+                    </div>
+                    <div id="two-rows" class="two-rows">
+                      <div id="left-row" class="left-row">
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Facebook" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Instagram" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="LinkedIn" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Hope@Home™ App" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Blog" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Web Design" />
+                      </div>
+                      <div id="right-row" class="right-row">
+                        <label for="">Facebook</label>
+                        <label for="">Instagram</label>
+                        <label for="">LinkedIn</label>
+                        <label for="">Hope@Home&trade; App</label>
+                        <label for="">Blog</label>
+                        <label for="">Web Design</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="two" class="two">
+                  <div id="category-2" class="category-2">
+                    <div id="title">
+                      <span>Resources</span>
+                    </div>
+                    <div id="two-rows" class="two-rows">
+                      <div id="left-row" class="left-row">
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Graphic design" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Video editing" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Supplies" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Mail" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Tech" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Data" />
+                      </div>
+                      <div id="right-row" class="right-row">
+                        <label for="">Graphic Design</label>
+                        <label for="">Video Editing</label>
+                        <label for="">Supplies</label>
+                        <label for="">Mail</label>
+                        <label for="">Tech</label>
+                        <label for="">Data</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="two-columns" class="two-columns">
+                <div id="two" class="two">
+                  <div id="category-3" class="category-3">
+                    <div id="title">
+                      <span>Development</span>
+                    </div>
+                    <div id="two-rows" class="two-rows">
+                      <div id="left-row" class="left-row">
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Legacy Builders™" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Grants Volunteer" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Giving Tuesday" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Thanking" />
+                      </div>
+                      <div id="right-row" class="right-row">
+                        <label for="">Legacy Builders</label>
+                        <label for="">Grants</label>
+                        <label for="">Giving Tuesday</label>
+                        <label for="">Thanking</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="two" class="two">
+                  <div id="category-4" class="category-4">
+                    <div id="title">
+                      <span>Programs</span>
+                    </div>
+                    <div id="two-rows" class="two-rows">
+                      <div id="left-row" class="left-row">
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Hope@Home™ Groups" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Hope Hubs™" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Hope@Home™ Weekends" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Legacy Retreats®" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="National Legacy Day™" />
+                        <input type="radio" id="choice" name="Volunteer-Serving-Interests" value="Legacy Videos™" />
+                      </div>
+                      <div id="right-row" class="right-row">
+                        <label for="">Hope@Home&trade; Groups</label>
+                        <label for="">Hope Hubs&trade;</label>
+                        <label for="">Hope@Home&trade; Weekends</label>
+                        <label for="">Legacy Retreats&reg;</label>
+                        <label for="">National Legacy Day&trade;</label>
+                        <label for="">Legacy Videos&trade;</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="two-columns" class="two-columns">
+            <div id="two" class="two">
+              <label for="First-Name">First Name&#42;</label>
+              <input type="text" id="FirstName" name="First-Name" />
+              <small id="fn-error" class="error">Please provide the information.&#42;</small>
+            </div>
+            <div id="two" class="two">
+              <label for="Last-Name">Last Name&#42;</label>
+              <input type="text" id="LastName" name="Last-Name" />
+              <small id="ln-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="two-columns" class="two-columns">
+            <div id="two" class="two">
+              <label for="Email">Email&#42;</label>
+              <input type="text" id="Email" name="Email" placeholder="xxx@example.com" />
+              <small id="e-error" class="error">Please write the valid email.&#42;</small>
+            </div>
+            <div id="two" class="two">
+              <label for="Phone-Number">Phone Number&#42;</label>
+              <input type="text" id="PhoneNumber" name="Phone-Number" placeholder="xxx-xxx-xxxx" />
+              <small id="pn-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="three-columns" class="three-columns">
+            <div id="three" class="three">
+              <label for="Birthdate">Birthdate&#42;</label>
+              <input type="date" id="Birthdate" name="Birthdate" placeholder="YYYY-MM-DD" />
+              <small id="bd-error" class="error">Please provide the information.&#42;</small>
+            </div>
+            <div id="three" class="three">
+              <label for="Gender">Gender&#42;</label>
+              <select type="text" id="Gender" name="Gender">
+                <option value="" selected hidden>Select Your Gender...</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+              <small id="g-error" class="error">Please provide the information.&#42;</small>
+            </div>
+            <div id="three" class="three">
+              <label for="T-Shirt-Size">T-Shirt Size&#42;</label>
+              <select type="text" id="TShirtSize" oninput="PdtoSf()" name="T-Shirt-Size">
+                <option value="" selected hidden>Select Your Size...</option>
+                <option value="5XL">5XL</option>
+                <option value="4XL">4XL</option>
+                <option value="3XL">3XL</option>
+                <option value="XXL">XXL</option>
+                <option value="XL">XL</option>
+                <option value="Adult L">L</option>
+                <option value="Adult M">M</option>
+                <option value="Adult S">S</option>
+                <option value="Youth L">Youth L</option>
+                <option value="Youth M">Youth M</option>
+                <option value="Youth S">Youth S</option>
+                <option value="Youth XS">Youth XS</option>
+              </select>
+              <small id="tss-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Street-Address">Street Address&#42;</label>
+              <input type="text" id="StreetAddress" name="Street-Address" />
+              <small id="sa-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="three-columns" class="three-columns">
+            <div id="three" class="three">
+              <label for="City">City&#42;</label>
+              <input type="text" id="City" name="City" />
+              <small id="c-error" class="error">Please provide the information.&#42;</small>
+            </div>
+            <div id="three" class="three">
+              <label for="State">State&#42;</label>
+              <input type="text" id="State" name="State" />
+              <small id="s-error" class="error">Please provide the information.&#42;</small>
+            </div>
+            <div id="three" class="three">
+              <label for="Zip">Zip&#42;</label>
+              <input type="text" id="Zip" name="Zip" />
+              <small id="z-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Goals-Gifts-Talents">Volunteer Motivation, Goals, and Gifts&#42;</label>
+              <span>
+                Please explain why you would like to volunteer with Inheritance of Hope, what personal goals you have for volunteering, and what spiritual gifts
+                and talents you have that you believe will bless the families we will be serving.
+              </span>
+              <textarea name="Goals-Gifts-Talents" id="GoalsGiftsTalents" cols="30" rows="2"></textarea>
+              <small id="ggt-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Religious-Denomination">What denomination(s) have you been involved with, and how?&#42;</label>
+              <textarea name="Religious-Denomination" id="ReligiousDenomination" cols="30" rows="2"></textarea>
+              <small id="rd-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Statement-of-Faith">Please read our statement of faith (below).</label>
+              <span>
+                Inheritance of Hope is a hope-filled community of care welcoming families of all faiths and backgrounds while serving under the core beliefs of
+                the historic Christian faith. Our beliefs are outlined as follows:
+              </span>
+              <span>
+                • We believe that true hope in the midst of a crisis like that of a parent’s terminal illness can only be found in the promise of eternal life
+                found in repentance and acceptance of the gift of Jesus Christ’s death and resurrection. This is our eternal legacy.<br />
+                • We believe that Inheritance of Hope activities should promote hope and joy in the promises of Jesus Christ. <br />
+                • We believe that Inheritance of Hope programs should be a place of fun, fellowship, and learning about leaving a legacy for children living
+                with a terminally ill parent and not a clinical environment for evaluation or counseling. <br />
+                • We believe that all IoH serving team members should comfort, encourage, and serve family members in the love of Jesus Christ.
+              </span>
+              <label for="Statement-of-Faith">Please share your response to it.&#42;</label>
+              <textarea name="Statement-of-Faith" id="StatementofFaith" cols="30" rows="2"></textarea>
+              <small id="sof-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label>DNA to Bring about the Best of this Mission&#42;</label>
+              <span>
+                In the spirit of James 1:2-4 (“Consider it pure joy, my brothers and sisters, when you face trials of many kinds, because you know that the
+                testing of your faith produces perseverance. Let perseverance have its full effect, so that you may be mature and complete, not lacking
+                anything.”), please respond to the following.
+              </span>
+              <span>
+                <strong>Deliver joy:</strong> Excellent results with excellent attitude = delivering joy with entrepreneurial zest; not entitlement weak sauce
+                but delightfully relentless
+              </span>
+              <label for="Deliver-Joy">How do you currently demonstrate this?&#42;</label>
+              <textarea name="Deliver-Joy-1" id="DeliverJoy1" cols="30" rows="2"></textarea>
+              <small id="dj-error-1" class="error">Please provide the information.&#42;</small>
+
+              <label for="Deliver-Joy-2">How do you desire to learn and grow in this?&#42;</label>
+              <textarea name="Deliver-Joy-2" id="DeliverJoy2" cols="30" rows="2"></textarea>
+              <small id="dj-error-2" class="error">Please provide the information.&#42;</small>
+
+              <span><strong>Neighbor as self:</strong> Loving neighbor and loving self, rooted in deepening love of God as commanded by Jesus Christ</span>
+              <label for="Neighbor-as-Self">
+                How do you currently demonstrate this with your neighbors – your closest relationship and your family? &#42;
+              </label>
+              <textarea name="Neighbor-as-Self-1" id="NeighborasSelf1" cols="30" rows="2"></textarea>
+              <small id="nas-error-1" class="error">Please provide the information.&#42;</small>
+
+              <label for="Neighbor-as-Self-2">How do you desire to learn and grow in this? &#42;</label>
+              <textarea name="Neighbor-as-Self-2" id="NeighborasSelf2" cols="30" rows="2"></textarea>
+              <small id="nas-error-2" class="error">Please provide the information.&#42;</small>
+
+              <span>
+                <strong>Antifragile Ambition:</strong> Embracing challenges and taking risks for bar-raising, game-changing mission advancement in quality and
+                quantity
+              </span>
+              <label for="Antifragile-Ambition">How do you currently demonstrate this?&#42;</label>
+              <textarea name="Antifragile-Ambition-1" id="AntifragileAmbition1" cols="30" rows="2"></textarea>
+              <small id="aa-error-1" class="error">Please provide the information.&#42;</small>
+
+              <label for="Antifragile-Ambition-2">How do you desire to learn and grow in this?&#42;</label>
+              <textarea name="Antifragile-Ambition-2" id="AntifragileAmbition2" cols="30" rows="2"></textarea>
+              <small id="aa-error-2" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Special-Needs-Experience">Special Needs Experience&#42;</label>
+              <span>
+                Do you have any training and/or experience in working with people who have special needs: autism, Asperger's, ADHD, hearing impairment, vision
+                impairment, etc.?
+              </span>
+              <div id="check-box" class="check-box">
+                <div id="left-box" class="left-box">
+                  <input type="radio" id="SpecialNeedsExperienceY" name="Special-Needs-Experience" value="Yes" />
+                  <input type="radio" id="SpecialNeedsExperienceN" name="Special-Needs-Experience" value="No" />
+                </div>
+                <div id="right-box" class="right-box">
+                  <span>YES</span>
+                  <span>NO</span>
+                </div>
+              </div>
+              <small id="sne-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Yes-Special-Needs-Experience">If 'Yes', please describe briefly.</label>
+              <textarea name="Yes-Special-Needs-Experience" id="YesSpecialNeedsExperience" cols="30" rows="2"></textarea>
+              <small id="ysne-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Food-Allergies">Do you have any food allergies or dietary restrictions? * </label>
+              <span>Please complete the following information to help us prepare the most comfortable and enjoyable retreat for you and our families.</span>
+              <div id="check-box" class="check-box">
+                <div id="left-box" class="left-box">
+                  <input type="radio" id="FoodAllergiesY" name="Food-Allergies" value="Yes" />
+                  <input type="radio" id="FoodAllergiesN" name="Food-Allergies" value="No" />
+                </div>
+                <div id="right-box" class="right-box">
+                  <span>YES</span>
+                  <span>NO</span>
+                </div>
+              </div>
+              <small id="fadr-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Yes-Food-Allergies">If 'Yes', please describe briefly.</label>
+              <textarea name="Yes-Food-Allergies" id="YesFoodAllergies" cols="30" rows="2"></textarea>
+              <small id="yfadr-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Non-English-Ability">Do you have any non-English language abilities?&#42;</label>
+              <div id="check-box" class="check-box">
+                <div id="left-box" class="left-box">
+                  <input type="radio" id="NonEnglishAbilityY" name="Non-English-Ability" value="Yes" />
+                  <input type="radio" id="NonEnglishAbilityN" name="Non-English-Ability" value="No" />
+                </div>
+                <div id="right-box" class="right-box">
+                  <span>YES</span>
+                  <span>NO</span>
+                </div>
+              </div>
+              <small id="nea-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Yes-Non-English-Ability">If 'Yes', please describe briefly.</label>
+              <textarea name="Yes-Non-English-Ability" id="YesNonEnglishAbility" cols="30" rows="2"></textarea>
+              <small id="ynea-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="About-Inheritance-of-Hope">How did you hear about Inheritance of Hope?&#42;</label>
+              <textarea name="About-Inheritance-of-Hope" id="AboutInheritanceofHope" cols="30" rows="2"></textarea>
+              <small id="aioh-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="section-name" class="section-name">
+            <span> Emergency Contact Info: </span>
+          </div>
+
+          <div id="two-columns" class="two-columns">
+            <div id="two" class="two">
+              <label for="Emergency-Contact-Name">Emergency Contact Name&#42;</label>
+              <input type="text" id="EmergencyContactName" name="Emergency-Contact-Name" />
+              <small id="ecn-error" class="error">Please provide the information.&#42;</small>
+            </div>
+            <div id="two" class="two">
+              <label for="Emergency-Contact-Relationship">Emergency Contact Relationship&#42;</label>
+              <input type="text" id="EmergencyContactRelationship" name="Emergency-Contact-Relationship" />
+              <small id="ecr-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="two-columns" class="two-columns">
+            <div id="two" class="two">
+              <label for="Emergency-Contact-Email">Emergency Contact Email&#42;</label>
+              <input type="text" id="EmergencyContactEmail" name="Emergency-Contact-Email" placeholder="xxx@example.com" />
+              <small id="ece-error" class="error">Please write the valid email.&#42;</small>
+            </div>
+            <div id="two" class="two">
+              <label for="Emergency-Contact-Number">Emergency Contact Phone Number&#42;</label>
+              <input type="text" id="EmergencyContactNumber" name="Emergency-Contact-Number" placeholder="xxx-xxx-xxxx" />
+              <small id="ecpn-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Emergency-Contact-Street-Address">Emergency Contact Street Address&#42;</label>
+              <input type="text" id="EmergencyContactStreetAddress" name="Emergency-Contact-Street-Address" />
+              <small id="ecsa-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="three-columns" class="three-columns">
+            <div id="three" class="three">
+              <label for="Emergency-Contact-City">City&#42;</label>
+              <input type="text" id="EmergencyContactCity" name="Emergency-Contact-City" />
+              <small id="ecc-error" class="error">Please provide the information.&#42;</small>
+            </div>
+            <div id="three" class="three">
+              <label for="Emergency-Contact-State">State&#42;</label>
+              <input type="text" id="EmergencyContactState" name="Emergency-Contact-State" />
+              <small id="ecs-error" class="error">Please provide the information.&#42;</small>
+            </div>
+            <div id="three" class="three">
+              <label for="Emergency-Contact-Zip">Zip&#42;</label>
+              <input type="text" id="EmergencyContactZip" name="Emergency-Contact-Zip" />
+              <small id="ecz-error" class="error">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Electronic-Consent" style="text-align: center">Electronic Consent&#42;</label>
+              <span> <strong>A.</strong> I understand that participation in Inheritance of Hope is purely voluntary. </span>
+              <span>
+                <strong>B.</strong> On behalf of myself and all the Participants listed on this form, their heirs, personal representatives, guardians,
+                successors, and assigns, I hereby unconditionally, irrevocably, and absolutely release, discharge, and agree to indemnify and hold harmless
+                Inheritance of Hope, its directors, officers, employees, volunteers, agents, representatives, successors, and assigns, and any parent
+                organizations, affiliates or subsidiaries, from any and all loss, liability, claims, demands, causes of action, costs or expenses (including
+                attorneys’ fees), damages or suits of any type, whether in law and/or in equity, related directly or indirectly, or in any way connected with
+                the Participants’ participation in Inheritance of Hope.
+              </span>
+              <span>
+                <strong>C.</strong>I understand, recognize, and agree that there are dangers, hazards, and risks associated with participation in Inheritance of
+                Hope. I understand that participation in Inheritance of Hope may result in injury, property damage, interaction with persons having potentially
+                communicable diseases, and/or death. I acknowledge that I understand and have fully considered the dangers, hazards, and risks associated with
+                Inheritance of Hope and voluntarily assume the risks associated with participation in Inheritance of Hope. I hereby unconditionally,
+                irrevocably, and absolutely release, discharge, and agree to indemnify and hold harmless Inheritance of Hope, its directors, officers,
+                employees, volunteers, agents, representatives, successors, and assigns, and any parent organizations, affiliates or subsidiaries, from any and
+                all loss, liability, claims, demands, causes of action, costs or expenses (including attorneys’ fees), damages or suits of any type, whether in
+                law and/or in equity, in the event of injury, property damage, disease, and/or death related directly or indirectly, or in any way connected
+                with the Participants’ participation in Inheritance of Hope.
+              </span>
+              <span>
+                <strong>D.</strong> By my/our signature(s) set forth below, I/we authorize Inheritance of Hope to photograph, film, and/or electronically record
+                interviews with me/us in such a manner as they choose. I further give permission and consent that any such photographs, films, and/or
+                electronically recorded interviews may be published and used by Inheritance of Hope and its agents to illustrate and promote the Inheritance of
+                Hope experience and Inheritance of Hope.
+              </span>
+              <span>
+                <strong>E.</strong> I agree that this Agreement is intended to be as broad and inclusive as is permitted by the law of the State of South
+                Carolina and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in full legal force and
+                effect. Any claims against Inheritance of Hope arising from or related to this Agreement or the Inheritance of Hope experience must be submitted
+                to binding arbitration in accordance with the applicable rules of the American Arbitration Association. Any arbitration shall be sited in Oconee
+                County, South Carolina. By checking the above box and electronically signing and dating below, I/we hereby warrant that I/we have read the
+                foregoing Release and executed it freely and voluntarily.
+              </span>
+              <div id="check-box" class="check-box">
+                <div id="left-box" class="left-box" style="width: 25%">
+                  <input type="radio" id="ElectronicConsent" name="Electronic-Consent" value="Yes" />
+                </div>
+                <div id="right-box" class="right-box" style="width: 75%">
+                  <span>I/we consent to providing my/our electronic signature.</span>
+                </div>
+              </div>
+              <small id="ec-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Applicant-Signature" style="text-align: center">Applicant Signature&#42;</label>
+              <span id="instruction">Give your legally effective electronic signature by typing your full legal name and entering the date below.</span>
+              <input type="text" id="ApplicantSignature" name="Applicant-Signature" />
+              <small id="as-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Signature-Date" style="text-align: center">Signature Date&#42;</label>
+              <input type="date" id="SignatureDate" name="Signature-Date" placeholder="YYYY-MM-DD" />
+              <small id="asd-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-column" class="one-column">
+            <div id="one" class="one">
+              <label for="Parent-Guardian-Signature" style="text-align: center">Parent/Guardian Signature</label>
+              <span id="instruction">Required* if applicant is under the age of 18 </span>
+              <input type="text" id="ParentGuardianSignature" name="Parent-Guardian-Signature" />
+              <small id="pgs-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="one-columm" class="one-column">
+            <div id="one" class="one">
+              <label for="Parent-Guardian-Signature-Date" style="text-align: center">Parent/Guardian Signature Date</label>
+              <input type="date" id="ParentGuardianSignatureDate" name="Parent-Guardian-Signature-Date" placeholder="YYYY-MM-DD" />
+              <small id="pgsd-error" class="error" style="text-align: center">Please provide the information.&#42;</small>
+            </div>
+          </div>
+
+          <div id="big-textarea" class="big-textarea">
+            <textarea style="display: none" name="Pardot-to-Salesforce" id="PardottoSF" cols="30" rows="10"></textarea>
+          </div>
+
+          <div id="button-box" class="button-box">
+            <button id="submit-form" class="submit-form" type="button">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function emailCorrectPattern(e) {
+        var y = /\S+@\S+\.\S+/;
+        return y.test(e);
+      }
+
+      function PdtoSf() {
+        var firstInterest = document.getElementById("choice");
+
+        var choiceValue = document.getElementsByName("Volunteer-Serving-Interests");
+        for (var i = 0; i < choiceValue.length; i++) {
+          if (choiceValue[i].checked == true) {
+            firstInterest.value = choiceValue[i].value;
+          }
+        }
+
+        let choice = firstInterest.value;
+        let vad = document.getElementById("SignatureDate").value;
+        let mgg = document.getElementById("GoalsGiftsTalents").value;
+        let sof = document.getElementById("StatementofFaith").value;
+        let sne = document.getElementById("YesSpecialNeedsExperience").value;
+        let multilingual = document.getElementById("YesNonEnglishAbility").value;
+        let deliverneighborambition =
+          document.getElementById("DeliverJoy1").value +
+          " & " +
+          document.getElementById("DeliverJoy2").value +
+          " & " +
+          document.getElementById("NeighborasSelf1").value +
+          " & " +
+          document.getElementById("NeighborasSelf2").value +
+          " & " +
+          document.getElementById("AntifragileAmbition1").value +
+          " & " +
+          document.getElementById("AntifragileAmbition2").value;
+        let shirt = document.getElementById("TShirtSize").value;
+        let ecn = document.getElementById("EmergencyContactName").value;
+        let ecr = document.getElementById("EmergencyContactRelationship").value;
+        let ece = document.getElementById("EmergencyContactEmail").value;
+        let ecp = document.getElementById("EmergencyContactNumber").value;
+        let eca =
+          document.getElementById("EmergencyContactStreetAddress").value +
+          "," +
+          document.getElementById("EmergencyContactCity").value +
+          "," +
+          document.getElementById("EmergencyContactState").value +
+          "," +
+          document.getElementById("EmergencyContactZip").value;
+        let ec = document.getElementById("ElectronicConsent").value;
+        let appsig = document.getElementById("ApplicantSignature").value;
+        let sigdate = document.getElementById("SignatureDate").value;
+        let parsig = document.getElementById("ParentGuardianSignature").value;
+        let parsigdate = document.getElementById("ParentGuardianSignatureDate").value;
+        let food = document.getElementById("YesFoodAllergies").value;
+
+        document.getElementById("PardottoSF").value =
+          "[Choice]" +
+          choice +
+          "[/Choice]" +
+          "[VAD]" +
+          vad +
+          "[/VAD]" +
+          "[MGG]" +
+          mgg +
+          "[/MGG]" +
+          "[SOF]" +
+          sof +
+          "[/SOF]" +
+          "[SNE]" +
+          sne +
+          "[/SNE]" +
+          "[Multilingual]" +
+          multilingual +
+          "[/Multilingual]" +
+          "[DNA]" +
+          deliverneighborambition +
+          "[/DNA]" +
+          "[Shirt]" +
+          shirt +
+          "[/Shirt]" +
+          "[ECN]" +
+          ecn +
+          "[/ECN]" +
+          "[ECR]" +
+          ecr +
+          "[/ECR]" +
+          "[ECE]" +
+          ece +
+          "[/ECE]" +
+          "[ECP]" +
+          ecp +
+          "[/ECP]" +
+          "[ECA]" +
+          eca +
+          "[/ECA]" +
+          "[EC]" +
+          ec +
+          "[/EC]" +
+          "[AppSig]" +
+          appsig +
+          "[/AppSig]" +
+          "[SigDate]" +
+          sigdate +
+          "[/SigDate]" +
+          "[ParSig]" +
+          parsig +
+          "[/ParSig]" +
+          "[ParSigDate]" +
+          parsigdate +
+          "[/ParSigDate]" +
+          "[Food]" +
+          food +
+          "[/Food]";
+      }
+
+      function validatingInputs() {
+        let textInputs = document.querySelectorAll("input[type=text]");
+        let dateInputs = document.querySelectorAll("input[type=date]");
+        let emailInputs = document.querySelectorAll("input[type=email]");
+        let selectInputs = document.querySelectorAll("select");
+        let checkBox = document.querySelectorAll("input[type=checkbox]");
+        let radioBox = document.querySelectorAll("input[type=radio]");
+        let textarea = document.querySelectorAll("textarea");
+
+        for (let i = 0; i < textInputs.length; i++) {
+          if (textInputs[i].value === "") {
+            textInputs[i].focus();
+            textInputs[i].parentElement.querySelector("small").style.visibility = "visible";
+            e.preventDefaul();
+          } else {
+            textInputs[i].parentElement.querySelector("small").style.visibility = "hidden";
+          }
+        }
+
+        for (let i = 0; i < dateInputs.length; i++) {
+          if (textInputs[i].value === "") {
+            textInputs[i].focus();
+            textInputs[i].parentElement.querySelector("small").style.visibility = "visible";
+            e.preventDefaul();
+          } else {
+            textInputs[i].parentElement.querySelector("small").style.visibility = "hidden";
+          }
+        }
+      }
+
+      document.getElementById("submit-form").addEventListener("click", () => {
+        PdtoSf();
+        validatingInputs();
+        document.getElementById("volunteer-applicaiton-form").submit();
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+
+        document.getElementById("PardottoSF").value =
+          "[Choice]" +
+          document.getElementById("choice").value +
+          "[/Choice]" +
+          "[VAD]" +
+          document.getElementById("SignatureDate").value +
+          "[/VAD]" +
+          "[MGG]" +
+          document.getElementById("GoalsGiftsTalents").value +
+          "[/MGG]" +
+          "[SOF]" +
+          document.getElementById("StatementofFaith").value +
+          "[/SOF]" +
+          "[SNE]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/SNE]" +
+          "[Multilingual]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/Multilingual]" +
+          "[Shirt]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/Shirt]" +
+          "[ECN]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/ECN]" +
+          "[ECR]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/ECR]" +
+          "[ECE]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/ECE]" +
+          "[ECP]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/ECP]" +
+          "[ECA]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/ECA]" +
+          "[EC]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/EC]" +
+          "[AppSig]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/AppSig]" +
+          "[SigDate]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/SigDate]" +
+          "[ParSig]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/ParSig]" +
+          "[ParSigDate]" +
+          document.getElementById("YesSpecialNeedsExperience").value +
+          "[/ParSigDate]" +
+          "[Food]" +
+          document.getElementById("YesFoodAllergies").value +
+          "[/Food]";
+
+
+-->
