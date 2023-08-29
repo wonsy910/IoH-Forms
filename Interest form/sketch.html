@@ -148,10 +148,21 @@
         border-radius: 15px;
       }
 
+      #interest-form {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
       .input-box {
         margin: 0 auto;
         padding: 10px 0;
-        width: 100%;
+        width: 50%;
         height: auto;
 
         display: flex;
@@ -211,7 +222,7 @@
 
           display: grid;
           grid-template-columns: repeat(2, 360px);
-          grid-template-rows: repeat(3, 715px);
+          grid-template-rows: repeat(3, 700px);
           align-items: start;
 
           background: #808284;
@@ -369,13 +380,24 @@
         .input-box {
           margin: 0 auto;
           padding: 10px 0;
-          width: 100%;
+          width: 50%;
           height: auto;
 
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        #interest-form {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
         }
 
         .input-box label {
@@ -450,15 +472,6 @@
             Legacy Video made with one of our coaches is required for the Legacy Retreat® application.)
           </p>
           <button class="select" name="Legacy Videos™" type="button">Select</button>
-        </div>
-
-        <div class="options">
-          <span>Annual Vision Event</span>
-          <p>
-            Over 7 million people in the US are in young families facing the loss of a parent. Attend our online Annual Vision Event and see for yourself what
-            no one else is offering these families. All ages are welcome.
-          </p>
-          <button class="select" name="Annual Legacy Events" type="button">Select</button>
         </div>
 
         <div class="options">
@@ -618,3 +631,16 @@
     </script>
   </body>
 </html>
+
+<!--
+
+        <div class="options">
+          <span>Annual Vision Event</span>
+          <p>
+            Over 7 million people in the US are in young families facing the loss of a parent. Attend our online Annual Vision Event and see for yourself what
+            no one else is offering these families. All ages are welcome.
+          </p>
+          <button class="select" name="Annual Legacy Events" type="button">Select</button>
+      </div>
+
+-->

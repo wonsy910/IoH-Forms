@@ -1,0 +1,179 @@
+<apex:page
+  renderAs="pdf"
+  standardController="CampaignMember"
+  showHeader="false"
+  sidebar="false"
+  standardStylesheets="false"
+  applyBodyTag="false"
+  applyHtmlTag="false"
+  docType="html-5.0"
+>
+  <html manifest="/apex/offlineCache">
+    <head>
+      <style>
+        @page {
+          size: letter;
+        }
+        body {
+          width: 8in;
+          height: 10.5in;
+          font-size: 16px;
+        }
+        .page-content {
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          width: 100%;
+          height: auto;
+        }
+        .header,
+        .main {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+
+        .header-logo {
+          margin: 2px auto;
+          padding: 0;
+          width: 30%;
+          height: auto;
+          text-align: center;
+        }
+
+        .header-info {
+          margin: 2px auto;
+          padding: 0;
+          width: 80%;
+          height: auto;
+        }
+        .header-info > table {
+          margin: 0 auto;
+          padding: 5px;
+          width: 100%;
+          border: solid 1px black;
+          border-collapse: separate;
+        }
+        .header-info > table > tr {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .header-info > table > tr > th {
+          margin: 0 auto;
+          padding: 0;
+          width: 30%;
+          height: auto;
+        }
+        .header-info > table > tr > td {
+          margin: 0 auto;
+          padding: 0;
+          width: 70%;
+          height: auto;
+          text-align: right;
+        }
+
+        .box {
+          margin: 2px auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        .box > table {
+          margin: 0 auto;
+          width: 100%;
+          min-height: 1.5in;
+          border: solid 1px black;
+        }
+        .box > table > tr {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          height: auto;
+          border-right: solid 1px black;
+          border-left: solid 1px black;
+        }
+        .box > table > tr > th {
+          margin: 0 auto;
+          padding: 3px;
+          width: 20%;
+          height: auto;
+
+          text-align: center;
+        }
+        .box > table > tr > td {
+          margin: 0 auto;
+          padding: 3px;
+          width: 80%;
+          height: auto;
+
+          text-align: left;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="page" style="page-break-after: void">
+        <div class="page-content">
+          <div class="header">
+            <div class="header-logo">
+              <apex:image width="100%" url="{!$Resource.companyLogo}" />
+            </div>
+            <div class="header-info">
+              <table>
+                <tr>
+                  <th>&nbsp;&nbsp;Prospect:</th>
+                  <td>{!CampaignMember.FirstName} {!CampaignMember.LastName}&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                  <th>&nbsp;&nbsp;Household:</th>
+                  <td>{!CampaignMember.Account_Name__c}&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                  <th>&nbsp;&nbsp;E-mail:</th>
+                  <td>{!CampaignMember.Email}&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                  <th>&nbsp;&nbsp;Mailing Address:</th>
+                  <td>{!CampaignMember.Street}, {!CampaignMember.City}, {!CampaignMember.State}, {!CampaignMember.PostalCode}&nbsp;&nbsp;</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="main">
+            <div class="box">
+              <table>
+                <tr>
+                  <th>Application Date</th>
+                  <td>{!CampaignMember.Application_Date__c}</td>
+                </tr>
+              </table>
+            </div>
+            <div class="box">
+              <table>
+                <tr>
+                  <th>Additional Notes</th>
+                  <td>{!CampaignMember.Additional_Notes__c}</td>
+                </tr>
+              </table>
+            </div>
+            <div class="box">
+              <table>
+                <tr>
+                  <th>Summary</th>
+                  <td>{!CampaignMember.Summary__c}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="footer"></div>
+        </div>
+      </div>
+    </body>
+  </html>
+</apex:page>
