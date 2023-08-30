@@ -3743,21 +3743,6 @@
         } else {
           document.getElementById("DPSC-Info-13-Error").style.visibility = "hidden";
         }
-        if (document.getElementById("DPSC-Heard-About-IoH").value == "") {
-          document.getElementById("DPSC-Heard-About-IoH").focus();
-          document.getElementById("DPSC-Info-13-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("DPSC-Info-13-Error").style.visibility = "hidden";
-        }
-        let interests = document.getElementsByName("DPSC-Served-in-IoH");
-        if (!interests[0].checked && !interests[1].checked && !interests[2].checked && !interests[3].checked && !interests[4].checked) {
-          interests[0].focus();
-          document.getElementById("DPSC-Info-14-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("DPSC-Info-14-Error").style.visibility = "hidden";
-        }
         if (
           !document.getElementById("DPSC-WATY-1").checked &&
           !document.getElementById("DPSC-WATY-2").checked &&
@@ -4075,21 +4060,6 @@
         } else {
           document.getElementById("WW-Info-13-Error").style.visibility = "hidden";
         }
-        if (document.getElementById("WW-Heard-About-IoH").value == "") {
-          document.getElementById("WW-Heard-About-IoH").focus();
-          document.getElementById("WW-Info-13-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("WW-Info-13-Error").style.visibility = "hidden";
-        }
-        let interests = document.getElementsByName("WW-Served-in-IoH");
-        if (!interests[0].checked && !interests[1].checked && !interests[2].checked && !interests[3].checked && !interests[4].checked) {
-          interests[0].focus();
-          document.getElementById("WW-Info-14-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("WW-Info-14-Error").style.visibility = "hidden";
-        }
         if (!document.getElementById("WW-WATY-1").checked && !document.getElementById("WW-WATY-2").checked && !document.getElementById("WW-WATY-3").checked) {
           document.getElementById("WW-WATY-1").focus();
           document.getElementById("WW-Info-15-Error").style.visibility = "visible";
@@ -4395,14 +4365,6 @@
           e.preventDefault();
         } else {
           document.getElementById("CODP-Info-12-Error").style.visibility = "hidden";
-        }
-        let interests = document.getElementsByName("CODP-Served-in-IoH");
-        if (!interests[0].checked && !interests[1].checked && !interests[2].checked && !interests[3].checked && !interests[4].checked) {
-          interests[0].focus();
-          document.getElementById("CODP-Info-13-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("CODP-Info-13-Error").style.visibility = "hidden";
         }
         if (
           !document.getElementById("CODP-WATY-1").checked &&
@@ -5176,21 +5138,6 @@
           e.preventDefault();
         } else {
           document.getElementById("SI-Info-13-Error").style.visibility = "hidden";
-        }
-        if (document.getElementById("SI-Heard-About-IoH").value == "") {
-          document.getElementById("SI-Heard-About-IoH").focus();
-          document.getElementById("SI-Info-13-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("SI-Info-13-Error").style.visibility = "hidden";
-        }
-        let interests = document.getElementsByName("SI-Served-in-IoH");
-        if (!interests[0].checked && !interests[1].checked && !interests[2].checked && !interests[3].checked && !interests[4].checked) {
-          interests[0].focus();
-          document.getElementById("SI-Info-14-Error").style.visibility = "visible";
-          e.preventDefault();
-        } else {
-          document.getElementById("SI-Info-14-Error").style.visibility = "hidden";
         }
         if (!document.getElementById("SI-WATY-1").checked && !document.getElementById("SI-WATY-2").checked && !document.getElementById("SI-WATY-3").checked) {
           document.getElementById("SI-WATY-1").focus();
